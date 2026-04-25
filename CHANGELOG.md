@@ -1,3 +1,7 @@
+## v0.1.5 Public Review Draft
+
+- Added the public GitHub repository URL to `CITATION.cff`.
+
 ## v0.1.4 Public Review Draft
 
 - Added links to external articles and announcements in the main README.
