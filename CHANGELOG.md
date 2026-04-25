@@ -1,3 +1,8 @@
+## v0.1.4 Public Review Draft
+
+- Added links to external articles and announcements in the main README.
+- Clarified that external articles are explanatory materials and that the English repository documentation remains authoritative.
+
 ## v0.1.3 Public Review Draft
 
 - Added machine-translated reference README files for Japanese, Simplified Chinese, and Korean.

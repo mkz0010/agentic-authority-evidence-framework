@@ -53,6 +53,17 @@ If there is any conflict or inconsistency between a translated README and the En
 
 For security, compliance, audit, or implementation decisions, refer to the English documentation under `docs/en/`.
 
+## Articles and Announcements
+
+The following articles introduce the motivation, design concepts, and technical background of AAEF.
+
+- [Model Output Is Not Authority: Action Assurance for AI Agents](https://dev.to/mkz0010/model-output-is-not-authority-action-assurance-for-ai-agents-4ljd) — DEV Community
+- [AIエージェント時代に必要なのは「モデルを信じること」ではなく「行為を統治すること」だ](https://zenn.dev/mkz0010/articles/bc7b94b515b8b5) — Zenn
+- [Prompt Injection対策を「プロンプト」ではなく「実行境界」で考える](https://qiita.com/mkz0010/items/244d97087146a3038ac8) — Qiita
+- [AAEF v0.1.3 Public Review Draft announcement](https://www.linkedin.com/feed/update/urn:li:activity:7453853837167263744/) — LinkedIn
+
+These articles are explanatory materials. The authoritative documentation remains this repository, especially the English README and `docs/en/`.
+
 ## Intended Audience
 
 AAEF is intended for:
