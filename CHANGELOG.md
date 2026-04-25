@@ -1,3 +1,10 @@
+## Unreleased / v0.2.0 Public Review Draft — Work in Progress
+
+- Added preliminary OWASP Agentic Top 10 2026 mapping.
+- Added initial Agentic Action Evidence Event JSON Schema.
+- Added minimal and valid evidence event examples.
+- Added High-Impact Action Taxonomy draft.
+
 ## v0.1.5 Public Review Draft
 
 - Added the public GitHub repository URL to `CITATION.cff`.
