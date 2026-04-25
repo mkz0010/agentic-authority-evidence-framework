@@ -1,0 +1,576 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mkz0010/agentic-authority-evidence-framework/schemas/agentic-action-evidence-event.schema.json",
+  "title": "AAEF Agentic Action Evidence Event",
+  "description": "Reference JSON Schema for recording high-impact agentic AI actions under AAEF. This schema is intended for public review and implementation feedback.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "schema_version",
+    "action_id",
+    "timestamp",
+    "agent",
+    "principal",
+    "delegation",
+    "requested_action",
+    "authorization",
+    "result",
+    "evidence"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "aaef.agentic_action_evidence_event",
+      "description": "Stable schema name for AAEF agentic action evidence events."
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "Schema version used by this event.",
+      "examples": [
+        "0.2.0-draft"
+      ]
+    },
+    "action_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique identifier for the attempted or completed agentic action."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the action was attempted, authorized, denied, or executed."
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "agentic_action_attempted",
+        "agentic_action_denied",
+        "agentic_action_allowed",
+        "agentic_action_executed",
+        "agentic_action_failed",
+        "agentic_action_revoked"
+      ],
+      "description": "Type of evidence event.",
+      "default": "agentic_action_executed"
+    },
+    "agent": {
+      "$ref": "#/$defs/agent"
+    },
+    "principal": {
+      "$ref": "#/$defs/principal"
+    },
+    "delegation": {
+      "$ref": "#/$defs/delegation"
+    },
+    "requested_action": {
+      "$ref": "#/$defs/requested_action"
+    },
+    "authorization": {
+      "$ref": "#/$defs/authorization"
+    },
+    "approval": {
+      "$ref": "#/$defs/approval"
+    },
+    "context": {
+      "$ref": "#/$defs/context"
+    },
+    "result": {
+      "$ref": "#/$defs/result"
+    },
+    "evidence": {
+      "$ref": "#/$defs/evidence"
+    },
+    "response": {
+      "$ref": "#/$defs/response"
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Implementation-specific extension fields. Extensions should not replace required AAEF fields.",
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "agent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "agent_id",
+        "agent_instance_id"
+      ],
+      "properties": {
+        "agent_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier for the agent product, agent definition, or logical agent."
+        },
+        "agent_instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier for the specific agent instance, session, runtime, tenant, workflow, or execution context."
+        },
+        "agent_product": {
+          "type": "string",
+          "description": "Human-readable product, platform, or agent name."
+        },
+        "operator_id": {
+          "type": "string",
+          "description": "Organization or entity responsible for operating the agent."
+        },
+        "issuer_id": {
+          "type": "string",
+          "description": "Entity that issued the agent identity, credential, authority grant, or attestation."
+        },
+        "runtime_environment": {
+          "type": "string",
+          "description": "Runtime, environment, tenant, or deployment boundary where the agent operated."
+        }
+      }
+    },
+    "principal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "principal_type",
+        "principal_id"
+      ],
+      "properties": {
+        "principal_type": {
+          "type": "string",
+          "enum": [
+            "human_user",
+            "organization",
+            "system",
+            "upstream_agent",
+            "service_account",
+            "unknown"
+          ],
+          "description": "Type of principal on whose behalf the agent acted."
+        },
+        "principal_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier for the principal."
+        },
+        "principal_context": {
+          "type": "string",
+          "description": "Context describing the principal's instruction, business process, workflow, or purpose."
+        },
+        "principal_context_id": {
+          "type": "string",
+          "description": "Reference ID for a structured principal context, workflow, ticket, request, or authority grant."
+        }
+      }
+    },
+    "delegation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority_scope"
+      ],
+      "properties": {
+        "delegation_chain_id": {
+          "type": "string",
+          "description": "Identifier for the delegation chain, if applicable."
+        },
+        "parent_action_id": {
+          "type": "string",
+          "description": "Identifier for the upstream action that created or influenced this action, if applicable."
+        },
+        "authority_scope": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Authority scope under which the action was attempted."
+        },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "max_amount": {
+              "type": [
+                "string",
+                "number"
+              ],
+              "description": "Maximum permitted amount, where applicable."
+            },
+            "currency": {
+              "type": "string",
+              "description": "Currency for amount constraints, where applicable."
+            },
+            "expires_at": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Expiration time for the authority or delegation."
+            },
+            "max_count": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Maximum number of permitted uses."
+            },
+            "max_delegation_depth": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Maximum permitted downstream delegation depth."
+            },
+            "redelegation_allowed": {
+              "type": "boolean",
+              "description": "Whether downstream redelegation was allowed."
+            },
+            "allowed_resources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Allowed resources or resource patterns."
+            },
+            "allowed_purposes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Allowed purposes or purpose categories."
+            }
+          }
+        }
+      }
+    },
+    "requested_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action_type",
+        "resource",
+        "purpose",
+        "risk_level"
+      ],
+      "properties": {
+        "action_type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Type of action requested or attempted."
+        },
+        "resource": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Target resource, system, account, dataset, file, tool, service, or external party."
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Declared purpose or business justification for the action."
+        },
+        "risk_level": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical",
+            "unknown"
+          ],
+          "description": "Risk classification of the requested action."
+        },
+        "high_impact_category": {
+          "type": "string",
+          "description": "Optional high-impact action taxonomy category, such as HIA-COMM or HIA-DATA."
+        },
+        "tool_name": {
+          "type": "string",
+          "description": "Tool or API requested for invocation."
+        },
+        "tool_operation": {
+          "type": "string",
+          "description": "Specific tool operation, endpoint, method, or command."
+        },
+        "argument_digest": {
+          "type": "string",
+          "description": "Privacy-preserving digest or reference for tool arguments when raw arguments should not be stored."
+        },
+        "external_effect_expected": {
+          "type": "boolean",
+          "description": "Whether the action was expected to create external or persistent effects."
+        }
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision",
+        "policy_id"
+      ],
+      "properties": {
+        "decision": {
+          "type": "string",
+          "enum": [
+            "allow",
+            "deny",
+            "requires_human_approval",
+            "requires_additional_verification",
+            "escalate"
+          ],
+          "description": "Authorization decision at the action boundary."
+        },
+        "policy_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Policy, rule, workflow, or decision point used for authorization."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Human-readable reason for the authorization decision."
+        },
+        "decision_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the authorization decision."
+        },
+        "trusted_inputs_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Trusted inputs used for the authorization decision."
+        },
+        "untrusted_inputs_excluded": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Untrusted inputs explicitly excluded from authorization."
+        },
+        "revocation_state_checked": {
+          "type": "boolean",
+          "description": "Whether revocation state was checked before allowing or executing the action."
+        }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approval_required"
+      ],
+      "properties": {
+        "approval_required": {
+          "type": "boolean",
+          "description": "Whether human approval was required."
+        },
+        "approval_id": {
+          "type": "string",
+          "description": "Identifier for the approval record."
+        },
+        "approver_id": {
+          "type": "string",
+          "description": "Identifier for the approver."
+        },
+        "approval_decision": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "denied",
+            "expired",
+            "not_required",
+            "unknown"
+          ],
+          "description": "Approval outcome."
+        },
+        "approval_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of approval decision."
+        },
+        "approval_context_presented": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Information shown to the human approver."
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "input_sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/input_source"
+          },
+          "description": "Input, memory, retrieval, or context sources that may have influenced the action."
+        },
+        "untrusted_content_influenced_action": {
+          "type": "boolean",
+          "description": "Whether untrusted content materially influenced the action."
+        },
+        "retrieved_or_remembered_content_material": {
+          "type": "boolean",
+          "description": "Whether retrieved or remembered content materially influenced the high-impact action."
+        },
+        "correlation_id": {
+          "type": "string",
+          "description": "Correlation ID for linking related workflow, trace, or action events."
+        },
+        "trace_id": {
+          "type": "string",
+          "description": "Trace ID for distributed tracing or workflow reconstruction."
+        }
+      }
+    },
+    "input_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_type",
+        "trust_level"
+      ],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "description": "Type of input source, such as user_instruction, external_email_body, retrieved_web_content, memory, tool_result, system_policy, or approval_record."
+        },
+        "source_id": {
+          "type": "string",
+          "description": "Identifier or reference for the source."
+        },
+        "trust_level": {
+          "type": "string",
+          "enum": [
+            "trusted",
+            "untrusted",
+            "mixed",
+            "unknown"
+          ],
+          "description": "Trust classification of the source."
+        },
+        "provenance": {
+          "type": "string",
+          "description": "Provenance metadata, URI, source description, or reference."
+        },
+        "content_digest": {
+          "type": "string",
+          "description": "Privacy-preserving digest of source content."
+        },
+        "materially_influenced_action": {
+          "type": "boolean",
+          "description": "Whether this source materially influenced the requested action."
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "external_effect"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "allowed",
+            "allowed_after_approval",
+            "denied",
+            "failed",
+            "partially_completed",
+            "quarantined",
+            "revoked"
+          ],
+          "description": "Final result status of the action."
+        },
+        "tool_invoked": {
+          "type": "string",
+          "description": "Tool actually invoked, if any."
+        },
+        "tool_result_reference": {
+          "type": "string",
+          "description": "Reference to tool output, result record, transaction ID, or execution log."
+        },
+        "external_effect": {
+          "type": "boolean",
+          "description": "Whether the action created an external, persistent, or system state-changing effect."
+        },
+        "error_code": {
+          "type": "string",
+          "description": "Error code if the action failed."
+        },
+        "result_digest": {
+          "type": "string",
+          "description": "Privacy-preserving digest of the result, where raw output should not be stored."
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "retention_class"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "description": "Identifier for this evidence record."
+        },
+        "evidence_hash": {
+          "type": "string",
+          "description": "Hash of the evidence event or related evidence bundle."
+        },
+        "retention_class": {
+          "type": "string",
+          "description": "Retention class or policy for this evidence event."
+        },
+        "tamper_evidence": {
+          "type": "string",
+          "enum": [
+            "none",
+            "signed_log_entry",
+            "append_only_log",
+            "transparency_log",
+            "hash_chain",
+            "other"
+          ],
+          "description": "Tamper-evidence mechanism used, if any."
+        },
+        "evidence_location": {
+          "type": "string",
+          "description": "Location or reference for stored evidence."
+        },
+        "privacy_notes": {
+          "type": "string",
+          "description": "Notes on privacy-preserving storage, redaction, minimization, or access control."
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "revocation_triggered": {
+          "type": "boolean",
+          "description": "Whether revocation was triggered as a result of this event."
+        },
+        "revocation_reference": {
+          "type": "string",
+          "description": "Reference to revocation action or record."
+        },
+        "isolation_triggered": {
+          "type": "boolean",
+          "description": "Whether agent, workflow, tool, memory, or delegation isolation was triggered."
+        },
+        "isolation_reference": {
+          "type": "string",
+          "description": "Reference to isolation action or incident record."
+        },
+        "incident_reference": {
+          "type": "string",
+          "description": "Reference to related incident, case, or review record."
+        }
+      }
+    }
+  }
+}

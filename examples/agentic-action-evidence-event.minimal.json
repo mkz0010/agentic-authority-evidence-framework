@@ -1,0 +1,50 @@
+{
+  "schema": "aaef.agentic_action_evidence_event",
+  "schema_version": "0.2.0-draft",
+  "action_id": "act_20260425_000001",
+  "timestamp": "2026-04-25T00:00:00Z",
+  "event_type": "agentic_action_denied",
+  "agent": {
+    "agent_id": "agent.support.assistant",
+    "agent_instance_id": "inst_01HZYXAMPLE"
+  },
+  "principal": {
+    "principal_type": "human_user",
+    "principal_id": "user_12345"
+  },
+  "delegation": {
+    "authority_scope": [
+      "ticket.read",
+      "ticket.comment.prepare"
+    ]
+  },
+  "requested_action": {
+    "action_type": "external_email.send",
+    "resource": "customer@example.com",
+    "purpose": "customer_support_followup",
+    "risk_level": "high",
+    "external_effect_expected": true
+  },
+  "authorization": {
+    "decision": "deny",
+    "policy_id": "policy.external_communication.v1",
+    "reason": "Agent authority scope does not include external_email.send",
+    "trusted_inputs_used": [
+      "policy",
+      "authority_scope",
+      "principal_context"
+    ],
+    "untrusted_inputs_excluded": [
+      "ticket_body"
+    ],
+    "revocation_state_checked": true
+  },
+  "result": {
+    "status": "denied",
+    "external_effect": false
+  },
+  "evidence": {
+    "retention_class": "high_impact_action",
+    "tamper_evidence": "signed_log_entry"
+  }
+}
