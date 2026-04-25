@@ -1,0 +1,132 @@
+{
+  "schema": "aaef.agentic_action_evidence_event",
+  "schema_version": "0.2.0-draft",
+  "action_id": "act_20260425_000001",
+  "timestamp": "2026-04-25T00:00:00Z",
+  "event_type": "agentic_action_executed",
+  "agent": {
+    "agent_id": "agent.procurement.assistant",
+    "agent_instance_id": "inst_01HZYXAMPLE",
+    "agent_product": "Example Procurement Agent",
+    "operator_id": "org.example",
+    "issuer_id": "issuer.example",
+    "runtime_environment": "prod/procurement/workflow"
+  },
+  "principal": {
+    "principal_type": "human_user",
+    "principal_id": "user_12345",
+    "principal_context": "procurement_request",
+    "principal_context_id": "req_20260425_000001"
+  },
+  "delegation": {
+    "delegation_chain_id": "del_chain_abc123",
+    "parent_action_id": "act_20260425_000000",
+    "authority_scope": [
+      "vendor.quote.request",
+      "purchase_order.prepare"
+    ],
+    "constraints": {
+      "max_amount": "1000.00",
+      "currency": "USD",
+      "expires_at": "2026-04-25T01:00:00Z",
+      "max_count": 1,
+      "max_delegation_depth": 1,
+      "redelegation_allowed": false,
+      "allowed_resources": [
+        "vendor_xyz"
+      ],
+      "allowed_purposes": [
+        "office_supplies_procurement"
+      ]
+    }
+  },
+  "requested_action": {
+    "action_type": "purchase_order.create",
+    "resource": "vendor_xyz",
+    "purpose": "office_supplies_procurement",
+    "risk_level": "high",
+    "high_impact_category": "HIA-FIN",
+    "tool_name": "procurement_api",
+    "tool_operation": "create_purchase_order",
+    "argument_digest": "sha256:example-argument-digest",
+    "external_effect_expected": true
+  },
+  "authorization": {
+    "decision": "requires_human_approval",
+    "policy_id": "policy.procurement.high_risk_actions.v1",
+    "reason": "purchase_order.create exceeds autonomous execution authority",
+    "decision_timestamp": "2026-04-25T00:01:00Z",
+    "trusted_inputs_used": [
+      "policy",
+      "authority_scope",
+      "principal_context",
+      "risk_classification"
+    ],
+    "untrusted_inputs_excluded": [
+      "retrieved_web_content",
+      "external_email_body"
+    ],
+    "revocation_state_checked": true
+  },
+  "approval": {
+    "approval_required": true,
+    "approval_id": "approval_98765",
+    "approver_id": "manager_456",
+    "approval_decision": "approved",
+    "approval_timestamp": "2026-04-25T00:05:00Z",
+    "approval_context_presented": [
+      "agent_id",
+      "principal_id",
+      "requested_action",
+      "resource",
+      "purpose",
+      "risk_level",
+      "authority_scope",
+      "expected_external_effect"
+    ]
+  },
+  "context": {
+    "input_sources": [
+      {
+        "source_type": "user_instruction",
+        "source_id": "req_20260425_000001",
+        "trust_level": "trusted",
+        "provenance": "internal_workflow",
+        "content_digest": "sha256:example-user-instruction-digest",
+        "materially_influenced_action": true
+      },
+      {
+        "source_type": "retrieved_web_content",
+        "source_id": "web_001",
+        "trust_level": "untrusted",
+        "provenance": "external_vendor_page",
+        "content_digest": "sha256:example-retrieved-content-digest",
+        "materially_influenced_action": false
+      }
+    ],
+    "untrusted_content_influenced_action": false,
+    "retrieved_or_remembered_content_material": false,
+    "correlation_id": "corr_abc123",
+    "trace_id": "trace_xyz789"
+  },
+  "result": {
+    "status": "allowed_after_approval",
+    "tool_invoked": "procurement_api.create_purchase_order",
+    "tool_result_reference": "po_000123",
+    "external_effect": true,
+    "result_digest": "sha256:example-result-digest"
+  },
+  "evidence": {
+    "evidence_id": "ev_20260425_000001",
+    "evidence_hash": "sha256:example-evidence-hash",
+    "retention_class": "high_impact_action",
+    "tamper_evidence": "signed_log_entry",
+    "evidence_location": "evidence-store://aaef/events/act_20260425_000001",
+    "privacy_notes": "Raw tool arguments are not stored; argument_digest is retained."
+  },
+  "response": {
+    "revocation_triggered": false,
+    "isolation_triggered": false,
+    "incident_reference": "none"
+  }
+}
