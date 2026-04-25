@@ -1,0 +1,30 @@
+{
+  "schema": "aaef.agentic_action_evidence_event",
+  "schema_version": "0.2.0-draft",
+  "action_id": "act_invalid_000001",
+  "timestamp": "not-a-date-time",
+  "event_type": "agentic_action_executed",
+  "agent": {
+    "agent_id": "agent.invalid.example"
+  },
+  "principal": {
+    "principal_type": "human_user",
+    "principal_id": "user_12345"
+  },
+  "delegation": {
+    "authority_scope": []
+  },
+  "requested_action": {
+    "action_type": "external_email.send",
+    "resource": "customer@example.com",
+    "purpose": "customer_support_followup",
+    "risk_level": "severe"
+  },
+  "authorization": {
+    "decision": "maybe"
+  },
+  "result": {
+    "status": "allowed"
+  },
+  "evidence": {}
+}
