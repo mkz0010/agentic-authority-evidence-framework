@@ -4,7 +4,7 @@ title: "Agentic Authority & Evidence Framework (AAEF): An Action Assurance Contr
 authors:
   - name: "Kazuma"
     affiliation: "Independent Security Consultant"
-version: "0.1.2-public-review"
+version: "0.1.3-public-review"
 date-released: "2026-04-25"
 license: "CC-BY-4.0"
 abstract: "AAEF is an action assurance control profile for agentic AI systems, focused on delegated authority, policy-enforced action boundaries, verifiable evidence, and revocable trust."

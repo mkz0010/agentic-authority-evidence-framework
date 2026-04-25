@@ -1,3 +1,10 @@
+## v0.1.3 Public Review Draft
+
+- Added machine-translated reference README files for Japanese, Simplified Chinese, and Korean.
+- Added translation disclaimer and language links to the main README.
+- Clarified that the English README and `docs/en/` are authoritative.
+- Added a translation feedback issue template.
+
 # Changelog
 
 ## v0.1 Public Review Draft — revised pre-publication package

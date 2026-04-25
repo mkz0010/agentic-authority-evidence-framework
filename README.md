@@ -38,6 +38,21 @@ AAEF does **not** replace AI governance frameworks, Zero Trust frameworks, ident
 
 Instead, AAEF is intended to complement them by defining action assurance controls for high-impact AI agent actions.
 
+## Language / Translations
+
+The English version of this repository is the authoritative version.
+
+The following translated README files are provided for reference only. They are based on machine translation and may contain inaccurate, incomplete, or ambiguous terminology.
+
+If there is any conflict or inconsistency between a translated README and the English documentation, the English version prevails.
+
+- [English](README.md) — authoritative
+- [日本語 / Japanese](README.ja.md) — reference translation
+- [简体中文 / Simplified Chinese](README.zh-CN.md) — reference translation
+- [한국어 / Korean](README.ko.md) — reference translation
+
+For security, compliance, audit, or implementation decisions, refer to the English documentation under `docs/en/`.
+
 ## Intended Audience
 
 AAEF is intended for:
