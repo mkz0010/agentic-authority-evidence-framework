@@ -128,7 +128,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 09-relationship-to-existing-frameworks.md
 │       ├── 10-maintenance-and-validation.md
 │       ├── 11-high-impact-action-taxonomy.md
-│       └── 14-evidence-event-schema.md
+│       ├── 14-evidence-event-schema.md
+│       └── 15-v02-control-expansion-notes.md
 ├── mappings/
 │   └── owasp-agentic-top10-2026.md
 ├── schemas/
@@ -139,12 +140,15 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   ├── agentic-action-evidence-event.json
 │   ├── agentic-action-evidence-event.minimal.json
 │   ├── agentic-action-evidence-event.valid.json
+│   ├── agentic-action-evidence-event.invalid.json
 │   └── attack-control-mapping.md
 ├── tools/
-│   └── validate_control_catalog.py
+│   ├── validate_control_catalog.py
+│   └── validate_evidence_schema.py
 └── .github/
     └── workflows/
-        └── validate-control-catalog.yml
+        ├── validate-control-catalog.yml
+        └── validate-evidence-schema.yml
 ```
 
 ## Citation
