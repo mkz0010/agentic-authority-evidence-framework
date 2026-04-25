@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use or reference this framework, please cite it as below."
 title: "Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems"
 authors:
-  - name: "Kazuma"
+  - family-names: "Horishita"
+    given-names: "Kazuma"
     affiliation: "Independent Security Consultant"
 version: "0.1.5-public-review"
 date-released: "2026-04-25"
