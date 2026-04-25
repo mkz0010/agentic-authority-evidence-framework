@@ -10,6 +10,25 @@ Machine-readable draft:
 
 This taxonomy is intended for AAEF v0.2.0 discussion and review. It is not a certification scheme, legal standard, or exhaustive list of all high-risk agentic AI actions.
 
+## Machine-Readable CSV
+
+The taxonomy is also provided as a machine-readable CSV file:
+
+- `taxonomies/high-impact-action-taxonomy-v0.2-draft.csv`
+
+The CSV includes the following columns:
+
+- `Category ID`
+- `Category Name`
+- `Definition`
+- `Example Actions`
+- `Typical Impact`
+- `Recommended Baseline`
+- `Key AAEF Control Areas`
+- `Suggested Evidence`
+
+The CSV is intended to support assessment tooling, review worksheets, mappings, and future validation workflows.
+
 ## Purpose
 
 AAEF v0.1.x requires organizations to define high-impact agentic actions.

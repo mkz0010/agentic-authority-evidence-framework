@@ -79,11 +79,17 @@ AAEF is intended for:
 
 ## Document Status
 
-This repository contains **AAEF v0.1 Public Review Draft**.
+This repository contains the **AAEF v0.1 Public Review Draft**, with selected **v0.2.0 work-in-progress draft artifacts** already merged for public review.
 
-This draft is intentionally incomplete. It is published to establish the core concepts, terminology, control domains, initial control requirements, and review direction for an open action assurance profile for agentic AI systems.
+The v0.1 control catalog remains the current control baseline.
 
-This revision incorporates early review feedback by clarifying evidence requirements, unifying maturity levels, strengthening prompt-injection-related controls, and making the control CSV the source of truth.
+The v0.2.0 work-in-progress materials currently include:
+
+- preliminary OWASP Agentic Top 10 2026 mapping,
+- initial Agentic Action Evidence Event JSON Schema,
+- High-Impact Action Taxonomy draft.
+
+These v0.2 materials are not yet a finalized release. They are provided to support review, implementation feedback, and future control expansion.
 
 Feedback, issues, and pull requests are welcome.
 
@@ -98,6 +104,9 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 ```text
 .
 ├── README.md
+├── README.ja.md
+├── README.zh-CN.md
+├── README.ko.md
 ├── LICENSE.md
 ├── CITATION.cff
 ├── CHANGELOG.md
@@ -117,9 +126,19 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 07-control-requirements.md
 │       ├── 08-assessment-methodology.md
 │       ├── 09-relationship-to-existing-frameworks.md
-│       └── 10-maintenance-and-validation.md
+│       ├── 10-maintenance-and-validation.md
+│       ├── 11-high-impact-action-taxonomy.md
+│       └── 14-evidence-event-schema.md
+├── mappings/
+│   └── owasp-agentic-top10-2026.md
+├── schemas/
+│   └── agentic-action-evidence-event.schema.json
+├── taxonomies/
+│   └── high-impact-action-taxonomy-v0.2-draft.csv
 ├── examples/
 │   ├── agentic-action-evidence-event.json
+│   ├── agentic-action-evidence-event.minimal.json
+│   ├── agentic-action-evidence-event.valid.json
 │   └── attack-control-mapping.md
 ├── tools/
 │   └── validate_control_catalog.py
