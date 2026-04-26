@@ -29,6 +29,7 @@ SCHEMA_PATH = REPO_ROOT / "schemas" / "agentic-action-evidence-event.schema.json
 VALID_EXAMPLES = [
     REPO_ROOT / "examples" / "agentic-action-evidence-event.minimal.json",
     REPO_ROOT / "examples" / "agentic-action-evidence-event.valid.json",
+    REPO_ROOT / "examples" / "agentic-action-evidence-event.high-impact.json",
 ]
 
 INVALID_EXAMPLES = [
