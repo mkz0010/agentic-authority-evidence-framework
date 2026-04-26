@@ -1,0 +1,48 @@
+flowchart LR
+    P[Principal / User] --> UI[Application or Workflow Interface]
+    UI --> AR[Agent Runtime]
+    AR --> M[Model]
+    M --> PA[Proposed Action]
+
+    PA --> AZ[Authorization Decision Point]
+    UI --> PC[Principal Context]
+    PC --> AZ
+    AG[Authority Grants and Delegation Records] --> AZ
+    POL[Policy Store] --> AZ
+    ST[Trusted Runtime State Sources] --> AZ
+    REV[Revocation and Freeze State] --> AZ
+
+    AZ --> ADA[Action-Bound Authorization Decision Artifact]
+    ADA --> TDE[Tool Dispatch Enforcement Point]
+
+    TDE --> TOOLS[Tools / APIs / External Systems]
+    TOOLS --> RES[Action Result]
+
+    AZ --> EV[Evidence Writer]
+    TDE --> EV
+    RES --> EV
+    PC --> EV
+    AG --> EV
+
+    EV --> ES[Evidence Store]
+    ES --> AUD[Review / Audit / Incident Reconstruction]
+
+    HUM[Human Approval / Override / Break-Glass] --> AZ
+    HUM --> EV
+
+    IR[Incident Response / Isolation] --> REV
+    IR --> TDE
+    IR --> EV
+
+    subgraph TCB[Trusted Control Boundary]
+        AZ
+        TDE
+        EV
+        POL
+        REV
+    end
+
+    subgraph UntrustedOrAdvisory[Untrusted or Advisory Inputs]
+        M
+        PA
+    end
