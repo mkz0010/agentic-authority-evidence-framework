@@ -211,6 +211,20 @@ Relevant controls:
 - `AAEF-AUZ-08`
 - `AAEF-AUZ-09`
 
+### Boundary Hardening for High-Impact Actions
+
+For high-impact actions, the trusted control boundary should be designed so that model-influenced components cannot bypass authorization, dispatch enforcement, or evidence generation.
+
+In particular:
+
+- the Tool Dispatch Enforcement Point should be treated as the required execution path for high-impact tool, API, or workflow execution;
+- high-impact tools and backend APIs should reject calls that do not originate from an approved Tool Dispatch Enforcement Point or equivalent enforcement gateway;
+- high-impact tool credentials should not be exposed to the model, prompt context, memory, RAG context, or untrusted Agent Runtime;
+- evidence for high-impact actions should not depend only on Agent Runtime self-reporting;
+- natural-language prompting, model instruction, or model self-restraint alone should not be treated as policy enforcement for high-impact action authorization.
+
+A trusted control boundary is weakened if the Agent Runtime can directly invoke high-impact tools using credentials that bypass the Tool Dispatch Enforcement Point.
+
 ## Action-Bound Authorization Decision Artifact
 
 For high-impact actions, an authorization decision should be bound to the specific action where feasible.
@@ -233,9 +247,46 @@ Related schema section:
 
 - `authorization.authorization_decision_artifact`
 
+### Canonical Action Request
+
+For high-impact actions, the authorization decision should be bound to a canonical representation of the requested action where feasible.
+
+A Canonical Action Request is a normalized representation used for authorization, dispatch verification, evidence correlation, and replay resistance.
+
+Recommended fields include:
+
+- schema version,
+- action ID,
+- agent ID,
+- agent instance ID,
+- principal ID,
+- authority scope,
+- tool name,
+- tool operation,
+- target resource,
+- purpose reference,
+- high-impact category,
+- expected external effect,
+- normalized argument digest,
+- policy ID,
+- policy version,
+- relevant approval ID if approval is required,
+- relevant runtime state references,
+- issued timestamp,
+- expiration timestamp,
+- nonce or single-use marker.
+
+The Tool Dispatch Enforcement Point should verify that the authorization decision artifact applies to the same Canonical Action Request that is about to be executed.
+
+If the tool operation, resource, principal, authority scope, arguments, approval context, policy version, expiration, or revocation state changes, the previous authorization decision should not be reused without reauthorization.
+
 ## Tool Dispatch Enforcement Point
 
 The Tool Dispatch Enforcement Point is the component that actually allows or blocks tool execution.
+
+For high-impact actions, the Tool Dispatch Enforcement Point should be treated as a required choke point, not merely as an optional wrapper around model-generated tool calls.
+
+The Tool Dispatch Enforcement Point should fail closed for high-impact actions when required authorization, approval, revocation, or evidence checks cannot be completed.
 
 It should enforce the authorization decision, not merely trust the model's tool call.
 
@@ -246,9 +297,19 @@ It should verify that:
 - the resource and scope match,
 - the principal and agent context match,
 - any required approval or verification has occurred,
-- revocation or freeze state does not block execution.
+- revocation or freeze state does not block execution,
+- the authorization decision artifact or dispatch attestation was issued by an approved component,
+- the decision has not already been used when single-use semantics are required,
+- the policy version is acceptable for the action being executed,
+- the canonical action digest matches the current tool invocation.
 
 This is where AAEF's separation between proposed action and permitted action becomes operational.
+
+High-impact backend APIs and tools should act as relying parties for dispatch enforcement.
+
+Where feasible, they should verify an authorization decision artifact, dispatch attestation, or equivalent enforcement signal before performing high-impact effects.
+
+This reduces the risk that an Agent Runtime, SDK wrapper, queue worker, or compromised integration path directly invokes a high-impact backend API without passing through the intended enforcement boundary.
 
 Relevant controls:
 
@@ -402,6 +463,17 @@ Evidence should preserve:
 
 ## Common Deployment Patterns
 
+### Implementation Profile Summary
+
+| Component | MVP placement | Strong placement | Anti-pattern |
+|---|---|---|---|
+| Authorization Decision Point | Runtime middleware or policy service | External authorization service with trusted policy and state inputs | Model self-check or natural-language policy prompt only |
+| Tool Dispatch Enforcement Point | Tool wrapper for controlled tools | Gateway, backend enforcement layer, or dedicated dispatch service | Logging-only wrapper that can be bypassed |
+| High-impact credentials | Held by TDE or backend API | Vault-backed short-lived credentials issued only to enforcement components | Agent Runtime owns broad API keys |
+| Evidence Writer | TDE writes structured evidence | Independent evidence pipeline fed by ADP, TDE, and backend execution paths | Agent self-reports success or failure only |
+| Backend API / Tool | Receives requests through TDE | Verifies dispatch attestation or action-bound authorization artifact | Accepts direct calls from Agent Runtime using shared credentials |
+| Human approval | Approval linked to action ID | Approval bound to canonical action digest and verified at dispatch | Human-readable summary approval only |
+
 ### Pattern A: Same-Process Prototype
 
 In a prototype, the model, runtime, policy check, and tool call may all run in one process.
@@ -419,6 +491,8 @@ Recommended use:
 - demos,
 - local testing,
 - low-impact actions only.
+
+Same-process implementations should not be used for production high-impact actions unless compensating controls demonstrate that model-influenced code cannot bypass authorization, dispatch enforcement, or evidence generation.
 
 ### Pattern B: Runtime-Enforced Agent Application
 
@@ -456,6 +530,10 @@ Recommended use:
 - high-impact actions,
 - production systems,
 - regulated or sensitive workflows.
+
+In this pattern, high-impact credentials should be held by the gateway, backend API, or another trusted enforcement component, not by the Agent Runtime.
+
+Backend APIs and tools should reject high-impact requests that do not carry a valid dispatch attestation, action-bound authorization decision artifact, or equivalent enforcement proof.
 
 ### Pattern D: Cross-Domain Agent Interaction
 
