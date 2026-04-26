@@ -1,0 +1,247 @@
+{
+  "schema": "aaef.agentic_action_evidence_event",
+  "schema_version": "0.2.0-draft",
+  "action_id": "act_20260426_audit_grade_000001",
+  "timestamp": "2026-04-26T02:00:00Z",
+  "event_type": "agentic_action_executed",
+  "agent": {
+    "agent_id": "agent.procurement.assistant",
+    "agent_instance_id": "inst_AUDIT_GRADE_EXAMPLE",
+    "agent_product": "Example Procurement Agent",
+    "operator_id": "org.example",
+    "issuer_id": "issuer.example",
+    "runtime_environment": "prod/procurement/workflow"
+  },
+  "principal": {
+    "principal_type": "human_user",
+    "principal_id": "user_12345",
+    "principal_context": "procurement_request",
+    "principal_context_id": "req_20260426_audit_grade_000001"
+  },
+  "delegation": {
+    "delegation_chain_id": "del_chain_audit_grade_001",
+    "parent_action_id": "act_20260426_audit_grade_000000",
+    "authority_scope": [
+      "vendor.quote.request",
+      "purchase_order.prepare"
+    ],
+    "constraints": {
+      "max_amount": "1000.00",
+      "currency": "USD",
+      "expires_at": "2026-04-26T03:00:00Z",
+      "max_count": 1,
+      "max_delegation_depth": 1,
+      "redelegation_allowed": false,
+      "allowed_resources": [
+        "vendor_xyz"
+      ],
+      "allowed_purposes": [
+        "office_supplies_procurement"
+      ]
+    },
+    "delegation_lineage": [
+      {
+        "lineage_node_id": "lineage_001",
+        "upstream_action_id": "act_20260426_high_impact_000000",
+        "upstream_agent_id": "agent.procurement.manager",
+        "downstream_agent_id": "agent.procurement.assistant",
+        "delegated_scope": [
+          "purchase_order.prepare"
+        ],
+        "delegated_constraints": [
+          "max_amount:1000.00",
+          "allowed_resource:vendor_xyz"
+        ],
+        "delegation_decision": "attenuated",
+        "decision_reference": "del_decision_001"
+      }
+    ]
+  },
+  "requested_action": {
+    "action_type": "purchase_order.create",
+    "resource": "vendor_xyz",
+    "purpose": "office_supplies_procurement",
+    "risk_level": "high",
+    "high_impact_category": "HIA-FIN",
+    "tool_name": "procurement_api",
+    "tool_operation": "create_purchase_order",
+    "argument_digest": "sha256:audit-grade-example-argument-digest",
+    "external_effect_expected": true
+  },
+  "authorization": {
+    "decision": "requires_human_approval",
+    "policy_id": "policy.procurement.high_risk_actions.v1",
+    "reason": "purchase_order.create exceeds autonomous execution authority",
+    "decision_timestamp": "2026-04-26T02:01:00Z",
+    "trusted_inputs_used": [
+      "policy",
+      "authority_scope",
+      "principal_context",
+      "risk_classification"
+    ],
+    "untrusted_inputs_excluded": [
+      "retrieved_web_content",
+      "external_email_body"
+    ],
+    "revocation_state_checked": true,
+    "authorization_decision_artifact": {
+      "decision_id": "authz_20260426_audit_grade_000001",
+      "decision": "requires_human_approval",
+      "bound_action_digest": "sha256:audit-grade-example-bound-action-digest",
+      "principal_id": "user_12345",
+      "authority_scope": [
+        "vendor.quote.request",
+        "purchase_order.prepare"
+      ],
+      "resource": "vendor_xyz",
+      "expires_at": "2026-04-26T02:10:00Z",
+      "issuer": "policy_engine.procurement",
+      "signature_reference": "sig_20260426_audit_grade_000001"
+    },
+    "intent_alignment": {
+      "principal_intent_reference": "req_20260426_high_impact_000001",
+      "policy_constraints_used": [
+        "approved_vendor_policy",
+        "procurement_limit_policy"
+      ],
+      "machine_enforceable_policy_reference": "policy.procurement.high_risk_actions.v1",
+      "human_readable_policy_summary": "Use approved vendors and stay within delegated procurement limits.",
+      "alignment_decision": "aligned",
+      "alignment_reason": "Requested vendor and amount matched structured authority constraints.",
+      "model_self_assessment_only": false
+    },
+    "state_checks": [
+      {
+        "state_source": "revocation_state",
+        "state_snapshot_id": "rev_state_20260425_000001",
+        "state_checked_at": "2026-04-26T00:00:55Z",
+        "state_result": "passed",
+        "conditional_policy_reference": "policy.revocation.check.v1"
+      },
+      {
+        "state_source": "vendor_status",
+        "state_snapshot_id": "vendor_state_vendor_xyz",
+        "state_checked_at": "2026-04-26T00:00:56Z",
+        "state_result": "passed",
+        "conditional_policy_reference": "policy.approved_vendor.v1"
+      }
+    ]
+  },
+  "approval": {
+    "approval_required": true,
+    "approval_id": "approval_audit_grade_000001",
+    "approver_id": "manager_456",
+    "approval_decision": "approved",
+    "approval_timestamp": "2026-04-26T02:05:00Z",
+    "approval_context_presented": [
+      "agent_id",
+      "principal_id",
+      "requested_action",
+      "resource",
+      "purpose",
+      "risk_level",
+      "authority_scope",
+      "expected_external_effect"
+    ]
+  },
+  "context": {
+    "input_sources": [
+      {
+        "source_type": "user_instruction",
+        "source_id": "req_20260426_high_impact_000001",
+        "trust_level": "trusted",
+        "provenance": "internal_workflow",
+        "content_digest": "sha256:example-user-instruction-digest",
+        "materially_influenced_action": true
+      },
+      {
+        "source_type": "retrieved_web_content",
+        "source_id": "web_001",
+        "trust_level": "untrusted",
+        "provenance": "external_vendor_page",
+        "content_digest": "sha256:example-retrieved-content-digest",
+        "materially_influenced_action": false
+      }
+    ],
+    "untrusted_content_influenced_action": false,
+    "retrieved_or_remembered_content_material": false,
+    "correlation_id": "corr_audit_grade_000001",
+    "trace_id": "trace_audit_grade_000001",
+    "input_influence_assessment": {
+      "untrusted_content_influenced_action": false,
+      "determined_by": "mixed",
+      "method": "source_tracking",
+      "confidence": "medium",
+      "limitations": "Semantic influence cannot be fully excluded; assessment combines runtime source tracking, provenance metadata, policy evaluation, and evidence pipeline correlation."
+    }
+  },
+  "result": {
+    "status": "allowed_after_approval",
+    "tool_invoked": "procurement_api.create_purchase_order",
+    "tool_result_reference": "po_000123",
+    "external_effect": true,
+    "result_digest": "sha256:audit-grade-example-result-digest"
+  },
+  "evidence": {
+    "evidence_id": "ev_20260426_audit_grade_000001",
+    "evidence_hash": "sha256:audit-grade-example-evidence-hash",
+    "retention_class": "audit_grade_high_impact_action",
+    "tamper_evidence": "hash_chain",
+    "evidence_location": "evidence-store://aaef/audit-grade/events/act_20260426_audit_grade_000001",
+    "privacy_notes": "Raw sensitive content is not stored in this evidence event; digests, references, and redacted metadata are retained."
+  },
+  "response": {
+    "revocation_triggered": false,
+    "isolation_triggered": false,
+    "incident_reference": "none"
+  },
+  "non_execution": {
+    "non_execution_decision": "not_applicable",
+    "reason": "Action proceeded after required approval."
+  },
+  "reauthorization": {
+    "reauthorization_requested": false,
+    "reauthorization_decision": "not_requested",
+    "retry_count": 0
+  },
+  "override": {
+    "override_triggered": false
+  },
+  "extensions": {
+    "evidence_profile": "audit-grade",
+    "profile_notes": "Example audit-grade evidence event demonstrating stronger integrity, provenance, retention, reviewability, and privacy metadata without changing the base JSON Schema.",
+    "policy_version": "policy.procurement.high_risk_actions.v1",
+    "dispatch_attestation_reference": "dispatch_attest_20260426_audit_grade_000001",
+    "canonicalization_method": "jcs-rfc8785",
+    "digest_algorithm": "sha-256",
+    "data_classification": "confidential",
+    "redaction_applied": true,
+    "redaction_policy_id": "redaction.aaef.audit.v1",
+    "raw_sensitive_content_stored": false,
+    "evidence_integrity": {
+      "tamper_evident": true,
+      "integrity_mechanism": "signed_worm_log_entry",
+      "signature_reference": "sig_evidence_20260426_audit_grade_000001",
+      "hash_chain_reference": "hash_chain_aaef_audit_20260426_000001"
+    },
+    "collection_points": [
+      "authorization_decision_point",
+      "tool_dispatch_enforcement_point",
+      "backend_api",
+      "evidence_pipeline"
+    ],
+    "source_components": [
+      "policy_engine.procurement",
+      "tde.procurement_gateway",
+      "backend.procurement_api",
+      "evidence_pipeline.audit"
+    ],
+    "retention_policy_id": "retention.audit.high_impact.v1",
+    "retention_period": "7y",
+    "reviewability": {
+      "assessor_replay_supported": false,
+      "incident_reconstruction_supported": true,
+      "evidence_location_review_required": true
+    }
+  }
+}
