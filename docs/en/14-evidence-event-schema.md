@@ -290,6 +290,128 @@ It does not prove that:
 - the implementation conforms to AAEF,
 - or the organization is compliant with any law or standard.
 
+## Evidence Event Schema Profiles
+
+The Evidence Event Schema is intended to support multiple implementation depths.
+
+A single JSON Schema can provide structural consistency, but different deployment contexts require different evidence expectations. For this reason, AAEF distinguishes between schema validity and evidence profile strength.
+
+A valid evidence event is not automatically sufficient for every assurance use case.
+
+Implementations should select an evidence profile based on action impact, regulatory context, audit needs, and operational risk.
+
+### Minimal Evidence Profile
+
+The Minimal Evidence Profile is intended for pilots, prototypes, internal reviews, and low-to-medium impact agentic actions.
+
+It should preserve enough information to answer the basic AAEF questions:
+
+- who or what acted,
+- on whose behalf the action was attempted,
+- what action was requested,
+- what authorization decision was made,
+- whether the action executed,
+- and where the evidence can be reviewed.
+
+This profile is useful for early adoption, but it should not be treated as sufficient for high-impact or regulated workflows without additional controls.
+
+### High-Impact Evidence Profile
+
+The High-Impact Evidence Profile is intended for agentic actions that may affect external parties, sensitive data, privileges, production systems, financial outcomes, legal commitments, persistent memory, or downstream delegation.
+
+For high-impact actions, evidence should include stronger linkage between the proposed action, authorization decision, dispatch enforcement, and execution result.
+
+High-impact evidence should include or reference:
+
+- event type,
+- policy ID and policy version,
+- authorization decision timestamp,
+- authorization decision artifact or equivalent decision reference,
+- requested tool name and operation,
+- target resource,
+- principal and authority scope,
+- action or argument digest,
+- correlation ID or trace ID,
+- input source and influence assessment where relevant,
+- revocation or freeze state checks where relevant,
+- and non-execution evidence for denied, deferred, escalated, frozen, or safely terminated actions.
+
+For high-impact actions, model-generated explanations or model self-assessment alone should not be treated as sufficient authorization or evidence.
+
+### Audit-Grade Evidence Profile
+
+The Audit-Grade Evidence Profile is intended for regulated, critical, externally reviewed, or incident-reconstruction use cases.
+
+Audit-grade evidence should strengthen integrity, provenance, retention, and reviewability.
+
+Audit-grade evidence should include or reference:
+
+- evidence ID,
+- evidence location,
+- evidence hash or digest,
+- digest algorithm,
+- canonicalization method where digests are used,
+- tamper-evidence or equivalent integrity protection,
+- retention class,
+- data classification,
+- redaction policy where applicable,
+- source component or collection point,
+- and evidence generation status.
+
+For critical high-impact actions, an assessment should not assign a strong Pass result if evidence consists only of mutable logs, screenshots without action IDs, model-generated explanations, human-readable policy summaries without enforceable references, or unverified assertions about input influence.
+
+### Non-Execution Evidence Profile
+
+AAEF treats non-execution as evidence-relevant.
+
+Denied, deferred, escalated, frozen, safely terminated, or reauthorization-required actions should produce evidence events or evidence references sufficient to reconstruct:
+
+- what action was attempted,
+- why it was not executed,
+- which authorization, policy, state, evidence, or input-trust gap caused non-execution,
+- whether human review or reauthorization was required,
+- and whether any external effect occurred.
+
+This is important because blocked high-impact actions may indicate attempted misuse, prompt injection, policy gaps, missing authority, stale delegation, or unsafe runtime state.
+
+### Override and Break-Glass Evidence Profile
+
+Override and break-glass actions require stronger evidence than ordinary approvals.
+
+Where override or break-glass behavior is used, evidence should include or reference:
+
+- override type,
+- override actor,
+- override authority,
+- override reason,
+- override scope,
+- override timestamp,
+- expiration,
+- linked action ID,
+- post-review requirement,
+- and incident or emergency reference where applicable.
+
+Forced continuation, temporary authority grants, or manual reversals should be reconstructable after the fact.
+
+A human-readable override reason alone is not sufficient evidence unless it is linked to the canonical action, authority scope, actor identity, and review process.
+
+## Profile Guidance and Schema Validation Limits
+
+Schema validation confirms that an evidence event is structurally valid.
+
+Schema validation does not prove that:
+
+- the action was safe,
+- the authorization decision was correct,
+- the evidence is complete,
+- the evidence was generated by a trusted component,
+- the evidence has not been tampered with,
+- or the implementation conforms to AAEF.
+
+Evidence quality depends on the trustworthiness of the components that generated, protected, correlated, and retained the evidence.
+
+AAEF evidence supports reviewability and reconstructability. It does not establish truth by itself.
+
 ## Open Questions for Review
 
 Feedback is welcome on:
