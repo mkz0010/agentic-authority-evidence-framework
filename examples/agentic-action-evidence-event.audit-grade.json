@@ -42,7 +42,7 @@
     "delegation_lineage": [
       {
         "lineage_node_id": "lineage_001",
-        "upstream_action_id": "act_20260426_high_impact_000000",
+        "upstream_action_id": "act_20260426_audit_grade_000000",
         "upstream_agent_id": "agent.procurement.manager",
         "downstream_agent_id": "agent.procurement.assistant",
         "delegated_scope": [
@@ -99,7 +99,7 @@
       "signature_reference": "sig_20260426_audit_grade_000001"
     },
     "intent_alignment": {
-      "principal_intent_reference": "req_20260426_high_impact_000001",
+      "principal_intent_reference": "req_20260426_audit_grade_000001",
       "policy_constraints_used": [
         "approved_vendor_policy",
         "procurement_limit_policy"
@@ -113,15 +113,15 @@
     "state_checks": [
       {
         "state_source": "revocation_state",
-        "state_snapshot_id": "rev_state_20260425_000001",
-        "state_checked_at": "2026-04-26T00:00:55Z",
+        "state_snapshot_id": "rev_state_20260426_audit_grade_000001",
+        "state_checked_at": "2026-04-26T02:00:55Z",
         "state_result": "passed",
         "conditional_policy_reference": "policy.revocation.check.v1"
       },
       {
         "state_source": "vendor_status",
         "state_snapshot_id": "vendor_state_vendor_xyz",
-        "state_checked_at": "2026-04-26T00:00:56Z",
+        "state_checked_at": "2026-04-26T02:00:56Z",
         "state_result": "passed",
         "conditional_policy_reference": "policy.approved_vendor.v1"
       }
@@ -148,7 +148,7 @@
     "input_sources": [
       {
         "source_type": "user_instruction",
-        "source_id": "req_20260426_high_impact_000001",
+        "source_id": "req_20260426_audit_grade_000001",
         "trust_level": "trusted",
         "provenance": "internal_workflow",
         "content_digest": "sha256:example-user-instruction-digest",
