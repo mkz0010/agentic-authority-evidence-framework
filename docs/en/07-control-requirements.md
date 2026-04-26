@@ -1,6 +1,6 @@
 # 07. Control Requirements
 
-This section provides the initial AAEF v0.1 control requirements.
+This section provides AAEF control requirements.
 
 The normative control catalog is available as CSV:
 
@@ -21,7 +21,7 @@ Each requirement uses the following structure:
 - **Evidence Examples**
 - **Maturity**
 
-## Initial Requirements
+## Requirements
 
 ### AAEF-GOV-01: Maintain an inventory of agentic AI systems that can access data, call tools, delegate tasks, or perform actions
 
@@ -93,7 +93,7 @@ Each requirement uses the following structure:
 **Evidence Examples:** Action logs; principal claims; session records.  
 **Maturity:** Required
 
-### AAEF-PRN-02: Principal context shall be preserved across tool calls, workflow steps, and delegations.
+### AAEF-PRN-02: Principal context shall be preserved across tool calls, workflow steps, and delegations
 
 **Domain:** Principal Binding  
 **Requirement:** Principal context shall be preserved across tool calls, workflow steps, and delegations.  
@@ -103,7 +103,9 @@ Each requirement uses the following structure:
 **Evidence Examples:** Trace logs; correlation IDs; trace IDs; session-scoped authority tokens; signed principal claims; delegation records; tool invocation metadata.  
 **Maturity:** Required
 
-**Implementation Note:** Principal context propagation is not automatic in stateless API chains, asynchronous workflows, queues, background jobs, or multi-agent delegation. Implementations should use explicit propagation mechanisms such as correlation IDs, trace IDs, session-scoped authority tokens, signed claims, workflow metadata, or structured delegation records. If principal context cannot be preserved, high-impact actions should be denied or escalated.
+**Implementation Note:** Principal context propagation is not automatic in stateless API chains, asynchronous workflows, queues, background jobs, or multi-agent delegation.
+
+Implementations should use explicit propagation mechanisms such as correlation IDs, trace IDs, session-scoped authority tokens, signed claims, workflow metadata, or structured delegation records. If principal context cannot be preserved, high-impact actions should be denied or escalated.
 
 ### AAEF-DEL-01: Delegated authority shall not exceed the authority held by the delegating party
 
@@ -185,7 +187,7 @@ Each requirement uses the following structure:
 **Evidence Examples:** Test results; decision logs.  
 **Maturity:** Required
 
-### AAEF-AUZ-05: Authorization decisions for high-impact actions shall be based on trusted policy inputs and system state, not on untrusted natural-language content alone.
+### AAEF-AUZ-05: Authorization decisions for high-impact actions shall be based on trusted policy inputs and system state, not on untrusted natural-language content alone
 
 **Domain:** Action Authorization  
 **Requirement:** Authorization decisions for high-impact actions shall be based on trusted policy inputs and system state, not on untrusted natural-language content alone.  
@@ -194,6 +196,60 @@ Each requirement uses the following structure:
 **Testing Procedure:** Test whether malicious instructions embedded in external content can alter authorization decisions, change policy inputs, modify risk classification, or bypass approval requirements.  
 **Evidence Examples:** Authorization policy; prompt-injection test results; decision logs; trusted input definitions.  
 **Maturity:** Required
+
+### AAEF-AUZ-06: High-impact actions shall evaluate intent-authority alignment using trusted workflow context, structured authority grants, machine-enforceable policy references, or trusted constraints where feasible; intent alignment shall not rely solely on model self-assessment or agent-inferred purpose
+
+**Domain:** Action Authorization  
+**Requirement:** High-impact actions shall evaluate intent-authority alignment using trusted workflow context, structured authority grants, machine-enforceable policy references, or trusted constraints where feasible; intent alignment shall not rely solely on model self-assessment or agent-inferred purpose.  
+**Objective:** Prevent semantically plausible actions from violating the principal intent or policy context under which authority was granted.  
+**Applicability:** High-impact actions where intent, purpose, policy, workflow context, or organizational constraints affect execution appropriateness.  
+**Testing Procedure:** Review sample high-impact actions and verify that intent alignment uses trusted policy references, workflow context, structured authority grants, or trusted constraints; test whether LLM-generated purpose or untrusted content alone can cause authorization to pass.  
+**Evidence Examples:** Policy reference; workflow context ID; authority grant; trusted constraint record; intent alignment decision; alignment rationale; test results showing model self-assessment alone is insufficient.  
+**Maturity:** Required
+
+**Implementation Note:** Human-readable principal intent and model-generated purpose can support review, explanation, or escalation, but they should not be the sole source of high-impact authorization. Runtime authorization should prefer machine-enforceable policy references, structured authority grants, trusted workflow context, trusted system state, or explicit organizational constraints where feasible.
+
+**Implementation Note:** Agent-inferred purpose is advisory unless it is bound to a trusted workflow, policy reference, or authority grant. This avoids circular reliance on the same model whose action is being authorized.
+
+### AAEF-AUZ-07: High-impact actions shall evaluate material runtime state from defined trusted state sources before execution where environmental, operational, revocation, or risk conditions can affect authorization
+
+**Domain:** Action Authorization  
+**Requirement:** High-impact actions shall evaluate material runtime state from defined trusted state sources before execution where environmental, operational, revocation, or risk conditions can affect authorization.  
+**Objective:** Prevent stale or unsafe execution when conditions have changed since authority was granted.  
+**Applicability:** High-impact actions whose safety or authorization depends on current state, such as incident state, system health, inventory state, fraud risk, account state, market conditions, or revocation state.  
+**Testing Procedure:** Review state-dependent authorization policies and test that defined state changes can deny, defer, escalate, freeze authority, or require additional verification before execution.  
+**Evidence Examples:** Trusted state source references; state snapshot ID; state check timestamp; conditional policy reference; revocation state check; decision logs.  
+**Maturity:** Required
+
+**Implementation Note:** AAEF does not require a specific state provider or external API. Organizations should define which runtime states are material for each high-impact action category and should identify which state sources are trusted for authorization.
+
+### AAEF-AUZ-08: High-impact actions shall be denied, deferred, or escalated when material deterministic or semantic ambiguity exists in authority, principal intent, runtime state, input trust, policy applicability, or evidence requirements; ambiguity resolution shall not rely solely on model self-assessment
+
+**Domain:** Action Authorization  
+**Requirement:** High-impact actions shall be denied, deferred, or escalated when material deterministic or semantic ambiguity exists in authority, principal intent, runtime state, input trust, policy applicability, or evidence requirements; ambiguity resolution shall not rely solely on model self-assessment.  
+**Objective:** Ensure that authority is treated as necessary but not sufficient for execution under material uncertainty.  
+**Applicability:** High-impact actions where ambiguity or uncertainty may materially affect execution appropriateness.  
+**Testing Procedure:** Test deterministic ambiguity such as missing principal, missing authority scope, missing policy reference, unknown revocation state, unresolved input trust, and missing evidence; test semantic ambiguity such as unclear intent or purpose-policy mismatch; verify that a model assertion of no ambiguity does not override missing trusted inputs.  
+**Evidence Examples:** Ambiguity decision logs; ambiguity type; escalation records; non-execution evidence; denial reason; evidence gap records; trusted input resolution records.  
+**Maturity:** Required
+
+**Implementation Note:** This control extends AAEF-AUZ-04. AAEF-AUZ-04 focuses on ambiguity in authority, principal, or purpose. AAEF-AUZ-08 covers broader material ambiguity, including runtime state, input trust, policy applicability, and evidence requirements.
+
+**Implementation Note:** LLM-assisted ambiguity detection may help identify uncertainty, but the model should not be the only component allowed to clear ambiguity for high-impact actions. Deterministic ambiguity should be resolved by trusted system state, policy references, authority records, evidence availability, or independent runtime checks.
+
+### AAEF-AUZ-09: Systems shall define safe handling for high-impact actions that are denied, deferred, or escalated due to insufficient authority, material ambiguity, state change, or missing evidence, including scoped reauthorization and retry controls
+
+**Domain:** Action Authorization  
+**Requirement:** Systems shall define safe handling for high-impact actions that are denied, deferred, or escalated due to insufficient authority, material ambiguity, state change, or missing evidence, including scoped reauthorization and retry controls.  
+**Objective:** Prevent authority denial from becoming a bypass path through repeated retries, scope creep, unsafe reauthorization, or task splitting.  
+**Applicability:** Systems where agents may request additional authority, retry actions, escalate actions, or continue workflows after denial or deferral.  
+**Testing Procedure:** Review denial and reauthorization workflows and test that reauthorization requests are scoped, attributable, rate-limited or controlled, linked to principal intent and policy constraints, and unable to bypass prior denials through repeated retries or task splitting.  
+**Evidence Examples:** Denial records; reauthorization request; requested additional scope; escalation target; retry count; principal reconfirmation record; linked action ID.  
+**Maturity:** Required
+
+**Implementation Note:** Reauthorization must not become a path to route around controls. Additional authority requests should be scoped, attributable, evidenced, and tied to principal intent and applicable policy constraints.
+
+**Implementation Note:** Denial handling should distinguish safe termination, human escalation, principal reconfirmation, narrowed reauthorization, and retry. Repeated denial or retry loops should be detectable.
 
 ### AAEF-TOOL-01: Tools available to agents shall be configured with minimum authority necessary
 
@@ -225,7 +281,7 @@ Each requirement uses the following structure:
 **Evidence Examples:** Tool registry; risk classification.  
 **Maturity:** Required
 
-### AAEF-TOOL-04: Tool invocation requests derived from untrusted or external content shall be subject to intent validation and policy checks before execution.
+### AAEF-TOOL-04: Tool invocation requests derived from untrusted or external content shall be subject to intent validation and policy checks before execution
 
 **Domain:** Tool and Action Boundary  
 **Requirement:** Tool invocation requests derived from untrusted or external content shall be subject to intent validation and policy checks before execution.  
@@ -265,7 +321,7 @@ Each requirement uses the following structure:
 **Evidence Examples:** Prompt handling policy; test results.  
 **Maturity:** Required
 
-### AAEF-MEM-04: For high-impact actions, retrieved or remembered content that materially influenced the action shall preserve provenance or trust metadata.
+### AAEF-MEM-04: For high-impact actions, retrieved or remembered content that materially influenced the action shall preserve provenance or trust metadata
 
 **Domain:** Memory and Retrieval  
 **Requirement:** For high-impact actions, retrieved or remembered content that materially influenced the action shall preserve provenance or trust metadata.  
@@ -364,3 +420,19 @@ Each requirement uses the following structure:
 **Testing Procedure:** Perform reconstruction from evidence samples.  
 **Evidence Examples:** Incident reconstruction report; logs; timeline.  
 **Maturity:** Required
+
+### AAEF-RES-04: Systems shall define and test conditional authority freeze behavior for high-impact workflows, including future-action denial, in-flight action handling, downstream delegation propagation, and evidence of freeze decisions; AAEF does not assume instantaneous global revocation in distributed systems
+
+**Domain:** Response and Revocation  
+**Requirement:** Systems shall define and test conditional authority freeze behavior for high-impact workflows, including future-action denial, in-flight action handling, downstream delegation propagation, and evidence of freeze decisions; AAEF does not assume instantaneous global revocation in distributed systems.  
+**Objective:** Enable conditional freeze or revocation while making revocation scope, propagation, in-flight behavior, and residual risk explicit.  
+**Applicability:** High-impact workflows with state-dependent authority, dynamic risk signals, active delegations, distributed execution, or time-sensitive revocation requirements.  
+**Testing Procedure:** Test defined state or risk triggers and verify that affected authority grants, delegations, tool access, workflows, and in-flight actions are frozen, denied, escalated, isolated, or revoked according to documented behavior.  
+**Evidence Examples:** Authority freeze record; revocation log; state trigger evidence; affected delegation IDs; in-flight action handling record; propagation record; incident or escalation record.  
+**Maturity:** Required
+
+**Implementation Note:** AAEF requires revocation and freeze behavior to be defined, evidenced, and testable. It does not assume instantaneous global revocation in distributed or asynchronous systems.
+
+**Implementation Note:** Implementations should distinguish future-action denial, in-flight action handling, downstream delegation propagation, partial authority freeze, and incident isolation where applicable.
+
+
