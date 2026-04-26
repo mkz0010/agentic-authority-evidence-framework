@@ -2,8 +2,17 @@
 
 - Added preliminary OWASP Agentic Top 10 2026 mapping.
 - Added initial Agentic Action Evidence Event JSON Schema.
-- Added minimal and valid evidence event examples.
+- Added minimal, valid, and invalid evidence event examples.
+- Added Evidence Event Schema validation workflow.
+- Expanded the Evidence Event Schema for v0.2 control areas, including authorization decision artifacts, intent alignment, state checks, input influence assessment, delegation lineage, override, non-execution, and reauthorization.
 - Added High-Impact Action Taxonomy draft.
+- Added v0.2 Control Expansion Notes.
+- Added authorization and revocation control expansion entries.
+- Added human, delegation, and evidence control expansion entries.
+- Added Assurance Model and Residual Risk Mapping.
+- Added Assessment Quick Start and Assessment Worksheet draft.
+- Updated README repository structure and document status for v0.2 work-in-progress artifacts.
+- Updated citation metadata to use the full author name.
 
 ## v0.1.5 Public Review Draft
 
