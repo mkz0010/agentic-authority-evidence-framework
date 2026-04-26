@@ -98,6 +98,7 @@ The v0.2.0 work-in-progress materials currently include:
 - High-Impact Action Taxonomy draft,
 - v0.2 Control Expansion Notes,
 - One-page Overview,
+- Reference Architecture,
 - authorization and revocation control expansion,
 - human, delegation, and evidence control expansion,
 - Assurance Model and Residual Risk Mapping,
@@ -153,9 +154,12 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 13-one-page-overview.md
 │       ├── 14-evidence-event-schema.md
 │       ├── 15-v02-control-expansion-notes.md
-│       └── 16-assurance-model.md
+│       ├── 16-assurance-model.md
+│       └── 17-reference-architecture.md
 ├── assessment/
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
+├── assets/
+│   └── aaef-reference-architecture.mmd
 ├── mappings/
 │   ├── owasp-agentic-top10-2026.md
 │   ├── threat-control-assurance-mapping.md
