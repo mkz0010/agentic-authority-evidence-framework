@@ -147,6 +147,20 @@ Implementations should use explicit propagation mechanisms such as correlation I
 **Evidence Examples:** Revocation test; policy logs; token invalidation records.  
 **Maturity:** Required
 
+### AAEF-DEL-05: Systems shall preserve sufficient delegation lineage metadata to reconstruct upstream and downstream authority decisions for high-impact actions, without requiring a specific graph database or tracing implementation
+
+**Domain:** Delegation and Authority  
+**Requirement:** Systems shall preserve sufficient delegation lineage metadata to reconstruct upstream and downstream authority decisions for high-impact actions, without requiring a specific graph database or tracing implementation.  
+**Objective:** Enable reconstruction of how authority moved from principals or upstream agents to downstream agents, tools, workflows, and actions.  
+**Applicability:** Multi-step, multi-agent, delegated, or workflow-based systems where high-impact actions may be caused by upstream or downstream authority transfers.  
+**Testing Procedure:** Trace representative delegated workflows end-to-end and verify that principal, upstream action, downstream agent, delegated scope, constraints, decision points, and resulting high-impact actions can be reconstructed from evidence.  
+**Evidence Examples:** Delegation chain ID; parent action ID; lineage node ID; upstream agent ID; downstream agent ID; delegated scope; constraints; correlation ID; trace ID; downstream action IDs.  
+**Maturity:** Required
+
+**Implementation Note:** AAEF requires reconstructability, not a specific graph database, tracing tool, or workflow engine. A chain, graph, trace, or external evidence system may be acceptable if it preserves sufficient references for review and incident reconstruction.
+
+**Implementation Note:** Delegation lineage should help identify where authority was granted, where it was attenuated, whether constraints were preserved, which node performed the final action, and which downstream actions may require revocation or isolation.
+
 ### AAEF-AUZ-01: High-impact actions shall be authorized at the point of execution
 
 **Domain:** Action Authorization  
@@ -370,6 +384,34 @@ Implementations should use explicit propagation mechanisms such as correlation I
 **Testing Procedure:** Review tamper-evidence mechanisms.  
 **Evidence Examples:** Signed logs; append-only log; integrity checks.  
 **Maturity:** Recommended
+
+### AAEF-EVD-05: Systems should record structured evidence for denied, deferred, escalated, or otherwise non-executed high-impact actions where non-execution was caused by authority gaps, material ambiguity, state changes, input trust gaps, policy uncertainty, or evidence gaps
+
+**Domain:** Evidence and Auditability  
+**Requirement:** Systems should record structured evidence for denied, deferred, escalated, or otherwise non-executed high-impact actions where non-execution was caused by authority gaps, material ambiguity, state changes, input trust gaps, policy uncertainty, or evidence gaps.  
+**Objective:** Make non-execution decisions reviewable so that denial, deferral, escalation, and safe termination can be audited and improved.  
+**Applicability:** High-impact actions that are blocked, deferred, escalated, frozen, denied, or safely terminated before execution.  
+**Testing Procedure:** Review denied and deferred high-impact action samples and verify that non-execution reason, ambiguity type, authority gap, escalation target, and linked action context are recorded.  
+**Evidence Examples:** Non-execution decision; denial reason; ambiguity type; authority gap; state gap; policy gap; evidence gap; escalation target; linked action ID.  
+**Maturity:** Recommended
+
+**Implementation Note:** Non-execution evidence should not be treated as an error log only. It should preserve enough context to explain why execution was not appropriate and whether the action was denied, deferred, escalated, frozen, or safely terminated.
+
+**Implementation Note:** The evidence depth may be risk-proportional, but high-impact non-execution decisions should be reviewable when they affect business process, safety, security, financial, legal, or customer outcomes.
+
+### AAEF-EVD-06: Systems should record structured evidence for reauthorization requests, additional scope requests, principal reconfirmation, and escalation decisions related to denied or deferred high-impact actions
+
+**Domain:** Evidence and Auditability  
+**Requirement:** Systems should record structured evidence for reauthorization requests, additional scope requests, principal reconfirmation, and escalation decisions related to denied or deferred high-impact actions.  
+**Objective:** Ensure that reauthorization does not become an unevidenced bypass path and that additional authority requests remain attributable, scoped, and reviewable.  
+**Applicability:** Systems where agents can request additional authority, ask for renewed approval, retry denied actions, or escalate blocked workflows.  
+**Testing Procedure:** Review reauthorization flows and verify that requested additional scope, approver or escalation target, principal reconfirmation, retry count, and linkage to the denied action are recorded.  
+**Evidence Examples:** Reauthorization request ID; denied action ID; requested additional scope; approver or escalation target; principal reconfirmation; retry count; reauthorization decision.  
+**Maturity:** Recommended
+
+**Implementation Note:** Reauthorization evidence should be linked to the original denied or deferred action. It should show what additional authority was requested, why it was requested, who or what approved it, and whether the scope changed.
+
+**Implementation Note:** Reauthorization evidence should help detect scope creep, repeated retry loops, task splitting, or attempts to route around prior denials.
 
 ### AAEF-HUM-01: Human approval requests shall clearly present the agent, principal, requested action, resource, purpose, risk level, and consequence
 
