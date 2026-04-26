@@ -553,6 +553,31 @@ AAEF does not require a specific cross-domain credential technology at this stag
 
 ## Implementation Neutrality
 
+AAEF does not require a new tool runtime, identity system, authorization stack, or dispatcher.
+
+The reference architecture can be implemented using existing enforcement mechanisms, including:
+
+- operating system users or Unix UIDs,
+- service accounts,
+- cloud workload identities,
+- enterprise IAM identities,
+- API gateways,
+- IAM policy enforcement,
+- OPA, Cedar, or similar policy engines,
+- workflow runners,
+- container or serverless isolation boundaries,
+- CLI wrappers,
+- backend service enforcement layers,
+- and existing audit or evidence pipelines.
+
+Pseudocode such as `dispatch_tool(tool_call)` and schema fields such as `principal` are abstract representations of the control boundary and evidence model. They are not intended to require a new tool execution platform or a new identity model.
+
+In a concrete implementation, the principal may be an existing user, service account, GitHub Actions actor, workload identity, Unix UID, or enterprise IAM subject.
+
+The key AAEF requirement is not the specific mechanism. The key requirement is that a model-generated action is treated as a proposed action, not authority by itself.
+
+For high-impact actions, the implementation should make the boundary between proposed action, permitted action, dispatched operation, executed effect, and recorded evidence explicit and reviewable.
+
 AAEF does not require:
 
 - a specific LLM,
