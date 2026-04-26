@@ -248,6 +248,44 @@ Assessors should record evidence limitations when evidence is incomplete, self-r
 
 For high-impact actions, model-only evidence should be treated as advisory, not sufficient evidence of authorization, enforcement, or safe execution.
 
+### Weak and Adversarial Evidence Examples
+
+For high-impact actions, assessors should distinguish between weak evidence and adversarial evidence patterns.
+
+Weak evidence may be incomplete, self-reported, mutable, or difficult to correlate.
+
+Adversarial evidence patterns are more serious. They may indicate that approval, authorization, or evidence artifacts are being reused, laundered, substituted, or presented in a misleading way.
+
+| Pattern | Why it is weak or risky | Assessment implication |
+|---|---|---|
+| Model-only explanation | The model describes why an action was safe, but no independent authorization, dispatch, backend, or evidence record supports the claim. | Treat as advisory only. Do not assign a strong Pass for high-impact actions. |
+| Screenshot-only evidence | A screenshot shows a UI state, but does not include action ID, authorization decision ID, policy version, trace ID, or evidence reference. | Record as weak supporting evidence, not primary evidence. |
+| Mutable log only | Evidence exists only in logs that can be modified without integrity protection or independent retention. | Record evidence limitation. Require stronger evidence for critical high-impact actions. |
+| Missing action ID | Evidence cannot be linked to a specific action attempt or execution result. | Do not treat as sufficient for reconstructability. |
+| Missing authorization artifact | The action result exists, but there is no action-bound authorization decision or equivalent enforcement reference. | Treat authorization evidence as incomplete. |
+| Unverified input influence assertion | The event claims untrusted content did not influence the action, but does not identify who determined this, by what method, or with what limitations. | Treat as weak evidence. Prefer runtime, provenance, policy, or evidence pipeline support. |
+| Human approval not bound to action | A human approved a summary, but the approval is not bound to the canonical action, resource, operation, scope, or argument digest. | Treat as insufficient for high-impact approval assurance. |
+| Approval laundering | A human approval is used to legitimize an action that differs from what was actually reviewed or approved. | Treat as an adversarial evidence pattern and investigate action binding. |
+| Replayed decision artifact | A prior authorization decision is reused for a different action, resource, scope, argument set, or time window. | Treat as an authorization integrity failure. |
+| Payload mismatch after approval | The approved action summary differs from the payload dispatched to the tool or backend API. | Treat as a dispatch integrity failure. |
+| Action digest mismatch | The digest bound to authorization does not match the dispatched tool invocation. | Treat as evidence of substitution, replay, or implementation failure. |
+
+Adversarial evidence patterns should not be handled as ordinary evidence gaps.
+
+They may indicate that the system can produce evidence that appears reviewable while failing to prove that the executed action matched the authorized action.
+
+For high-impact actions, assessors should require action-bound evidence linking:
+
+- the proposed action,
+- the principal and authority scope,
+- the authorization decision,
+- any human approval,
+- the dispatched tool operation,
+- the executed backend effect,
+- and the resulting evidence event.
+
+If these links are missing or inconsistent, the assessment should record a finding even if the system produced structurally valid logs or schema-valid evidence events.
+
 ## Assessment Worksheet Columns
 
 The worksheet includes the following columns:
