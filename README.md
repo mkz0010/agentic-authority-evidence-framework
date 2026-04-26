@@ -99,6 +99,7 @@ The v0.2.0 work-in-progress materials currently include:
 - v0.2 Control Expansion Notes,
 - One-page Overview,
 - Reference Architecture,
+- v0.2.0 Release Preparation Checklist,
 - authorization and revocation control expansion,
 - human, delegation, and evidence control expansion,
 - Assurance Model and Residual Risk Mapping,
@@ -155,7 +156,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 14-evidence-event-schema.md
 │       ├── 15-v02-control-expansion-notes.md
 │       ├── 16-assurance-model.md
-│       └── 17-reference-architecture.md
+│       ├── 17-reference-architecture.md
+│       └── 18-v020-release-preparation-checklist.md
 ├── assessment/
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
 ├── assets/
