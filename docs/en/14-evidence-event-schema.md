@@ -395,6 +395,94 @@ Forced continuation, temporary authority grants, or manual reversals should be r
 
 A human-readable override reason alone is not sufficient evidence unless it is linked to the canonical action, authority scope, actor identity, and review process.
 
+## Evidence Assertion Sources and Input Influence Assessment
+
+Evidence events may contain both observed facts and derived assertions.
+
+For example:
+
+- a Tool Dispatch Enforcement Point may observe that a dispatch request was blocked,
+- an Authorization Decision Point may observe that a policy decision was `deny`,
+- a runtime input tracker may observe that untrusted retrieved content was present in context,
+- a policy engine may infer that untrusted input was relevant to a requested high-impact action,
+- a model may claim that it was or was not influenced by a source.
+
+These are not equivalent evidence sources.
+
+AAEF evidence should distinguish between:
+
+- what was directly observed,
+- what was inferred by a trusted runtime, policy, provenance, or evidence component,
+- what was asserted by the model,
+- what was asserted by a human reviewer,
+- and what could not be determined.
+
+### Recommended Assertion Metadata
+
+Where an evidence event includes an assertion about input influence, evidence quality, authorization context, or trust state, the event should identify the source and method of that assertion.
+
+Recommended fields include:
+
+```yaml
+input_influence_assessment:
+  determined_by: runtime_input_tracker | policy_engine | provenance_metadata | evidence_pipeline | human_review | model | mixed | unknown
+  method: source_tracking | taint_tracking | retrieval_provenance | policy_evaluation | semantic_review | model_self_assessment | manual_review | best_effort
+  confidence: high | medium | low | unknown
+  limitations: string
+```
+
+Implementations may use different field names, but they should preserve the same assurance meaning:
+
+- who or what made the assertion,
+- how the assertion was determined,
+- how much confidence should be placed in it,
+- and what limitations apply.
+
+### Model Assertions Are Advisory for High-Impact Actions
+
+For high-impact actions, model-provided claims about input influence should be treated as advisory unless corroborated by trusted runtime, provenance, policy, human review, or evidence pipeline sources.
+
+A model-only assertion such as:
+
+```text
+The action was not influenced by untrusted content.
+```
+
+should not be treated as sufficient evidence that untrusted content did not influence a high-impact action.
+
+This is especially important for prompt injection and indirect prompt injection scenarios, where the model may be the compromised or influenced component.
+
+### Conservative Source Tracking
+
+AAEF does not require implementations to prove semantic influence with perfect certainty.
+
+In many systems, it is not possible to prove whether a specific token, document, email, web page, memory item, or retrieved passage semantically influenced a model-generated action.
+
+However, implementations can still preserve useful evidence by tracking:
+
+- which sources were present in context,
+- which sources were retrieved,
+- which sources were untrusted,
+- which sources were excluded,
+- which sources contributed to tool arguments,
+- which policy or runtime component made the influence determination,
+- and what limitations apply.
+
+For high-impact actions, conservative source tracking is preferable to unsupported claims of non-influence.
+
+### Evidence Review Implication
+
+Assessors should treat input influence assertions differently depending on their source.
+
+In general:
+
+- runtime, provenance, policy, TDE, backend, or evidence pipeline assertions provide stronger evidence,
+- human review may provide useful supporting evidence when the reviewed payload and action context are clear,
+- model self-assessment alone provides weak evidence,
+- missing assertion source or method should be treated as an evidence limitation.
+
+Evidence events should make these distinctions visible enough to support review, audit, and incident reconstruction.
+
 ## Profile Guidance and Schema Validation Limits
 
 Schema validation confirms that an evidence event is structurally valid.
@@ -436,7 +524,7 @@ Future versions may add:
 - High-Impact Action Taxonomy integration
 - JSON Schema validation workflow
 - example invalid events
-- Evidence assertion source and input influence determination
+- schema-level Evidence assertion source and input influence determination
 - Authorization decision artifact profile
 - Override, non-execution, and reauthorization examples
 - schema versioning policy
