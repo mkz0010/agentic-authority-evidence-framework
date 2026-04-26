@@ -98,6 +98,21 @@ AAEF is a framework for reducing, constraining, evidencing, and reviewing agenti
 
 It is not a magic safety layer.
 
+## Implementation Framing
+
+AAEF does not require replacing existing identity, authorization, runtime isolation, or enforcement mechanisms.
+
+It can be implemented using existing mechanisms such as OS users, service accounts, workload identities, IAM, API gateways, policy engines, workflow runners, containers, serverless functions, CLI wrappers, backend services, and audit pipelines.
+
+AAEF focuses on the assurance requirement:
+
+- the model may propose an action,
+- the proposed action should not be treated as authority by itself,
+- high-impact execution should pass through an authorization or enforcement boundary,
+- and evidence should link the proposed action, principal, authorization or enforcement decision, dispatched operation, executed effect, and result.
+
+In short, AAEF is not a new authorization stack. It is a framework for making agentic action authority, enforcement, and evidence boundaries explicit and reviewable.
+
 ## How to Read This Repository
 
 Start here:
