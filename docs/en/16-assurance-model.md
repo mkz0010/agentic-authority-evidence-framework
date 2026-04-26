@@ -166,6 +166,27 @@ Implementers should distinguish:
 - model-generated explanations,
 - and best-effort implementation assertions.
 
+### Assertion Source Limitations
+
+AAEF assurance depends not only on the presence of evidence, but also on the trustworthiness of the component that generated each evidence assertion.
+
+Implementers and assessors should distinguish between:
+
+- direct observations from trusted enforcement components,
+- policy engine decisions,
+- provenance or source-tracking metadata,
+- backend execution records,
+- independent evidence pipeline records,
+- human reviewer assertions,
+- model-generated explanations,
+- and best-effort implementation assertions.
+
+For high-impact actions, model-generated claims about input influence, authorization correctness, or safe execution should not be treated as equivalent to independently generated enforcement or evidence records.
+
+This is particularly important when evaluating prompt injection, indirect prompt injection, RAG-sourced content, external messages, user-uploaded files, memory, or agent-to-agent inputs.
+
+If the source, method, confidence, or limitations of an assertion are unclear, the assurance conclusion should be weakened or recorded as a residual evidence limitation.
+
 ### Evidence Quality Limitations
 
 AAEF evidence supports reviewability and reconstructability, but evidence does not establish truth by itself.
