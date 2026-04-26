@@ -1,4 +1,4 @@
-## Unreleased / v0.2.0 Public Review Draft — Work in Progress
+## v0.2.0 Public Review Draft - 2026-04-26
 
 - Added preliminary OWASP Agentic Top 10 2026 mapping.
 - Added initial Agentic Action Evidence Event JSON Schema.
@@ -14,8 +14,8 @@
 - Added One-page Overview for first-time readers.
 - Added Reference Architecture and Mermaid diagram source.
 - Added v0.2.0 Release Preparation Checklist.
-- Updated README repository structure and document status for v0.2 work-in-progress artifacts.
-- Updated citation metadata to use the full author name.
+- Updated README repository structure and document status for the v0.2.0 Public Review Draft.
+- Updated citation metadata to use the full author name and v0.2.0 public review release metadata.
 
 ## v0.1.5 Public Review Draft
 
