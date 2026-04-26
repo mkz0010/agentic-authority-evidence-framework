@@ -49,7 +49,12 @@
         "agentic_action_allowed",
         "agentic_action_executed",
         "agentic_action_failed",
-        "agentic_action_revoked"
+        "agentic_action_revoked",
+        "agentic_action_deferred",
+        "agentic_action_escalated",
+        "authority_frozen",
+        "human_override_recorded",
+        "reauthorization_requested"
       ],
       "description": "Type of evidence event.",
       "default": "agentic_action_executed"
@@ -88,6 +93,15 @@
       "type": "object",
       "description": "Implementation-specific extension fields. Extensions should not replace required AAEF fields.",
       "additionalProperties": true
+    },
+    "override": {
+      "$ref": "#/$defs/override"
+    },
+    "non_execution": {
+      "$ref": "#/$defs/non_execution"
+    },
+    "reauthorization": {
+      "$ref": "#/$defs/reauthorization"
     }
   },
   "$defs": {
@@ -235,6 +249,13 @@
               "description": "Allowed purposes or purpose categories."
             }
           }
+        },
+        "delegation_lineage": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/delegation_lineage_node"
+          },
+          "description": "Optional lineage nodes for reconstructing upstream and downstream authority transfer."
         }
       }
     },
@@ -311,7 +332,10 @@
             "deny",
             "requires_human_approval",
             "requires_additional_verification",
-            "escalate"
+            "escalate",
+            "defer",
+            "freeze",
+            "reauthorization_required"
           ],
           "description": "Authorization decision at the action boundary."
         },
@@ -346,6 +370,19 @@
         "revocation_state_checked": {
           "type": "boolean",
           "description": "Whether revocation state was checked before allowing or executing the action."
+        },
+        "authorization_decision_artifact": {
+          "$ref": "#/$defs/authorization_decision_artifact"
+        },
+        "intent_alignment": {
+          "$ref": "#/$defs/intent_alignment"
+        },
+        "state_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/state_check"
+          },
+          "description": "Runtime state checks used or considered for authorization."
         }
       }
     },
@@ -419,6 +456,9 @@
         "trace_id": {
           "type": "string",
           "description": "Trace ID for distributed tracing or workflow reconstruction."
+        },
+        "input_influence_assessment": {
+          "$ref": "#/$defs/input_influence_assessment"
         }
       }
     },
@@ -479,7 +519,12 @@
             "failed",
             "partially_completed",
             "quarantined",
-            "revoked"
+            "revoked",
+            "deferred",
+            "escalated",
+            "frozen",
+            "safely_terminated",
+            "reauthorization_requested"
           ],
           "description": "Final result status of the action."
         },
@@ -569,6 +614,450 @@
         "incident_reference": {
           "type": "string",
           "description": "Reference to related incident, case, or review record."
+        }
+      }
+    },
+    "delegation_lineage_node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lineage_node_id",
+        "delegation_decision"
+      ],
+      "properties": {
+        "lineage_node_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier for this lineage node."
+        },
+        "upstream_action_id": {
+          "type": "string",
+          "description": "Identifier for the upstream action, if applicable."
+        },
+        "upstream_agent_id": {
+          "type": "string",
+          "description": "Identifier for the upstream agent, if applicable."
+        },
+        "downstream_agent_id": {
+          "type": "string",
+          "description": "Identifier for the downstream agent, if applicable."
+        },
+        "delegated_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Scope delegated at this lineage node."
+        },
+        "delegated_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Human-readable or referenced constraints preserved at this lineage node."
+        },
+        "delegation_decision": {
+          "type": "string",
+          "enum": [
+            "granted",
+            "attenuated",
+            "denied",
+            "expired",
+            "revoked",
+            "unknown"
+          ],
+          "description": "Delegation decision at this lineage node."
+        },
+        "decision_reference": {
+          "type": "string",
+          "description": "Reference to the delegation decision or evidence record."
+        }
+      }
+    },
+    "authorization_decision_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_id",
+        "decision",
+        "bound_action_digest",
+        "issuer"
+      ],
+      "properties": {
+        "decision_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier for the authorization decision artifact."
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "allow",
+            "deny",
+            "requires_human_approval",
+            "requires_additional_verification",
+            "escalate",
+            "defer",
+            "freeze",
+            "reauthorization_required"
+          ],
+          "description": "Decision represented by the artifact."
+        },
+        "bound_action_digest": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Digest binding the decision to the specific action request."
+        },
+        "principal_id": {
+          "type": "string",
+          "description": "Principal identifier bound to the decision."
+        },
+        "authority_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Authority scope bound to the decision."
+        },
+        "resource": {
+          "type": "string",
+          "description": "Resource bound to the decision."
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Decision artifact expiration time."
+        },
+        "issuer": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Trusted decision issuer, such as a policy engine or authorization service."
+        },
+        "signature_reference": {
+          "type": "string",
+          "description": "Reference to signature, attestation, or integrity metadata for the artifact."
+        }
+      }
+    },
+    "intent_alignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "alignment_decision"
+      ],
+      "properties": {
+        "principal_intent_reference": {
+          "type": "string",
+          "description": "Reference to the principal intent, request, ticket, workflow, or business process."
+        },
+        "policy_constraints_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Policy constraints used to evaluate intent-authority alignment."
+        },
+        "machine_enforceable_policy_reference": {
+          "type": "string",
+          "description": "Reference to a machine-enforceable policy used for the decision."
+        },
+        "human_readable_policy_summary": {
+          "type": "string",
+          "description": "Human-readable summary used for review. This should not replace the machine-enforceable policy reference."
+        },
+        "alignment_decision": {
+          "type": "string",
+          "enum": [
+            "aligned",
+            "not_aligned",
+            "unclear",
+            "not_evaluated"
+          ],
+          "description": "Intent-authority alignment outcome."
+        },
+        "alignment_reason": {
+          "type": "string",
+          "description": "Reason or review note for the alignment decision."
+        },
+        "model_self_assessment_only": {
+          "type": "boolean",
+          "description": "Whether the alignment decision relied only on model self-assessment. For high-assurance actions this should generally be false."
+        }
+      }
+    },
+    "state_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state_source",
+        "state_result"
+      ],
+      "properties": {
+        "state_source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Trusted state source used for authorization, such as incident_status, system_health, revocation_state, or fraud_risk."
+        },
+        "state_snapshot_id": {
+          "type": "string",
+          "description": "Reference to the state snapshot used for the decision."
+        },
+        "state_checked_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when state was checked."
+        },
+        "state_result": {
+          "type": "string",
+          "enum": [
+            "passed",
+            "failed",
+            "unknown",
+            "not_checked",
+            "authority_frozen",
+            "escalation_required"
+          ],
+          "description": "Result of the state check."
+        },
+        "conditional_policy_reference": {
+          "type": "string",
+          "description": "Policy reference for state-dependent authorization or freeze behavior."
+        },
+        "freeze_reason": {
+          "type": "string",
+          "description": "Reason authority was frozen, if applicable."
+        }
+      }
+    },
+    "input_influence_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "determined_by",
+        "method",
+        "confidence"
+      ],
+      "properties": {
+        "untrusted_content_influenced_action": {
+          "type": "boolean",
+          "description": "Assessment of whether untrusted content materially influenced the action."
+        },
+        "determined_by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Component or actor that determined the input influence assessment."
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "runtime_input_tracker",
+            "source_tracking",
+            "taint_tracking",
+            "policy_engine",
+            "human_review",
+            "model_self_assessment",
+            "best_effort",
+            "other"
+          ],
+          "description": "Method used to determine input influence."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "unknown"
+          ],
+          "description": "Confidence level for the input influence assessment."
+        },
+        "limitations": {
+          "type": "string",
+          "description": "Known limitations of the assessment."
+        }
+      }
+    },
+    "override": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "override_triggered"
+      ],
+      "properties": {
+        "override_triggered": {
+          "type": "boolean",
+          "description": "Whether human override occurred."
+        },
+        "override_type": {
+          "type": "string",
+          "enum": [
+            "emergency_stop",
+            "manual_reversal",
+            "forced_continuation",
+            "break_glass",
+            "temporary_authority_grant",
+            "other"
+          ],
+          "description": "Type of override."
+        },
+        "override_actor_id": {
+          "type": "string",
+          "description": "Human actor or privileged role that performed the override."
+        },
+        "override_reason": {
+          "type": "string",
+          "description": "Reason for override."
+        },
+        "override_authority": {
+          "type": "string",
+          "description": "Authority or role under which the override was performed."
+        },
+        "override_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Scope affected by the override."
+        },
+        "override_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of override."
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Expiration time for temporary override authority."
+        },
+        "post_review_required": {
+          "type": "boolean",
+          "description": "Whether post-review is required."
+        },
+        "linked_action_id": {
+          "type": "string",
+          "description": "Action or workflow linked to the override."
+        },
+        "incident_reference": {
+          "type": "string",
+          "description": "Related incident or case reference."
+        }
+      }
+    },
+    "non_execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "non_execution_decision"
+      ],
+      "properties": {
+        "non_execution_decision": {
+          "type": "string",
+          "enum": [
+            "denied",
+            "deferred",
+            "escalated",
+            "frozen",
+            "safely_terminated",
+            "not_applicable"
+          ],
+          "description": "Decision describing why execution did not proceed."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Human-readable reason for non-execution."
+        },
+        "ambiguity_type": {
+          "type": "string",
+          "enum": [
+            "deterministic",
+            "semantic",
+            "mixed",
+            "none",
+            "unknown"
+          ],
+          "description": "Type of ambiguity involved, if any."
+        },
+        "authority_gap": {
+          "type": "string",
+          "description": "Authority gap or missing authority scope, if applicable."
+        },
+        "intent_gap": {
+          "type": "string",
+          "description": "Intent gap, if applicable."
+        },
+        "policy_gap": {
+          "type": "string",
+          "description": "Policy gap, if applicable."
+        },
+        "state_gap": {
+          "type": "string",
+          "description": "State gap, if applicable."
+        },
+        "input_trust_gap": {
+          "type": "string",
+          "description": "Input trust gap, if applicable."
+        },
+        "evidence_gap": {
+          "type": "string",
+          "description": "Evidence gap, if applicable."
+        },
+        "escalation_target": {
+          "type": "string",
+          "description": "Escalation target for deferred or escalated action."
+        },
+        "linked_action_id": {
+          "type": "string",
+          "description": "Related action ID."
+        }
+      }
+    },
+    "reauthorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reauthorization_requested": {
+          "type": "boolean",
+          "description": "Whether reauthorization was requested."
+        },
+        "reauthorization_request_id": {
+          "type": "string",
+          "description": "Identifier for the reauthorization request."
+        },
+        "denied_action_id": {
+          "type": "string",
+          "description": "Denied or deferred action that led to reauthorization."
+        },
+        "requested_additional_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Additional authority scope requested."
+        },
+        "principal_reconfirmation_required": {
+          "type": "boolean",
+          "description": "Whether principal reconfirmation is required."
+        },
+        "approver_or_escalation_target": {
+          "type": "string",
+          "description": "Approver or escalation target."
+        },
+        "retry_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Retry count linked to this action or reauthorization path."
+        },
+        "reauthorization_decision": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "denied",
+            "deferred",
+            "expired",
+            "not_requested",
+            "unknown"
+          ],
+          "description": "Decision on reauthorization request."
         }
       }
     }

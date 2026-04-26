@@ -38,7 +38,24 @@
       "allowed_purposes": [
         "office_supplies_procurement"
       ]
-    }
+    },
+    "delegation_lineage": [
+      {
+        "lineage_node_id": "lineage_001",
+        "upstream_action_id": "act_20260425_000000",
+        "upstream_agent_id": "agent.procurement.manager",
+        "downstream_agent_id": "agent.procurement.assistant",
+        "delegated_scope": [
+          "purchase_order.prepare"
+        ],
+        "delegated_constraints": [
+          "max_amount:1000.00",
+          "allowed_resource:vendor_xyz"
+        ],
+        "delegation_decision": "attenuated",
+        "decision_reference": "del_decision_001"
+      }
+    ]
   },
   "requested_action": {
     "action_type": "purchase_order.create",
@@ -66,7 +83,49 @@
       "retrieved_web_content",
       "external_email_body"
     ],
-    "revocation_state_checked": true
+    "revocation_state_checked": true,
+    "authorization_decision_artifact": {
+      "decision_id": "authz_20260425_000001",
+      "decision": "requires_human_approval",
+      "bound_action_digest": "sha256:example-bound-action-digest",
+      "principal_id": "user_12345",
+      "authority_scope": [
+        "vendor.quote.request",
+        "purchase_order.prepare"
+      ],
+      "resource": "vendor_xyz",
+      "expires_at": "2026-04-25T00:10:00Z",
+      "issuer": "policy_engine.procurement",
+      "signature_reference": "sig_20260425_000001"
+    },
+    "intent_alignment": {
+      "principal_intent_reference": "req_20260425_000001",
+      "policy_constraints_used": [
+        "approved_vendor_policy",
+        "procurement_limit_policy"
+      ],
+      "machine_enforceable_policy_reference": "policy.procurement.high_risk_actions.v1",
+      "human_readable_policy_summary": "Use approved vendors and stay within delegated procurement limits.",
+      "alignment_decision": "aligned",
+      "alignment_reason": "Requested vendor and amount matched structured authority constraints.",
+      "model_self_assessment_only": false
+    },
+    "state_checks": [
+      {
+        "state_source": "revocation_state",
+        "state_snapshot_id": "rev_state_20260425_000001",
+        "state_checked_at": "2026-04-25T00:00:55Z",
+        "state_result": "passed",
+        "conditional_policy_reference": "policy.revocation.check.v1"
+      },
+      {
+        "state_source": "vendor_status",
+        "state_snapshot_id": "vendor_state_vendor_xyz",
+        "state_checked_at": "2026-04-25T00:00:56Z",
+        "state_result": "passed",
+        "conditional_policy_reference": "policy.approved_vendor.v1"
+      }
+    ]
   },
   "approval": {
     "approval_required": true,
@@ -107,7 +166,14 @@
     "untrusted_content_influenced_action": false,
     "retrieved_or_remembered_content_material": false,
     "correlation_id": "corr_abc123",
-    "trace_id": "trace_xyz789"
+    "trace_id": "trace_xyz789",
+    "input_influence_assessment": {
+      "untrusted_content_influenced_action": false,
+      "determined_by": "runtime_input_tracker",
+      "method": "source_tracking",
+      "confidence": "medium",
+      "limitations": "Semantic influence cannot be fully excluded; assessment is based on recorded source use and authorization inputs."
+    }
   },
   "result": {
     "status": "allowed_after_approval",
@@ -128,5 +194,17 @@
     "revocation_triggered": false,
     "isolation_triggered": false,
     "incident_reference": "none"
+  },
+  "non_execution": {
+    "non_execution_decision": "not_applicable",
+    "reason": "Action proceeded after required approval."
+  },
+  "reauthorization": {
+    "reauthorization_requested": false,
+    "reauthorization_decision": "not_requested",
+    "retry_count": 0
+  },
+  "override": {
+    "override_triggered": false
   }
 }

@@ -12,6 +12,7 @@ Examples:
 
 - `examples/agentic-action-evidence-event.minimal.json`
 - `examples/agentic-action-evidence-event.valid.json`
+- `examples/agentic-action-evidence-event.invalid.json`
 
 This schema is intended for AAEF v0.2.0 discussion and review. It is not a certification format and does not guarantee compliance by itself.
 
@@ -91,6 +92,42 @@ The schema includes fields such as:
 
 These fields support reconstruction of action sequences, delegation chains, and response actions.
 
+
+### 6. Evidence assertions should identify their source and limits
+
+Some evidence fields are assertions rather than direct facts.
+
+For example, `untrusted_content_influenced_action: false` is only meaningful if the event also shows who or what determined that assertion, what method was used, the confidence level, and known limitations.
+
+The schema therefore supports `input_influence_assessment` to record:
+
+- `determined_by`
+- `method`
+- `confidence`
+- `limitations`
+
+This is intended to avoid treating model self-reporting as sufficient evidence for high-impact actions.
+
+### 7. Authorization decisions should be bound to actions
+
+AAEF separates model output from authority.
+
+For high-impact actions, an authorization decision should not be treated as a free-floating `allow` value. It should be bound to the action, principal, resource, authority scope, and issuing decision point where feasible.
+
+The schema therefore supports `authorization_decision_artifact`.
+
+### 8. Non-execution and override events are evidence
+
+An action that was denied, deferred, escalated, frozen, or safely terminated may still be security-relevant.
+
+The schema therefore supports optional sections for:
+
+- `non_execution`
+- `reauthorization`
+- `override`
+
+These sections support review of denied actions, safe termination, scoped reauthorization, human override, and break-glass operations.
+
 ## Required Top-Level Fields
 
 The initial schema requires:
@@ -139,6 +176,87 @@ AAEF v0.1.x included:
 That example demonstrated the concept.
 
 This schema turns the evidence event into a structured draft format that can be validated and reviewed.
+
+
+## v0.2 Draft Expansion Sections
+
+The current v0.2 draft schema includes optional sections and objects for recently added control areas.
+
+### Authorization Decision Artifact
+
+`authorization.authorization_decision_artifact` can be used to record an action-bound decision artifact.
+
+It may include:
+
+- `decision_id`
+- `decision`
+- `bound_action_digest`
+- `principal_id`
+- `authority_scope`
+- `resource`
+- `expires_at`
+- `issuer`
+- `signature_reference`
+
+This supports integrity between authorization and tool dispatch by making it easier to detect decision reuse, replay, or substitution.
+
+### Intent Alignment
+
+`authorization.intent_alignment` can be used to record how intent-authority alignment was evaluated.
+
+It may include:
+
+- `principal_intent_reference`
+- `policy_constraints_used`
+- `machine_enforceable_policy_reference`
+- `human_readable_policy_summary`
+- `alignment_decision`
+- `alignment_reason`
+- `model_self_assessment_only`
+
+The field `model_self_assessment_only` is included to make reliance on model self-assessment visible. For high-assurance actions, implementers should avoid relying solely on model self-assessment.
+
+### State Checks
+
+`authorization.state_checks` can be used to record runtime state checks that affected authorization.
+
+Examples include:
+
+- revocation state,
+- incident status,
+- system health,
+- approved vendor status,
+- account state,
+- fraud risk,
+- market state,
+- or other organization-defined state sources.
+
+### Input Influence Assessment
+
+`context.input_influence_assessment` can be used to record who or what determined whether untrusted content influenced an action.
+
+This is more reviewable than a standalone boolean because it records method, confidence, and limitations.
+
+### Delegation Lineage
+
+`delegation.delegation_lineage` can be used to record lineage nodes for reconstructing upstream and downstream authority decisions.
+
+AAEF requires reconstructability, not a specific graph database or tracing tool.
+
+### Human Override
+
+`override` can be used to record human override or break-glass context.
+
+It is intended to be append-only and linked to original actions or incidents, not to overwrite prior evidence.
+
+### Non-Execution
+
+`non_execution` can be used to record denied, deferred, escalated, frozen, or safely terminated high-impact actions.
+
+### Reauthorization
+
+`reauthorization` can be used to record scoped reauthorization requests, retry counts, principal reconfirmation, and reauthorization decisions.
+
 
 ## Validation
 
@@ -196,4 +314,7 @@ Future versions may add:
 - High-Impact Action Taxonomy integration
 - JSON Schema validation workflow
 - example invalid events
+- Evidence assertion source and input influence determination
+- Authorization decision artifact profile
+- Override, non-execution, and reauthorization examples
 - schema versioning policy
