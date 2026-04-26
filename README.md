@@ -214,6 +214,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   ├── agentic-action-evidence-event.json
 │   ├── agentic-action-evidence-event.minimal.json
 │   ├── agentic-action-evidence-event.valid.json
+│   ├── agentic-action-evidence-event.high-impact.json
+│   ├── agentic-action-evidence-event.audit-grade.json
 │   ├── agentic-action-evidence-event.invalid.json
 │   └── attack-control-mapping.md
 ├── tools/

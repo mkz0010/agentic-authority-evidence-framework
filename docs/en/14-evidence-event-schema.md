@@ -300,6 +300,21 @@ A valid evidence event is not automatically sufficient for every assurance use c
 
 Implementations should select an evidence profile based on action impact, regulatory context, audit needs, and operational risk.
 
+### Profile Examples
+
+The examples below illustrate different Evidence Event Schema usage levels.
+
+| Profile | Example | Purpose |
+|---|---|---|
+| Minimal | [`agentic-action-evidence-event.minimal.json`](../../examples/agentic-action-evidence-event.minimal.json) | Shows the minimum structurally valid evidence event. |
+| General valid example | [`agentic-action-evidence-event.valid.json`](../../examples/agentic-action-evidence-event.valid.json) | Shows a broader valid event with optional sections. |
+| High-Impact | [`agentic-action-evidence-event.high-impact.json`](../../examples/agentic-action-evidence-event.high-impact.json) | Demonstrates high-impact action evidence with authorization artifact, approval, input influence assessment, and traceability. |
+| Audit-Grade | [`agentic-action-evidence-event.audit-grade.json`](../../examples/agentic-action-evidence-event.audit-grade.json) | Demonstrates stronger integrity, provenance, retention, reviewability, and profile metadata through schema-valid extensions. |
+
+These examples are illustrative profiles, not separate certification levels.
+
+Schema validation confirms structural validity only. Evidence profile strength depends on the trustworthiness of the components that generated, protected, correlated, and retained the evidence.
+
 ### Minimal Evidence Profile
 
 The Minimal Evidence Profile is intended for pilots, prototypes, internal reviews, and low-to-medium impact agentic actions.
