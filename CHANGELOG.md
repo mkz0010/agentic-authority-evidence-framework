@@ -11,6 +11,7 @@
 - Added human, delegation, and evidence control expansion entries.
 - Added Assurance Model and Residual Risk Mapping.
 - Added Assessment Quick Start and Assessment Worksheet draft.
+- Added One-page Overview for first-time readers.
 - Updated README repository structure and document status for v0.2 work-in-progress artifacts.
 - Updated citation metadata to use the full author name.
 

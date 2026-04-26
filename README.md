@@ -97,6 +97,7 @@ The v0.2.0 work-in-progress materials currently include:
 - expanded Evidence Event Schema sections for v0.2 control areas,
 - High-Impact Action Taxonomy draft,
 - v0.2 Control Expansion Notes,
+- One-page Overview,
 - authorization and revocation control expansion,
 - human, delegation, and evidence control expansion,
 - Assurance Model and Residual Risk Mapping,
@@ -149,6 +150,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 10-maintenance-and-validation.md
 │       ├── 11-high-impact-action-taxonomy.md
 │       ├── 12-assessment-quick-start.md
+│       ├── 13-one-page-overview.md
 │       ├── 14-evidence-event-schema.md
 │       ├── 15-v02-control-expansion-notes.md
 │       └── 16-assurance-model.md
