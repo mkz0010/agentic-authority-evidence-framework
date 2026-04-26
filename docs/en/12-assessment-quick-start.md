@@ -286,6 +286,44 @@ For high-impact actions, assessors should require action-bound evidence linking:
 
 If these links are missing or inconsistent, the assessment should record a finding even if the system produced structurally valid logs or schema-valid evidence events.
 
+### Reviewing High-Impact Action Review Surfaces
+
+For high-impact actions, assessors should review whether the approval or review surface presented enough information for meaningful review.
+
+A review surface may be a web UI, CLI confirmation prompt, approval workflow, ticket, change request, policy review screen, or another mechanism.
+
+Assessors should check whether the review surface showed or linked to:
+
+- the principal,
+- the agent or agent instance,
+- the canonical action,
+- the action type,
+- the target resource,
+- the tool or backend operation,
+- the authority scope,
+- the expected external effect,
+- the risk level or high-impact category,
+- the applicable policy decision,
+- any required approval or override reason,
+- the action or argument digest,
+- the expiration or revocation state,
+- and the evidence reference or correlation ID.
+
+For high-impact actions, approval should be bound to the canonical action that is actually dispatched or executed.
+
+A review surface that presents only a human-readable summary should be treated as weak evidence if the summary is not linked to the canonical action, tool operation, resource, authority scope, and action or argument digest.
+
+If the approved action and executed action cannot be correlated, assessors should record a finding even if an approval record exists.
+
+Assessment should consider whether the system can demonstrate that:
+
+- the approver reviewed the same action that was authorized,
+- the authorized action was the same action that was dispatched,
+- the dispatched operation was the same operation executed by the backend,
+- and the resulting evidence event links the approval, dispatch, execution, and result.
+
+Missing or inconsistent review-surface evidence may indicate approval laundering, payload substitution, replayed authorization artifacts, or weak approval assurance.
+
 ## Assessment Worksheet Columns
 
 The worksheet includes the following columns:

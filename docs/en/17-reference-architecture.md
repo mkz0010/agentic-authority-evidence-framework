@@ -447,6 +447,39 @@ Relevant controls:
 - `AAEF-HUM-03`
 - `AAEF-HUM-04`
 
+### High-Impact Action Review Surface
+
+AAEF does not prescribe a specific user interface for human approval or review.
+
+A review surface may be a web UI, CLI confirmation prompt, approval workflow, ticket, change request, policy review screen, or another mechanism that presents a high-impact action for review before execution.
+
+For high-impact actions, the review surface should make the reviewed action clear enough for the approver or reviewer to understand what is being authorized.
+
+Where applicable, the review surface should expose or reference:
+
+- the principal,
+- the agent or agent instance,
+- the canonical action,
+- the action type,
+- the target resource,
+- the tool or backend operation,
+- the authority scope,
+- the expected external effect,
+- the risk level or high-impact category,
+- the applicable policy decision,
+- any required approval or override reason,
+- the action or argument digest,
+- the expiration or revocation state,
+- and the evidence reference or correlation ID.
+
+The approval should be bound to the canonical action that is actually dispatched or executed.
+
+A human-readable summary alone is not sufficient if the executed action can differ from what the approver reviewed.
+
+If the reviewed action, approved action, dispatched operation, and executed backend effect are not bound together, the system may be vulnerable to approval laundering, payload substitution, replayed authorization artifacts, or action digest mismatch.
+
+AAEF does not require a particular review UI implementation. However, high-impact action review surfaces should make the boundary between proposed action, permitted action, dispatched operation, executed effect, and recorded evidence visible enough to support meaningful approval and later review.
+
 ## Incident Response and Isolation
 
 Incident response may update revocation state, freeze authority, isolate agents, block tools, or trigger reconstruction.
