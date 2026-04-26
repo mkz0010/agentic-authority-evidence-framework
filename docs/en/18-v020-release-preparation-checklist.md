@@ -1,0 +1,321 @@
+# 18. v0.2.0 Release Preparation Checklist
+
+## Status
+
+This document is a release preparation checklist for the AAEF v0.2.0 public review release.
+
+It is intended to help maintainers verify repository consistency before creating the v0.2.0 tag and GitHub release.
+
+This checklist is not itself a control requirement.
+
+## Release Goal
+
+The goal of v0.2.0 is to publish a more complete public review draft of AAEF that includes:
+
+- expanded control catalog,
+- Evidence Event Schema and validation workflow,
+- High-Impact Action Taxonomy,
+- Assurance Model and Residual Risk Mapping,
+- Assessment Quick Start and Worksheet,
+- One-page Overview,
+- Reference Architecture,
+- OWASP Agentic Top 10 mapping,
+- and updated repository navigation.
+
+## Pre-Release Principle
+
+Before tagging v0.2.0, the repository should be internally consistent.
+
+At minimum:
+
+- README should describe the current state accurately,
+- CHANGELOG should summarize v0.2.0 changes,
+- CITATION metadata should be current,
+- control catalog validation should pass,
+- evidence schema validation should pass,
+- repository structure should match the files actually present,
+- release notes should not overclaim assurance,
+- and open issues should clearly indicate what remains under review.
+
+## 1. Repository State
+
+Run:
+
+- `git checkout main`
+- `git pull`
+- `git status`
+- `git log --oneline -10`
+
+Expected:
+
+- local `main` is up to date with `origin/main`,
+- working tree is clean,
+- recent merge commits are visible,
+- no untracked files remain.
+
+## 2. Validation
+
+Run:
+
+- `python tools/validate_control_catalog.py`
+- `python tools/validate_evidence_schema.py`
+
+Expected:
+
+- `OK: 44 controls validated.`
+- `OK: evidence schema and examples validated.`
+
+If validation fails, do not create the release tag.
+
+## 3. Control Catalog Consistency
+
+Verify:
+
+- `controls/aaef-controls-v0.1.csv` contains 44 controls.
+- `docs/en/07-control-requirements.md` contains the same control IDs.
+- New v0.2 controls are included in both files.
+- Control IDs are unique.
+- Domain prefixes are consistent.
+- Maturity values are valid.
+- Required, Recommended, and Optional values are intentional.
+
+Current v0.2 expanded controls include:
+
+- `AAEF-AUZ-06`
+- `AAEF-AUZ-07`
+- `AAEF-AUZ-08`
+- `AAEF-AUZ-09`
+- `AAEF-RES-04`
+- `AAEF-DEL-05`
+- `AAEF-EVD-05`
+- `AAEF-EVD-06`
+- `AAEF-HUM-03`
+- `AAEF-HUM-04`
+
+## 4. Evidence Schema Consistency
+
+Verify:
+
+- `schemas/agentic-action-evidence-event.schema.json` is valid JSON Schema Draft 2020-12.
+- `examples/agentic-action-evidence-event.minimal.json` passes validation.
+- `examples/agentic-action-evidence-event.valid.json` passes validation.
+- `examples/agentic-action-evidence-event.invalid.json` fails validation as expected.
+- `docs/en/14-evidence-event-schema.md` describes major v0.2 schema sections.
+
+Major v0.2 schema areas include:
+
+- `authorization.authorization_decision_artifact`
+- `authorization.intent_alignment`
+- `authorization.state_checks`
+- `context.input_influence_assessment`
+- `delegation.delegation_lineage`
+- `override`
+- `non_execution`
+- `reauthorization`
+
+## 5. Repository Navigation
+
+Verify README includes current repository structure entries for:
+
+- `docs/en/12-assessment-quick-start.md`
+- `docs/en/13-one-page-overview.md`
+- `docs/en/14-evidence-event-schema.md`
+- `docs/en/15-v02-control-expansion-notes.md`
+- `docs/en/16-assurance-model.md`
+- `docs/en/17-reference-architecture.md`
+- `assessment/aaef-assessment-worksheet-v0.2-draft.csv`
+- `assets/aaef-reference-architecture.mmd`
+- `mappings/threat-control-assurance-mapping.md`
+- `mappings/threat-control-assurance-mapping-v0.2-draft.csv`
+- `schemas/agentic-action-evidence-event.schema.json`
+- `taxonomies/high-impact-action-taxonomy-v0.2-draft.csv`
+- `tools/validate_evidence_schema.py`
+- `.github/workflows/validate-evidence-schema.yml`
+
+## 6. README Status Language
+
+Verify README clearly distinguishes:
+
+- latest tagged v0.1.x release as the prior public review baseline,
+- `main` branch as v0.2.0 work-in-progress before release,
+- `controls/aaef-controls-v0.1.csv` filename retained for continuity,
+- v0.2.0 materials as public review draft artifacts.
+
+Before final release, decide whether to update wording from:
+
+- `v0.2.0 work-in-progress`
+
+to:
+
+- `v0.2.0 Public Review Draft`
+
+If this wording is changed, update README and CHANGELOG consistently.
+
+## 7. CHANGELOG
+
+Verify CHANGELOG includes v0.2.0 items for:
+
+- OWASP Agentic Top 10 mapping,
+- Evidence Event Schema,
+- Evidence examples,
+- Evidence Schema validation workflow,
+- Evidence Schema expansion,
+- High-Impact Action Taxonomy,
+- v0.2 Control Expansion Notes,
+- Authorization and Revocation controls,
+- Human, Delegation, and Evidence controls,
+- Assurance Model and Residual Risk Mapping,
+- Assessment Quick Start and Worksheet,
+- One-page Overview,
+- Reference Architecture,
+- README and repository navigation updates,
+- citation metadata updates.
+
+Before release, consider changing the section heading from:
+
+- `Unreleased / v0.2.0 Public Review Draft — Work in Progress`
+
+to:
+
+- `v0.2.0 Public Review Draft`
+
+## 8. CITATION Metadata
+
+Verify `CITATION.cff` includes:
+
+- full author name,
+- repository-code URL,
+- correct title,
+- current release version,
+- release date.
+
+Expected author metadata:
+
+- family name: `Horishita`
+- given name: `Kazuma`
+
+Before tagging v0.2.0, update:
+
+- `version`
+- `date-released`
+
+if the project chooses to treat v0.2.0 as a released public review draft.
+
+## 9. Issue and Milestone Review
+
+Before release, review GitHub Issues and Milestones.
+
+Recommended checks:
+
+- v0.2.0 milestone contains relevant open review issues.
+- Issues representing completed artifacts are commented as initial draft merged where applicable.
+- Remaining open issues clearly indicate they are review or future-work items.
+- Do not close design-review issues solely because a draft artifact exists.
+- Confirm labels such as `v0.2`, `discussion-needed`, `control`, `schema`, `mapping`, and `documentation` are applied consistently.
+
+Potential open issues that may remain open after v0.2.0:
+
+- evidence assertion source and input influence determination,
+- trusted control boundary and authorization-to-tool dispatch integrity,
+- assurance model and residual risk refinement,
+- tamper-evident evidence storage,
+- risk-proportional evidence,
+- authority denial and reauthorization flow,
+- cross-domain authority assertions,
+- approval fatigue and approval quality,
+- principal context degradation.
+
+## 10. Release Notes Draft
+
+The v0.2.0 release notes should include:
+
+### Summary
+
+AAEF v0.2.0 expands the initial public review draft into a more implementation- and assessment-oriented framework.
+
+### Major Additions
+
+- Control catalog expanded to 44 controls.
+- Evidence Event JSON Schema added and expanded.
+- Evidence Schema validation workflow added.
+- High-Impact Action Taxonomy added.
+- OWASP Agentic Top 10 mapping added.
+- Assurance Model and Residual Risk Mapping added.
+- Assessment Quick Start and Worksheet added.
+- One-page Overview added.
+- Reference Architecture added.
+- README, CHANGELOG, and citation metadata updated.
+
+### Important Notes
+
+The release notes should clarify:
+
+- AAEF is not a certification scheme.
+- AAEF does not guarantee model correctness.
+- AAEF does not eliminate all agentic AI risk.
+- Model output is not authority.
+- Evidence fields may be assertions and require source, method, confidence, and limitations.
+- Revocation is not assumed to be instantaneous in distributed systems.
+- v0.2.0 remains a public review draft.
+
+## 11. Release Tag Procedure
+
+After all checks pass:
+
+- `git checkout main`
+- `git pull`
+- `git status`
+- `python tools/validate_control_catalog.py`
+- `python tools/validate_evidence_schema.py`
+- `git log --oneline -5`
+
+Then create the tag:
+
+- `git tag v0.2.0`
+- `git push origin v0.2.0`
+
+Create the GitHub Release from tag `v0.2.0`.
+
+Recommended release type:
+
+- Public Review Draft
+- not pre-release if the intent is to make v0.2.0 the current public review baseline
+- pre-release if the project wants additional validation before calling v0.2.0 the current baseline
+
+## 12. Post-Release Checks
+
+After publishing the GitHub Release:
+
+- Confirm release notes render correctly.
+- Confirm README links and repository structure are correct.
+- Confirm `CITATION.cff` displays correctly on GitHub.
+- Confirm GitHub Actions are passing on `main`.
+- Confirm tag `v0.2.0` points to the intended commit.
+- Confirm Issues and Milestones reflect the new status.
+- Consider pinning or linking the release in README.
+
+## 13. Do Not Release If
+
+Do not create the v0.2.0 release if:
+
+- control validation fails,
+- evidence schema validation fails,
+- README and CHANGELOG disagree materially,
+- release notes overclaim assurance,
+- the control catalog and readable requirements disagree,
+- `CITATION.cff` is materially wrong,
+- or the release commit is not the intended `main` commit.
+
+## Final Pre-Tag Checklist
+
+- [ ] `git status` is clean.
+- [ ] `main` is up to date with `origin/main`.
+- [ ] Control catalog validation passes.
+- [ ] Evidence schema validation passes.
+- [ ] README status language is correct.
+- [ ] README repository structure is current.
+- [ ] CHANGELOG v0.2.0 section is current.
+- [ ] CITATION metadata is current.
+- [ ] Release notes are drafted.
+- [ ] Open issues and milestone status are reviewed.
+- [ ] Tag name is confirmed as `v0.2.0`.
