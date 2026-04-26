@@ -79,23 +79,43 @@ AAEF is intended for:
 
 ## Document Status
 
-This repository contains the **AAEF v0.1 Public Review Draft**, with selected **v0.2.0 work-in-progress draft artifacts** already merged for public review.
+The latest tagged v0.1.x release remains the **AAEF v0.1 Public Review Draft** baseline.
 
-The v0.1 control catalog remains the current control baseline.
+The `main` branch contains selected **v0.2.0 work-in-progress draft artifacts** merged for public review.
+
+The current control catalog file remains:
+
+- `controls/aaef-controls-v0.1.csv`
+
+However, the `main` branch now includes v0.2 work-in-progress control expansion entries and supporting review artifacts. These materials are not yet a finalized v0.2.0 release.
 
 The v0.2.0 work-in-progress materials currently include:
 
 - preliminary OWASP Agentic Top 10 2026 mapping,
 - initial Agentic Action Evidence Event JSON Schema,
-- High-Impact Action Taxonomy draft.
+- Evidence Event Schema validation workflow,
+- expanded Evidence Event Schema sections for v0.2 control areas,
+- High-Impact Action Taxonomy draft,
+- v0.2 Control Expansion Notes,
+- authorization and revocation control expansion,
+- human, delegation, and evidence control expansion,
+- Assurance Model and Residual Risk Mapping,
+- Assessment Quick Start,
+- and Assessment Worksheet draft.
 
-These v0.2 materials are not yet a finalized release. They are provided to support review, implementation feedback, and future control expansion.
+These v0.2 materials are provided to support review, implementation feedback, and future release preparation.
 
 Feedback, issues, and pull requests are welcome.
 
 ## Control Catalog Source of Truth
 
-The normative control catalog for v0.1 is `controls/aaef-controls-v0.1.csv`.
+The control catalog CSV is the machine-readable source of truth for control IDs, requirement text, objectives, applicability, testing procedures, evidence examples, and maturity classification.
+
+Current catalog file:
+
+- `controls/aaef-controls-v0.1.csv`
+
+The file name is retained for continuity during the v0.2 public review work. The `main` branch may contain v0.2 work-in-progress control expansion entries before the final v0.2.0 release.
 
 The Markdown control list in `docs/en/07-control-requirements.md` is maintained for readability and must remain consistent with the CSV catalog. This repository includes a validation script and GitHub Actions workflow to detect control ID drift.
 
@@ -128,10 +148,16 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 09-relationship-to-existing-frameworks.md
 │       ├── 10-maintenance-and-validation.md
 │       ├── 11-high-impact-action-taxonomy.md
+│       ├── 12-assessment-quick-start.md
 │       ├── 14-evidence-event-schema.md
-│       └── 15-v02-control-expansion-notes.md
+│       ├── 15-v02-control-expansion-notes.md
+│       └── 16-assurance-model.md
+├── assessment/
+│   └── aaef-assessment-worksheet-v0.2-draft.csv
 ├── mappings/
-│   └── owasp-agentic-top10-2026.md
+│   ├── owasp-agentic-top10-2026.md
+│   ├── threat-control-assurance-mapping.md
+│   └── threat-control-assurance-mapping-v0.2-draft.csv
 ├── schemas/
 │   └── agentic-action-evidence-event.schema.json
 ├── taxonomies/
@@ -155,7 +181,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 
 If you reference this work, please cite it as:
 
-> Kazuma, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.1 Public Review Draft, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, Public Review Draft, 2026.
 
 ## License
 
