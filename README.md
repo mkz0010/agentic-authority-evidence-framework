@@ -79,19 +79,17 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.2.0 Public Review Draft** is the latest tagged public review draft baseline.
+**AAEF v0.2.1 Public Review Refinement** is the current tagged public review baseline.
 
-The `main` branch currently includes post-v0.2.0 public review refinements for Evidence Event Schema profiles, Evidence Quality Gate guidance, assertion source and input influence assessment, High-Impact and Audit-Grade evidence examples, weak and adversarial evidence examples, existing enforcement implementation framing, high-impact action review surfaces, and Open Research Questions.
+AAEF v0.2.1 builds on the v0.2.0 Public Review Draft and incorporates post-v0.2.0 public review refinements for Evidence Event Schema profiles, Evidence Quality Gate guidance, assertion source and input influence assessment, High-Impact and Audit-Grade evidence examples, weak and adversarial evidence examples, existing enforcement implementation framing, high-impact action review surfaces, and Open Research Questions.
 
-These post-v0.2.0 refinements are candidates for a future v0.2.1 Public Review Refinement release.
-
-Earlier v0.1.x releases remain available as prior public review baselines.
+Earlier v0.2.0 and v0.1.x releases remain available as prior public review baselines.
 
 The current control catalog file remains:
 
 - `controls/aaef-controls-v0.1.csv`
 
-The file name is retained for continuity, but the catalog now contains the v0.2.0 public review control set.
+The file name is retained for continuity, but the catalog contains the current v0.2.x public review control set.
 
 The v0.2.0 Public Review Draft includes:
 
@@ -162,7 +160,7 @@ Current catalog file:
 
 - `controls/aaef-controls-v0.1.csv`
 
-The file name is retained for continuity in the v0.2.0 Public Review Draft. The catalog contains the current v0.2.0 public review control set.
+The file name is retained for continuity in the v0.2.x public review series. The catalog contains the current v0.2.x public review control set.
 
 The Markdown control list in `docs/en/07-control-requirements.md` is maintained for readability and must remain consistent with the CSV catalog. This repository includes a validation script and GitHub Actions workflow to detect control ID drift.
 
@@ -237,7 +235,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.2.0 Public Review Draft, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.2.1 Public Review Refinement, 2026.
 
 ## Research and Open Questions
 

@@ -1,8 +1,8 @@
 # Changelog
 
-## Unreleased / v0.2.1 Public Review Refinement
+## v0.2.1 Public Review Refinement - 2026-04-27
 
-This section tracks post-v0.2.0 public review refinements currently merged into `main`.
+This release incorporates post-v0.2.0 public review refinements.
 
 ### Added
 
@@ -31,8 +31,9 @@ This section tracks post-v0.2.0 public review refinements currently merged into 
 
 ### Notes
 
-- These refinements do not create a certification scheme or claim complete mitigation.
-- The latest tagged public review baseline remains v0.2.0 until a v0.2.1 release is created.
+- This release remains a public review refinement.
+- It does not create a certification scheme or claim complete mitigation.
+- v0.2.0 remains available as the prior public review baseline.
 
 ## v0.2.0 Public Review Draft - 2026-04-26
 
