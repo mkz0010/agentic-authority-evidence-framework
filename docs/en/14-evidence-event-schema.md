@@ -178,9 +178,9 @@ That example demonstrated the concept.
 This schema turns the evidence event into a structured draft format that can be validated and reviewed.
 
 
-## v0.2 Draft Expansion Sections
+## Evidence Event Expansion Sections
 
-The current v0.2 draft schema includes optional sections and objects for recently added control areas.
+The evidence event schema includes optional sections and objects introduced during the v0.2 public review expansion.
 
 ### Authorization Decision Artifact
 
