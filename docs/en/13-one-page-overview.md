@@ -182,6 +182,10 @@ The evidence layer records.
 
 AAEF v0.3.0 Public Review Draft is the current public review baseline.
 
+AAEF v0.3.1 Maintenance Release is the latest tagged maintenance release for this baseline.
+
+It does not change the v0.3.0 public review scope.
+
 AAEF v0.3.0 builds on the v0.2.x baseline and adds implementation profiles, evidence quality assessment criteria, assessment profile mapping, TCB implementation capability patterns, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration guidance.
 
 These materials remain public review drafts and are not a certification scheme, formal standard, or claim of complete mitigation.
