@@ -180,10 +180,10 @@ The evidence layer records.
 
 ## Current Status
 
-The latest tagged v0.1.x release remains the initial public review baseline.
+AAEF v0.2.1 Public Review Refinement is the current public review baseline.
 
-The `main` branch contains v0.2.0 work-in-progress materials for public review, including expanded controls, schema work, mappings, and assessment materials.
+AAEF v0.2.1 builds on the v0.2.0 Public Review Draft and incorporates post-v0.2.0 public review refinements for Evidence Event Schema profiles, Evidence Quality Gate guidance, assertion source and input influence assessment, High-Impact and Audit-Grade evidence examples, weak and adversarial evidence examples, existing enforcement implementation framing, high-impact action review surfaces, and Open Research Questions.
 
-These materials are drafts.
+These materials remain public review drafts and are not a certification scheme, formal standard, or claim of complete mitigation.
 
 Feedback is welcome through Issues, Pull Requests, and Discussions.
