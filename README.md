@@ -144,6 +144,7 @@ If you are new to AAEF, start with the documents below:
 | [`Evidence Event Schema`](docs/en/14-evidence-event-schema.md) | What evidence should exist? | Defines structured evidence for audit logs, SIEM events, incident reconstruction, and evidence review |
 | [`Assessment Worksheet`](assessment/aaef-assessment-worksheet-v0.2-draft.csv) | How should controls be reviewed? | Supports applicability review, evidence review, findings, residual risk, and remediation tracking |
 | [`Assessment Profiles`](docs/en/20-assessment-profiles.md) | How deeply should AAEF be applied? | Provides draft Lite, Standard, High-Impact, and Audit-Grade applicability guidance based on action risk and agent autonomy |
+| [`Assessment Profile Mapping`](assessment/aaef-assessment-profiles-v0.3-draft.csv) | Which controls are expected under each profile? | Provides a sidecar profile applicability mapping without changing the Control Catalog |
 
 In short:
 
@@ -205,6 +206,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 19-open-research-questions.md
 │       └── 20-assessment-profiles.md
 ├── assessment/
+│   ├── aaef-assessment-profiles-v0.3-draft.csv
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
 ├── assets/
 │   └── aaef-reference-architecture.mmd
@@ -225,6 +227,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   ├── agentic-action-evidence-event.invalid.json
 │   └── attack-control-mapping.md
 ├── tools/
+│   ├── validate_assessment_profiles.py
 │   ├── validate_assessment_worksheet.py
 │   ├── validate_control_catalog.py
 │   └── validate_evidence_schema.py
