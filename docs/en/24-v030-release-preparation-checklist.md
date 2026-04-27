@@ -1,0 +1,143 @@
+# 24. v0.3.0 Release Preparation Checklist
+
+This document is a release preparation checklist for the AAEF v0.3.0 public review release.
+
+It is intended to help maintainers verify repository consistency before creating the v0.3.0 tag and GitHub release.
+
+## Release Goal
+
+The goal of v0.3.0 is to expand the v0.2.x public review baseline with implementation profiles and evidence quality assessment guidance.
+
+The v0.3.0 release includes:
+
+- Evidence Quality Gate assessment criteria,
+- Assessment Profiles and tiered applicability guidance,
+- Assessment Profile Mapping sidecar CSV,
+- TCB implementation capability patterns,
+- Action Sequence Monitoring and Task Splitting guidance,
+- Assessment Automation and Human Review Classification guidance,
+- Infrastructure and SIEM Evidence Integration guidance,
+- and updated release metadata.
+
+## Release Scope
+
+The v0.3.0 release is a public review draft.
+
+It is not:
+
+- a certification scheme,
+- a formal standard,
+- a claim of complete mitigation,
+- an implementation conformance claim,
+- or an audit opinion.
+
+## Completed Roadmap Items
+
+The following v0.3.0 roadmap items have been implemented:
+
+- #62 Evidence Quality Gate assessment criteria,
+- #63 Assessment Profiles and tiered applicability,
+- #64 Assessment Profile mapping without changing Control Catalog,
+- #65 TCB implementation capability patterns,
+- #66 Action sequence monitoring for task splitting,
+- #67 Infrastructure and SIEM evidence integration patterns,
+- #68 Assessment automation and human review classification.
+
+## Repository Consistency Checks
+
+Before tagging v0.3.0, verify:
+
+- [ ] README document status references v0.3.0.
+- [ ] README citation references v0.3.0.
+- [ ] CHANGELOG includes v0.3.0 release notes.
+- [ ] One-page Overview current status references v0.3.0.
+- [ ] Repository structure includes v0.3.0 documents.
+- [ ] v0.2.0 release checklist remains available as historical release preparation material.
+- [ ] v0.3.0 release preparation checklist is included in the repository.
+
+## Automated Repository Validation
+
+Run:
+
+    python tools/validate_assessment_profiles.py
+    python tools/validate_assessment_worksheet.py
+    python tools/validate_control_catalog.py
+    python tools/validate_evidence_schema.py
+
+These checks validate structural consistency of the assessment profile mapping, assessment worksheet, control catalog, and evidence schema examples.
+
+They do not constitute a security assessment, audit opinion, or implementation conformance claim.
+
+## Line Ending and Diff Checks
+
+Run:
+
+    git diff --check
+    git ls-files --eol README.md CHANGELOG.md docs/en/13-one-page-overview.md docs/en/24-v030-release-preparation-checklist.md
+
+The expected repository convention is LF line endings for text files.
+
+## Suggested Release Notes
+
+Suggested GitHub Release title:
+
+    v0.3.0 Public Review Draft
+
+Suggested summary:
+
+    AAEF v0.3.0 expands the v0.2.x public review baseline with implementation profiles, evidence quality assessment criteria, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration patterns.
+
+Suggested release notes text:
+
+    ## Summary
+
+    AAEF v0.3.0 Public Review Draft expands the v0.2.x baseline with implementation profiles and evidence quality assessment guidance.
+
+    This release adds:
+
+    - Evidence Quality Gate assessment criteria
+    - Assessment Profiles and tiered applicability guidance
+    - Assessment Profile Mapping sidecar CSV
+    - TCB implementation capability patterns
+    - Action Sequence Monitoring and Task Splitting guidance
+    - Assessment Automation and Human Review Classification guidance
+    - Infrastructure and SIEM Evidence Integration guidance
+
+    ## Validation
+
+    Automated repository validation completed:
+
+    - `python tools/validate_assessment_profiles.py`
+    - `python tools/validate_assessment_worksheet.py`
+    - `python tools/validate_control_catalog.py`
+    - `python tools/validate_evidence_schema.py`
+
+    These checks validate structural consistency. They do not constitute a security assessment, audit opinion, or implementation conformance claim.
+
+    ## Status
+
+    This release remains a public review draft.
+
+    It is not a certification scheme, formal standard, or claim of complete mitigation.
+
+## Tagging
+
+After the release preparation PR is merged, tag the intended release commit:
+
+    git checkout main
+    git pull --ff-only origin main
+    git tag v0.3.0
+    git push origin v0.3.0
+
+Create the GitHub Release from tag `v0.3.0`.
+
+## Final Checklist
+
+- [ ] Release preparation PR merged.
+- [ ] `main` is up to date.
+- [ ] Working tree is clean.
+- [ ] Automated validation completed.
+- [ ] Tag `v0.3.0` created.
+- [ ] Tag `v0.3.0` pushed to origin.
+- [ ] GitHub Release created.
+- [ ] Release notes include public review draft status and non-certification disclaimer.
