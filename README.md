@@ -79,36 +79,38 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.2.1 Public Review Refinement** is the current tagged public review baseline.
+**AAEF v0.3.0 Public Review Draft** is the current public review baseline.
 
-AAEF v0.2.1 builds on the v0.2.0 Public Review Draft and incorporates post-v0.2.0 public review refinements for Evidence Event Schema profiles, Evidence Quality Gate guidance, assertion source and input influence assessment, High-Impact and Audit-Grade evidence examples, weak and adversarial evidence examples, existing enforcement implementation framing, high-impact action review surfaces, and Open Research Questions.
+AAEF v0.3.0 builds on the v0.2.x baseline and adds implementation profiles, evidence quality assessment criteria, assessment profile mapping, TCB implementation capability patterns, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration guidance.
 
-Earlier v0.2.0 and v0.1.x releases remain available as prior public review baselines.
+Earlier v0.2.x and v0.1.x releases remain available as prior public review baselines.
 
 The current control catalog file remains:
 
 - `controls/aaef-controls-v0.1.csv`
 
-The file name is retained for continuity, but the catalog contains the current v0.2.x public review control set.
+The file name is retained for continuity, but the catalog contains the current public review control set.
 
-The v0.2.0 Public Review Draft includes:
+The v0.3.0 Public Review Draft includes:
 
 - preliminary OWASP Agentic Top 10 2026 mapping,
 - Agentic Action Evidence Event JSON Schema,
 - Evidence Event Schema validation workflow,
-- expanded Evidence Event Schema sections for v0.2 control areas,
 - High-Impact Action Taxonomy draft,
-- v0.2 Control Expansion Notes,
-- One-page Overview,
 - Reference Architecture,
-- v0.2.0 Release Preparation Checklist,
-- authorization and revocation control expansion,
-- human, delegation, and evidence control expansion,
 - Assurance Model and Residual Risk Mapping,
 - Assessment Quick Start,
-- and Assessment Worksheet draft.
+- Assessment Worksheet draft,
+- Evidence Quality Gate assessment criteria,
+- Assessment Profiles and tiered applicability guidance,
+- Assessment Profile Mapping sidecar CSV,
+- TCB implementation capability patterns,
+- Action Sequence Monitoring and Task Splitting guidance,
+- Assessment Automation and Human Review Classification guidance,
+- Infrastructure and SIEM Evidence Integration guidance,
+- and v0.3.0 Release Preparation Checklist.
 
-AAEF v0.2.0 remains a public review draft. It is not a certification scheme, formal standard, or claim of complete mitigation.
+AAEF v0.3.0 remains a public review draft. It is not a certification scheme, formal standard, or claim of complete mitigation.
 
 Feedback, issues, and pull requests are welcome.
 
@@ -207,7 +209,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 20-assessment-profiles.md
 │       ├── 21-action-sequence-monitoring.md
 │       ├── 22-assessment-automation-and-human-review.md
-│       └── 23-infrastructure-siem-evidence-integration.md
+│       ├── 23-infrastructure-siem-evidence-integration.md
+│       └── 24-v030-release-preparation-checklist.md
 ├── assessment/
 │   ├── aaef-assessment-profiles-v0.3-draft.csv
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
@@ -244,7 +247,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.2.1 Public Review Refinement, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.3.0 Public Review Draft, 2026.
 
 ## Research and Open Questions
 

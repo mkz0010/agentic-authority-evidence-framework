@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.3.0 Public Review Draft - 2026-04-27
+
+This release expands the v0.2.x public review baseline with implementation profiles, evidence quality assessment criteria, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration patterns.
+
+### Added
+
+- Added Evidence Quality Gate assessment outcomes and assertion source strength guidance.
+- Added Assessment Profiles and tiered applicability guidance for Lite, Standard, High-Impact, and Audit-Grade profiles.
+- Added Assessment Profile Mapping sidecar CSV without changing the Control Catalog.
+- Added validation for the Assessment Profile Mapping.
+- Added TCB implementation capability patterns to the Reference Architecture.
+- Added Action Sequence Monitoring and Task Splitting guidance.
+- Added Assessment Automation and Human Review Classification guidance.
+- Added Infrastructure and SIEM Evidence Integration guidance.
+- Added v0.3.0 Release Preparation Checklist.
+
+### Changed
+
+- Updated README document status, repository structure, and citation metadata for v0.3.0.
+- Updated One-page Overview current status for v0.3.0.
+- Clarified that automated repository validation is structural validation, not security assurance, audit opinion, or implementation conformance.
+
+### Notes
+
+- This release remains a public review draft.
+- It does not create a certification scheme or claim complete mitigation.
+- v0.2.1 remains available as the prior public review refinement baseline.
+
 ## v0.2.1 Public Review Refinement - 2026-04-27
 
 This release incorporates post-v0.2.0 public review refinements.
