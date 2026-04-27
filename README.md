@@ -1,5 +1,7 @@
 # Agentic Authority & Evidence Framework / AAEF
 
+[![Validate AAEF Artifacts](https://github.com/mkz0010/agentic-authority-evidence-framework/actions/workflows/validate-aaef-artifacts.yml/badge.svg)](https://github.com/mkz0010/agentic-authority-evidence-framework/actions/workflows/validate-aaef-artifacts.yml)
+
 **AAEF: An Action Assurance Control Profile for Agentic AI Systems**
 
 Agentic Authority & Evidence Framework (AAEF) is a practical control framework for governing **delegated authority**, **policy-enforced action boundaries**, and **verifiable evidence** in agentic AI systems.
