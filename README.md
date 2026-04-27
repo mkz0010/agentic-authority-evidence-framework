@@ -240,8 +240,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   └── validate_evidence_schema.py
 └── .github/
     └── workflows/
-        ├── validate-control-catalog.yml
-        └── validate-evidence-schema.yml
+        └── validate-aaef-artifacts.yml
 ```
 
 ## Citation
