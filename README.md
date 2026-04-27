@@ -206,7 +206,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 19-open-research-questions.md
 │       ├── 20-assessment-profiles.md
 │       ├── 21-action-sequence-monitoring.md
-│       └── 22-assessment-automation-and-human-review.md
+│       ├── 22-assessment-automation-and-human-review.md
+│       └── 23-infrastructure-siem-evidence-integration.md
 ├── assessment/
 │   ├── aaef-assessment-profiles-v0.3-draft.csv
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
