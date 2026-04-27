@@ -123,6 +123,7 @@ If you are new to AAEF, start with the documents below:
 5. [`docs/en/07-control-requirements.md`](docs/en/07-control-requirements.md) — detailed control requirements
 6. [`docs/en/14-evidence-event-schema.md`](docs/en/14-evidence-event-schema.md) — evidence event schema and evidence model
 7. [`docs/en/12-assessment-quick-start.md`](docs/en/12-assessment-quick-start.md) — how to start reviewing a system using AAEF
+8. [`docs/en/20-assessment-profiles.md`](docs/en/20-assessment-profiles.md) — draft assessment profiles and tiered applicability guidance
 
 ## Role-Based Reading Paths
 
@@ -131,8 +132,8 @@ If you are new to AAEF, start with the documents below:
 | New readers | [`One-page Overview`](docs/en/13-one-page-overview.md) | [`Core Principles`](docs/en/02-core-principles.md) | [`Introduction`](docs/en/00-introduction.md) / [`Scope`](docs/en/01-scope.md) |
 | Implementers | [`Reference Architecture`](docs/en/17-reference-architecture.md) | [`Control Requirements`](docs/en/07-control-requirements.md) | [`Evidence Event Schema`](docs/en/14-evidence-event-schema.md), examples, and validation tools |
 | Security architects | [`Reference Architecture`](docs/en/17-reference-architecture.md) | [`Threat Model`](docs/en/04-threat-model.md) / [`Trust Model`](docs/en/05-trust-model.md) | Controls and mappings |
-| Auditors / assessors | [`Assessment Quick Start`](docs/en/12-assessment-quick-start.md) | [`Control Requirements`](docs/en/07-control-requirements.md) | Assessment worksheet and [`Assurance Model`](docs/en/16-assurance-model.md) |
-| Governance / risk teams | [`One-page Overview`](docs/en/13-one-page-overview.md) | [`High-Impact Action Taxonomy`](docs/en/11-high-impact-action-taxonomy.md) | [`Relationship to Existing Frameworks`](docs/en/09-relationship-to-existing-frameworks.md) and [`Assurance Model`](docs/en/16-assurance-model.md) |
+| Auditors / assessors | [`Assessment Quick Start`](docs/en/12-assessment-quick-start.md) | [`Assessment Profiles`](docs/en/20-assessment-profiles.md) and [`Control Requirements`](docs/en/07-control-requirements.md) | Assessment worksheet and [`Assurance Model`](docs/en/16-assurance-model.md) |
+| Governance / risk teams | [`One-page Overview`](docs/en/13-one-page-overview.md) | [`High-Impact Action Taxonomy`](docs/en/11-high-impact-action-taxonomy.md) and [`Assessment Profiles`](docs/en/20-assessment-profiles.md) | [`Relationship to Existing Frameworks`](docs/en/09-relationship-to-existing-frameworks.md) and [`Assurance Model`](docs/en/16-assurance-model.md) |
 
 ## How the Core Documents Fit Together
 
@@ -142,6 +143,7 @@ If you are new to AAEF, start with the documents below:
 | [`Reference Architecture`](docs/en/17-reference-architecture.md) | Where should controls be enforced? | Shows responsibility separation across model, authorization, dispatch, tools, and evidence |
 | [`Evidence Event Schema`](docs/en/14-evidence-event-schema.md) | What evidence should exist? | Defines structured evidence for audit logs, SIEM events, incident reconstruction, and evidence review |
 | [`Assessment Worksheet`](assessment/aaef-assessment-worksheet-v0.2-draft.csv) | How should controls be reviewed? | Supports applicability review, evidence review, findings, residual risk, and remediation tracking |
+| [`Assessment Profiles`](docs/en/20-assessment-profiles.md) | How deeply should AAEF be applied? | Provides draft Lite, Standard, High-Impact, and Audit-Grade applicability guidance based on action risk and agent autonomy |
 
 In short:
 
@@ -200,7 +202,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 16-assurance-model.md
 │       ├── 17-reference-architecture.md
 │       ├── 18-v020-release-preparation-checklist.md
-│       └── 19-open-research-questions.md
+│       ├── 19-open-research-questions.md
+│       └── 20-assessment-profiles.md
 ├── assessment/
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
 ├── assets/
