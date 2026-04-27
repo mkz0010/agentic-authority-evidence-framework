@@ -165,7 +165,7 @@ Current catalog file:
 
 - `controls/aaef-controls-v0.1.csv`
 
-The file name is retained for continuity in the v0.2.x public review series. The catalog contains the current v0.2.x public review control set.
+The file name is retained for continuity. The catalog remains the current machine-readable control source of truth unless superseded by a later catalog file.
 
 The Markdown control list in `docs/en/07-control-requirements.md` is maintained for readability and must remain consistent with the CSV catalog. This repository includes a validation script and GitHub Actions workflow to detect control ID drift.
 
