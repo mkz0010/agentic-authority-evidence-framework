@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.3.1 Maintenance Release - 2026-04-27
+
+This maintenance release improves repository organization, version reference consistency, and automated validation after the v0.3.0 Public Review Draft.
+
+### Added
+
+- Added a consolidated GitHub Actions workflow for AAEF artifact validation.
+
+### Changed
+
+- Moved release preparation checklists into `docs/en/release/`.
+- Marked release preparation checklists as historical release preparation artifacts.
+- Clarified current version references after the v0.3.0 release.
+- Updated `CITATION.cff` for the v0.3.1 maintenance release.
+- Consolidated validation workflows into `.github/workflows/validate-aaef-artifacts.yml`.
+
+### Notes
+
+- This release does not change the v0.3.0 Public Review Draft baseline scope.
+- This release remains part of the public review draft series.
+- It does not create a certification scheme, formal standard, implementation conformance claim, audit opinion, or claim of complete mitigation.
+
 ## v0.3.0 Public Review Draft - 2026-04-27
 
 This release expands the v0.2.x public review baseline with implementation profiles, evidence quality assessment criteria, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration patterns.

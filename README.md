@@ -81,6 +81,10 @@ AAEF is intended for:
 
 **AAEF v0.3.0 Public Review Draft** is the current public review baseline.
 
+**AAEF v0.3.1 Maintenance Release** is the latest tagged maintenance release for this baseline.
+
+AAEF v0.3.1 does not change the v0.3.0 public review scope. It adds post-release cleanup, release artifact organization, version reference consistency, and consolidated validation automation.
+
 AAEF v0.3.0 builds on the v0.2.x baseline and adds implementation profiles, evidence quality assessment criteria, assessment profile mapping, TCB implementation capability patterns, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration guidance.
 
 Earlier v0.2.x and v0.1.x releases remain available as prior public review baselines.
@@ -247,7 +251,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.3.0 Public Review Draft, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.3.1 Maintenance Release, 2026.
 
 ## Research and Open Questions
 

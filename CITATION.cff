@@ -5,7 +5,7 @@ authors:
   - family-names: "Horishita"
     given-names: "Kazuma"
     affiliation: "Independent Security Consultant"
-version: "0.3.0-public-review-draft"
+version: "0.3.1-maintenance-release"
 date-released: "2026-04-27"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/mkz0010/agentic-authority-evidence-framework"
