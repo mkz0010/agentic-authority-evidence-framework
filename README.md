@@ -79,7 +79,11 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.2.0 Public Review Draft** is the current public review draft baseline.
+**AAEF v0.2.0 Public Review Draft** is the latest tagged public review draft baseline.
+
+The `main` branch currently includes post-v0.2.0 public review refinements for Evidence Event Schema profiles, Evidence Quality Gate guidance, assertion source and input influence assessment, High-Impact and Audit-Grade evidence examples, weak and adversarial evidence examples, existing enforcement implementation framing, high-impact action review surfaces, and Open Research Questions.
+
+These post-v0.2.0 refinements are candidates for a future v0.2.1 Public Review Refinement release.
 
 Earlier v0.1.x releases remain available as prior public review baselines.
 
@@ -197,7 +201,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 15-v02-control-expansion-notes.md
 │       ├── 16-assurance-model.md
 │       ├── 17-reference-architecture.md
-│       └── 18-v020-release-preparation-checklist.md
+│       ├── 18-v020-release-preparation-checklist.md
+│       └── 19-open-research-questions.md
 ├── assessment/
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
 ├── assets/
@@ -219,6 +224,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   ├── agentic-action-evidence-event.invalid.json
 │   └── attack-control-mapping.md
 ├── tools/
+│   ├── validate_assessment_worksheet.py
 │   ├── validate_control_catalog.py
 │   └── validate_evidence_schema.py
 └── .github/
