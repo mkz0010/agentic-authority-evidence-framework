@@ -182,6 +182,23 @@ That mapping should be maintained separately from the Control Catalog so that:
 - assessment tooling can use profile-specific views,
 - and implementers can adopt profiles without changing the control source of truth.
 
+## Draft Profile Mapping
+
+The draft sidecar mapping is maintained at:
+
+- `assessment/aaef-assessment-profiles-v0.3-draft.csv`
+
+This mapping provides draft applicability guidance for each control across the following profiles:
+
+- Lite
+- Standard
+- High-Impact
+- Audit-Grade
+
+The mapping is assessment guidance, not a change to the Control Catalog.
+
+The Control Catalog remains the control source of truth. The sidecar mapping provides a profile-specific assessment view that can evolve independently.
+
 ## Relationship to Evidence Quality Gate
 
 Assessment profiles and Evidence Quality Gate results are related but distinct.
