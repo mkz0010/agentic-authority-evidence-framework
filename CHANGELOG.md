@@ -1,3 +1,39 @@
+# Changelog
+
+## Unreleased / v0.2.1 Public Review Refinement
+
+This section tracks post-v0.2.0 public review refinements currently merged into `main`.
+
+### Added
+
+- Added Evidence Event Schema profile guidance for Minimal, High-Impact, Audit-Grade, Non-Execution, and Override / Break-Glass evidence profiles.
+- Added High-Impact and Audit-Grade Evidence Event examples.
+- Added validation coverage for High-Impact and Audit-Grade Evidence Event examples.
+- Added Evidence Quality Gate guidance for high-impact actions.
+- Added weak and adversarial evidence examples for high-impact action assessment.
+- Added Open Research Questions for agentic action assurance.
+- Added high-impact action review surface guidance.
+
+### Changed
+
+- Improved README onboarding and role-based reading paths.
+- Strengthened Trusted Control Boundary and Tool Dispatch Enforcement Point guidance.
+- Clarified evidence assertion sources and input influence assessment.
+- Clarified that AAEF can be implemented using existing identity, authorization, runtime isolation, enforcement, and audit mechanisms.
+- Linked Evidence Event Schema profiles to concrete examples.
+- Aligned the assessment worksheet with the control catalog.
+- Renamed worksheet `Maturity` to `Requirement Level`.
+
+### Tooling
+
+- Added assessment worksheet validation.
+- Expanded evidence schema validation to include High-Impact and Audit-Grade examples.
+
+### Notes
+
+- These refinements do not create a certification scheme or claim complete mitigation.
+- The latest tagged public review baseline remains v0.2.0 until a v0.2.1 release is created.
+
 ## v0.2.0 Public Review Draft - 2026-04-26
 
 - Added preliminary OWASP Agentic Top 10 2026 mapping.
@@ -32,8 +68,6 @@
 - Added translation disclaimer and language links to the main README.
 - Clarified that the English README and `docs/en/` are authoritative.
 - Added a translation feedback issue template.
-
-# Changelog
 
 ## v0.1 Public Review Draft — revised pre-publication package
 
