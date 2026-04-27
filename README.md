@@ -108,7 +108,7 @@ The v0.3.0 Public Review Draft includes:
 - Action Sequence Monitoring and Task Splitting guidance,
 - Assessment Automation and Human Review Classification guidance,
 - Infrastructure and SIEM Evidence Integration guidance,
-- and v0.3.0 Release Preparation Checklist.
+- and historical release preparation records under `docs/en/release/`.
 
 AAEF v0.3.0 remains a public review draft. It is not a certification scheme, formal standard, or claim of complete mitigation.
 
@@ -204,13 +204,14 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 15-v02-control-expansion-notes.md
 │       ├── 16-assurance-model.md
 │       ├── 17-reference-architecture.md
-│       ├── 18-v020-release-preparation-checklist.md
 │       ├── 19-open-research-questions.md
 │       ├── 20-assessment-profiles.md
 │       ├── 21-action-sequence-monitoring.md
 │       ├── 22-assessment-automation-and-human-review.md
 │       ├── 23-infrastructure-siem-evidence-integration.md
-│       └── 24-v030-release-preparation-checklist.md
+│       └── release/
+│           ├── v0.2.0-preparation-checklist.md
+│           └── v0.3.0-preparation-checklist.md
 ├── assessment/
 │   ├── aaef-assessment-profiles-v0.3-draft.csv
 │   └── aaef-assessment-worksheet-v0.2-draft.csv
