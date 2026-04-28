@@ -251,6 +251,7 @@ The v0.5.0 planning materials are intended to be read in the following order.
 | `docs/en/36-risk-proportional-evidence-profile.md` | Risk-proportional evidence depth planning profile. |
 | `docs/en/37-tamper-evident-evidence-storage.md` | Tamper-evident evidence storage planning profile. |
 | `docs/en/43-risk-proportional-evidence-assessment-guidance.md` | Assessment guidance for applying E0 through E5 evidence depth levels. |
+| `docs/en/47-approval-quality-assessment-guidance.md` | Approval quality assessment guidance for meaningful approval, blind approval, approval fatigue, approval laundering, retry pressure, and task-splitting review. |
 
 ### Field Candidates
 
@@ -279,7 +280,7 @@ The following table summarizes selected v0.5.0 planning threads and their curren
 | --- | --- | --- | --- |
 | #2 | Principal Context Degradation | Concept note added; planning definitions and related control language strengthened; Principal Context Degradation examples added. | JSON examples, schema field decisions, freshness thresholds, reconfirmation assessment guidance, and stale context negative tests remain. |
 | #3 | Cross-Agent and Cross-Domain Authority | Concept note added; authority assertion planning profile added; cross-agent authority lineage strengthened; cross-agent authority examples added. | JSON examples, authority assertion schema field decisions, receiving-side validation guidance, evidence limitation fields, and stale or replayed assertion negative tests remain. |
-| #6 | Approval quality and approval fatigue | Approval quality concept added; `AAEF-AUZ-03`, `AAEF-HUM-01`, and `AAEF-HUM-02` strengthened; approval evidence examples added. | Approval quality metrics, approval fatigue assessment guidance, approval laundering negative tests, and potential dedicated approval quality control decisions remain. |
+| #6 | Approval quality and approval fatigue | Approval quality concept added; `AAEF-AUZ-03`, `AAEF-HUM-01`, and `AAEF-HUM-02` strengthened; approval evidence examples and approval quality assessment guidance added. | Approval quality metrics, approval fatigue thresholds, approval laundering negative tests, schema field decisions, assessment profile integration, and potential dedicated approval quality control decisions remain. |
 | #19 | Tamper-evident evidence storage | Tamper-evident evidence storage profile added; `AAEF-EVD-04` strengthened; tamper-evident evidence examples added. | Evidence integrity schema field decisions, negative tests for tampering and replay, and incident-response evidence preservation guidance remain. |
 | #20 | Risk-proportional evidence depth | Risk-proportional evidence profile added; assessment guidance added; evidence depth field candidates added; evidence depth examples added. | Schema adoption decisions for `evidence_depth_level`, required depth by action class, assessment profile integration, and JSON examples remain. |
 | #21 | Authority denial and reauthorization flow | Authority denial and reauthorization concept added; `AAEF-EVD-05` and `AAEF-EVD-06` strengthened; non-execution and reauthorization examples added. | Non-execution and reauthorization JSON examples, retry and task-splitting negative tests, and schema field decisions remain. |
