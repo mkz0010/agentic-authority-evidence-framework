@@ -81,15 +81,11 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.3.0 Public Review Draft** is the current public review baseline.
+**AAEF v0.4.0 Public Review Draft** is the current public review baseline.
 
-**AAEF v0.3.1 Maintenance Release** is the latest tagged maintenance release for this baseline.
+AAEF v0.4.0 builds on the v0.3.x baseline and adds enterprise assessment usability guidance for agentic AI action assurance.
 
-AAEF v0.3.1 does not change the v0.3.0 public review scope. It adds post-release cleanup, release artifact organization, version reference consistency, and consolidated validation automation.
-
-AAEF v0.3.0 builds on the v0.2.x baseline and adds implementation profiles, evidence quality assessment criteria, assessment profile mapping, TCB implementation capability patterns, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration guidance.
-
-Earlier v0.2.x and v0.1.x releases remain available as prior public review baselines.
+Earlier v0.3.x, v0.2.x, and v0.1.x releases remain available as prior public review baselines.
 
 The current control catalog file remains:
 
@@ -97,7 +93,7 @@ The current control catalog file remains:
 
 The file name is retained for continuity, but the catalog contains the current public review control set.
 
-The v0.3.0 Public Review Draft includes:
+The v0.4.0 Public Review Draft includes:
 
 - preliminary OWASP Agentic Top 10 2026 mapping,
 - Agentic Action Evidence Event JSON Schema,
@@ -114,9 +110,17 @@ The v0.3.0 Public Review Draft includes:
 - Action Sequence Monitoring and Task Splitting guidance,
 - Assessment Automation and Human Review Classification guidance,
 - Infrastructure and SIEM Evidence Integration guidance,
+- Control Catalog Versioning and Change Impact guidance,
+- Testing Procedures and Pass Criteria guidance,
+- machine-readable testing procedure draft,
+- High-Impact and Audit-Grade Pre-qualification Gate guidance,
+- Trusted Control Boundary Integrity Requirements,
+- External Framework Mapping Methodology,
+- initial conservative external framework mapping draft,
+- validation for testing procedures and external mappings,
 - and historical release preparation records under `docs/en/release/`.
 
-AAEF v0.3.0 remains a public review draft. It is not a certification scheme, formal standard, or claim of complete mitigation.
+AAEF v0.4.0 remains a public review draft. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
 
 Feedback, issues, and pull requests are welcome.
 
@@ -228,7 +232,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 28-external-framework-mapping-methodology.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
-│           └── v0.3.0-preparation-checklist.md
+│           ├── v0.3.0-preparation-checklist.md
+│           └── v0.4.0-preparation-checklist.md
 ├── assessment/
 │   ├── aaef-assessment-profiles-v0.3-draft.csv
 │   ├── aaef-assessment-worksheet-v0.2-draft.csv
@@ -268,7 +273,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.3.1 Maintenance Release, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.4.0 Public Review Draft, 2026.
 
 ## Research and Open Questions
 
