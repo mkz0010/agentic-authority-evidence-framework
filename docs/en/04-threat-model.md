@@ -101,6 +101,8 @@ Examples:
 
 These threats affect chains of agents and inter-agent collaboration.
 
+For v0.5.0 planning, see `docs/en/31-cross-agent-cross-domain-authority.md` for the Cross-Agent and Cross-Domain Authority concept note.
+
 Examples:
 
 - rogue agent participation,

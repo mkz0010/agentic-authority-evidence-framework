@@ -83,6 +83,8 @@ A trust domain may represent:
 
 Cross-domain agent actions require explicit trust assumptions and additional evidence.
 
+For v0.5.0 planning, AAEF tracks Cross-Agent and Cross-Domain Authority as a concept for verifying identity, authority, delegation constraints, evidence, and revocation semantics across trust boundaries. See `docs/en/31-cross-agent-cross-domain-authority.md`.
+
 
 ## Implementation Note: Principal Context Propagation
 

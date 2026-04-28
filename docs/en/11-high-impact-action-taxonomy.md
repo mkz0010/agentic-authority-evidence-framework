@@ -346,6 +346,8 @@ Why it matters:
 
 Agent-to-agent communication does not imply authority to delegate work. Cross-domain agent actions may create identity, authority, evidence, and revocation gaps.
 
+For v0.5.0 planning, see `docs/en/31-cross-agent-cross-domain-authority.md` for the Cross-Agent and Cross-Domain Authority concept note.
+
 Recommended treatment:
 
 - verify agent identity, issuer, operator, principal binding, and authority scope,

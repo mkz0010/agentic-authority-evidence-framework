@@ -158,6 +158,8 @@ Open questions include:
 
 Multi-agent and cross-agent authority are important, but not fully addressed in the current AAEF draft.
 
+A v0.5.0 planning concept note is maintained in `docs/en/31-cross-agent-cross-domain-authority.md`.
+
 Open questions include:
 
 - How should authority propagate across agents?
