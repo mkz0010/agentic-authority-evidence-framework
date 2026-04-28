@@ -550,3 +550,5 @@ Future versions may add:
 For v0.5.0 planning on evidence depth, assurance value, and operational overhead, see `docs/en/36-risk-proportional-evidence-profile.md`.
 
 For v0.5.0 planning on evidence integrity, tamper evidence, and independent verification, see `docs/en/37-tamper-evident-evidence-storage.md`.
+
+For v0.5.0 planning field candidates before changing the schema, see `docs/en/38-v050-evidence-schema-field-candidates.md`.
