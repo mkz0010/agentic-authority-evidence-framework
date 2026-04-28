@@ -222,7 +222,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │           └── v0.3.0-preparation-checklist.md
 ├── assessment/
 │   ├── aaef-assessment-profiles-v0.3-draft.csv
-│   └── aaef-assessment-worksheet-v0.2-draft.csv
+│   ├── aaef-assessment-worksheet-v0.2-draft.csv
+│   └── aaef-testing-procedures-v0.4-draft.csv
 ├── assets/
 │   └── aaef-reference-architecture.mmd
 ├── mappings/
@@ -245,7 +246,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   ├── validate_assessment_profiles.py
 │   ├── validate_assessment_worksheet.py
 │   ├── validate_control_catalog.py
-│   └── validate_evidence_schema.py
+│   ├── validate_evidence_schema.py
+│   └── validate_testing_procedures.py
 └── .github/
     └── workflows/
         └── validate-aaef-artifacts.yml
