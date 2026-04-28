@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.4.1 Public Review Refinement Release - 2026-04-28
+
+This maintenance release refines the v0.4.0 Public Review Draft based on post-release review work.
+
+### Changed
+
+- Refined control-specific testing procedure criteria across all 44 controls.
+- Updated testing procedure pass, partial, fail, sample selection, notes, and automation potential fields.
+- Refined external framework mapping methodology and copyright-sensitive source handling.
+- Updated external mapping records to use more conservative, non-equivalence-oriented language.
+- Refreshed OWASP Agentic Top 10 mapping for the v0.4.x baseline.
+- Added NIST AI RMF / Generative AI Profile mapping.
+- Added ISO/IEC 42001 feasibility note and high-level mapping row.
+- Added CSA Agentic Trust Framework mapping.
+
+### Notes
+
+- This release remains a Public Review Draft.
+- External mappings are informative alignment aids only.
+- External mappings do not imply compliance equivalence, certification readiness, audit sufficiency, or conformity with external frameworks.
+- ISO/IEC 42001-related materials are handled at a high-level, copyright-safe feasibility level only.
+
 ## v0.4.0 Public Review Draft - 2026-04-28
 
 This release expands the v0.3.x public review baseline with enterprise assessment usability guidance for agentic AI action assurance.

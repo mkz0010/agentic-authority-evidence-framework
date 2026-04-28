@@ -180,9 +180,9 @@ The evidence layer records.
 
 ## Current Status
 
-AAEF v0.4.0 Public Review Draft is the current public review baseline.
+AAEF v0.4.1 Public Review Draft is the current public review baseline.
 
-AAEF v0.4.0 builds on the v0.3.x baseline and adds enterprise assessment usability guidance for agentic AI action assurance.
+AAEF v0.4.1 is a maintenance and refinement release over v0.4.0. It preserves the v0.4.0 enterprise assessment usability baseline and incorporates post-release refinements to testing criteria and external framework mappings.
 
 It adds control catalog versioning, measurable testing procedures and pass criteria, High-Impact and Audit-Grade pre-qualification guidance, Trusted Control Boundary integrity requirements, and informative external framework mapping methodology.
 
