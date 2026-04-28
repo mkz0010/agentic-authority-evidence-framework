@@ -216,6 +216,59 @@ A conservative sequence is:
 5. Update reference architecture and assessment guidance.
 6. Prepare a v0.5.0 public review release once the design is coherent.
 
+## Recommended Reading Order
+
+The v0.5.0 planning materials are intended to be read in the following order.
+
+1. Start with this overview to understand the planning scope, current status, and remaining work.
+2. Read the core concept notes to understand the authority, denial, reauthorization, and cross-domain design problems.
+3. Read the planning profiles to understand candidate control, evidence, and assessment design options.
+4. Read the example documents to understand how the planning concepts may appear in review, assessment, or incident reconstruction.
+5. Read the schema field candidates last, because they are planning candidates and do not change the current Evidence Event Schema.
+
+## v0.5.0 Planning Document Index
+
+### Overview and Control Design
+
+| Document | Purpose |
+| --- | --- |
+| `docs/en/33-v050-planning-overview.md` | Overall v0.5.0 planning scope, status, examples, and remaining work. |
+| `docs/en/34-v050-control-design-options.md` | Candidate control design options for future v0.5.0 work. |
+
+### Core Concept Notes
+
+| Document | Purpose |
+| --- | --- |
+| `docs/en/31-cross-agent-cross-domain-authority.md` | Cross-agent and cross-domain authority planning concept. |
+| `docs/en/32-authority-denial-reauthorization-flow.md` | Authority denial, non-execution, retry, and reauthorization flow planning concept. |
+| `docs/en/39-approval-quality-approval-fatigue.md` | Approval quality, blind approval, approval fatigue, and meaningful human review planning concept. |
+
+### Planning Profiles and Assessment Guidance
+
+| Document | Purpose |
+| --- | --- |
+| `docs/en/35-authority-assertion-profile.md` | Candidate authority assertion profile for cross-agent and cross-domain authority claims. |
+| `docs/en/36-risk-proportional-evidence-profile.md` | Risk-proportional evidence depth planning profile. |
+| `docs/en/37-tamper-evident-evidence-storage.md` | Tamper-evident evidence storage planning profile. |
+| `docs/en/43-risk-proportional-evidence-assessment-guidance.md` | Assessment guidance for applying E0 through E5 evidence depth levels. |
+
+### Field Candidates
+
+| Document | Purpose |
+| --- | --- |
+| `docs/en/38-v050-evidence-schema-field-candidates.md` | Candidate Evidence Event Schema fields for future schema refinement. |
+
+### Non-Normative Examples
+
+| Document | Purpose |
+| --- | --- |
+| `docs/en/40-approval-evidence-examples.md` | Approval evidence, weak approval, approval laundering, and approval fatigue examples. |
+| `docs/en/41-non-execution-reauthorization-examples.md` | Denial, deferral, safe termination, retry, task splitting, and reauthorization examples. |
+| `docs/en/42-tamper-evident-evidence-examples.md` | Tamper-evident, independently corroborated, replay, omission, and integrity verification examples. |
+| `docs/en/44-evidence-depth-examples.md` | E3, E4, and E5 evidence depth examples. |
+
+These documents are non-normative planning materials unless otherwise stated. They are intended to support discussion before future schema, control, testing, or assessment changes are adopted.
+
 ## Current Planning Status
 
 The following table summarizes selected v0.5.0 planning threads and their current status.
