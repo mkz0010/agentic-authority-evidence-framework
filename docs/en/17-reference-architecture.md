@@ -2,7 +2,7 @@
 
 ## Status
 
-This document is a reference architecture for AAEF v0.2 public review.
+This document originated as the AAEF reference architecture during the v0.2 public review cycle and remains part of the current v0.4.1 Public Review Draft baseline.
 
 It is not a required implementation architecture and does not mandate specific vendors, protocols, runtimes, policy engines, databases, or identity systems.
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Clarified that `docs/en/30-49` v0.5.0 planning materials are non-normative unless explicitly incorporated into catalog, schema, assessment, testing, or release artifacts.
+- Clarified the v0.5.0 planning overview by grouping the six planning themes into authority lifecycle and supporting assurance themes.
+- Added missing v0.5.0 planning document index entries for Principal Context Degradation and tamper-evident evidence negative tests.
+- Clarified current-status wording for v0.2-originated documents that remain part of the v0.4.1 Public Review Draft baseline.
+
 ## v0.4.1 Public Review Refinement Release - 2026-04-28
 
 This maintenance release refines the v0.4.0 Public Review Draft based on post-release review work.

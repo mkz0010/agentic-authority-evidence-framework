@@ -1,8 +1,10 @@
 # v0.5.0 Evidence Schema Field Candidates
 
-**Status:** v0.5.0 planning note
+**Status:** Non-normative v0.5.0 planning note
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Non-normative field candidate inventory before changing the Evidence Event Schema
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 

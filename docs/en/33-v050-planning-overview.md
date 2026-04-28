@@ -1,8 +1,10 @@
 # v0.5.0 Planning Overview
 
-**Status:** v0.5.0 planning overview
+**Status:** Non-normative v0.5.0 planning overview
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Planning document for the next major public review design cycle
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 
@@ -18,20 +20,27 @@ For control design tradeoffs before changing the catalog, see `docs/en/34-v050-c
 
 ## v0.5.0 Core Design Themes
 
-The initial v0.5.0 planning work is organized around three related concepts:
+The initial v0.5.0 planning work is organized around six related planning themes.
+
+Core authority lifecycle themes:
 
 1. Principal Context Degradation
 2. Cross-Agent and Cross-Domain Authority
 3. Authority Denial and Reauthorization Flow
+
+Supporting assurance themes:
+
 4. Risk-Proportional Evidence and Performance Overhead
 5. Tamper-Evident Evidence Storage
 6. Approval Quality and Approval Fatigue
 
-Together, these concepts refine AAEF's core claim that model output is not authority.
+Together, these themes refine AAEF's core claim that model output is not authority.
 
 For approval quality and approval fatigue planning, see `docs/en/39-approval-quality-approval-fatigue.md`.
 
-They focus on whether authority remains valid, traceable, bounded, and reviewable across time, delegation, agent boundaries, trust domains, and denial or reauthorization paths.
+The authority lifecycle themes focus on whether authority remains valid, traceable, bounded, and reviewable across time, delegation, agent boundaries, trust domains, and denial or reauthorization paths.
+
+The supporting assurance themes focus on whether evidence depth, evidence integrity, and human approval quality are proportionate to the risk of the action being reviewed.
 
 ## Theme 1: Principal Context Degradation
 
@@ -102,15 +111,18 @@ The main design question is whether AAEF should strengthen guidance for:
 - reauthorization evidence;
 - linkage between denial, escalation, reauthorization, and final execution or non-execution outcomes.
 
-## Relationship Among the Three Themes
+## Relationship Among the Planning Themes
 
 These themes are intentionally connected.
 
-| Theme | Key dependency |
-| --- | --- |
-| Principal Context Degradation | May trigger denial, escalation, or reauthorization when context is stale or ambiguous. |
-| Cross-Agent and Cross-Domain Authority | May cause principal context loss, delegation drift, evidence trust gaps, or revocation propagation gaps. |
-| Authority Denial and Reauthorization Flow | Provides the controlled path when authority is insufficient, degraded, ambiguous, or unverifiable. |
+| Theme | Theme group | Key dependency |
+| --- | --- | --- |
+| Principal Context Degradation | Authority lifecycle | May trigger denial, escalation, or reauthorization when context is stale or ambiguous. |
+| Cross-Agent and Cross-Domain Authority | Authority lifecycle | May cause principal context loss, delegation drift, evidence trust gaps, or revocation propagation gaps. |
+| Authority Denial and Reauthorization Flow | Authority lifecycle | Provides the controlled path when authority is insufficient, degraded, ambiguous, or unverifiable. |
+| Risk-Proportional Evidence and Performance Overhead | Supporting assurance | Helps decide how much evidence depth is justified for a given action, risk level, and operational cost. |
+| Tamper-Evident Evidence Storage | Supporting assurance | Helps preserve evidence integrity when actions, denials, approvals, or reauthorizations must be reviewed later. |
+| Approval Quality and Approval Fatigue | Supporting assurance | Helps determine whether human approval provides meaningful authority rather than blind approval, fatigue-driven approval, or approval laundering. |
 
 A future v0.5.0 design should avoid treating these as isolated features.
 
@@ -119,7 +131,9 @@ For example:
 - degraded principal context in a long-running workflow may require scoped reauthorization;
 - cross-domain authority gaps may require receiving-side denial or external evidence verification;
 - repeated denial in a cross-agent workflow may indicate attempted policy bypass or task splitting;
-- revocation in one domain may require downstream freeze, denial, or residual-risk evidence in another domain.
+- revocation in one domain may require downstream freeze, denial, or residual-risk evidence in another domain;
+- higher-risk reauthorization paths may require stronger evidence depth and tamper-evident preservation;
+- human approval may need additional context, batching limits, or retry-pressure safeguards when an agent repeatedly asks for the same denied action.
 
 ## Candidate v0.5.0 Refinement Areas
 
@@ -239,6 +253,7 @@ The v0.5.0 planning materials are intended to be read in the following order.
 
 | Document | Purpose |
 | --- | --- |
+| `docs/en/30-principal-context-degradation.md` | Principal context degradation, freshness, drift, reconfirmation, and authority sufficiency planning concept. |
 | `docs/en/31-cross-agent-cross-domain-authority.md` | Cross-agent and cross-domain authority planning concept. |
 | `docs/en/32-authority-denial-reauthorization-flow.md` | Authority denial, non-execution, retry, and reauthorization flow planning concept. |
 | `docs/en/39-approval-quality-approval-fatigue.md` | Approval quality, blind approval, approval fatigue, and meaningful human review planning concept. |
@@ -267,6 +282,7 @@ The v0.5.0 planning materials are intended to be read in the following order.
 | `docs/en/41-non-execution-reauthorization-examples.md` | Denial, deferral, safe termination, retry, task splitting, and reauthorization examples. |
 | `docs/en/48-non-execution-reauthorization-negative-tests.md` | Negative test candidates for denial, deferral, freeze, safe termination, retry, task splitting, reauthorization, and selective omission of non-execution evidence. |
 | `docs/en/42-tamper-evident-evidence-examples.md` | Tamper-evident, independently corroborated, replay, omission, and integrity verification examples. |
+| `docs/en/49-tamper-evident-evidence-negative-tests.md` | Negative test candidates for evidence tampering, replay, omission, anchoring gaps, and integrity verification failures. |
 | `docs/en/44-evidence-depth-examples.md` | E3, E4, and E5 evidence depth examples. |
 | `docs/en/45-principal-context-degradation-examples.md` | Principal Context Degradation examples for freshness, drift, reconfirmation, denial, and evidence review. |
 | `docs/en/46-cross-agent-authority-examples.md` | Cross-agent and cross-domain authority examples for authority assertions, delegation lineage, receiving-side validation, and evidence limitations. |

@@ -14,7 +14,7 @@ Examples:
 - `examples/agentic-action-evidence-event.valid.json`
 - `examples/agentic-action-evidence-event.invalid.json`
 
-This schema is intended for AAEF v0.2.0 discussion and review. It is not a certification format and does not guarantee compliance by itself.
+This schema originated during the AAEF v0.2.0 discussion and review cycle and remains part of the current v0.4.1 Public Review Draft baseline. It is not a certification format and does not guarantee compliance by itself.
 
 ## Purpose
 
@@ -180,7 +180,7 @@ This schema turns the evidence event into a structured draft format that can be 
 
 ## Evidence Event Expansion Sections
 
-The evidence event schema includes optional sections and objects introduced during the v0.2 public review expansion.
+The evidence event schema includes optional sections and objects introduced during earlier public review expansion and retained in the current baseline.
 
 ### Authorization Decision Artifact
 

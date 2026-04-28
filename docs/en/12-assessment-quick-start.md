@@ -2,7 +2,7 @@
 
 ## Status
 
-This document is an initial assessment quick start for AAEF v0.2 public review.
+This document originated as an initial assessment quick start during the AAEF v0.2 public review cycle and remains part of the current v0.4.1 Public Review Draft baseline.
 
 It is intended to help reviewers, implementers, security teams, AI governance teams, and auditors begin using AAEF as an assessment aid.
 

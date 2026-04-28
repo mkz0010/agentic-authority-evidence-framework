@@ -1,8 +1,10 @@
 # Approval Quality Assessment Guidance
 
-**Status:** v0.5.0 planning guidance
+**Status:** Non-normative v0.5.0 planning guidance
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Non-normative assessment guidance for meaningful approval, blind approval, approval fatigue, approval laundering, retry pressure, and task-splitting review
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 
