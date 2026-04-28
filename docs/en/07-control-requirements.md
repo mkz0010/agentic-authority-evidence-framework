@@ -265,6 +265,8 @@ Implementations should use explicit propagation mechanisms such as correlation I
 
 **Implementation Note:** Denial handling should distinguish safe termination, human escalation, principal reconfirmation, narrowed reauthorization, and retry. Repeated denial or retry loops should be detectable.
 
+For v0.5.0 planning, see `docs/en/32-authority-denial-reauthorization-flow.md` for the Authority Denial and Reauthorization Flow concept note.
+
 ### AAEF-TOOL-01: Tools available to agents shall be configured with minimum authority necessary
 
 **Domain:** Tool and Action Boundary  

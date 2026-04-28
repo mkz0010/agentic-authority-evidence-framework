@@ -214,3 +214,7 @@ This document does not claim that AAEF has solved these research questions.
 It also does not make these questions mandatory implementation requirements.
 
 The purpose is to make open problems visible, so that future research, review, implementation experience, and incident analysis can improve the framework.
+
+## Authority Denial and Reauthorization Flow
+
+A v0.5.0 planning concept note is maintained in `docs/en/32-authority-denial-reauthorization-flow.md`.
