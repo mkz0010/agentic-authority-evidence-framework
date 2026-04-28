@@ -33,6 +33,58 @@ v0.5.0 control design should follow these principles:
 6. Preserve AAEF's core premise: model output is not authority.
 7. Keep v0.5.0 implementable for real agentic AI systems.
 
+## Normative Incorporation Rules
+
+v0.5.0 planning concepts do not become normative AAEF requirements merely because they are described in planning documents.
+
+A planning concept becomes normative only when it is explicitly incorporated into one or more normative or assessment artifacts, such as:
+
+- the control catalog CSV;
+- the human-readable control requirements;
+- the testing procedures;
+- the assessment worksheet or assessment profiles;
+- the evidence schema or required evidence examples;
+- release notes that explicitly identify the incorporated change.
+
+### Incorporation Outcomes
+
+Each v0.5.0 planning concept should be resolved into one of the following outcomes before release.
+
+| Outcome | Meaning | Required action |
+| --- | --- | --- |
+| Planning only | The concept remains design input for future work. | Keep it marked as non-normative planning material. |
+| Guidance only | The concept informs implementation or assessment interpretation, but does not create a new requirement. | Add or update guidance text without changing control obligations. |
+| Testing refinement | The concept changes how an existing control is tested. | Update testing procedures and validation expectations. |
+| Evidence refinement | The concept requires new or clearer evidence expectations. | Update evidence guidance, examples, or schema candidates as appropriate. |
+| Existing control refinement | The concept strengthens an existing control without creating a new control ID. | Update the relevant control requirement, testing procedure, and assessment artifacts together. |
+| New control | The concept introduces a distinct assessable obligation that does not fit existing controls. | Add a new control ID and update related testing, assessment, mapping, and evidence artifacts. |
+
+### Promotion Criteria
+
+Before a planning concept is promoted into the control catalog or other normative artifacts, it should satisfy the following criteria:
+
+1. **Distinct obligation:** The concept creates a clearly assessable obligation that is not already covered by existing controls.
+2. **Action boundary relevance:** The obligation relates to authorization, execution, evidence, recovery, delegation, principal binding, human approval, or governance of agentic actions.
+3. **Trusted evidence source:** Required evidence can be generated or corroborated by trusted workflow, authorization, enforcement, backend, or evidence components.
+4. **Pass/fail testability:** The obligation can be evaluated with clear pass, partial, and fail criteria.
+5. **Implementation feasibility:** The requirement can be implemented without assuming a universal identity system, universal agent protocol, or certification scheme.
+6. **Backward compatibility:** The change does not unintentionally redefine the v0.4.1 baseline unless the release explicitly says so.
+7. **Mapping impact:** Any external framework mapping impact is reviewed without claiming compliance equivalence, certification readiness, or audit sufficiency.
+
+### Promotion Decision Record
+
+For each v0.5.0 planning theme, the release preparation process should record:
+
+- the chosen incorporation outcome;
+- affected controls, schema fields, testing procedures, or assessment artifacts;
+- whether the change is normative or guidance-only;
+- expected evidence sources;
+- known implementation burden;
+- residual ambiguity or deferred work.
+
+This decision record may be maintained in the relevant planning issue, release checklist, or future release notes.
+
+
 ## Theme 1: Principal Context Degradation
 
 See: `docs/en/30-principal-context-degradation.md`

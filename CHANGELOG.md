@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Added v0.5.0 planning incorporation rules to clarify when planning concepts become guidance, testing refinements, evidence refinements, existing control refinements, or new controls.
 - Clarified that `docs/en/30-49` v0.5.0 planning materials are non-normative unless explicitly incorporated into catalog, schema, assessment, testing, or release artifacts.
 - Clarified the v0.5.0 planning overview by grouping the six planning themes into authority lifecycle and supporting assurance themes.
 - Added missing v0.5.0 planning document index entries for Principal Context Degradation and tamper-evident evidence negative tests.
