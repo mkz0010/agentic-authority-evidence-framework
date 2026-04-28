@@ -132,6 +132,7 @@ If you are new to AAEF, start with the documents below:
 6. [`docs/en/14-evidence-event-schema.md`](docs/en/14-evidence-event-schema.md) — evidence event schema and evidence model
 7. [`docs/en/12-assessment-quick-start.md`](docs/en/12-assessment-quick-start.md) — how to start reviewing a system using AAEF
 8. [`docs/en/20-assessment-profiles.md`](docs/en/20-assessment-profiles.md) — draft assessment profiles and tiered applicability guidance
+9. [`docs/en/25-testing-procedures-and-pass-criteria.md`](docs/en/25-testing-procedures-and-pass-criteria.md) — testing procedures, pass criteria, evidence expectations, and reviewer judgment guidance
 
 ## Role-Based Reading Paths
 
