@@ -232,3 +232,5 @@ Future v0.5.0 work may include:
 ## Related Examples
 
 For non-normative non-execution and reauthorization examples, see `docs/en/41-non-execution-reauthorization-examples.md`.
+
+For v0.5.0 non-execution and reauthorization negative tests, see `docs/en/48-non-execution-reauthorization-negative-tests.md`.
