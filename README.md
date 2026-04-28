@@ -135,6 +135,7 @@ If you are new to AAEF, start with the documents below:
 9. [`docs/en/25-testing-procedures-and-pass-criteria.md`](docs/en/25-testing-procedures-and-pass-criteria.md) — testing procedures, pass criteria, evidence expectations, and reviewer judgment guidance
 10. [`docs/en/26-high-impact-audit-grade-prequalification.md`](docs/en/26-high-impact-audit-grade-prequalification.md) — pre-qualification gate for High-Impact and Audit-Grade assessment profiles
 11. [`docs/en/27-trusted-control-boundary-integrity.md`](docs/en/27-trusted-control-boundary-integrity.md) — integrity requirements for the Trusted Control Boundary
+12. [`docs/en/28-external-framework-mapping-methodology.md`](docs/en/28-external-framework-mapping-methodology.md) — informative external framework mapping methodology
 
 ## Role-Based Reading Paths
 
@@ -224,6 +225,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 25-testing-procedures-and-pass-criteria.md
 │       ├── 26-high-impact-audit-grade-prequalification.md
 │       ├── 27-trusted-control-boundary-integrity.md
+│       ├── 28-external-framework-mapping-methodology.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           └── v0.3.0-preparation-checklist.md
@@ -234,6 +236,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 ├── assets/
 │   └── aaef-reference-architecture.mmd
 ├── mappings/
+│   ├── aaef-external-framework-mapping-v0.4-draft.csv
 │   ├── owasp-agentic-top10-2026.md
 │   ├── threat-control-assurance-mapping.md
 │   └── threat-control-assurance-mapping-v0.2-draft.csv
@@ -253,6 +256,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   ├── validate_assessment_profiles.py
 │   ├── validate_assessment_worksheet.py
 │   ├── validate_control_catalog.py
+│   ├── validate_external_mappings.py
 │   ├── validate_evidence_schema.py
 │   └── validate_testing_procedures.py
 └── .github/
