@@ -133,6 +133,7 @@ If you are new to AAEF, start with the documents below:
 7. [`docs/en/12-assessment-quick-start.md`](docs/en/12-assessment-quick-start.md) — how to start reviewing a system using AAEF
 8. [`docs/en/20-assessment-profiles.md`](docs/en/20-assessment-profiles.md) — draft assessment profiles and tiered applicability guidance
 9. [`docs/en/25-testing-procedures-and-pass-criteria.md`](docs/en/25-testing-procedures-and-pass-criteria.md) — testing procedures, pass criteria, evidence expectations, and reviewer judgment guidance
+10. [`docs/en/26-high-impact-audit-grade-prequalification.md`](docs/en/26-high-impact-audit-grade-prequalification.md) — pre-qualification gate for High-Impact and Audit-Grade assessment profiles
 
 ## Role-Based Reading Paths
 
@@ -218,6 +219,9 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 21-action-sequence-monitoring.md
 │       ├── 22-assessment-automation-and-human-review.md
 │       ├── 23-infrastructure-siem-evidence-integration.md
+│       ├── 24-control-catalog-versioning.md
+│       ├── 25-testing-procedures-and-pass-criteria.md
+│       ├── 26-high-impact-audit-grade-prequalification.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           └── v0.3.0-preparation-checklist.md
