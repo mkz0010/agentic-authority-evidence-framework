@@ -226,6 +226,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── 15-v02-control-expansion-notes.md
 │       ├── 16-assurance-model.md
 │       ├── 17-reference-architecture.md
+│       ├── 18-implementation-guidance.md
 │       ├── 19-open-research-questions.md
 │       ├── 20-assessment-profiles.md
 │       ├── 21-action-sequence-monitoring.md
