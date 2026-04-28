@@ -56,6 +56,8 @@ The main design question is whether AAEF should treat degraded principal context
 
 See: `docs/en/31-cross-agent-cross-domain-authority.md`
 
+For the non-normative authority assertion planning profile, see `docs/en/35-authority-assertion-profile.md`.
+
 Cross-Agent and Cross-Domain Authority addresses cases where one agent, workflow, system, or organization relies on another agent's identity, authority claims, delegated scope, evidence, or execution results.
 
 The core principle is:

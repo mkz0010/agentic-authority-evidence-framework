@@ -170,7 +170,7 @@ Risks:
 
 ### Option C: Define an Authority Assertion Profile First
 
-Do not add controls yet. First define a non-normative authority assertion profile.
+Do not add controls yet. First define a non-normative authority assertion profile. A planning profile is maintained in `docs/en/35-authority-assertion-profile.md`.
 
 Potential fields:
 

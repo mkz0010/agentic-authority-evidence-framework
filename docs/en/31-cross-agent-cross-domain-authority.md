@@ -157,7 +157,7 @@ If these cannot be verified, the safer behavior should be denial, deferral, esca
 
 ## Authority Assertion Considerations
 
-Future AAEF work may define a cross-domain authority assertion profile.
+Future AAEF work may define a cross-domain authority assertion profile. A non-normative planning profile is maintained in `docs/en/35-authority-assertion-profile.md`.
 
 Such an assertion could include:
 
