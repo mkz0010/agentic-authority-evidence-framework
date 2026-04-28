@@ -25,8 +25,11 @@ The initial v0.5.0 planning work is organized around three related concepts:
 3. Authority Denial and Reauthorization Flow
 4. Risk-Proportional Evidence and Performance Overhead
 5. Tamper-Evident Evidence Storage
+6. Approval Quality and Approval Fatigue
 
 Together, these concepts refine AAEF's core claim that model output is not authority.
+
+For approval quality and approval fatigue planning, see `docs/en/39-approval-quality-approval-fatigue.md`.
 
 They focus on whether authority remains valid, traceable, bounded, and reviewable across time, delegation, agent boundaries, trust domains, and denial or reauthorization paths.
 
