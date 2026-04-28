@@ -134,6 +134,7 @@ If you are new to AAEF, start with the documents below:
 8. [`docs/en/20-assessment-profiles.md`](docs/en/20-assessment-profiles.md) — draft assessment profiles and tiered applicability guidance
 9. [`docs/en/25-testing-procedures-and-pass-criteria.md`](docs/en/25-testing-procedures-and-pass-criteria.md) — testing procedures, pass criteria, evidence expectations, and reviewer judgment guidance
 10. [`docs/en/26-high-impact-audit-grade-prequalification.md`](docs/en/26-high-impact-audit-grade-prequalification.md) — pre-qualification gate for High-Impact and Audit-Grade assessment profiles
+11. [`docs/en/27-trusted-control-boundary-integrity.md`](docs/en/27-trusted-control-boundary-integrity.md) — integrity requirements for the Trusted Control Boundary
 
 ## Role-Based Reading Paths
 
@@ -222,6 +223,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 24-control-catalog-versioning.md
 │       ├── 25-testing-procedures-and-pass-criteria.md
 │       ├── 26-high-impact-audit-grade-prequalification.md
+│       ├── 27-trusted-control-boundary-integrity.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           └── v0.3.0-preparation-checklist.md
