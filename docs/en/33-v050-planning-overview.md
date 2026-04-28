@@ -294,3 +294,4 @@ The following non-normative example documents illustrate how selected v0.5.0 pla
 - Tamper-evident evidence examples: `docs/en/42-tamper-evident-evidence-examples.md`
 - Risk-proportional evidence assessment guidance: `docs/en/43-risk-proportional-evidence-assessment-guidance.md`
 - Evidence depth examples: `docs/en/44-evidence-depth-examples.md`
+- Principal context degradation examples: `docs/en/45-principal-context-degradation-examples.md`

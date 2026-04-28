@@ -562,3 +562,5 @@ For v0.5.0 tamper-evident evidence examples, see `docs/en/42-tamper-evident-evid
 For v0.5.0 risk-proportional evidence assessment guidance, see `docs/en/43-risk-proportional-evidence-assessment-guidance.md`.
 
 For v0.5.0 evidence depth examples, see `docs/en/44-evidence-depth-examples.md`.
+
+For v0.5.0 Principal Context Degradation examples, see `docs/en/45-principal-context-degradation-examples.md`.
