@@ -257,21 +257,22 @@ For the related v0.5.0 planning concept, see `docs/en/30-principal-context-degra
 
 **Implementation Note:** LLM-assisted ambiguity detection may help identify uncertainty, but the model should not be the only component allowed to clear ambiguity for high-impact actions. Deterministic ambiguity should be resolved by trusted system state, policy references, authority records, evidence availability, or independent runtime checks.
 
-### AAEF-AUZ-09: Systems shall define safe handling for high-impact actions that are denied, deferred, or escalated due to insufficient authority, material ambiguity, state change, or missing evidence, including scoped reauthorization and retry controls
+### AAEF-AUZ-09: Systems shall define safe handling for denied, deferred, escalated, retried, or reauthorization-required high-impact actions
 
-**Domain:** Action Authorization  
-**Requirement:** Systems shall define safe handling for high-impact actions that are denied, deferred, or escalated due to insufficient authority, material ambiguity, state change, or missing evidence, including scoped reauthorization and retry controls.  
-**Objective:** Prevent authority denial from becoming a bypass path through repeated retries, scope creep, unsafe reauthorization, or task splitting.  
-**Applicability:** Systems where agents may request additional authority, retry actions, escalate actions, or continue workflows after denial or deferral.  
-**Testing Procedure:** Review denial and reauthorization workflows and test that reauthorization requests are scoped, attributable, rate-limited or controlled, linked to principal intent and policy constraints, and unable to bypass prior denials through repeated retries or task splitting.  
-**Evidence Examples:** Denial records; reauthorization request; requested additional scope; escalation target; retry count; principal reconfirmation record; linked action ID.  
+**Domain:** Action Authorization
+**Requirement:** Systems shall define safe handling for high-impact actions that are denied, deferred, escalated, retried, or require reauthorization due to insufficient authority, material ambiguity, state change, principal context degradation, or missing evidence, including scoped reauthorization, retry control, task splitting detection, and safe termination.
+**Objective:** Prevent authority denial from becoming a bypass path through repeated retries, scope creep, unsafe reauthorization, tool switching, or task splitting.
+**Applicability:** Systems where agents may request additional authority, retry actions, escalate actions, continue workflows after denial, or encounter degraded principal context before high-impact execution.
+**Testing Procedure:** Review denial and reauthorization workflows and test that denied, deferred, escalated, retried, or reauthorization-required actions are safely handled, linked to the original action, scoped to principal intent and policy constraints, and unable to bypass prior denials through repeated retries, scope creep, alternate tools, or task splitting.
+**Evidence Examples:** Denial records; non-execution evidence; reauthorization request; requested additional scope; escalation target; retry count; principal reconfirmation record; linked action ID; task splitting correlation; safe termination record.
 **Maturity:** Required
 
-**Implementation Note:** Reauthorization must not become a path to route around controls. Additional authority requests should be scoped, attributable, evidenced, and tied to principal intent and applicable policy constraints.
+**Implementation Note:** Denial, deferral, escalation, and reauthorization are control outcomes, not application errors. A denied action should not become an alternate path to execution through retries, prompt reformulation, alternate tools, broader approval requests, or decomposition into smaller actions.
 
-**Implementation Note:** Denial handling should distinguish safe termination, human escalation, principal reconfirmation, narrowed reauthorization, and retry. Repeated denial or retry loops should be detectable.
+Reauthorization should create a new scoped decision linked to the original denied or deferred action. It should not silently mutate the original denial or broaden authority beyond the requested and approved scope.
 
-For v0.5.0 planning, see `docs/en/32-authority-denial-reauthorization-flow.md` for the Authority Denial and Reauthorization Flow concept note.
+For the related v0.5.0 planning concept, see `docs/en/32-authority-denial-reauthorization-flow.md`.
+
 
 ### AAEF-TOOL-01: Tools available to agents shall be configured with minimum authority necessary
 
@@ -393,33 +394,33 @@ For v0.5.0 planning, see `docs/en/32-authority-denial-reauthorization-flow.md` f
 **Evidence Examples:** Signed logs; append-only log; integrity checks.  
 **Maturity:** Recommended
 
-### AAEF-EVD-05: Systems should record structured evidence for denied, deferred, escalated, or otherwise non-executed high-impact actions where non-execution was caused by authority gaps, material ambiguity, state changes, input trust gaps, policy uncertainty, or evidence gaps
+### AAEF-EVD-05: Systems should record structured evidence for non-executed high-impact actions
 
-**Domain:** Evidence and Auditability  
-**Requirement:** Systems should record structured evidence for denied, deferred, escalated, or otherwise non-executed high-impact actions where non-execution was caused by authority gaps, material ambiguity, state changes, input trust gaps, policy uncertainty, or evidence gaps.  
-**Objective:** Make non-execution decisions reviewable so that denial, deferral, escalation, and safe termination can be audited and improved.  
-**Applicability:** High-impact actions that are blocked, deferred, escalated, frozen, denied, or safely terminated before execution.  
-**Testing Procedure:** Review denied and deferred high-impact action samples and verify that non-execution reason, ambiguity type, authority gap, escalation target, and linked action context are recorded.  
-**Evidence Examples:** Non-execution decision; denial reason; ambiguity type; authority gap; state gap; policy gap; evidence gap; escalation target; linked action ID.  
+**Domain:** Evidence and Auditability
+**Requirement:** Systems should record structured evidence for denied, deferred, escalated, frozen, safely terminated, or otherwise non-executed high-impact actions where non-execution was caused by authority gaps, material ambiguity, state changes, principal context degradation, input trust gaps, policy uncertainty, or evidence gaps.
+**Objective:** Make non-execution decisions reviewable so that denial, deferral, escalation, freeze, and safe termination can be audited, correlated, and improved.
+**Applicability:** High-impact actions that are blocked, deferred, escalated, frozen, denied, or safely terminated before execution.
+**Testing Procedure:** Review denied, deferred, escalated, frozen, and safely terminated high-impact action samples and verify that non-execution reason, ambiguity type, authority gap, principal context issue, escalation target, linked action context, and final non-execution outcome are recorded.
+**Evidence Examples:** Non-execution decision; denial reason; ambiguity type; authority gap; principal context issue; state gap; policy gap; evidence gap; escalation target; linked action ID; safe termination record.
 **Maturity:** Recommended
 
-**Implementation Note:** Non-execution evidence should not be treated as an error log only. It should preserve enough context to explain why execution was not appropriate and whether the action was denied, deferred, escalated, frozen, or safely terminated.
+**Implementation Note:** Non-execution evidence is important because safe denial and safe termination are security-relevant outcomes. Evidence should support review of why execution did not proceed, what condition triggered non-execution, and whether related retries or reauthorization requests were later attempted.
 
-**Implementation Note:** The evidence depth may be risk-proportional, but high-impact non-execution decisions should be reviewable when they affect business process, safety, security, financial, legal, or customer outcomes.
 
-### AAEF-EVD-06: Systems should record structured evidence for reauthorization requests, additional scope requests, principal reconfirmation, and escalation decisions related to denied or deferred high-impact actions
+### AAEF-EVD-06: Systems should record structured evidence for reauthorization and additional authority requests
 
-**Domain:** Evidence and Auditability  
-**Requirement:** Systems should record structured evidence for reauthorization requests, additional scope requests, principal reconfirmation, and escalation decisions related to denied or deferred high-impact actions.  
-**Objective:** Ensure that reauthorization does not become an unevidenced bypass path and that additional authority requests remain attributable, scoped, and reviewable.  
-**Applicability:** Systems where agents can request additional authority, ask for renewed approval, retry denied actions, or escalate blocked workflows.  
-**Testing Procedure:** Review reauthorization flows and verify that requested additional scope, approver or escalation target, principal reconfirmation, retry count, and linkage to the denied action are recorded.  
-**Evidence Examples:** Reauthorization request ID; denied action ID; requested additional scope; approver or escalation target; principal reconfirmation; retry count; reauthorization decision.  
+**Domain:** Evidence and Auditability
+**Requirement:** Systems should record structured evidence for reauthorization requests, additional scope requests, principal reconfirmation, retry decisions, and escalation decisions related to denied, deferred, or reauthorization-required high-impact actions.
+**Objective:** Ensure that reauthorization does not become an unevidenced bypass path and that additional authority requests remain attributable, scoped, linked to prior denial or deferral, and reviewable.
+**Applicability:** Systems where agents can request additional authority, ask for renewed approval, retry denied actions, request principal reconfirmation, or escalate blocked workflows.
+**Testing Procedure:** Review reauthorization flows and verify that requested additional scope, approver or escalation target, principal reconfirmation, retry count, decision outcome, and linkage to the denied or deferred action are recorded and cannot silently broaden authority.
+**Evidence Examples:** Reauthorization request ID; denied action ID; requested additional scope; approver or escalation target; principal reconfirmation; retry count; reauthorization decision; post-reauthorization effective scope.
 **Maturity:** Recommended
 
-**Implementation Note:** Reauthorization evidence should be linked to the original denied or deferred action. It should show what additional authority was requested, why it was requested, who or what approved it, and whether the scope changed.
+**Implementation Note:** Reauthorization evidence should make clear what additional authority was requested, why it was requested, who or what approved it, what scope was granted, and how the new decision relates to the original denial or deferral.
 
-**Implementation Note:** Reauthorization evidence should help detect scope creep, repeated retry loops, task splitting, or attempts to route around prior denials.
+For the related v0.5.0 planning concept, see `docs/en/32-authority-denial-reauthorization-flow.md`.
+
 
 ### AAEF-HUM-01: Human approval requests shall clearly present the agent, principal, requested action, resource, purpose, risk level, and consequence
 
