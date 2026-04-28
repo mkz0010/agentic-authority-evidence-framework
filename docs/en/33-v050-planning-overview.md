@@ -225,3 +225,9 @@ A conservative sequence is:
 | #21 | Authority Denial and Reauthorization Flow | Concept note added; follow-up control, testing, and schema decisions remain. |
 
 Additional v0.5.x topics may include approval quality, tamper-evident evidence storage, and risk-proportional evidence overhead.
+## Planning Examples
+
+The following non-normative example documents illustrate how selected v0.5.0 planning concepts may be reviewed in practice.
+
+- Approval evidence examples: `docs/en/40-approval-evidence-examples.md`
+- Non-execution and reauthorization examples: `docs/en/41-non-execution-reauthorization-examples.md`
