@@ -93,19 +93,25 @@ Each requirement uses the following structure:
 **Evidence Examples:** Action logs; principal claims; session records.  
 **Maturity:** Required
 
-### AAEF-PRN-02: Principal context shall be preserved across tool calls, workflow steps, and delegations
+### AAEF-PRN-02: Principal context shall be preserved and remain valid, current, bounded, and semantically connected across tool calls, workflow steps, delegations, long-running workflows, and reauthorization paths
 
-**Domain:** Principal Binding  
-**Requirement:** Principal context shall be preserved across tool calls, workflow steps, and delegations.  
-**Objective:** Prevent loss of accountability across workflows.  
-**Applicability:** Tool-using or delegating agents.  
-**Testing Procedure:** Trace sample workflows end-to-end and verify that principal context is preserved through correlation IDs, trace IDs, session-scoped authority tokens, signed claims, workflow metadata, or structured delegation records.  
-**Evidence Examples:** Trace logs; correlation IDs; trace IDs; session-scoped authority tokens; signed principal claims; delegation records; tool invocation metadata.  
+**Domain:** Principal Binding
 **Maturity:** Required
 
-**Implementation Note:** Principal context propagation is not automatic in stateless API chains, asynchronous workflows, queues, background jobs, or multi-agent delegation.
+**Requirement:** Principal context shall be preserved and remain valid, current, bounded, and semantically connected across tool calls, workflow steps, delegations, long-running workflows, and reauthorization paths.
+**Objective:** Prevent loss of accountability and degraded, stale, broadened, or ambiguous authority context across workflows.
+**Applicability:** Tool-using, delegating, long-running, asynchronous, reauthorization, or cross-domain agentic workflows.
+**Testing Procedure:** Trace sample workflows end-to-end and verify that principal context is preserved, remains valid and bounded, or is explicitly refreshed, reconfirmed, reauthorized, denied, or escalated when degraded.
+**Evidence Examples:** Trace logs; correlation IDs; trace IDs; session-scoped authority tokens; signed principal claims; delegation records; context refresh records; principal reconfirmation records; reauthorization records; non-execution evidence.
 
-Implementations should use explicit propagation mechanisms such as correlation IDs, trace IDs, session-scoped authority tokens, signed claims, workflow metadata, or structured delegation records. If principal context cannot be preserved, high-impact actions should be denied or escalated.
+**Implementation Note:** Principal context propagation is not automatic in stateless API chains, asynchronous workflows, queues, background jobs, long-running sessions, reauthorization flows, or multi-agent delegation.
+
+Implementations should use explicit propagation mechanisms such as correlation IDs, trace IDs, session-scoped authority tokens, signed claims, workflow metadata, structured delegation records, or equivalent authority references.
+
+Preserved principal context should not be treated as sufficient when it is stale, ambiguous, broadened, semantically distant from the requested action, or no longer tied to the original authority basis. If principal context cannot be preserved, validated, refreshed, reconfirmed, or reauthorized, high-impact actions should be denied, deferred, or escalated.
+
+For the related v0.5.0 planning concept, see `docs/en/30-principal-context-degradation.md`.
+
 
 ### AAEF-DEL-01: Delegated authority shall not exceed the authority held by the delegating party
 
