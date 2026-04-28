@@ -81,9 +81,9 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.4.0 Public Review Draft** is the current public review baseline.
+**AAEF v0.4.1 Public Review Draft** is the current public review baseline.
 
-AAEF v0.4.0 builds on the v0.3.x baseline and adds enterprise assessment usability guidance for agentic AI action assurance.
+AAEF v0.4.1 is a maintenance and refinement release over v0.4.0. It preserves the v0.4.0 enterprise assessment usability baseline and incorporates post-release refinements to testing criteria and external framework mappings.
 
 Earlier v0.3.x, v0.2.x, and v0.1.x releases remain available as prior public review baselines.
 
@@ -93,7 +93,7 @@ The current control catalog file remains:
 
 The file name is retained for continuity, but the catalog contains the current public review control set.
 
-The v0.4.0 Public Review Draft includes:
+The v0.4.x Public Review Draft includes:
 
 - preliminary OWASP Agentic Top 10 2026 mapping,
 - Agentic Action Evidence Event JSON Schema,
@@ -120,7 +120,7 @@ The v0.4.0 Public Review Draft includes:
 - validation for testing procedures and external mappings,
 - and historical release preparation records under `docs/en/release/`.
 
-AAEF v0.4.0 remains a public review draft. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
+AAEF v0.4.1 remains a public review draft. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
 
 Feedback, issues, and pull requests are welcome.
 
@@ -273,7 +273,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.4.0 Public Review Draft, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.4.1 Public Review Draft, 2026.
 
 ## Research and Open Questions
 
