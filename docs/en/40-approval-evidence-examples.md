@@ -419,6 +419,8 @@ These examples do not require:
 
 ## Future Work
 
+For non-normative approval quality assessment guidance, see `docs/en/47-approval-quality-assessment-guidance.md`.
+
 Future AAEF work may decide whether to:
 
 - add approval evidence examples to JSON examples;

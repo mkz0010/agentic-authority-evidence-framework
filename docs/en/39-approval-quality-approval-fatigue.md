@@ -202,6 +202,8 @@ This concept does not require:
 
 ## Future Work
 
+For non-normative approval quality assessment guidance, see `docs/en/47-approval-quality-assessment-guidance.md`.
+
 Future AAEF work may decide whether to:
 
 - strengthen `AAEF-AUZ-03`;
