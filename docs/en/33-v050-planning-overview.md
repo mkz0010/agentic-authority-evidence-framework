@@ -16,7 +16,7 @@ AAEF v0.5.0 planning shifts toward deeper authority semantics for agentic AI sys
 
 This document does not add new controls, schema fields, or assessment requirements by itself. It organizes the main design themes that may later become control, schema, testing, or architecture refinements.
 
-For control design tradeoffs and incorporation rules before changing the catalog, see `docs/en/34-v050-control-design-options.md`.
+For control design tradeoffs, incorporation rules, and the preliminary outcome register before changing the catalog, see `docs/en/34-v050-control-design-options.md`.
 
 ## v0.5.0 Core Design Themes
 
