@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Added a preliminary v0.5.0 incorporation outcome register for current planning themes.
 - Added v0.5.0 planning incorporation rules to clarify when planning concepts become guidance, testing refinements, evidence refinements, existing control refinements, or new controls.
 - Clarified that `docs/en/30-49` v0.5.0 planning materials are non-normative unless explicitly incorporated into catalog, schema, assessment, testing, or release artifacts.
 - Clarified the v0.5.0 planning overview by grouping the six planning themes into authority lifecycle and supporting assurance themes.

@@ -85,6 +85,43 @@ For each v0.5.0 planning theme, the release preparation process should record:
 This decision record may be maintained in the relevant planning issue, release checklist, or future release notes.
 
 
+## Preliminary v0.5.0 Incorporation Outcome Register
+
+The following register provides an initial, non-normative disposition for the current v0.5.0 planning themes.
+
+These outcomes are planning assumptions only. They do not change the v0.4.1 baseline and do not create new control obligations unless later incorporated into the relevant normative or assessment artifacts.
+
+| Planning theme | Primary expected outcome | Secondary possible outcome | Current disposition |
+| --- | --- | --- | --- |
+| Principal Context Degradation | Existing control refinement | Guidance and testing refinement | Treat as a cross-cutting authority lifecycle concept that may refine authorization, delegation, memory, and governance controls without immediately creating a new control ID. |
+| Cross-Agent and Cross-Domain Authority | Existing control refinement | New control candidate if existing delegation and authorization controls cannot express cross-boundary handoff risk | Keep as a planning topic until the framework determines whether cross-agent authority is a refinement of existing delegation controls or a distinct assessable obligation. |
+| Authority Denial and Reauthorization Flow | Testing refinement | Evidence refinement and existing control refinement | Treat primarily as a testable behavior for denial, freeze, expiry, and reauthorization paths before deciding whether new control text is needed. |
+| Risk-Proportional Evidence and Performance Overhead | Guidance only | Evidence refinement and assessment profile refinement | Treat as implementation and assessment guidance unless specific evidence expectations become required for higher assurance levels. |
+| Tamper-Evident Evidence Storage | Evidence refinement | New control candidate for high-impact or audit-grade profiles | Keep as an evidence-integrity planning topic. Avoid requiring tamper-evident storage universally unless scoped to higher-risk profiles. |
+| Approval Quality and Approval Fatigue | Existing control refinement | New HUM control candidate if approval quality cannot be adequately represented by existing HUM controls | Treat as a human-approval assurance refinement while preserving the distinction between meaningful approval and approval UI presence. |
+
+### Outcome Review Questions
+
+Before any theme is promoted beyond this preliminary disposition, reviewers should answer:
+
+1. Does the theme create a distinct assessable obligation, or does it clarify an existing obligation?
+2. Can the theme be tested using trusted evidence rather than model or runtime self-report alone?
+3. Is the expected implementation burden proportional to the risk tier or assurance level?
+4. Does the theme require a new control ID, or can it be expressed through control text, testing procedures, assessment guidance, or evidence expectations?
+5. Would incorporating the theme change external mapping claims or require new mapping caveats?
+6. Does the theme need schema support, or is document-level guidance sufficient?
+
+### Release Preparation Use
+
+During v0.5.0 release preparation, this register should be updated to record the selected incorporation outcome for each theme.
+
+If a theme remains unresolved, it should either:
+
+- remain marked as non-normative planning material;
+- be deferred to a later v0.5.x planning issue; or
+- be converted into a narrower implementation, testing, or evidence guidance item.
+
+
 ## Theme 1: Principal Context Degradation
 
 See: `docs/en/30-principal-context-degradation.md`
