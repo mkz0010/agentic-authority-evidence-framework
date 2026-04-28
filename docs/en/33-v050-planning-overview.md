@@ -231,3 +231,4 @@ The following non-normative example documents illustrate how selected v0.5.0 pla
 
 - Approval evidence examples: `docs/en/40-approval-evidence-examples.md`
 - Non-execution and reauthorization examples: `docs/en/41-non-execution-reauthorization-examples.md`
+- Tamper-evident evidence examples: `docs/en/42-tamper-evident-evidence-examples.md`

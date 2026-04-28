@@ -312,6 +312,8 @@ The first v0.5.0 design preference is to use planning guidance before adding new
 
 ## Relationship to Evidence Event Schema
 
+For non-normative tamper-evident evidence examples, see `docs/en/42-tamper-evident-evidence-examples.md`.
+
 This profile may inform future Evidence Event Schema refinements.
 
 Candidate future schema concepts include:
