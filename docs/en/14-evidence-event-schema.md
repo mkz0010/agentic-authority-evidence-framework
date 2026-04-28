@@ -558,3 +558,5 @@ For v0.5.0 approval evidence examples, see `docs/en/40-approval-evidence-example
 For v0.5.0 non-execution and reauthorization examples, see `docs/en/41-non-execution-reauthorization-examples.md`.
 
 For v0.5.0 tamper-evident evidence examples, see `docs/en/42-tamper-evident-evidence-examples.md`.
+
+For v0.5.0 risk-proportional evidence assessment guidance, see `docs/en/43-risk-proportional-evidence-assessment-guidance.md`.
