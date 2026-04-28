@@ -566,3 +566,5 @@ For v0.5.0 evidence depth examples, see `docs/en/44-evidence-depth-examples.md`.
 For v0.5.0 Principal Context Degradation examples, see `docs/en/45-principal-context-degradation-examples.md`.
 
 For v0.5.0 cross-agent authority examples, see `docs/en/46-cross-agent-authority-examples.md`.
+
+For v0.5.0 approval quality assessment guidance, see `docs/en/47-approval-quality-assessment-guidance.md`.
