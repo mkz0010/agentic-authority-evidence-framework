@@ -570,3 +570,5 @@ For v0.5.0 cross-agent authority examples, see `docs/en/46-cross-agent-authority
 For v0.5.0 approval quality assessment guidance, see `docs/en/47-approval-quality-assessment-guidance.md`.
 
 For v0.5.0 non-execution and reauthorization negative tests, see `docs/en/48-non-execution-reauthorization-negative-tests.md`.
+
+For v0.5.0 tamper-evident evidence negative tests, see `docs/en/49-tamper-evident-evidence-negative-tests.md`.

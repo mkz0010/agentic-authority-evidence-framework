@@ -347,6 +347,8 @@ This profile does not require:
 
 ## Future Work
 
+For non-normative tamper-evident evidence negative tests, see `docs/en/49-tamper-evident-evidence-negative-tests.md`.
+
 Future AAEF work may decide whether to:
 
 - add evidence integrity fields to the Evidence Event Schema;

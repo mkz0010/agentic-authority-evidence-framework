@@ -302,3 +302,4 @@ The following non-normative example documents illustrate how selected v0.5.0 pla
 - Cross-agent authority examples: `docs/en/46-cross-agent-authority-examples.md`
 - Approval quality assessment guidance: `docs/en/47-approval-quality-assessment-guidance.md`
 - Non-execution and reauthorization negative tests: `docs/en/48-non-execution-reauthorization-negative-tests.md`
+- Tamper-evident evidence negative tests: `docs/en/49-tamper-evident-evidence-negative-tests.md`
