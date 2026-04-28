@@ -153,19 +153,22 @@ For the related v0.5.0 planning concept, see `docs/en/30-principal-context-degra
 **Evidence Examples:** Revocation test; policy logs; token invalidation records.  
 **Maturity:** Required
 
-### AAEF-DEL-05: Systems shall preserve sufficient delegation lineage metadata to reconstruct upstream and downstream authority decisions for high-impact actions, without requiring a specific graph database or tracing implementation
+### AAEF-DEL-05: Systems shall record authority lineage for delegated, cross-agent, and cross-domain workflows
 
-**Domain:** Delegation and Authority  
-**Requirement:** Systems shall preserve sufficient delegation lineage metadata to reconstruct upstream and downstream authority decisions for high-impact actions, without requiring a specific graph database or tracing implementation.  
-**Objective:** Enable reconstruction of how authority moved from principals or upstream agents to downstream agents, tools, workflows, and actions.  
-**Applicability:** Multi-step, multi-agent, delegated, or workflow-based systems where high-impact actions may be caused by upstream or downstream authority transfers.  
-**Testing Procedure:** Trace representative delegated workflows end-to-end and verify that principal, upstream action, downstream agent, delegated scope, constraints, decision points, and resulting high-impact actions can be reconstructed from evidence.  
-**Evidence Examples:** Delegation chain ID; parent action ID; lineage node ID; upstream agent ID; downstream agent ID; delegated scope; constraints; correlation ID; trace ID; downstream action IDs.  
+**Domain:** Delegation and Authority
+**Requirement:** Systems shall record authority lineage for delegated, cross-agent, and cross-domain workflows so that reviewers can reconstruct how authority moved from principals, upstream agents, external agents, tools, workflows, trust domains, and authority assertions to downstream actions.
+**Objective:** Enable reconstruction of how authority moved across agents, tools, workflows, and trust domains without treating agent-to-agent communication or external authority claims as authority by themselves.
+**Applicability:** Delegated, multi-agent, agent-to-agent, cross-domain, vendor-operated, tenant-crossing, tool-mediated, or workflow-orchestrated high-impact actions.
+**Testing Procedure:** Trace representative delegated, cross-agent, and cross-domain workflows end-to-end and verify that principal, upstream agent, external or downstream agent, trust domain, authority assertion or delegation record, delegated scope, constraints, receiving-side verification, decision points, and resulting high-impact actions can be reconstructed from evidence.
+**Evidence Examples:** Delegation chain ID; authority lineage ID; parent action ID; lineage node ID; upstream agent ID; downstream agent ID; external agent ID; trust domain; authority assertion reference; delegated scope; constraints; receiving-side verification record; correlation ID; trace ID; downstream action IDs; evidence trust limitation.
 **Maturity:** Required
 
-**Implementation Note:** AAEF requires reconstructability, not a specific graph database, tracing tool, or workflow engine. A chain, graph, trace, or external evidence system may be acceptable if it preserves sufficient references for review and incident reconstruction.
+**Implementation Note:** Agent-to-agent communication does not itself imply authority.
 
-**Implementation Note:** Delegation lineage should help identify where authority was granted, where it was attenuated, whether constraints were preserved, which node performed the final action, and which downstream actions may require revocation or isolation.
+Receiving systems should not treat another agent's request, rationale, delegation claim, or authority assertion as sufficient authority unless the receiving side can verify the relevant identity, principal context, delegated scope, constraints, trust domain, and evidence limitations.
+
+For the related v0.5.0 planning concept, see `docs/en/31-cross-agent-cross-domain-authority.md`.
+
 
 ### AAEF-AUZ-01: High-impact actions shall be authorized at the point of execution
 
