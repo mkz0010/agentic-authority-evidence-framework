@@ -434,25 +434,41 @@ For the related v0.5.0 planning concept, see `docs/en/32-authority-denial-reauth
 For the related v0.5.0 planning concept, see `docs/en/32-authority-denial-reauthorization-flow.md`.
 
 
-### AAEF-HUM-01: Human approval requests shall clearly present the agent, principal, requested action, resource, purpose, risk level, and consequence
+### AAEF-HUM-01: Human approval requests shall present sufficient action-bound context for meaningful review
 
-**Domain:** Human Oversight  
-**Requirement:** Human approval requests shall clearly present the agent, principal, requested action, resource, purpose, risk level, and consequence.  
-**Objective:** Enable informed approval.  
-**Applicability:** Approval workflows.  
-**Testing Procedure:** Review approval UI and sampled records.  
-**Evidence Examples:** Approval screenshots; approval records.  
+**Domain:** Human Oversight
+**Requirement:** Human approval requests shall present sufficient action-bound context for meaningful review, including the agent, principal, requested action, resource, purpose or scope, authority basis, risk level, expected effect, material limitations, and consequence before approval is granted.
+**Objective:** Enable informed approval by ensuring that approvers understand what action is being authorized, on whose behalf, under what authority, against which resource, and with what risk or consequence.
+**Applicability:** Approval, review, escalation, and reauthorization workflows for high-impact, high-risk, critical, delegated, cross-domain, or externally impactful actions.
+**Testing Procedure:** Review approval UI, approval records, tickets, workflow prompts, or equivalent review surfaces and verify that approvers receive sufficient context to make a meaningful action-bound decision before execution.
+**Evidence Examples:** Approval UI screenshots; approval request records; action summary; canonical action ID or action digest; principal context; authority basis; risk level; resource; purpose or scope; consequence summary; context presented to approver; approval records.
 **Maturity:** Required
 
-### AAEF-HUM-02: Approval workflows shall be designed to reduce blind approval and approval fatigue
+**Implementation Note:** A review surface may be a web UI, CLI confirmation prompt, approval workflow, ticket, change request, policy review screen, or another mechanism.
 
-**Domain:** Human Oversight  
-**Requirement:** Approval workflows shall be designed to reduce blind approval and approval fatigue.  
-**Objective:** Prevent ineffective oversight.  
-**Applicability:** Frequent approval workflows.  
-**Testing Procedure:** Review batching, thresholds, and UX patterns.  
-**Evidence Examples:** Approval metrics; UX design; policy.  
+For high-impact actions, the review surface should make clear what is being approved and how the approval is bound to the canonical action that may be dispatched or executed. A human-readable summary alone is weak if it is not linked to the relevant action, resource, authority scope, and final dispatch or execution evidence.
+
+This control complements `AAEF-AUZ-03`, which treats meaningful approval or additional verification as an authorization condition.
+
+For the related v0.5.0 planning concept, see `docs/en/39-approval-quality-approval-fatigue.md`.
+
+
+### AAEF-HUM-02: Approval workflows shall be designed and monitored to reduce blind approval and approval fatigue
+
+**Domain:** Human Oversight
+**Requirement:** Approval workflows shall be designed and monitored to reduce blind approval, rubber-stamping, excessive prompting, and approval fatigue, especially for repeated, batched, high-volume, high-risk, or ambiguous approval requests.
+**Objective:** Prevent ineffective human oversight by ensuring that approval workload, prompt design, escalation paths, batching, and approval metrics support meaningful review.
+**Applicability:** Frequent approval workflows, batched approvals, high-volume review queues, repeated reauthorization requests, escalation workflows, and critical-action approval paths.
+**Testing Procedure:** Review approval workflow design, approval frequency, batching, prompt quality, escalation paths, reviewer role suitability, and approval metrics; test whether repeated, ambiguous, or task-split requests are detected, escalated, rate-limited, aggregated, or otherwise handled to preserve meaningful review.
+**Evidence Examples:** Approval metrics; approval volume reports; UX design; workflow policy; batching rules; escalation rules; reviewer role mapping; repeated approval detection; task-splitting alerts; approval outcome sampling; fatigue review records.
 **Maturity:** Recommended
+
+**Implementation Note:** Approval fatigue should be assessed as a control weakness, not only as a user-experience concern.
+
+A workflow that produces many low-context or repetitive approval prompts may train reviewers to approve without understanding. Risk-based prompt prioritization, batching limits, reviewer role suitability, escalation paths, and sampling of approval outcomes can help determine whether human oversight remains meaningful.
+
+For the related v0.5.0 planning concept, see `docs/en/39-approval-quality-approval-fatigue.md`.
+
 
 ### AAEF-RES-01: Organizations shall be able to revoke agent authority, tool access, credentials, and active delegations
 
