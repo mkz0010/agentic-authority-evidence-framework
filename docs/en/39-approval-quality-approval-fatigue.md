@@ -170,6 +170,8 @@ Evidence should show:
 
 Approval evidence should avoid storing unnecessary sensitive content. Structured summaries, identifiers, hashes, screenshots, or references may be preferable to raw prompt or full payload retention where appropriate.
 
+For non-normative approval evidence examples, see `docs/en/40-approval-evidence-examples.md`.
+
 ## Negative Test Ideas
 
 Assessments may test whether:

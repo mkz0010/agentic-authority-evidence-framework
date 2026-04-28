@@ -552,3 +552,5 @@ For v0.5.0 planning on evidence depth, assurance value, and operational overhead
 For v0.5.0 planning on evidence integrity, tamper evidence, and independent verification, see `docs/en/37-tamper-evident-evidence-storage.md`.
 
 For v0.5.0 planning field candidates before changing the schema, see `docs/en/38-v050-evidence-schema-field-candidates.md`.
+
+For v0.5.0 approval evidence examples, see `docs/en/40-approval-evidence-examples.md`.
