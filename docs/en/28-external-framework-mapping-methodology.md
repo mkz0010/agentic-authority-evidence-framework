@@ -221,3 +221,58 @@ Future work should determine:
 - how to handle external framework copyright and quotation limits,
 - how to represent mapping confidence changes over time,
 - and how external mappings should be reviewed before release.
+
+## Mapping Granularity and Copyright-Sensitive Sources
+
+External framework mappings in AAEF are informative alignment aids. They are not compliance mappings, certification claims, audit opinions, or evidence of conformity with any external framework.
+
+### Mapping Granularity
+
+Mappings should use the lowest practical public reference level only where doing so improves clarity without overstating equivalence.
+
+When refining mappings:
+
+- use framework-level or domain-level mapping when the relationship is broad or conceptual;
+- use category-level or subcategory-level mapping only when the relationship is specific enough to support reviewer understanding;
+- avoid implying one-to-one equivalence unless the relationship is explicit, narrow, and supportable;
+- distinguish conceptual alignment, implementation support, evidence support, and non-equivalent relationships;
+- preserve uncertainty where the mapping is partial, indirect, or dependent on implementation context.
+
+Subcategory-level mapping should be treated as a precision aid, not as a stronger assurance claim.
+
+### Copyright-Sensitive or License-Restricted Frameworks
+
+Some external frameworks, standards, and specifications are protected by copyright, license terms, or publication restrictions. AAEF mappings must avoid reproducing protected material.
+
+For copyright-sensitive sources:
+
+- do not reproduce requirement text, clause text, tables, annex text, figures, or translated excerpts;
+- do not publish detailed clause-by-clause equivalence tables based on non-public or license-restricted text;
+- rely only on publicly available descriptions, titles, scope statements, metadata, or high-level concepts unless a licensed review process is explicitly established;
+- avoid committing protected source text, translated text, or derived detailed summaries into the public repository;
+- treat any mapping as feasibility analysis or informative alignment unless a legally appropriate and licensed review supports deeper analysis.
+
+Where detailed mapping requires access to protected text, the repository should record the mapping limitation rather than reconstruct or republish the protected material.
+
+### Mapping Language
+
+Preferred mapping language includes:
+
+- conceptual alignment;
+- adjacent concern;
+- implementation support;
+- evidence support;
+- partial overlap;
+- not assessed;
+- not equivalent.
+
+Avoid language that implies:
+
+- compliance equivalence;
+- certification readiness;
+- audit sufficiency;
+- complete mitigation;
+- formal conformity;
+- replacement for the external framework or standard.
+
+AAEF remains a Public Review Draft control profile and assessment aid. External mappings should help readers understand relationships, not claim that AAEF satisfies another framework.
