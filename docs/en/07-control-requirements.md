@@ -479,6 +479,41 @@ A workflow that produces many low-context or repetitive approval prompts may tra
 For the related v0.5.0 planning concept, see `docs/en/39-approval-quality-approval-fatigue.md`.
 
 
+### AAEF-HUM-03: Human override and exceptional intervention shall be recorded as append-only evidence
+
+**Domain:** Human Oversight
+**Requirement:** Systems shall record structured, append-only evidence when a human overrides, interrupts, reverses, extends, or bypasses normal agentic authorization flow for high-impact actions.
+**Objective:** Preserve auditability when exceptional human intervention changes or bypasses normal agentic control flow.
+**Applicability:** High-impact workflows where humans can perform emergency stop, manual reversal, forced continuation, exception handling, temporary authority grant, or privileged intervention.
+**Testing Procedure:** Review override scenarios and verify that override actor, reason, authority, scope, timestamp, linked action, and post-review requirement are recorded without overwriting existing evidence.
+**Evidence Examples:** Override event; linked action ID; override actor ID; override reason; override authority; override scope; timestamp; incident reference; post-review record.
+**Maturity:** Required
+
+**Implementation Note:** Human intervention may be necessary during incidents, safety events, customer-impacting failures, or urgent operational exceptions.
+
+This control does not prohibit override, interruption, reversal, or forced continuation. It requires those interventions to create additional evidence that preserves the original action history, identifies who intervened, explains why normal flow was changed, and links the intervention to the affected action or workflow.
+
+Override evidence should be additive. A human override should not erase the original authorization decision, dispatched action, execution result, denial event, or prior review context.
+
+
+### AAEF-HUM-04: Break-glass authority shall be scoped, time-bound, attributable, and post-reviewed
+
+**Domain:** Human Oversight
+**Requirement:** Systems shall constrain break-glass or emergency authority grants with explicit actor identity, reason, scope, expiration, and post-review requirements.
+**Objective:** Allow emergency intervention without creating unbounded or unevidenced authority expansion.
+**Applicability:** Systems that support break-glass, emergency access, temporary authority expansion, or incident-driven bypass of normal approval flow.
+**Testing Procedure:** Test break-glass flows and verify that emergency authority is scoped, time-bound, attributable, recorded, and subject to post-review.
+**Evidence Examples:** Break-glass grant; actor identity; reason; scope; expiration; approval or incident reference; post-review record; revocation record.
+**Maturity:** Required
+
+**Implementation Note:** Break-glass authority should be treated as controlled emergency authority, not as a permanent alternative authorization path.
+
+A break-glass grant should identify the actor, reason, affected agent or workflow, allowed action scope, expiration, linked incident or approval reference, and required post-review. Emergency authority should expire or be revoked after use, and actions taken under that authority should remain attributable and reconstructable.
+
+This control complements `AAEF-RES-01` and `AAEF-RES-02` by ensuring that emergency authority expansion can later be revoked, reviewed, and distinguished from normal authorization flow.
+
+
+
 ### AAEF-RES-01: Organizations shall be able to revoke agent authority, tool access, credentials, and active delegations
 
 **Domain:** Response and Revocation  

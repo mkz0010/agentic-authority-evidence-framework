@@ -230,6 +230,27 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │       ├── 26-high-impact-audit-grade-prequalification.md
 │       ├── 27-trusted-control-boundary-integrity.md
 │       ├── 28-external-framework-mapping-methodology.md
+│       ├── 29-iso-iec-42001-feasibility.md
+│       ├── 30-principal-context-degradation.md
+│       ├── 31-cross-agent-cross-domain-authority.md
+│       ├── 32-authority-denial-reauthorization-flow.md
+│       ├── 33-v050-planning-overview.md
+│       ├── 34-v050-control-design-options.md
+│       ├── 35-authority-assertion-profile.md
+│       ├── 36-risk-proportional-evidence-profile.md
+│       ├── 37-tamper-evident-evidence-storage.md
+│       ├── 38-v050-evidence-schema-field-candidates.md
+│       ├── 39-approval-quality-approval-fatigue.md
+│       ├── 40-approval-evidence-examples.md
+│       ├── 41-non-execution-reauthorization-examples.md
+│       ├── 42-tamper-evident-evidence-examples.md
+│       ├── 43-risk-proportional-evidence-assessment-guidance.md
+│       ├── 44-evidence-depth-examples.md
+│       ├── 45-principal-context-degradation-examples.md
+│       ├── 46-cross-agent-authority-examples.md
+│       ├── 47-approval-quality-assessment-guidance.md
+│       ├── 48-non-execution-reauthorization-negative-tests.md
+│       ├── 49-tamper-evident-evidence-negative-tests.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
@@ -242,6 +263,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   └── aaef-reference-architecture.mmd
 ├── mappings/
 │   ├── aaef-external-framework-mapping-v0.4-draft.csv
+│   ├── csa-agentic-trust-framework.md
+│   ├── nist-ai-rmf-genai-profile.md
 │   ├── owasp-agentic-top10-2026.md
 │   ├── threat-control-assurance-mapping.md
 │   └── threat-control-assurance-mapping-v0.2-draft.csv
