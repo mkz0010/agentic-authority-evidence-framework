@@ -239,3 +239,5 @@ Future v0.5.0 work may include:
 - integrating this concept with Principal Context Degradation;
 - integrating this concept with Authority Denial and Reauthorization Flow;
 - clarifying receiving-side enforcement responsibilities.
+
+For v0.5.0 cross-agent authority examples, see `docs/en/46-cross-agent-authority-examples.md`.

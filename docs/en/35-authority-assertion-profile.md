@@ -182,6 +182,8 @@ This profile does not require:
 
 ## Future Work
 
+For non-normative cross-agent and cross-domain authority examples, see `docs/en/46-cross-agent-authority-examples.md`.
+
 Future AAEF work may decide whether to:
 
 - add selected fields to the Evidence Event Schema;
