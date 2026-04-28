@@ -485,3 +485,14 @@ This design note does not:
 4. Should reauthorization become a dedicated authorization control or remain part of `AAEF-AUZ-09`?
 5. Which evidence schema fields are essential for v0.5.0, and which should remain optional?
 6. How much testing procedure expansion is acceptable before assessment burden becomes too high?
+
+## Evidence Integrity Levels Relationship
+
+The current evidence-related planning themes are consolidated in `docs/en/51-evidence-integrity-levels.md`.
+
+That model should be used as shared design context before promoting any of the following themes into normative or assessment artifacts:
+
+- Risk-Proportional Evidence and Performance Overhead;
+- Tamper-Evident Evidence Storage.
+
+The model is non-normative and does not itself change the v0.4.1 baseline.
