@@ -1,7 +1,7 @@
 # v0.5.0 Planning Overview
 
-**Status:** v0.5.0 planning overview  
-**AAEF baseline:** v0.4.1 Public Review Draft  
+**Status:** v0.5.0 planning overview
+**AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Planning document for the next major public review design cycle
 
 ## Purpose
