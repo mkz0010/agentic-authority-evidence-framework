@@ -218,13 +218,20 @@ A conservative sequence is:
 
 ## Current Planning Status
 
-| Issue | Topic | Status |
-| --- | --- | --- |
-| #2 | Principal Context Degradation | Concept note added; follow-up control and schema decisions remain. |
-| #3 | Cross-Agent and Cross-Domain Authority | Concept note added; follow-up control and schema decisions remain. |
-| #21 | Authority Denial and Reauthorization Flow | Concept note added; follow-up control, testing, and schema decisions remain. |
+The following table summarizes selected v0.5.0 planning threads and their current status.
 
-Additional v0.5.x topics may include approval quality, tamper-evident evidence storage, and risk-proportional evidence overhead.
+| Issue / Thread | Area | Completed Planning Work | Remaining Planning Work |
+| --- | --- | --- | --- |
+| #2 | Principal Context Degradation | Concept note added; planning definitions and related control language strengthened in the v0.5.0 planning cycle. | Schema decisions, assessment guidance, and additional negative tests remain. |
+| #3 | Cross-Agent and Cross-Domain Authority | Concept note added; authority assertion planning profile added; cross-agent authority lineage strengthened. | Schema decisions, assessment guidance, and additional delegation or lineage negative tests remain. |
+| #6 | Approval quality and approval fatigue | Approval quality concept added; `AAEF-AUZ-03`, `AAEF-HUM-01`, and `AAEF-HUM-02` strengthened; approval evidence examples added. | Approval quality metrics, approval fatigue assessment guidance, approval laundering negative tests, and potential dedicated approval quality control decisions remain. |
+| #19 | Tamper-evident evidence storage | Tamper-evident evidence storage profile added; `AAEF-EVD-04` strengthened; tamper-evident evidence examples added. | Evidence integrity schema field decisions, negative tests for tampering and replay, and incident-response evidence preservation guidance remain. |
+| #20 | Risk-proportional evidence depth | Risk-proportional evidence profile added; assessment guidance added; evidence depth field candidates added; evidence depth examples added. | Schema adoption decisions for `evidence_depth_level`, required depth by action class, assessment profile integration, and JSON examples remain. |
+| #21 | Authority denial and reauthorization flow | Authority denial and reauthorization concept added; `AAEF-EVD-05` and `AAEF-EVD-06` strengthened; non-execution and reauthorization examples added. | Non-execution and reauthorization JSON examples, retry and task-splitting negative tests, and schema field decisions remain. |
+
+These items remain planning work. They do not establish certification requirements or final schema requirements.
+
+
 ## Planning Examples
 
 The following non-normative example documents illustrate how selected v0.5.0 planning concepts may be reviewed in practice.
