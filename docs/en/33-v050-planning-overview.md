@@ -18,7 +18,8 @@ This document does not add new controls, schema fields, or assessment requiremen
 
 For control design tradeoffs, incorporation rules, and the preliminary outcome register before changing the catalog, see `docs/en/34-v050-control-design-options.md`.
 
-For a consolidated authority lifecycle model covering Principal Context Degradation, Cross-Agent and Cross-Domain Authority, and Authority Denial and Reauthorization Flow, see `docs/en/50-authority-lifecycle-model.md`.
+For a consolidated authority lifecycle model covering Principal Context Degradation, Cross-Agent and Cross-Domain Authority, and Authority Denial and Reauthorization Flow, see `docs/en/50-authority-lifecycle-model.md`
+- `docs/en/51-evidence-integrity-levels.md`.
 
 ## v0.5.0 Core Design Themes
 
@@ -322,3 +323,5 @@ The following non-normative example documents illustrate how selected v0.5.0 pla
 - Approval quality assessment guidance: `docs/en/47-approval-quality-assessment-guidance.md`
 - Non-execution and reauthorization negative tests: `docs/en/48-non-execution-reauthorization-negative-tests.md`
 - Tamper-evident evidence negative tests: `docs/en/49-tamper-evident-evidence-negative-tests.md`
+
+For a risk-proportional evidence integrity model covering tamper-evident storage, trusted evidence generation, and performance overhead tradeoffs, see `docs/en/51-evidence-integrity-levels.md`.
