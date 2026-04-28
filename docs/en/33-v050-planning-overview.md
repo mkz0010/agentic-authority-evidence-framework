@@ -18,6 +18,8 @@ This document does not add new controls, schema fields, or assessment requiremen
 
 For control design tradeoffs, incorporation rules, and the preliminary outcome register before changing the catalog, see `docs/en/34-v050-control-design-options.md`.
 
+For a consolidated authority lifecycle model covering Principal Context Degradation, Cross-Agent and Cross-Domain Authority, and Authority Denial and Reauthorization Flow, see `docs/en/50-authority-lifecycle-model.md`.
+
 ## v0.5.0 Core Design Themes
 
 The initial v0.5.0 planning work is organized around six related planning themes.
@@ -282,7 +284,8 @@ The v0.5.0 planning materials are intended to be read in the following order.
 | `docs/en/41-non-execution-reauthorization-examples.md` | Denial, deferral, safe termination, retry, task splitting, and reauthorization examples. |
 | `docs/en/48-non-execution-reauthorization-negative-tests.md` | Negative test candidates for denial, deferral, freeze, safe termination, retry, task splitting, reauthorization, and selective omission of non-execution evidence. |
 | `docs/en/42-tamper-evident-evidence-examples.md` | Tamper-evident, independently corroborated, replay, omission, and integrity verification examples. |
-| `docs/en/49-tamper-evident-evidence-negative-tests.md` | Negative test candidates for evidence tampering, replay, omission, anchoring gaps, and integrity verification failures. |
+| `docs/en/49-tamper-evident-evidence-negative-tests.md`
+- `docs/en/50-authority-lifecycle-model.md` | Negative test candidates for evidence tampering, replay, omission, anchoring gaps, and integrity verification failures. |
 | `docs/en/44-evidence-depth-examples.md` | E3, E4, and E5 evidence depth examples. |
 | `docs/en/45-principal-context-degradation-examples.md` | Principal Context Degradation examples for freshness, drift, reconfirmation, denial, and evidence review. |
 | `docs/en/46-cross-agent-authority-examples.md` | Cross-agent and cross-domain authority examples for authority assertions, delegation lineage, receiving-side validation, and evidence limitations. |
