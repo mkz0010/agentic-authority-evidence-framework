@@ -35,5 +35,8 @@ jobs:
       - name: Validate control catalog
         run: python tools/validate_control_catalog.py
 
+      - name: Validate testing procedures
+        run: python tools/validate_testing_procedures.py
+
       - name: Validate evidence schema and examples
         run: python tools/validate_evidence_schema.py

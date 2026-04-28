@@ -132,6 +132,7 @@ If you are new to AAEF, start with the documents below:
 6. [`docs/en/14-evidence-event-schema.md`](docs/en/14-evidence-event-schema.md) — evidence event schema and evidence model
 7. [`docs/en/12-assessment-quick-start.md`](docs/en/12-assessment-quick-start.md) — how to start reviewing a system using AAEF
 8. [`docs/en/20-assessment-profiles.md`](docs/en/20-assessment-profiles.md) — draft assessment profiles and tiered applicability guidance
+9. [`docs/en/25-testing-procedures-and-pass-criteria.md`](docs/en/25-testing-procedures-and-pass-criteria.md) — testing procedures, pass criteria, evidence expectations, and reviewer judgment guidance
 
 ## Role-Based Reading Paths
 
@@ -222,7 +223,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │           └── v0.3.0-preparation-checklist.md
 ├── assessment/
 │   ├── aaef-assessment-profiles-v0.3-draft.csv
-│   └── aaef-assessment-worksheet-v0.2-draft.csv
+│   ├── aaef-assessment-worksheet-v0.2-draft.csv
+│   └── aaef-testing-procedures-v0.4-draft.csv
 ├── assets/
 │   └── aaef-reference-architecture.mmd
 ├── mappings/
@@ -245,7 +247,8 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 │   ├── validate_assessment_profiles.py
 │   ├── validate_assessment_worksheet.py
 │   ├── validate_control_catalog.py
-│   └── validate_evidence_schema.py
+│   ├── validate_evidence_schema.py
+│   └── validate_testing_procedures.py
 └── .github/
     └── workflows/
         └── validate-aaef-artifacts.yml
