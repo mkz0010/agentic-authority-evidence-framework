@@ -265,6 +265,7 @@ The v0.5.0 planning materials are intended to be read in the following order.
 | --- | --- |
 | `docs/en/40-approval-evidence-examples.md` | Approval evidence, weak approval, approval laundering, and approval fatigue examples. |
 | `docs/en/41-non-execution-reauthorization-examples.md` | Denial, deferral, safe termination, retry, task splitting, and reauthorization examples. |
+| `docs/en/48-non-execution-reauthorization-negative-tests.md` | Negative test candidates for denial, deferral, freeze, safe termination, retry, task splitting, reauthorization, and selective omission of non-execution evidence. |
 | `docs/en/42-tamper-evident-evidence-examples.md` | Tamper-evident, independently corroborated, replay, omission, and integrity verification examples. |
 | `docs/en/44-evidence-depth-examples.md` | E3, E4, and E5 evidence depth examples. |
 | `docs/en/45-principal-context-degradation-examples.md` | Principal Context Degradation examples for freshness, drift, reconfirmation, denial, and evidence review. |
@@ -283,7 +284,7 @@ The following table summarizes selected v0.5.0 planning threads and their curren
 | #6 | Approval quality and approval fatigue | Approval quality concept added; `AAEF-AUZ-03`, `AAEF-HUM-01`, and `AAEF-HUM-02` strengthened; approval evidence examples and approval quality assessment guidance added. | Approval quality metrics, approval fatigue thresholds, approval laundering negative tests, schema field decisions, assessment profile integration, and potential dedicated approval quality control decisions remain. |
 | #19 | Tamper-evident evidence storage | Tamper-evident evidence storage profile added; `AAEF-EVD-04` strengthened; tamper-evident evidence examples added. | Evidence integrity schema field decisions, negative tests for tampering and replay, and incident-response evidence preservation guidance remain. |
 | #20 | Risk-proportional evidence depth | Risk-proportional evidence profile added; assessment guidance added; evidence depth field candidates added; evidence depth examples added. | Schema adoption decisions for `evidence_depth_level`, required depth by action class, assessment profile integration, and JSON examples remain. |
-| #21 | Authority denial and reauthorization flow | Authority denial and reauthorization concept added; `AAEF-EVD-05` and `AAEF-EVD-06` strengthened; non-execution and reauthorization examples added. | Non-execution and reauthorization JSON examples, retry and task-splitting negative tests, and schema field decisions remain. |
+| #21 | Authority denial and reauthorization flow | Authority denial and reauthorization concept added; `AAEF-EVD-05` and `AAEF-EVD-06` strengthened; non-execution and reauthorization examples and negative tests added. | Non-execution and reauthorization JSON examples, executable negative test fixtures, retry correlation or task-splitting schema field decisions, severity guidance, and assessment sampling guidance remain. |
 
 These items remain planning work. They do not establish certification requirements or final schema requirements.
 
