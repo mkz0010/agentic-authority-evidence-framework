@@ -203,3 +203,5 @@ Future v0.5.0 work may include:
 - adding evidence schema fields for context age, drift, and reconfirmation;
 - integrating Principal Context Degradation with Authority Denial and Reauthorization Flow;
 - connecting this concept to Cross-Agent and Cross-Domain Authority.
+
+For v0.5.0 Principal Context Degradation examples, see `docs/en/45-principal-context-degradation-examples.md`.
