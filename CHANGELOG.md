@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.4.0 Public Review Draft - 2026-04-28
+
+This release expands the v0.3.x public review baseline with enterprise assessment usability guidance for agentic AI action assurance.
+
+### Added
+
+- Added Control Catalog Versioning and Change Impact guidance.
+- Added Testing Procedures and Pass Criteria guidance.
+- Added machine-readable testing procedure draft.
+- Added validation for testing procedures.
+- Added High-Impact and Audit-Grade Pre-qualification Gate guidance.
+- Added Trusted Control Boundary Integrity Requirements.
+- Added External Framework Mapping Methodology.
+- Added initial conservative external framework mapping draft.
+- Added validation for external framework mappings.
+
+### Changed
+
+- Updated README document status, Start Here, repository structure, and citation text for v0.4.0.
+- Updated One-page Overview current status for v0.4.0.
+- Updated `CITATION.cff` for the v0.4.0 public review draft.
+- Expanded consolidated artifact validation to include testing procedures and external mappings.
+
+### Notes
+
+- This release remains a public review draft.
+- It does not create a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
+- External mappings are informative only and do not claim compliance equivalence or audit sufficiency.
+- v0.3.1 remains available as the prior maintenance release.
+
 ## v0.3.1 Maintenance Release - 2026-04-27
 
 This maintenance release improves repository organization, version reference consistency, and automated validation after the v0.3.0 Public Review Draft.

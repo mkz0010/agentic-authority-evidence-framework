@@ -180,14 +180,12 @@ The evidence layer records.
 
 ## Current Status
 
-AAEF v0.3.0 Public Review Draft is the current public review baseline.
+AAEF v0.4.0 Public Review Draft is the current public review baseline.
 
-AAEF v0.3.1 Maintenance Release is the latest tagged maintenance release for this baseline.
+AAEF v0.4.0 builds on the v0.3.x baseline and adds enterprise assessment usability guidance for agentic AI action assurance.
 
-It does not change the v0.3.0 public review scope.
+It adds control catalog versioning, measurable testing procedures and pass criteria, High-Impact and Audit-Grade pre-qualification guidance, Trusted Control Boundary integrity requirements, and informative external framework mapping methodology.
 
-AAEF v0.3.0 builds on the v0.2.x baseline and adds implementation profiles, evidence quality assessment criteria, assessment profile mapping, TCB implementation capability patterns, action sequence monitoring, assessment automation guidance, and infrastructure / SIEM evidence integration guidance.
-
-These materials remain public review drafts and are not a certification scheme, formal standard, or claim of complete mitigation.
+These materials remain public review drafts and are not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
 
 Feedback is welcome through Issues, Pull Requests, and Discussions.
