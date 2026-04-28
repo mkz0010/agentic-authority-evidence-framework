@@ -554,3 +554,5 @@ For v0.5.0 planning on evidence integrity, tamper evidence, and independent veri
 For v0.5.0 planning field candidates before changing the schema, see `docs/en/38-v050-evidence-schema-field-candidates.md`.
 
 For v0.5.0 approval evidence examples, see `docs/en/40-approval-evidence-examples.md`.
+
+For v0.5.0 non-execution and reauthorization examples, see `docs/en/41-non-execution-reauthorization-examples.md`.

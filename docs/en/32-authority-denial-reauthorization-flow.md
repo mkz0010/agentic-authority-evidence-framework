@@ -229,3 +229,6 @@ Future v0.5.0 work may include:
 - integrating this concept with Principal Context Degradation;
 - integrating this concept with Cross-Agent and Cross-Domain Authority;
 - defining safe reauthorization examples for long-running and delegated workflows.
+## Related Examples
+
+For non-normative non-execution and reauthorization examples, see `docs/en/41-non-execution-reauthorization-examples.md`.
