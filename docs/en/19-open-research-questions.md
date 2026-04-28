@@ -36,6 +36,10 @@ Implementation guidance remains in:
 
 This document is research-facing and intentionally exploratory.
 
+## v0.5.0 Planning Overview
+
+A v0.5.0 planning overview is maintained in `docs/en/33-v050-planning-overview.md`.
+
 ## Principal Context Degradation
 
 Principal Context Degradation refers to the loss, weakening, staleness, or ambiguity of the principal context under which an agentic AI system acts.
