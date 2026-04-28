@@ -236,7 +236,7 @@ Tamper-evident evidence asks:
 
 Not every action needs tamper-evident evidence. However, critical, irreversible, cross-domain, or incident-relevant actions may require stronger evidence integrity guarantees.
 
-For v0.5.0 planning, tamper-evident evidence storage is tracked separately.
+For v0.5.0 planning, tamper-evident evidence storage is tracked separately in `docs/en/37-tamper-evident-evidence-storage.md`.
 
 ## Relationship to Evidence Event Schema
 

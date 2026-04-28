@@ -24,6 +24,7 @@ The initial v0.5.0 planning work is organized around three related concepts:
 2. Cross-Agent and Cross-Domain Authority
 3. Authority Denial and Reauthorization Flow
 4. Risk-Proportional Evidence and Performance Overhead
+5. Tamper-Evident Evidence Storage
 
 Together, these concepts refine AAEF's core claim that model output is not authority.
 
