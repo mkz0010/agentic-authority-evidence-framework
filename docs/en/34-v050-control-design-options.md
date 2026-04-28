@@ -122,6 +122,18 @@ If a theme remains unresolved, it should either:
 - be converted into a narrower implementation, testing, or evidence guidance item.
 
 
+## Authority Lifecycle Model Relationship
+
+The current authority-related planning themes are consolidated in `docs/en/50-authority-lifecycle-model.md`.
+
+That model should be used as shared design context before promoting any of the following themes into normative or assessment artifacts:
+
+- Principal Context Degradation;
+- Cross-Agent and Cross-Domain Authority;
+- Authority Denial and Reauthorization Flow.
+
+The model is non-normative and does not itself change the v0.4.1 baseline.
+
 ## Theme 1: Principal Context Degradation
 
 See: `docs/en/30-principal-context-degradation.md`

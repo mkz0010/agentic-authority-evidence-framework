@@ -187,7 +187,7 @@ The Markdown control list in `docs/en/07-control-requirements.md` is maintained 
 
 ## Planning Material Boundary
 
-Documents under `docs/en/30-49` are v0.5.0 planning materials. They are non-normative unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
+Documents under `docs/en/30-50` are v0.5.0 planning materials. They are non-normative unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 These documents currently remain under `docs/en/` for public review continuity. A future release may move them into a dedicated planning directory if the repository structure is reorganized.
 
@@ -257,6 +257,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── 47-approval-quality-assessment-guidance.md
 │       ├── 48-non-execution-reauthorization-negative-tests.md
 │       ├── 49-tamper-evident-evidence-negative-tests.md
+│       ├── 50-authority-lifecycle-model.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
