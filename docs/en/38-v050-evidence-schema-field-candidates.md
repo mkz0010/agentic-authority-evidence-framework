@@ -277,3 +277,5 @@ This field may help assessors determine whether evidence depth is proportionate 
 ## Relationship to Risk-Proportional Evidence Guidance
 
 For non-normative assessment guidance on applying evidence depth levels, see `docs/en/43-risk-proportional-evidence-assessment-guidance.md`.
+
+For non-normative evidence depth examples, see `docs/en/44-evidence-depth-examples.md`.

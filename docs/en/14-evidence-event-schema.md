@@ -560,3 +560,5 @@ For v0.5.0 non-execution and reauthorization examples, see `docs/en/41-non-execu
 For v0.5.0 tamper-evident evidence examples, see `docs/en/42-tamper-evident-evidence-examples.md`.
 
 For v0.5.0 risk-proportional evidence assessment guidance, see `docs/en/43-risk-proportional-evidence-assessment-guidance.md`.
+
+For v0.5.0 evidence depth examples, see `docs/en/44-evidence-depth-examples.md`.

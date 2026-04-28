@@ -359,6 +359,8 @@ Risk-proportional evidence should avoid:
 
 ## Future Work
 
+For non-normative evidence depth examples, see `docs/en/44-evidence-depth-examples.md`.
+
 Future AAEF work may decide whether to:
 
 - add `evidence_depth_level` to the Evidence Event Schema;
