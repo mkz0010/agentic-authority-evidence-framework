@@ -568,3 +568,5 @@ For v0.5.0 Principal Context Degradation examples, see `docs/en/45-principal-con
 For v0.5.0 cross-agent authority examples, see `docs/en/46-cross-agent-authority-examples.md`.
 
 For v0.5.0 approval quality assessment guidance, see `docs/en/47-approval-quality-assessment-guidance.md`.
+
+For v0.5.0 non-execution and reauthorization negative tests, see `docs/en/48-non-execution-reauthorization-negative-tests.md`.

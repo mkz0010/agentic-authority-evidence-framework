@@ -358,6 +358,8 @@ These examples do not require:
 
 ## Future Work
 
+For non-normative non-execution and reauthorization negative tests, see `docs/en/48-non-execution-reauthorization-negative-tests.md`.
+
 Future AAEF work may decide whether to:
 
 - add non-execution JSON examples;
