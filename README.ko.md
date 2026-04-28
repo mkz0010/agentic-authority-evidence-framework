@@ -81,13 +81,13 @@ AAEF는 다음 독자를 대상으로 합니다.
 
 ## 문서 상태
 
-**AAEF v0.4.0 Public Review Draft** 는 현재 공개 검토 baseline 입니다.
+**AAEF v0.4.1 Public Review Draft** 는 현재 공개 검토 baseline 입니다.
 
-AAEF v0.4.0은 v0.3.x baseline을 확장하여 agentic AI action assurance를 enterprise assessment 및 audit support에서 더 쉽게 사용할 수 있도록 guidance를 추가합니다.
+AAEF v0.4.1은 v0.4.0에 대한 maintenance and refinement release 입니다. v0.4.0의 enterprise assessment usability baseline을 유지하면서 testing criteria 및 external framework mappings에 대한 post-release refinements를 반영합니다.
 
 이전 v0.3.x, v0.2.x, v0.1.x releases 는 prior public review baselines 로 계속 참조할 수 있습니다.
 
-AAEF v0.4.0에 추가된 주요 요소:
+AAEF v0.4.1에 포함된 주요 요소:
 
 - control catalog versioning and change impact guidance
 - measurable testing procedures and pass criteria
@@ -97,8 +97,10 @@ AAEF v0.4.0에 추가된 주요 요소:
 - external framework mapping methodology
 - initial conservative external framework mapping draft
 - validation for testing procedures and external mappings
+- refined control-specific testing procedure pass criteria
+- updated conservative external framework mappings, including NIST AI RMF / GenAI Profile, ISO/IEC 42001 feasibility, and CSA Agentic Trust Framework mapping
 
-AAEF v0.4.0은 공개 검토 초안입니다. 인증 체계, 공식 표준, implementation conformance claim, audit opinion, compliance equivalence 또는 완전한 완화 주장을 의미하지 않습니다.
+AAEF v0.4.1은 공개 검토 초안입니다. 인증 체계, 공식 표준, implementation conformance claim, audit opinion, compliance equivalence 또는 완전한 완화 주장을 의미하지 않습니다.
 
 Issues 및 Pull Requests를 통한 피드백을 환영합니다.
 
@@ -118,7 +120,7 @@ AAEF를 처음 읽는 경우, 영어 문서 기준으로 다음 순서를 권장
 
 이 작업을 참조하는 경우 다음과 같이 인용하십시오.
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.4.0 Public Review Draft, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.4.1 Public Review Draft, 2026.
 
 ## 라이선스
 

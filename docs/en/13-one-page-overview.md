@@ -54,15 +54,18 @@ AAEF covers control areas such as:
 - human oversight,
 - response and revocation.
 
-AAEF also includes supporting materials for v0.2 public review:
+AAEF also includes current public review support materials:
 
 - High-Impact Action Taxonomy,
-- Evidence Event JSON Schema,
-- Evidence Schema validation workflow,
+- Evidence Event JSON Schema and validation workflow,
 - OWASP Agentic Top 10 mapping,
 - Assurance Model and Residual Risk Mapping,
-- Assessment Quick Start,
-- Assessment Worksheet.
+- Assessment Quick Start and Assessment Worksheet,
+- Assessment Profiles,
+- Testing Procedures and Pass Criteria,
+- High-Impact and Audit-Grade pre-qualification guidance,
+- Trusted Control Boundary integrity guidance,
+- external framework mapping methodology and conservative mapping drafts.
 
 ## What Counts as High-Impact?
 
@@ -135,14 +138,17 @@ Start here:
 6. `controls/aaef-controls-v0.1.csv`  
    Machine-readable control catalog source.
 
-Then read the v0.2 public review artifacts:
+Then read the current public review support artifacts:
 
 - `docs/en/11-high-impact-action-taxonomy.md`
 - `docs/en/14-evidence-event-schema.md`
-- `docs/en/15-v02-control-expansion-notes.md`
 - `docs/en/16-assurance-model.md`
 - `docs/en/12-assessment-quick-start.md`
+- `docs/en/20-assessment-profiles.md`
+- `docs/en/25-testing-procedures-and-pass-criteria.md`
 - `assessment/aaef-assessment-worksheet-v0.2-draft.csv`
+- `assessment/aaef-assessment-profiles-v0.3-draft.csv`
+- `assessment/aaef-testing-procedures-v0.4-draft.csv`
 
 ## How AAEF Can Be Used
 

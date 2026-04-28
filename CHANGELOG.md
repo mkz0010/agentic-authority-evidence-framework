@@ -4,6 +4,12 @@
 
 This maintenance release refines the v0.4.0 Public Review Draft based on post-release review work.
 
+Additional documentation consistency fixes:
+- Added missing human-readable control requirement sections for `AAEF-HUM-03` and `AAEF-HUM-04`.
+- Updated One-page Overview references from v0.2-specific wording to current public review support artifacts.
+- Updated Korean and Simplified Chinese README document status and citation text to v0.4.1.
+- Updated README repository structure to include current v0.5.0 planning documents and mapping files.
+
 ### Changed
 
 - Refined control-specific testing procedure criteria across all 44 controls.
