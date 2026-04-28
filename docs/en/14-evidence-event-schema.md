@@ -545,3 +545,6 @@ Future versions may add:
 - Authorization decision artifact profile
 - Override, non-execution, and reauthorization examples
 - schema versioning policy
+## v0.5.0 Planning Notes
+
+For v0.5.0 planning on evidence depth, assurance value, and operational overhead, see `docs/en/36-risk-proportional-evidence-profile.md`.
