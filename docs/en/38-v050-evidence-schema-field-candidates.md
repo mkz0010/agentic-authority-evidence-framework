@@ -203,3 +203,77 @@ This document does not:
 The recommended next step is to select a small P0/P1 field set for experimental schema expansion or example-only representation.
 
 A conservative approach is to first add examples showing how these candidate fields could appear before making them required schema fields.
+## Evidence Depth Field Candidates
+
+The following candidate fields may support future risk-proportional evidence depth handling.
+
+These fields are planning candidates only. They do not change the current Evidence Event Schema.
+
+### Candidate: `evidence_depth_level`
+
+**Purpose:** Record the expected or applied evidence depth level for an action evidence event.
+
+**Candidate values:**
+
+- `E0`: No AAEF evidence expected
+- `E1`: Minimal operational evidence
+- `E2`: Standard action evidence
+- `E3`: High-impact evidence
+- `E4`: Audit-grade evidence
+- `E5`: Tamper-evident or independently verifiable evidence
+
+**Assessment use:**
+
+This field may help assessors determine whether evidence depth is proportionate to action risk, impact, reversibility, delegation, cross-domain involvement, approval requirements, reauthorization requirements, incident relevance, or external review needs.
+
+### Candidate: `evidence_depth_rationale`
+
+**Purpose:** Explain why the selected evidence depth level was assigned.
+
+**Example rationale values:**
+
+- low-risk reversible action
+- standard agentic action
+- high-impact action
+- approval-required action
+- reauthorization-required action
+- non-executed high-impact action
+- override or exceptional human intervention
+- critical action
+- incident-relevant action
+- externally reviewed or disputed action
+
+### Candidate: `evidence_depth_source`
+
+**Purpose:** Identify how the evidence depth level was determined.
+
+**Example values:**
+
+- policy
+- risk engine
+- control profile
+- assessment profile
+- human reviewer
+- incident workflow
+- implementation default
+
+### Candidate: `evidence_depth_limitations`
+
+**Purpose:** Record known limitations that prevent the evidence event from satisfying the intended depth.
+
+**Example limitations:**
+
+- mutable local evidence only
+- no independent corroboration
+- no integrity verification
+- incomplete dispatch linkage
+- incomplete backend execution linkage
+- approval evidence missing or weak
+- non-execution evidence incomplete
+- reauthorization linkage incomplete
+- sensitive data minimized by reference only
+- retention limitation
+
+## Relationship to Risk-Proportional Evidence Guidance
+
+For non-normative assessment guidance on applying evidence depth levels, see `docs/en/43-risk-proportional-evidence-assessment-guidance.md`.
