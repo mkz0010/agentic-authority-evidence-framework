@@ -257,6 +257,8 @@ It is intended to be append-only and linked to original actions or incidents, no
 
 `reauthorization` can be used to record scoped reauthorization requests, retry counts, principal reconfirmation, and reauthorization decisions.
 
+For v0.5.0 planning, see `docs/en/32-authority-denial-reauthorization-flow.md` for denial, deferral, retry, reauthorization, and safe termination evidence considerations.
+
 
 ## Validation
 

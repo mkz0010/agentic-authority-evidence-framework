@@ -231,6 +231,8 @@ The Trusted Control Boundary should define what happens when required trust inpu
 
 For high-impact actions, the safer default should be denial, deferral, escalation, freeze, or reauthorization.
 
+For v0.5.0 planning, see `docs/en/32-authority-denial-reauthorization-flow.md` for the Authority Denial and Reauthorization Flow concept note.
+
 Assessment considerations:
 
 - Does the system fail closed when authority is missing?
