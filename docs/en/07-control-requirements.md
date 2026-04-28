@@ -190,15 +190,24 @@ For the related v0.5.0 planning concept, see `docs/en/31-cross-agent-cross-domai
 **Evidence Examples:** Authorization logs; policy definitions.  
 **Maturity:** Required
 
-### AAEF-AUZ-03: High-risk and critical actions shall require explicit approval or additional verification
+### AAEF-AUZ-03: High-risk and critical actions shall require meaningful approval or additional verification
 
-**Domain:** Action Authorization  
-**Requirement:** High-risk and critical actions shall require explicit approval or additional verification.  
-**Objective:** Apply risk-proportional friction.  
-**Applicability:** High-risk and critical actions.  
-**Testing Procedure:** Review approval threshold and sampled approvals.  
-**Evidence Examples:** Approval records; risk rules; UI screenshots.  
+**Domain:** Action Authorization
+**Requirement:** High-risk and critical actions shall require meaningful, risk-proportional explicit approval or additional verification before execution, with sufficient action context, principal context, authority basis, risk information, scope, and linkage to the final dispatched or executed action.
+**Objective:** Ensure that approval or additional verification provides informed, action-bound friction rather than blind confirmation, generic consent, or approval-shaped friction.
+**Applicability:** High-risk and critical actions, especially irreversible, externally impactful, delegated, reauthorization-required, cross-domain, or untrusted-input-influenced actions.
+**Testing Procedure:** Review approval thresholds and sampled approvals or additional verification flows; verify that approval occurs before execution, is specific to the action, presents sufficient context for meaningful review, remains within the approved scope, and is linked to authorization, dispatch, execution, and evidence records.
+**Evidence Examples:** Approval threshold policy; risk rules; approval request; context presented to approver; approval decision; approver identity; approval timestamp; canonical action ID or action digest; final dispatch record; execution evidence; denial or escalation records.
 **Maturity:** Required
+
+**Implementation Note:** Approval is not authority merely because a human clicked a button. For high-risk and critical actions, approval should be specific, contextual, attributable, and bound to the canonical action that is actually dispatched or executed.
+
+If the requested action, resource, scope, principal context, authority basis, risk level, or execution payload changes materially after approval, the system should deny, defer, escalate, or require reapproval before execution.
+
+This control complements `AAEF-HUM-01` and `AAEF-HUM-02`. `AAEF-AUZ-03` focuses on approval or verification as an authorization condition, while the HUM controls focus on review surface quality and approval fatigue mitigation.
+
+For the related v0.5.0 planning concept, see `docs/en/39-approval-quality-approval-fatigue.md`.
+
 
 ### AAEF-AUZ-04: If authority, principal, or purpose cannot be determined, high-impact actions shall be denied or escalated
 
