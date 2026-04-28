@@ -38,5 +38,8 @@ jobs:
       - name: Validate testing procedures
         run: python tools/validate_testing_procedures.py
 
+      - name: Validate external mappings
+        run: python tools/validate_external_mappings.py
+
       - name: Validate evidence schema and examples
         run: python tools/validate_evidence_schema.py
