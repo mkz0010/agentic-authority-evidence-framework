@@ -307,3 +307,5 @@ Future AAEF work may decide whether to:
 - define examples for E3, E4, and E5 evidence;
 - define tamper-evident evidence storage expectations;
 - define privacy and data minimization guidance for evidence records.
+
+For v0.5.0 risk-proportional evidence assessment guidance, see `docs/en/43-risk-proportional-evidence-assessment-guidance.md`.
