@@ -396,15 +396,22 @@ For the related v0.5.0 planning concept, see `docs/en/32-authority-denial-reauth
 **Evidence Examples:** Approval ID; workflow record; action event.  
 **Maturity:** Required
 
-### AAEF-EVD-04: Critical action evidence should be protected against undetected alteration
+### AAEF-EVD-04: Critical and audit-grade action evidence should be protected against undetected alteration
 
-**Domain:** Evidence and Auditability  
-**Requirement:** Critical action evidence should be protected against undetected alteration.  
-**Objective:** Improve evidence reliability.  
-**Applicability:** Critical actions.  
-**Testing Procedure:** Review tamper-evidence mechanisms.  
-**Evidence Examples:** Signed logs; append-only log; integrity checks.  
+**Domain:** Evidence and Auditability
+**Requirement:** Critical and audit-grade action evidence should be protected against undetected alteration, deletion, replay, reordering, or selective omission using tamper-evident, write-restricted, append-only, cryptographically linked, independently corroborated, or equivalent integrity mechanisms.
+**Objective:** Improve evidence reliability by making evidence tampering, deletion, replay, reordering, or inconsistency detectable during review or incident reconstruction.
+**Applicability:** Critical actions, audit-grade evidence, incident-relevant evidence, delegated or cross-domain high-impact actions, and evidence used for external review.
+**Testing Procedure:** Review evidence storage, integrity, retention, and verification mechanisms; verify that sampled critical or audit-grade evidence cannot be silently modified, deleted, reordered, replayed, or selectively omitted without detection.
+**Evidence Examples:** Append-only log; write-restricted evidence store; signed evidence record; hash chain; Merkle root; external timestamp; immutable storage policy; integrity verification result; independent corroborating log; retention policy; deletion or redaction record; evidence trust limitation.
 **Maturity:** Recommended
+
+**Implementation Note:** Tamper-evident evidence does not necessarily prevent tampering. It should make tampering, deletion, replay, reordering, or inconsistency detectable during review.
+
+Evidence generated only by the agent runtime, or stored only in a mutable component controlled by the system being assessed, should not be treated as strong assurance by itself. Stronger evidence may require write-restricted storage, append-only logs, cryptographic linkage, signing, external timestamping, independent corroboration, or trusted runtime references depending on risk.
+
+For the related v0.5.0 planning profile, see `docs/en/37-tamper-evident-evidence-storage.md`.
+
 
 ### AAEF-EVD-05: Systems should record structured evidence for non-executed high-impact actions
 
