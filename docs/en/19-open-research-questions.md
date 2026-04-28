@@ -40,6 +40,8 @@ This document is research-facing and intentionally exploratory.
 
 Principal Context Degradation refers to the loss, weakening, staleness, or ambiguity of the principal context under which an agentic AI system acts.
 
+A v0.5.0 planning concept note is maintained in `docs/en/30-principal-context-degradation.md`.
+
 Open questions include:
 
 - How can principal context degradation be measured in long-running agentic tasks?
