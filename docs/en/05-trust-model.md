@@ -92,6 +92,8 @@ AAEF does not mandate a specific implementation mechanism. However, systems shou
 
 If a system cannot preserve principal context across a workflow, high-impact actions in that workflow should be denied, escalated, or treated as unauthenticated authority use.
 
+For v0.5.0 planning, AAEF also tracks Principal Context Degradation: cases where principal context is technically present but stale, ambiguous, semantically distant, or no longer sufficient for the requested high-impact action. See `docs/en/30-principal-context-degradation.md`.
+
 ## Action Assurance Levels
 
 AAEF uses one maturity model across the framework.

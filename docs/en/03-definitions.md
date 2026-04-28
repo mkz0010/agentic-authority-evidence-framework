@@ -90,6 +90,8 @@ A boundary within which identities, authorities, policies, evidence, and revocat
 
 The information required to determine on whose behalf an agent action is attempted or performed. Principal context may include user identity, organization, tenant, session, role, purpose, authority grant, delegation chain, and correlation identifiers.
 
+See also: `docs/en/30-principal-context-degradation.md` for the v0.5.0 planning concept of Principal Context Degradation.
+
 ## Action Assurance
 
 The ability to verify that an agentic action was performed by an identified agent, on behalf of a known principal, within delegated authority, allowed at the point of execution, recorded with sufficient evidence, and subject to revocation and review.
