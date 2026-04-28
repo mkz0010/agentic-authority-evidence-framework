@@ -185,6 +185,12 @@ Control catalog versioning and change impact guidance is documented in [`docs/en
 
 The Markdown control list in `docs/en/07-control-requirements.md` is maintained for readability and must remain consistent with the CSV catalog. This repository includes a validation script and GitHub Actions workflow to detect control ID drift.
 
+## Planning Material Boundary
+
+Documents under `docs/en/30-49` are v0.5.0 planning materials. They are non-normative unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
+
+These documents currently remain under `docs/en/` for public review continuity. A future release may move them into a dedicated planning directory if the repository structure is reorganized.
+
 ## Repository Structure
 
 ```text

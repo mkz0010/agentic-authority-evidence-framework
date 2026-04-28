@@ -2,7 +2,7 @@
 
 ## Status
 
-This document defines an initial AAEF assurance model for v0.2 public review.
+This document originated as an initial AAEF assurance model during the v0.2 public review cycle and remains part of the current v0.4.1 Public Review Draft baseline.
 
 It is not a certification scheme and does not claim that implementing AAEF controls eliminates agentic AI risk.
 

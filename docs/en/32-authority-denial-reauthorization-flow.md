@@ -1,8 +1,10 @@
 # Authority Denial and Reauthorization Flow
 
-**Status:** v0.5.0 planning concept note
+**Status:** Non-normative v0.5.0 planning concept note
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Issue context:** #21
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 

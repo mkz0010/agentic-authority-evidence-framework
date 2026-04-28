@@ -1,8 +1,10 @@
 # Tamper-Evident Evidence Examples
 
-**Status:** v0.5.0 planning examples
+**Status:** Non-normative v0.5.0 planning examples
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Non-normative examples for tamper-evident, independently corroborated, and integrity-verifiable evidence review
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 

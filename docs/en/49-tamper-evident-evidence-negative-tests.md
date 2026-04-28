@@ -1,8 +1,10 @@
 # Tamper-Evident Evidence Negative Tests
 
-**Status:** v0.5.0 planning negative tests
+**Status:** Non-normative v0.5.0 planning negative tests
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Non-normative negative tests for evidence tampering, replay, deletion, truncation, reordering, selective omission, integrity verification, and evidence preservation review
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 

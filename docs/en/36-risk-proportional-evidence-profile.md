@@ -1,8 +1,10 @@
 # Risk-Proportional Evidence Profile
 
-**Status:** v0.5.0 planning profile
+**Status:** Non-normative v0.5.0 planning profile
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Non-normative planning profile for evidence depth, assurance value, and operational overhead
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 

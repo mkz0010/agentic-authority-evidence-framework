@@ -1,8 +1,10 @@
 # v0.5.0 Control Design Options
 
-**Status:** v0.5.0 planning design note
+**Status:** Non-normative v0.5.0 planning design note
 **AAEF baseline:** v0.4.1 Public Review Draft
 **Scope:** Control design options before changing the control catalog, evidence schema, assessment worksheet, or testing procedures
+
+> **Planning status:** This document is non-normative v0.5.0 planning material. It is not part of the normative v0.4.1 Public Review Draft baseline unless explicitly incorporated into the control catalog, evidence schema, assessment artifacts, testing procedures, or release notes.
 
 ## Purpose
 

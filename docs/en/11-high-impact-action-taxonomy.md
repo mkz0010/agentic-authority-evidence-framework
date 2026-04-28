@@ -8,7 +8,7 @@ Machine-readable draft:
 
 - `taxonomies/high-impact-action-taxonomy-v0.2-draft.csv`
 
-This taxonomy is intended for AAEF v0.2.0 discussion and review. It is not a certification scheme, legal standard, or exhaustive list of all high-risk agentic AI actions.
+This taxonomy originated during the AAEF v0.2.0 discussion and review cycle and remains part of the current v0.4.1 Public Review Draft baseline. It is not a certification scheme, legal standard, or exhaustive list of all high-risk agentic AI actions.
 
 ## Machine-Readable CSV
 
