@@ -23,6 +23,7 @@ The initial v0.5.0 planning work is organized around three related concepts:
 1. Principal Context Degradation
 2. Cross-Agent and Cross-Domain Authority
 3. Authority Denial and Reauthorization Flow
+4. Risk-Proportional Evidence and Performance Overhead
 
 Together, these concepts refine AAEF's core claim that model output is not authority.
 
@@ -77,6 +78,8 @@ The main design question is whether AAEF should define stronger guidance for:
 ## Theme 3: Authority Denial and Reauthorization Flow
 
 See: `docs/en/32-authority-denial-reauthorization-flow.md`
+
+For the non-normative risk-proportional evidence planning profile, see `docs/en/36-risk-proportional-evidence-profile.md`.
 
 Authority Denial and Reauthorization Flow addresses what happens after a high-impact action is denied, deferred, escalated, or found to have insufficient authority.
 
