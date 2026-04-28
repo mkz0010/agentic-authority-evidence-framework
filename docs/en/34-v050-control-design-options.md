@@ -496,4 +496,3 @@ That model should be used as shared design context before promoting any of the f
 - Tamper-Evident Evidence Storage.
 
 The model is non-normative and does not itself change the v0.4.1 baseline.
-
