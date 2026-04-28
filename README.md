@@ -173,6 +173,8 @@ Current catalog file:
 
 The file name is retained for continuity. The catalog remains the current machine-readable control source of truth unless superseded by a later catalog file.
 
+Control catalog versioning and change impact guidance is documented in [`docs/en/24-control-catalog-versioning.md`](docs/en/24-control-catalog-versioning.md).
+
 The Markdown control list in `docs/en/07-control-requirements.md` is maintained for readability and must remain consistent with the CSV catalog. This repository includes a validation script and GitHub Actions workflow to detect control ID drift.
 
 ## Repository Structure
