@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Refined `AAEF-AUZ-02` and `AAEF-AUZ-07` testing procedure language for scope expansion and authority lifecycle state changes.
+
 ### Added
 
 - Added a temporary v0.5.x principal context testing CSV refinement proposal.
