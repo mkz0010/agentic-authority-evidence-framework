@@ -44,6 +44,8 @@ For v0.5.x principal context testing CSV refinement proposal, see `docs/en/statu
 
 For v0.5.x cross-agent delegation testing proposal, see `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md`.
 
+For v0.5.x cross-agent delegation testing candidate appendix, see `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
