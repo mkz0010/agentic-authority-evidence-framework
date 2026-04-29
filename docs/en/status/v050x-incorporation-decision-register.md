@@ -357,3 +357,29 @@ Remaining #161-related incorporation decisions include:
 - whether and how to incorporate task splitting and aggregate-effect bypass tests;
 - whether risk escalation and untrusted input influence require additional active testing refinement;
 - whether related evidence/schema or assessment profile changes are needed.
+
+## Incorporation Update after #194
+
+PR #194 completed the first active testing procedure refinement based on the cross-agent delegation testing candidate work.
+
+The refinement did not add temporary `VTC-A2A-*` rows to the active testing procedure CSV.
+
+Instead, it preserved the one-control-one-row testing model and refined existing active rows:
+
+- `AAEF-DEL-01` for delegated scope mismatch and delegated capability, operation, target, or resource comparison;
+- `AAEF-DEL-05` for cross-agent authority lineage, communication-not-authority handling, and receiving-side validation.
+
+This confirms the selected incorporation path for the first #163 batch:
+
+- use VTC candidates as planning and review inputs;
+- refine existing control-linked testing rows where appropriate;
+- avoid promoting temporary VTC IDs into active testing artifacts unless the testing model is explicitly changed.
+
+Remaining #163-related incorporation decisions include:
+
+- whether and how to refine `AAEF-DEL-02` for capability-scoped delegation;
+- whether and how to incorporate fire-and-forget delegation tests;
+- whether and how to incorporate refusal propagation tests;
+- whether downstream redelegation requires new active testing language;
+- whether minimum delegation chain evidence expectations require additional refinement;
+- whether related evidence/schema, control catalog, or assessment profile changes are needed.
