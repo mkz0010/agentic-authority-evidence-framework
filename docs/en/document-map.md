@@ -137,6 +137,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-testing-procedure-candidate-matrix.md` | v0.5.x testing procedure candidate matrix | Temporary status / coordination material |
 | `docs/en/status/v050x-testing-candidate-mapping.md` | v0.5.x testing candidate mapping | Temporary status / coordination material |
 | `docs/en/status/v050x-testing-draft-pass-fail-criteria.md` | v0.5.x testing draft pass/fail criteria | Temporary status / coordination material |
+| `docs/en/status/v050x-testing-incorporation-readiness-review.md` | v0.5.x testing incorporation readiness review | Temporary status / coordination material |
 
 ## Physical Organization Policy
 
