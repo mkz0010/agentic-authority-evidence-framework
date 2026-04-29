@@ -315,3 +315,11 @@ The proposal focuses on two candidate examples:
 - `agentic-action-evidence-event.approval-binding.json`
 
 The examples are design candidates only and do not modify the active schema or example files.
+
+## First Schema Implementation
+
+The first schema implementation uses the narrow optional field approach described in this proposal.
+
+It adds optional schema support for evidence integrity, evidence trust limitation, approval evidence source, approval-to-action binding, and execution-bound approval enforcement references.
+
+Principal context freshness and delegation lineage fields remain deferred.

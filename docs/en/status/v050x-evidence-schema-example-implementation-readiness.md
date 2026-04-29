@@ -287,3 +287,15 @@ This readiness review does not:
 - close #161, #163, #165, or #167.
 
 It records readiness decisions before the first actual schema or example implementation PR.
+
+## Schema Implementation Progress
+
+The first implementation PR for this track adds optional Evidence Event Schema support for:
+
+- evidence integrity metadata;
+- evidence trust limitations;
+- approval evidence source references;
+- approval-to-action binding references;
+- execution-bound approval enforcement references.
+
+This implementation keeps the new schema fields optional and does not add evidence examples in the same change.
