@@ -50,6 +50,8 @@ For v0.5.x cross-agent delegation CSV refinement proposal, see `docs/en/status/v
 
 For v0.5.x approval quality testing proposal, see `docs/en/status/v050x-approval-quality-testing-proposal.md`.
 
+For v0.5.x approval quality testing candidate appendix, see `docs/en/status/v050x-approval-quality-testing-candidate-appendix.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
