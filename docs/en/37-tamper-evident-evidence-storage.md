@@ -25,6 +25,12 @@ It is intended to support future design work for:
 - non-execution and reauthorization evidence;
 - evidence storage threat modeling.
 
+## Requirements Guidance Follow-up
+
+Tamper-evident evidence requirements guidance is maintained in `docs/en/61-tamper-evident-evidence-requirements.md`.
+
+That document provides non-normative guidance for selected contexts where tamper-evident evidence may be required, strongly recommended, recommended, optional, or usually unnecessary.
+
 ## Core Principle
 
 Evidence is useful only if reviewers can understand how much it can be trusted.
