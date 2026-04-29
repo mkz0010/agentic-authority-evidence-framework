@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated v0.5.x status documents after the evidence integrity CSV refinement proposal review.
+
 ### Added
 
 - Added a temporary v0.5.x evidence integrity CSV refinement proposal.

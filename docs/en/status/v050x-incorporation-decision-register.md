@@ -409,3 +409,47 @@ Remaining #167-related incorporation decisions include:
 - whether approval evidence trusted-source expectations require `AAEF-EVD-03` refinement;
 - whether approval fatigue and repeated approval behavior require additional `AAEF-HUM-02` refinement;
 - whether related evidence/schema, control catalog, or assessment profile changes are needed.
+
+## Incorporation Update after #201
+
+PR #201 completed the evidence integrity CSV refinement proposal review.
+
+The review concluded that immediate active testing procedure CSV refinement is not required for the first #165 incorporation step.
+
+The current active testing procedure row `AAEF-EVD-04` already covers the primary evidence integrity and tamper-evident evidence requirements, including:
+
+- critical and audit-grade evidence;
+- undetected alteration;
+- deletion;
+- replay;
+- reordering;
+- truncation;
+- selective omission;
+- integrity verification;
+- append-only evidence storage;
+- write-restricted evidence stores;
+- signed evidence records;
+- hash chains;
+- Merkle roots;
+- external timestamps;
+- immutable storage policies;
+- independent corroborating logs;
+- retention policy;
+- deletion or redaction records;
+- evidence trust limitations.
+
+This confirms the selected incorporation path for the first #165 batch:
+
+- do not add temporary evidence integrity candidate IDs to active testing artifacts;
+- do not create new control IDs at this stage;
+- use `AAEF-EVD-04` as the central active row for evidence integrity and tamper-evident evidence;
+- defer schema, examples, negative tests, and incident-response preservation details to follow-up work.
+
+Remaining #165-related incorporation decisions include:
+
+- whether evidence integrity fields should be added to the Evidence Event Schema;
+- whether E5 or higher-depth evidence examples should be introduced;
+- whether negative tests should be added for tampering, deletion, replay, reordering, truncation, and selective omission;
+- whether incident-response evidence preservation guidance should be created or refined;
+- whether `AAEF-EVD-04` should receive a later minor wording refinement for verification result and failure handling;
+- whether evidence integrity should be tied to assessment profiles or evidence depth levels.
