@@ -24,6 +24,8 @@ For document classification and navigation, see `docs/en/document-map.md`.
 
 For temporary v0.5.x follow-up status, see `docs/en/status/v050x-follow-up-status.md`.
 
+For v0.5.x incorporation decision direction, see `docs/en/status/v050x-incorporation-decision-register.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:

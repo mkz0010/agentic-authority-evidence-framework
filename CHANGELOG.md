@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x incorporation decision register for #161 through #167.
 - Added temporary v0.5.x follow-up status tracking under `docs/en/status/`.
 - Added a document map to classify AAEF documents by role without moving existing files.
 - Added non-normative approval quality testing and evidence guidance for v0.5.x follow-up work.
