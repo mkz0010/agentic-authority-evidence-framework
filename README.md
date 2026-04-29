@@ -81,9 +81,9 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.4.1 Public Review Draft** is the current public review baseline.
+**AAEF v0.5.0 Public Review Planning Release** is the latest public review planning release.
 
-AAEF v0.4.1 is a maintenance and refinement release over v0.4.0. It preserves the v0.4.0 enterprise assessment usability baseline and incorporates post-release refinements to testing criteria and external framework mappings.
+AAEF v0.5.0 is a non-normative planning and design-clarification release. It adds planning models and incorporation guidance for authority lifecycle, evidence integrity, approval quality, and future v0.5.x work. AAEF v0.4.1 remains the current control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, or testing procedures.
 
 Earlier v0.3.x, v0.2.x, and v0.1.x releases remain available as prior public review baselines.
 
@@ -120,7 +120,7 @@ The v0.4.x Public Review Draft includes:
 - validation for testing procedures and external mappings,
 - and historical release preparation records under `docs/en/release/`.
 
-AAEF v0.4.1 remains a public review draft. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
+AAEF v0.5.0 remains a public review planning release. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
 
 Feedback, issues, and pull requests are welcome.
 
@@ -308,7 +308,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.4.1 Public Review Draft, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.5.0 Public Review Planning Release, 2026.
 
 ## Research and Open Questions
 
