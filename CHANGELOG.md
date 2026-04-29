@@ -4,6 +4,8 @@
 
 ### Added
 
+- Added temporary v0.5.x follow-up status tracking under `docs/en/status/`.
+- Added a document map to classify AAEF documents by role without moving existing files.
 - Added non-normative approval quality testing and evidence guidance for v0.5.x follow-up work.
 - Added non-normative tamper-evident evidence requirements guidance for selected v0.5.x contexts.
 - Added non-normative evidence integrity profile guidance for high-impact and audit-grade v0.5.x follow-up work.

@@ -271,6 +271,10 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── 60-evidence-integrity-profile-guidance.md
 │       ├── 61-tamper-evident-evidence-requirements.md
 │       ├── 62-approval-quality-testing-guidance.md
+│       ├── document-map.md
+│       └── status/
+│           ├── README.md
+│           └── v050x-follow-up-status.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
@@ -319,6 +323,8 @@ If you reference this work, please cite it as:
 > Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.5.0 Public Review Planning Release, 2026.
 
 ## Research and Open Questions
+
+For document classification and navigation, see [`docs/en/document-map.md`](docs/en/document-map.md).
 
 For a research-facing entry point, see [`docs/en/55-researcher-overview.md`](docs/en/55-researcher-overview.md). For the detailed catalog of open research questions, see [`docs/en/19-open-research-questions.md`](docs/en/19-open-research-questions.md).
 

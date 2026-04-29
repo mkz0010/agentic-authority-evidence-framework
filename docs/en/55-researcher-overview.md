@@ -18,6 +18,12 @@ AAEF v0.4.1 remains the current control and assessment baseline unless a later r
 
 The v0.5.0 planning materials are non-normative unless explicitly incorporated into future control, evidence, assessment, testing, mapping, or release artifacts.
 
+## Document Map and Follow-up Status
+
+For document classification and navigation, see `docs/en/document-map.md`.
+
+For temporary v0.5.x follow-up status, see `docs/en/status/v050x-follow-up-status.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
