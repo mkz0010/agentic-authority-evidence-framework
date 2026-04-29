@@ -31,6 +31,7 @@ VALID_EXAMPLES = [
     REPO_ROOT / "examples" / "agentic-action-evidence-event.valid.json",
     REPO_ROOT / "examples" / "agentic-action-evidence-event.high-impact.json",
     REPO_ROOT / "examples" / "agentic-action-evidence-event.audit-grade.json",
+    REPO_ROOT / "examples" / "agentic-action-evidence-event.integrity-e5.json",
 ]
 
 INVALID_EXAMPLES = [
