@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added temporary v0.5.x testing draft pass/fail criteria for selected testing candidates.
 - Added a temporary v0.5.x testing candidate mapping document for likely control areas and evidence expectations.
 - Added a temporary v0.5.x testing procedure candidate matrix for selected testing candidates.
 - Added a temporary v0.5.x testing candidate selection document for #161, #163, and #167.
