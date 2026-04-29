@@ -60,3 +60,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-evidence-integrity-csv-refinement-proposal.md`
 - `docs/en/status/v050x-incorporation-review-checkpoint.md`
 - `docs/en/status/v050x-next-phase-track-plan.md`
+- `docs/en/status/v050x-evidence-schema-and-examples-track-proposal.md`

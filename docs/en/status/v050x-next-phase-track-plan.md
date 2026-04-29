@@ -283,3 +283,15 @@ This plan does not:
 - close #161, #163, #165, or #167.
 
 It records the intended next-phase work split after the first v0.5.x incorporation review cycle.
+
+## T1 Track Proposal
+
+Track T1 is started in `docs/en/status/v050x-evidence-schema-and-examples-track-proposal.md`.
+
+The proposal evaluates whether schema fields or examples are needed for:
+
+- evidence integrity and tamper-evident evidence;
+- trusted approval evidence source handling;
+- model-generated approval summary limitations;
+- principal context freshness and degradation evidence;
+- delegation and authority lineage evidence.
