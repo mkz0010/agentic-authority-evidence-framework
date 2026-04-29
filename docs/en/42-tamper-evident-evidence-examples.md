@@ -25,6 +25,12 @@ It illustrates how reviewers can distinguish:
 
 This document does not change the Evidence Event Schema, control catalog, testing procedures, or assessment worksheet.
 
+## Requirements Guidance Follow-up
+
+Tamper-evident evidence requirements guidance is maintained in `docs/en/61-tamper-evident-evidence-requirements.md`.
+
+That document provides the selected-context guidance for when tamper-evident evidence may be required, strongly recommended, recommended, optional, or usually unnecessary.
+
 ## Core Principle
 
 Tamper-evident evidence does not necessarily prevent tampering.

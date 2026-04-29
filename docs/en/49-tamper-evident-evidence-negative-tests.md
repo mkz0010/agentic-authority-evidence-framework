@@ -14,6 +14,12 @@ It helps reviewers test whether evidence used to support high-impact agentic act
 
 This document does not change the Evidence Event Schema, control catalog, testing procedures, or assessment worksheet.
 
+## Requirements Guidance Follow-up
+
+Tamper-evident evidence requirements guidance is maintained in `docs/en/61-tamper-evident-evidence-requirements.md`.
+
+That document provides the selected-context guidance model. This document provides negative tests for tamper-evident evidence failure modes.
+
 ## Core Principle
 
 Evidence is not strong merely because a log exists.

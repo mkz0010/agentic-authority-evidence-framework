@@ -198,6 +198,12 @@ However, low-risk classification should not be used to hide high-impact effects.
 | Treating tamper-evident storage as complete evidence | Integrity does not prove completeness or relevance. |
 | Using audit-grade claims without retention and reviewability | Evidence may be strong technically but unusable in assessment. |
 
+## Tamper-Evident Evidence Requirements Follow-up
+
+Tamper-evident evidence requirements guidance is maintained in `docs/en/61-tamper-evident-evidence-requirements.md`.
+
+That document expands the selected-context guidance for when tamper-evident evidence may be required, strongly recommended, recommended, optional, or usually unnecessary.
+
 ## Relationship to Tamper-Evident Evidence
 
 Tamper-evident evidence is one way to improve evidence integrity.
