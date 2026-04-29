@@ -16,6 +16,12 @@ The remaining design issue is that an approval event is not automatically meanin
 
 This concept note explores how AAEF should distinguish meaningful approval from approval-shaped friction.
 
+## Testing Guidance Follow-up
+
+Approval quality testing guidance is maintained in `docs/en/62-approval-quality-testing-guidance.md`.
+
+That document extends approval quality and approval fatigue planning with negative tests, expected safe outcomes, and candidate evidence expectations.
+
 ## Core Principle
 
 Human approval is not authority unless the approver has enough context, capability, time, and independence to make a meaningful decision.

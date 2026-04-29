@@ -16,6 +16,12 @@ The purpose is to distinguish meaningful human approval from superficial approva
 
 This model does not introduce new control requirements by itself.
 
+## Testing Guidance Follow-up
+
+Approval quality testing guidance is maintained in `docs/en/62-approval-quality-testing-guidance.md`.
+
+That document defines non-normative negative test guidance and candidate evidence expectations for approval quality, approval fatigue, approval laundering, batch approval, reauthorization, and approval-to-execution binding.
+
 ## Design Rationale
 
 Human approval is often used as a safety boundary for agentic actions.

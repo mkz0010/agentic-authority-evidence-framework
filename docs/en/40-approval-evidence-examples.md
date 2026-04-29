@@ -21,6 +21,12 @@ It illustrates how reviewers can distinguish:
 
 This document does not change the Evidence Event Schema, control catalog, testing procedures, or assessment worksheet.
 
+## Testing Guidance Follow-up
+
+Approval quality testing guidance is maintained in `docs/en/62-approval-quality-testing-guidance.md`.
+
+That document provides non-normative negative tests and candidate evidence expectations for approval evidence quality.
+
 ## Core Principle
 
 A human approval record is not automatically meaningful evidence.
