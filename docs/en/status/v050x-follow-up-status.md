@@ -133,3 +133,23 @@ This update partially addresses #161.
 - task splitting and aggregate-effect bypass criteria;
 - whether VTC-PCD-03 and VTC-PCD-07 require additional active testing refinement;
 - whether related evidence, schema, or assessment profile changes are needed.
+
+## Update after #194
+
+PR #194 partially incorporated the cross-agent delegation testing work into active testing procedures.
+
+The active testing procedure CSV was refined for:
+
+- `AAEF-DEL-01` — delegated scope mismatch, delegated capability, operation, target, resource, and downstream action comparison;
+- `AAEF-DEL-05` — cross-agent authority lineage, communication-not-authority handling, and receiving-side validation evidence.
+
+This update partially addresses #163.
+
+#163 remains open because additional cross-agent delegation work is still pending, including:
+
+- capability-scoped delegation refinement for `AAEF-DEL-02`;
+- fire-and-forget delegation and explicit acceptance behavior;
+- refusal propagation and resulting workflow state evidence;
+- downstream redelegation authority;
+- minimum delegation chain evidence expectations;
+- whether related evidence, schema, control, or assessment profile changes are needed.

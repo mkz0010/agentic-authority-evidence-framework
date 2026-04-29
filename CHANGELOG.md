@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Updated v0.5.x status documents after the cross-agent delegation testing procedure refinement.
 - Refined `AAEF-DEL-01` and `AAEF-DEL-05` testing procedure language for cross-agent delegation authority validation.
 
 ### Added
