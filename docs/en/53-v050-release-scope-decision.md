@@ -101,6 +101,12 @@ They should remain open until the project decides one of the following for each 
 - convert into a narrower v0.5.x follow-up issue;
 - defer explicitly as future research or implementation guidance.
 
+## Release Preparation Checklist
+
+Release preparation should follow `docs/en/54-v050-release-preparation-checklist.md`.
+
+That checklist records validation steps, issue review guidance, follow-up issue candidates, and draft release note language for v0.5.0.
+
 ## Release Note Guidance
 
 The v0.5.0 release notes should state that v0.5.0 is a planning and design-clarification release.
