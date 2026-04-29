@@ -54,6 +54,8 @@ For v0.5.x approval quality testing candidate appendix, see `docs/en/status/v050
 
 For v0.5.x approval quality CSV refinement proposal, see `docs/en/status/v050x-approval-quality-csv-refinement-proposal.md`.
 
+For v0.5.x evidence integrity CSV refinement proposal, see `docs/en/status/v050x-evidence-integrity-csv-refinement-proposal.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
