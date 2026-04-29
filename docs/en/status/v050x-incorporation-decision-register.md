@@ -332,3 +332,28 @@ This document does not:
 - supersede release notes.
 
 It is a temporary decision register for the v0.5.x incorporation phase.
+
+## Incorporation Update after #189
+
+PR #189 completed the first active testing procedure refinement based on the principal context testing candidate work.
+
+The refinement did not add temporary `VTC-PCD-*` rows to the active testing procedure CSV.
+
+Instead, it preserved the one-control-one-row testing model and refined existing active rows:
+
+- `AAEF-AUZ-02` for material scope expansion and requested-vs-authorized scope review;
+- `AAEF-AUZ-07` for revocation, expiry, downscoping, and authority lifecycle state changes.
+
+This confirms the selected incorporation path for the first #161 batch:
+
+- use VTC candidates as planning and review inputs;
+- refine existing control-linked testing rows where appropriate;
+- avoid promoting temporary VTC IDs into active testing artifacts unless the testing model is explicitly changed.
+
+Remaining #161-related incorporation decisions include:
+
+- whether and how to incorporate task drift tests;
+- whether and how to incorporate retry-after-denial tests;
+- whether and how to incorporate task splitting and aggregate-effect bypass tests;
+- whether risk escalation and untrusted input influence require additional active testing refinement;
+- whether related evidence/schema or assessment profile changes are needed.

@@ -114,3 +114,22 @@ This document does not:
 - replace release notes;
 - replace the document map;
 - define new control, testing, evidence, assessment, or schema requirements.
+
+## Update after #189
+
+PR #189 partially incorporated the principal context degradation testing work into active testing procedures.
+
+The active testing procedure CSV was refined for:
+
+- `AAEF-AUZ-02` — requested purpose, target resource, and applicable scope, including material scope expansion;
+- `AAEF-AUZ-07` — material runtime state, including revocation, expiry, downscoping, and authority lifecycle state changes.
+
+This update partially addresses #161.
+
+#161 remains open because additional principal context degradation work is still pending, including:
+
+- material task drift thresholds;
+- retry-after-denial correlation;
+- task splitting and aggregate-effect bypass criteria;
+- whether VTC-PCD-03 and VTC-PCD-07 require additional active testing refinement;
+- whether related evidence, schema, or assessment profile changes are needed.
