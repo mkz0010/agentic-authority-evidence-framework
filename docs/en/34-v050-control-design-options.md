@@ -33,6 +33,14 @@ v0.5.0 control design should follow these principles:
 6. Preserve AAEF's core premise: model output is not authority.
 7. Keep v0.5.0 implementable for real agentic AI systems.
 
+## v0.5.0 Release Scope Decision Relationship
+
+The current v0.5.0 release scope decision is recorded in `docs/en/53-v050-release-scope-decision.md`.
+
+That document should be used when deciding whether each planning theme remains non-normative guidance, becomes a v0.5.x follow-up item, or is later incorporated into control, evidence, assessment, testing, mapping, or release artifacts.
+
+For v0.5.0, the intended disposition is to keep the current planning models non-normative unless later release artifacts explicitly incorporate them.
+
 ## Normative Incorporation Rules
 
 v0.5.0 planning concepts do not become normative AAEF requirements merely because they are described in planning documents.
