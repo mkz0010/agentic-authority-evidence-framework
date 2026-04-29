@@ -120,6 +120,7 @@ Researchers may start with the following sequence:
 11. `docs/en/51-evidence-integrity-levels.md`
 12. `docs/en/52-approval-quality-model.md`
 13. `docs/en/53-v050-release-scope-decision.md`
+14. `docs/en/59-principal-context-degradation-testing.md`
 
 For readers focused on cross-agent systems, start with:
 

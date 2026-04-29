@@ -25,6 +25,12 @@ It illustrates how reviewers can distinguish:
 
 This document does not change the Evidence Event Schema, control catalog, testing procedures, or assessment worksheet.
 
+## Testing Guidance Follow-up
+
+Principal context degradation testing guidance is maintained in `docs/en/59-principal-context-degradation-testing.md`.
+
+That document extends these examples into non-normative test scenarios and candidate evidence expectations.
+
 ## Core Principle
 
 Principal context is not valid merely because some principal identifier exists.

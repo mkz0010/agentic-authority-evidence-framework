@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added non-normative principal context degradation testing guidance for v0.5.x follow-up work.
 - Added non-normative cross-agent budget propagation guidance for v0.5.x follow-up work.
 - Added non-normative cross-agent delegation negative test guidance for v0.5.x follow-up work.
 - Added non-normative capability-scoped cross-agent delegation guidance for v0.5.x follow-up work.
