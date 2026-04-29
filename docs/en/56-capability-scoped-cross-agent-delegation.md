@@ -233,6 +233,12 @@ This document relates to:
 
 It also relates to the open Cross-Agent and Cross-Domain Authority umbrella issue and the v0.5.x follow-up issues for delegation acceptance, chain accountability, and budget propagation.
 
+## Negative Test Follow-up
+
+Cross-agent delegation negative test guidance is maintained in `docs/en/57-cross-agent-delegation-negative-tests.md`.
+
+That document covers failure modes for communication mistaken for authority, missing explicit acceptance, refusal propagation failure, scope mismatch, delegation chain accountability, downstream redelegation, budget propagation, retry pressure, task splitting, and evidence omission.
+
 ## Open Design Questions
 
 Future work should decide:
