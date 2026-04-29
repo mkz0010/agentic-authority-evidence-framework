@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added non-normative capability-scoped cross-agent delegation guidance for v0.5.x follow-up work.
 - Added a researcher overview as a research-facing entry point with reading paths, review questions, and links to open research questions and v0.5.x follow-up work.
 
 ## v0.5.0 Public Review Planning Release - 2026-04-29

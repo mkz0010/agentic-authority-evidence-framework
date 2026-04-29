@@ -126,7 +126,8 @@ For readers focused on cross-agent systems, start with:
 1. `docs/en/31-cross-agent-cross-domain-authority.md`
 2. `docs/en/46-cross-agent-authority-examples.md`
 3. `docs/en/50-authority-lifecycle-model.md`
-4. the open Cross-Agent and Cross-Domain Authority umbrella issue and related v0.5.x follow-up issues.
+4. `docs/en/56-capability-scoped-cross-agent-delegation.md`
+5. the open Cross-Agent and Cross-Domain Authority umbrella issue and related v0.5.x follow-up issues.
 
 ## Current v0.5.x Follow-up Areas
 

@@ -18,6 +18,12 @@ The purpose is to describe how authority is established, preserved, degraded, tr
 
 This model does not introduce new control requirements by itself.
 
+## Capability-Scoped Cross-Agent Delegation
+
+Capability-scoped cross-agent delegation is further described in `docs/en/56-capability-scoped-cross-agent-delegation.md`.
+
+That guidance supports the authority lifecycle model by distinguishing communication, delegation acceptance, and execution authorization across agent boundaries.
+
 ## Scope
 
 The authority lifecycle model applies to agentic systems where an agent, workflow, tool dispatcher, backend service, or delegated agent may perform actions on behalf of a principal.
