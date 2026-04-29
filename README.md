@@ -283,7 +283,8 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │           ├── v050x-testing-incorporation-readiness-review.md
 │           ├── v050x-principal-context-testing-proposal.md
 │           ├── v050x-principal-context-testing-candidate-appendix.md
-│           └── v050x-principal-context-testing-csv-refinement-proposal.md
+│           ├── v050x-principal-context-testing-csv-refinement-proposal.md
+│           └── v050x-cross-agent-delegation-testing-proposal.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
