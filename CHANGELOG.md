@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Refined `AAEF-HUM-01` and `AAEF-AUZ-03` testing procedure language for approval quality and approval-to-execution binding.
+
 ### Added
 
 - Added a temporary v0.5.x approval quality CSV refinement proposal.
