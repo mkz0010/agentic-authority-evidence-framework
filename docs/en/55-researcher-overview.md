@@ -62,6 +62,8 @@ For the v0.5.x next phase track plan, see `docs/en/status/v050x-next-phase-track
 
 For the v0.5.x evidence schema and examples track proposal, see `docs/en/status/v050x-evidence-schema-and-examples-track-proposal.md`.
 
+For the v0.5.x evidence schema field proposal, see `docs/en/status/v050x-evidence-schema-field-proposal.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
