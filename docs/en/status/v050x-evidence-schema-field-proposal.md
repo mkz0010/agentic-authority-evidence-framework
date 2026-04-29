@@ -304,3 +304,14 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records candidate schema field decisions before any schema or example implementation PR.
+
+## Example Design Proposal
+
+The initial evidence example designs are recorded in `docs/en/status/v050x-evidence-example-design-proposal.md`.
+
+The proposal focuses on two candidate examples:
+
+- `agentic-action-evidence-event.integrity-e5.json`
+- `agentic-action-evidence-event.approval-binding.json`
+
+The examples are design candidates only and do not modify the active schema or example files.

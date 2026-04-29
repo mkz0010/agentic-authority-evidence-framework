@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x evidence example design proposal.
 - Added a temporary v0.5.x evidence schema field proposal.
 - Added a temporary v0.5.x evidence schema and examples track proposal.
 - Added a temporary v0.5.x next phase track plan.

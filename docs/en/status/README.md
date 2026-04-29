@@ -62,3 +62,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-next-phase-track-plan.md`
 - `docs/en/status/v050x-evidence-schema-and-examples-track-proposal.md`
 - `docs/en/status/v050x-evidence-schema-field-proposal.md`
+- `docs/en/status/v050x-evidence-example-design-proposal.md`
