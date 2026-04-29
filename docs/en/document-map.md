@@ -132,6 +132,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | Path | Purpose | Classification |
 | --- | --- | --- |
 | _No matching documents in this category yet._ |  |  |
+| `docs/en/status/v050x-incorporation-decision-register.md` | v0.5.x incorporation direction register | Temporary status / coordination material |
 
 ## Physical Organization Policy
 

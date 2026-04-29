@@ -274,7 +274,8 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── document-map.md
 │       └── status/
 │           ├── README.md
-│           └── v050x-follow-up-status.md
+│           ├── v050x-follow-up-status.md
+│           └── v050x-incorporation-decision-register.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md

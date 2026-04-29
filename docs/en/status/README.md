@@ -17,6 +17,7 @@ This directory may contain:
 - milestone status summaries;
 - follow-up issue tracking;
 - incorporation status summaries;
+- incorporation decision registers;
 - review coordination notes;
 - release preparation state;
 - close, promote, defer, or split decision tracking.
@@ -37,3 +38,8 @@ This directory should not contain:
 Documents in this directory do not change the current AAEF control and assessment baseline.
 
 Any normative incorporation must be handled through a later PR that explicitly updates the relevant control, testing, evidence, assessment, schema, mapping, or release artifacts.
+
+## Current Status Documents
+
+- `docs/en/status/v050x-follow-up-status.md`
+- `docs/en/status/v050x-incorporation-decision-register.md`
