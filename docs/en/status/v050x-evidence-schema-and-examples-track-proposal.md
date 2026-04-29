@@ -201,3 +201,15 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records the starting proposal for the v0.5.x evidence schema and examples track.
+
+## Schema Field Proposal
+
+The candidate schema field decision layer is recorded in `docs/en/status/v050x-evidence-schema-field-proposal.md`.
+
+The proposal separates candidate fields into:
+
+- first candidate set;
+- deferred candidates;
+- not recommended yet.
+
+It recommends starting with optional evidence integrity, integrity verification, proof reference, evidence trust limitation, approval evidence source, approval-to-action binding, and execution-bound approval enforcement references.
