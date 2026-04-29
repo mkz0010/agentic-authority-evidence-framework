@@ -44,6 +44,12 @@ They may later inform:
 
 They are not executable test fixtures by themselves.
 
+## Budget Propagation Guidance
+
+Cross-agent budget propagation guidance is maintained in `docs/en/58-cross-agent-budget-propagation.md`.
+
+That document provides the guidance model for bounded resource constraints. This document provides negative tests for budget propagation failure modes.
+
 ## Negative Test Categories
 
 | Category | Purpose |

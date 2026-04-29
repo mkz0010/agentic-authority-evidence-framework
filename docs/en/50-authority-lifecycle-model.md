@@ -24,6 +24,12 @@ Capability-scoped cross-agent delegation is further described in `docs/en/56-cap
 
 That guidance supports the authority lifecycle model by distinguishing communication, delegation acceptance, and execution authorization across agent boundaries.
 
+## Cross-Agent Budget Propagation
+
+Cross-agent budget propagation is further described in `docs/en/58-cross-agent-budget-propagation.md`.
+
+That guidance supports the authority lifecycle model by clarifying how delegated authority should preserve, attenuate, or explicitly reauthorize budget, quota, tool-use, API, compute, time, data access, and downstream delegation constraints.
+
 ## Cross-Agent Delegation Negative Tests
 
 Cross-agent delegation negative test guidance is maintained in `docs/en/57-cross-agent-delegation-negative-tests.md`.
