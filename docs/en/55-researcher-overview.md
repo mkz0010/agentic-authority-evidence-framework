@@ -123,6 +123,7 @@ Researchers may start with the following sequence:
 14. `docs/en/59-principal-context-degradation-testing.md`
 15. `docs/en/60-evidence-integrity-profile-guidance.md`
 16. `docs/en/61-tamper-evident-evidence-requirements.md`
+17. `docs/en/62-approval-quality-testing-guidance.md`
 
 For readers focused on cross-agent systems, start with:
 

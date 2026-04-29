@@ -14,6 +14,12 @@ It helps assessors reason about whether a human approval was meaningful, informe
 
 This document does not change the Evidence Event Schema, control catalog, testing procedures, or assessment worksheet.
 
+## Testing Guidance Follow-up
+
+Approval quality testing guidance is maintained in `docs/en/62-approval-quality-testing-guidance.md`.
+
+That document extends this assessment guidance with non-normative negative tests and candidate evidence expectations.
+
 ## Core Principle
 
 Human approval is not automatically authority.

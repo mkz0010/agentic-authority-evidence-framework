@@ -270,6 +270,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── 59-principal-context-degradation-testing.md
 │       ├── 60-evidence-integrity-profile-guidance.md
 │       ├── 61-tamper-evident-evidence-requirements.md
+│       ├── 62-approval-quality-testing-guidance.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
