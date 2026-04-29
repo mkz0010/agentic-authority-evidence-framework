@@ -18,6 +18,12 @@ It focuses on:
 
 This document does not change the Evidence Event Schema, control catalog, testing procedures, or assessment worksheet.
 
+## Evidence Integrity Profile Follow-up
+
+Evidence integrity profile guidance is maintained in `docs/en/60-evidence-integrity-profile-guidance.md`.
+
+That document clarifies the distinction between evidence depth and evidence integrity for high-impact and audit-grade contexts.
+
 ## Core Principle
 
 Evidence depth should increase with action risk, review need, and consequence.
