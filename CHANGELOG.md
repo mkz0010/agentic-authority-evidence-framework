@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x approval quality testing proposal.
+
 ### Changed
 
 - Updated v0.5.x status documents after the cross-agent delegation testing procedure refinement.
