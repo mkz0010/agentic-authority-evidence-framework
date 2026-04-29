@@ -28,6 +28,8 @@ For v0.5.x incorporation decision direction, see `docs/en/status/v050x-incorpora
 
 For v0.5.x testing candidate selection, see `docs/en/status/v050x-testing-candidate-selection.md`.
 
+For v0.5.x testing procedure candidate matrix, see `docs/en/status/v050x-testing-procedure-candidate-matrix.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:

@@ -44,3 +44,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-follow-up-status.md`
 - `docs/en/status/v050x-incorporation-decision-register.md`
 - `docs/en/status/v050x-testing-candidate-selection.md`
+- `docs/en/status/v050x-testing-procedure-candidate-matrix.md`
