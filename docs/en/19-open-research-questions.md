@@ -8,6 +8,12 @@ These questions are not AAEF control requirements.
 
 They are intended to help researchers, students, reviewers, and implementers identify areas where further empirical study, measurement, experimentation, or formalization may be useful.
 
+## Researcher Overview
+
+A research-facing entry point is maintained in `docs/en/55-researcher-overview.md`.
+
+This document remains the detailed catalog of open research questions. The researcher overview provides project positioning, reading paths, current v0.5.x follow-up areas, and review questions for researchers.
+
 ## Purpose
 
 AAEF is primarily an action assurance framework for agentic AI systems.

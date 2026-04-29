@@ -263,6 +263,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── 52-approval-quality-model.md
 │       ├── 53-v050-release-scope-decision.md
 │       ├── 54-v050-release-preparation-checklist.md
+│       ├── 55-researcher-overview.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
@@ -312,7 +313,7 @@ If you reference this work, please cite it as:
 
 ## Research and Open Questions
 
-For research-oriented open questions, see [`docs/en/19-open-research-questions.md`](docs/en/19-open-research-questions.md).
+For a research-facing entry point, see [`docs/en/55-researcher-overview.md`](docs/en/55-researcher-overview.md). For the detailed catalog of open research questions, see [`docs/en/19-open-research-questions.md`](docs/en/19-open-research-questions.md).
 
 ## License
 
