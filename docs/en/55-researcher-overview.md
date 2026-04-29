@@ -34,6 +34,8 @@ For v0.5.x testing candidate mapping, see `docs/en/status/v050x-testing-candidat
 
 For v0.5.x draft pass/fail criteria, see `docs/en/status/v050x-testing-draft-pass-fail-criteria.md`.
 
+For v0.5.x testing incorporation readiness review, see `docs/en/status/v050x-testing-incorporation-readiness-review.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
