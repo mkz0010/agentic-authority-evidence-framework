@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+_No unreleased changes._
+
+## v0.5.0 Public Review Planning Release - 2026-04-29
+
 ### Changed
 
 - Added a v0.5.0 release preparation checklist with validation steps, issue review guidance, follow-up issue candidates, and draft release notes.
