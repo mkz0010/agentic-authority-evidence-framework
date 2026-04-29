@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x next phase track plan.
 - Added a temporary v0.5.x incorporation review checkpoint for #161, #163, #165, and #167.
 
 ### Changed

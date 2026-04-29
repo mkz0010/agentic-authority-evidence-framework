@@ -236,3 +236,15 @@ This checkpoint does not:
 - close #161, #163, #165, or #167.
 
 It records the current incorporation review state after the first v0.5.x review cycle.
+
+## Next Phase Track Plan
+
+The next phase work split is recorded in `docs/en/status/v050x-next-phase-track-plan.md`.
+
+The plan separates remaining work into:
+
+- evidence schema and examples;
+- evidence integrity negative tests;
+- delegation semantics;
+- approval semantics;
+- cleanup and publication readiness.

@@ -58,6 +58,8 @@ For v0.5.x evidence integrity CSV refinement proposal, see `docs/en/status/v050x
 
 For the v0.5.x incorporation review checkpoint, see `docs/en/status/v050x-incorporation-review-checkpoint.md`.
 
+For the v0.5.x next phase track plan, see `docs/en/status/v050x-next-phase-track-plan.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
