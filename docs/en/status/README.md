@@ -46,3 +46,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-testing-candidate-selection.md`
 - `docs/en/status/v050x-testing-procedure-candidate-matrix.md`
 - `docs/en/status/v050x-testing-candidate-mapping.md`
+- `docs/en/status/v050x-testing-draft-pass-fail-criteria.md`
