@@ -98,7 +98,7 @@ These outcomes are planning assumptions only. They do not change the v0.4.1 base
 | Authority Denial and Reauthorization Flow | Testing refinement | Evidence refinement and existing control refinement | Treat primarily as a testable behavior for denial, freeze, expiry, and reauthorization paths before deciding whether new control text is needed. |
 | Risk-Proportional Evidence and Performance Overhead | Guidance only | Evidence refinement and assessment profile refinement | Treat as implementation and assessment guidance unless specific evidence expectations become required for higher assurance levels. |
 | Tamper-Evident Evidence Storage | Evidence refinement | New control candidate for high-impact or audit-grade profiles | Keep as an evidence-integrity planning topic. Avoid requiring tamper-evident storage universally unless scoped to higher-risk profiles. |
-| Approval Quality and Approval Fatigue | Existing control refinement | New HUM control candidate if approval quality cannot be adequately represented by existing HUM controls | Treat as a human-approval assurance refinement while preserving the distinction between meaningful approval and approval UI presence. |
+| Approval Quality and Approval Fatigue | Existing HUM control refinement | Guidance, testing refinement, or new HUM control candidate if approval quality cannot be adequately represented by existing HUM controls | Treat as a human-approval assurance refinement while preserving the distinction between meaningful approval, approval evidence, approval context quality, and approval UI presence. |
 
 ### Outcome Review Questions
 
@@ -511,5 +511,13 @@ That model should be used as shared design context before promoting any of the f
 
 - Risk-Proportional Evidence and Performance Overhead;
 - Tamper-Evident Evidence Storage.
+
+The model is non-normative and does not itself change the v0.4.1 baseline.
+
+## Approval Quality Model Relationship
+
+The current human-approval planning theme is consolidated in `docs/en/52-approval-quality-model.md`.
+
+That model should be used as shared design context before promoting Approval Quality and Approval Fatigue into normative or assessment artifacts.
 
 The model is non-normative and does not itself change the v0.4.1 baseline.
