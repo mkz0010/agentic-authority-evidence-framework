@@ -94,7 +94,7 @@ These outcomes are planning assumptions only. They do not change the v0.4.1 base
 | Planning theme | Primary expected outcome | Secondary possible outcome | Current disposition |
 | --- | --- | --- | --- |
 | Principal Context Degradation | Existing control refinement | Guidance and testing refinement | Treat as a cross-cutting authority lifecycle concept that may refine authorization, delegation, memory, and governance controls without immediately creating a new control ID. |
-| Cross-Agent and Cross-Domain Authority | Existing control refinement | New control candidate if existing delegation and authorization controls cannot express cross-boundary handoff risk | Keep as a planning topic until the framework determines whether cross-agent authority is a refinement of existing delegation controls or a distinct assessable obligation. |
+| Cross-Agent and Cross-Domain Authority | Existing control refinement | New control candidate if existing controls cannot express capability-scoped delegation, explicit acceptance or refusal, delegation chain limits, or cross-agent budget propagation | Keep as a planning topic until the framework determines whether cross-agent authority is a refinement of existing delegation controls or a distinct assessable obligation. |
 | Authority Denial and Reauthorization Flow | Testing refinement | Evidence refinement and existing control refinement | Treat primarily as a testable behavior for denial, freeze, expiry, and reauthorization paths before deciding whether new control text is needed. |
 | Risk-Proportional Evidence and Performance Overhead | Guidance only | Evidence refinement and assessment profile refinement | Treat as implementation and assessment guidance unless specific evidence expectations become required for higher assurance levels. |
 | Tamper-Evident Evidence Storage | Evidence refinement | New control candidate for high-impact or audit-grade profiles | Keep as an evidence-integrity planning topic. Avoid requiring tamper-evident storage universally unless scoped to higher-risk profiles. |
@@ -215,6 +215,23 @@ Use a hybrid approach:
 - consider a new `AAEF-PRN-03` only if the strengthened `AAEF-PRN-02` becomes too broad.
 
 For v0.5.0, the preferred first step is to strengthen `AAEF-PRN-02` and testing procedures before adding a new control.
+
+## Cross-Agent Delegation Design Considerations
+
+The cross-agent authority planning theme should explicitly distinguish communication from delegation authority.
+
+A future incorporation decision should consider whether existing controls can express the following obligations, or whether a new cross-agent control family or control IDs are required:
+
+- inter-agent communication does not imply authority to delegate;
+- cross-agent delegation authority should be capability-scoped;
+- receiving agents should explicitly accept or refuse delegated tasks;
+- refusal should propagate back to the requesting agent or workflow;
+- delegation chains should have depth limits and reauthorization expectations;
+- delegation chain evidence should preserve accountability across hops;
+- delegated agents should inherit budget, quota, rate, time, or resource ceilings;
+- gateway, dispatcher, workflow, or backend enforcement should prevent unbounded downstream delegation.
+
+These considerations remain non-normative until incorporated into control, testing, evidence, assessment, or release artifacts.
 
 ## Theme 2: Cross-Agent and Cross-Domain Authority
 

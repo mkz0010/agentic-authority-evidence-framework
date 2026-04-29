@@ -97,6 +97,94 @@ At minimum, a handoff should preserve:
 
 If these elements cannot be preserved or corroborated, the downstream component should treat the authority context as degraded or unbound.
 
+## Cross-Agent Delegation Authority
+
+Inter-agent communication is not delegation authority.
+
+The ability of one agent, workflow, or tool to communicate with another does not imply that it has authority to delegate work, spend resources, invoke capabilities, or expand the scope of the original principal's authorization.
+
+Cross-agent delegation should be treated as an authority-bearing transition, not merely as a message-passing event.
+
+### Capability-Scoped Delegation
+
+Cross-agent authority should be capability-scoped rather than merely agent-scoped.
+
+For example, Agent A may be authorized to request information from Agent B, but not to delegate an action that modifies data, spends money, contacts an external party, or triggers a high-impact operation.
+
+A cross-agent delegation context should identify, where applicable:
+
+- requesting agent;
+- receiving agent;
+- source principal;
+- delegated capability;
+- action type;
+- target or resource;
+- allowed scope;
+- budget or resource ceiling;
+- validity window or expiry;
+- maximum delegation depth;
+- whether downstream delegation is allowed;
+- policy context and constraints.
+
+If the requested capability is not covered by the delegation context, the receiving agent should treat the request as unauthorized or require reauthorization.
+
+### Explicit Delegation Acceptance and Refusal
+
+Delegation should not be treated as fire-and-forget.
+
+A receiving agent should be able to explicitly accept or refuse a delegated task before the delegating agent proceeds as if the task will be performed.
+
+The delegation response should distinguish:
+
+| Delegation response | Meaning | Expected behavior |
+| --- | --- | --- |
+| Accepted | The receiving agent accepts the delegated task within the provided authority scope. | The delegating workflow may proceed based on the accepted delegation. |
+| Refused | The receiving agent refuses the task and provides a reason or refusal category. | The delegating workflow must not assume execution and should handle denial, fallback, escalation, or reauthorization. |
+| Ambiguous | The receiving agent response does not clearly accept or refuse. | Treat as not accepted; require clarification or reauthorization. |
+| Expired | The delegation request or authority context is no longer valid. | Do not execute; require renewed delegation authority. |
+| Out of scope | The request exceeds the delegated capability, budget, target, or validity window. | Refuse or require reauthorization before execution. |
+
+Refusal propagation is important. If a downstream agent refuses a delegated task, that refusal should propagate back to the requesting agent or workflow in a way that prevents silent continuation under a false assumption of execution.
+
+### Delegation Chain Limits and Accountability
+
+Delegation chains should have explicit limits.
+
+Without depth limits, reauthorization expectations, and evidence linkage, accountability can become difficult to reconstruct as authority passes from Agent A to Agent B, then to Agent C, and onward.
+
+A delegation chain should preserve:
+
+- the original principal or authority source;
+- each delegating and receiving agent;
+- delegated capability and scope at each hop;
+- maximum permitted delegation depth;
+- whether each hop was accepted or refused;
+- reauthorization events at each required level;
+- budget and resource constraints at each hop;
+- evidence linkage between delegation records.
+
+For higher-integrity contexts, delegation evidence may use hash linkage, signatures, sequence identifiers, append-only records, or other mechanisms that make delegation chain modification detectable.
+
+This document does not require a specific cryptographic mechanism. Such mechanisms may be appropriate for higher evidence integrity levels or audit-grade contexts.
+
+### Cross-Agent Budget and Resource Propagation
+
+Delegated agents should not receive unconstrained resource authority merely because they receive a delegated task.
+
+When Agent A delegates to Agent B, Agent B should inherit bounded constraints such as budget, quota, rate limit, time limit, tool-use limit, or other resource ceilings appropriate to the original authorization.
+
+Cross-agent budget propagation helps prevent:
+
+- unbounded downstream delegation;
+- resource exhaustion;
+- cost amplification;
+- uncontrolled external service use;
+- unexpected high-impact side effects;
+- accountability gaps between the delegating and receiving agents.
+
+Budget and resource constraints should be enforced by a trusted gateway, dispatcher, workflow engine, backend service, or equivalent enforcement point where feasible.
+
+
 ## Denial, Freeze, Revocation, and Reauthorization
 
 Authority denial and reauthorization are not exceptional edge cases. They are normal lifecycle transitions that must be testable.
@@ -126,6 +214,8 @@ Authority lifecycle evidence should allow a reviewer to reconstruct:
 - what action, target, scope, and policy context were evaluated;
 - whether the authority decision had an expiry or validity window;
 - whether delegation or handoff occurred;
+- what capability, budget, resource, and delegation depth constraints applied;
+- whether downstream delegation was accepted, refused, expired, or out of scope;
 - whether principal context degradation was detected;
 - whether denial, freeze, revocation, expiry, or reauthorization occurred;
 - whether execution matched the verified authority scope.
@@ -153,7 +243,7 @@ The expected incorporation path is:
 | Planning theme | Likely incorporation path |
 | --- | --- |
 | Principal Context Degradation | Existing control refinement, guidance, and testing refinement |
-| Cross-Agent and Cross-Domain Authority | Existing control refinement, with possible new control candidate if cross-boundary authority cannot be expressed by existing controls |
+| Cross-Agent and Cross-Domain Authority | Existing control refinement, with possible new control candidate for capability-scoped delegation, explicit acceptance or refusal, delegation chain limits, or cross-agent budget propagation if existing controls cannot express these obligations |
 | Authority Denial and Reauthorization Flow | Testing refinement, evidence refinement, and possible existing control refinement |
 
 Any future normative incorporation should follow the incorporation rules and outcome register in `docs/en/34-v050-control-design-options.md`.
