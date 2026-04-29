@@ -24,6 +24,12 @@ Capability-scoped cross-agent delegation is further described in `docs/en/56-cap
 
 That guidance supports the authority lifecycle model by distinguishing communication, delegation acceptance, and execution authorization across agent boundaries.
 
+## Cross-Agent Delegation Negative Tests
+
+Cross-agent delegation negative test guidance is maintained in `docs/en/57-cross-agent-delegation-negative-tests.md`.
+
+That guidance supports the authority lifecycle model by describing failure modes for delegation acceptance, refusal propagation, downstream delegation, reauthorization, chain accountability, and evidence preservation.
+
 ## Scope
 
 The authority lifecycle model applies to agentic systems where an agent, workflow, tool dispatcher, backend service, or delegated agent may perform actions on behalf of a principal.

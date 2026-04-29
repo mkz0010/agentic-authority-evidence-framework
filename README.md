@@ -265,6 +265,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── 54-v050-release-preparation-checklist.md
 │       ├── 55-researcher-overview.md
 │       ├── 56-capability-scoped-cross-agent-delegation.md
+│       ├── 57-cross-agent-delegation-negative-tests.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
