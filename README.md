@@ -290,7 +290,8 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │           ├── v050x-approval-quality-testing-proposal.md
 │           ├── v050x-approval-quality-testing-candidate-appendix.md
 │           ├── v050x-approval-quality-csv-refinement-proposal.md
-│           └── v050x-evidence-integrity-csv-refinement-proposal.md
+│           ├── v050x-evidence-integrity-csv-refinement-proposal.md
+│           └── v050x-incorporation-review-checkpoint.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md

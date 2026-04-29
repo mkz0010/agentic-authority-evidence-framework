@@ -453,3 +453,26 @@ Remaining #165-related incorporation decisions include:
 - whether incident-response evidence preservation guidance should be created or refined;
 - whether `AAEF-EVD-04` should receive a later minor wording refinement for verification result and failure handling;
 - whether evidence integrity should be tied to assessment profiles or evidence depth levels.
+
+## Incorporation Review Checkpoint after #202
+
+After #202, the first incorporation review cycle for #161, #163, #165, and #167 is complete.
+
+The current incorporation decisions are:
+
+| Issue | Topic | Incorporation decision | Active artifact result | Status |
+| --- | --- | --- | --- | --- |
+| #161 | Principal context | Partially incorporate into existing active testing rows | Active testing procedure CSV refined | Open |
+| #163 | Cross-agent delegation | Partially incorporate into existing active DEL testing rows | Active testing procedure CSV refined | Open |
+| #165 | Evidence integrity | Treat as substantially represented by `AAEF-EVD-04` for the first step | No immediate active CSV change | Open |
+| #167 | Approval quality | Partially incorporate into existing active HUM/AUZ testing rows | Active testing procedure CSV refined | Open |
+
+The consolidated checkpoint is recorded in `docs/en/status/v050x-incorporation-review-checkpoint.md`.
+
+The next incorporation phase should focus on smaller follow-up decisions rather than broad first-pass incorporation:
+
+- evidence schema and examples;
+- evidence integrity negative tests;
+- delegation semantics;
+- approval semantics;
+- status document cleanup and publication readiness.

@@ -196,3 +196,18 @@ This update records #165 as already substantially represented in the current act
 - defining selective omission tests;
 - defining incident-response evidence preservation guidance;
 - deciding whether a later minor `AAEF-EVD-04` wording refinement is needed.
+
+## Checkpoint after #202
+
+After #202, the first incorporation review cycle for #161, #163, #165, and #167 is complete.
+
+Current checkpoint:
+
+- #161 principal context — first active CSV refinement incorporated; issue remains open.
+- #163 cross-agent delegation — first active CSV refinement incorporated; issue remains open.
+- #165 evidence integrity — substantially represented by existing `AAEF-EVD-04`; no immediate active CSV change required; issue remains open.
+- #167 approval quality — first active CSV refinement incorporated; issue remains open.
+
+For the consolidated checkpoint, see `docs/en/status/v050x-incorporation-review-checkpoint.md`.
+
+The next phase should split remaining work into smaller tracks for evidence schema and examples, negative tests, delegation semantics, approval semantics, and cleanup/publication readiness.
