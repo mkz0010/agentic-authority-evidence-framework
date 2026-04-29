@@ -50,3 +50,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-testing-incorporation-readiness-review.md`
 - `docs/en/status/v050x-principal-context-testing-proposal.md`
 - `docs/en/status/v050x-principal-context-testing-candidate-appendix.md`
+- `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md`
