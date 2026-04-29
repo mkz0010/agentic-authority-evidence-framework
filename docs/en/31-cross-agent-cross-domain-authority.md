@@ -14,6 +14,12 @@ It explains how authority, principal context, delegation constraints, evidence, 
 
 This document does not add new control requirements yet. It is intended to prepare future refinements to Principal Binding, Delegation and Authority, Action Authorization, Evidence, Response, and Trusted Control Boundary guidance.
 
+## Capability-Scoped Delegation Follow-up
+
+Capability-scoped cross-agent delegation guidance is maintained in `docs/en/56-capability-scoped-cross-agent-delegation.md`.
+
+That document clarifies that cross-agent delegation should be evaluated at the capability, action, resource, and constraint level rather than merely at the agent identity level.
+
 ## Definition
 
 **Cross-Agent and Cross-Domain Authority** refers to the problem of determining whether one agent, system, workflow, or organization may rely on another agent's identity, authority claims, delegated scope, evidence, or execution results.
