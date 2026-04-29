@@ -233,6 +233,12 @@ This document relates to:
 
 It also relates to the open Cross-Agent and Cross-Domain Authority umbrella issue and the v0.5.x follow-up issues for delegation acceptance, chain accountability, and budget propagation.
 
+## Budget Propagation Follow-up
+
+Cross-agent budget propagation guidance is maintained in `docs/en/58-cross-agent-budget-propagation.md`.
+
+That document clarifies how delegated agents should inherit bounded resource constraints such as budget, quota, API use, compute, time, tool-use, data access, and downstream delegation limits.
+
 ## Negative Test Follow-up
 
 Cross-agent delegation negative test guidance is maintained in `docs/en/57-cross-agent-delegation-negative-tests.md`.
