@@ -268,6 +268,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │       ├── 57-cross-agent-delegation-negative-tests.md
 │       ├── 58-cross-agent-budget-propagation.md
 │       ├── 59-principal-context-degradation-testing.md
+│       ├── 60-evidence-integrity-profile-guidance.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md

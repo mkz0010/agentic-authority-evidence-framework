@@ -17,6 +17,12 @@ The purpose is to describe how evidence strength can scale with action risk, ass
 
 This model does not introduce new control requirements by itself.
 
+## Profile Guidance Follow-up
+
+Evidence integrity profile guidance is maintained in `docs/en/60-evidence-integrity-profile-guidance.md`.
+
+That document relates Evidence Integrity Levels to high-impact and audit-grade assessment contexts, evidence depth, tamper-evident evidence, and risk-proportional evidence expectations.
+
 ## Design Rationale
 
 AAEF relies on evidence because model output is not authority and model-generated explanations are not sufficient assurance.

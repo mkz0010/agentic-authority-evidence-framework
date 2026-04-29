@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added non-normative evidence integrity profile guidance for high-impact and audit-grade v0.5.x follow-up work.
 - Added non-normative principal context degradation testing guidance for v0.5.x follow-up work.
 - Added non-normative cross-agent budget propagation guidance for v0.5.x follow-up work.
 - Added non-normative cross-agent delegation negative test guidance for v0.5.x follow-up work.
