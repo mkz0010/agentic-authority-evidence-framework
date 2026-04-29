@@ -153,3 +153,23 @@ This update partially addresses #163.
 - downstream redelegation authority;
 - minimum delegation chain evidence expectations;
 - whether related evidence, schema, control, or assessment profile changes are needed.
+
+## Update after #199
+
+PR #199 partially incorporated the approval quality testing work into active testing procedures.
+
+The active testing procedure CSV was refined for:
+
+- `AAEF-HUM-01` — what the approver actually saw, vague approval prompt handling, and action-bound approval context;
+- `AAEF-AUZ-03` — canonical action matching, approval scope, approval state source, and independent approval enforcement before execution.
+
+This update partially addresses #167.
+
+#167 remains open because additional approval quality work is still pending, including:
+
+- draft-vs-execute approval operation-class refinement;
+- post-approval payload modification and materiality criteria;
+- model-generated approval summary treatment as evidence;
+- trusted approval evidence source expectations;
+- approval fatigue and repeated approval interaction with HUM-02;
+- whether related evidence, schema, control, or assessment profile changes are needed.
