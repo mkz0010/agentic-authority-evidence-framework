@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Updated v0.5.x status documents after the principal context testing procedure refinement.
 - Refined `AAEF-AUZ-02` and `AAEF-AUZ-07` testing procedure language for scope expansion and authority lifecycle state changes.
 
 ### Added
