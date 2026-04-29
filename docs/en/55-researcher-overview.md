@@ -30,6 +30,8 @@ For v0.5.x testing candidate selection, see `docs/en/status/v050x-testing-candid
 
 For v0.5.x testing procedure candidate matrix, see `docs/en/status/v050x-testing-procedure-candidate-matrix.md`.
 
+For v0.5.x testing candidate mapping, see `docs/en/status/v050x-testing-candidate-mapping.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
