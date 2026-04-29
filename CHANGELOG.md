@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x cross-agent delegation CSV refinement proposal.
 - Added a temporary v0.5.x cross-agent delegation testing candidate appendix.
 - Added a temporary v0.5.x cross-agent delegation testing proposal.
 
