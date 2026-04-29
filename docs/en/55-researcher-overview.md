@@ -40,6 +40,8 @@ For v0.5.x principal context testing proposal, see `docs/en/status/v050x-princip
 
 For v0.5.x principal context testing candidate appendix, see `docs/en/status/v050x-principal-context-testing-candidate-appendix.md`.
 
+For v0.5.x principal context testing CSV refinement proposal, see `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
