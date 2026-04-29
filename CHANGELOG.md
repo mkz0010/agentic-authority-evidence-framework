@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Added a v0.5.0 release preparation checklist with validation steps, issue review guidance, follow-up issue candidates, and draft release notes.
 - Added a v0.5.0 release scope decision record clarifying that current planning models remain non-normative unless explicitly incorporated into future normative or assessment artifacts.
 - Added a non-normative v0.5.0 approval quality model for meaningful approval, approval context sufficiency, batch approval risk, approval fatigue, and approval evidence expectations.
 - Refined cross-agent authority lifecycle guidance for capability-scoped delegation, explicit acceptance or refusal, delegation chain limits, evidence linkage, and budget propagation.
