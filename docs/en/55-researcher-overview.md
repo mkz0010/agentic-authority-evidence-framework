@@ -66,6 +66,8 @@ For the v0.5.x evidence schema field proposal, see `docs/en/status/v050x-evidenc
 
 For the v0.5.x evidence example design proposal, see `docs/en/status/v050x-evidence-example-design-proposal.md`.
 
+For the v0.5.x evidence schema/example implementation readiness review, see `docs/en/status/v050x-evidence-schema-example-implementation-readiness.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:

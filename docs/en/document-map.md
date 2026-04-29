@@ -153,6 +153,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-evidence-schema-and-examples-track-proposal.md` | v0.5.x evidence schema and examples track proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-evidence-schema-field-proposal.md` | v0.5.x evidence schema field proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-evidence-example-design-proposal.md` | v0.5.x evidence example design proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-evidence-schema-example-implementation-readiness.md` | v0.5.x evidence schema/example implementation readiness review | Temporary status / coordination material |
 
 ## Physical Organization Policy
 

@@ -325,3 +325,14 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records example designs before any schema or example implementation PR.
+
+## Implementation Readiness Review
+
+The implementation readiness review is recorded in `docs/en/status/v050x-evidence-schema-example-implementation-readiness.md`.
+
+The readiness review recommends a schema-first, example-follow-up approach:
+
+1. add optional schema support for the smallest evidence integrity and approval evidence fields;
+2. add one tamper-evident evidence example;
+3. add one approval-to-execution binding example;
+4. update status documents after implementation.
