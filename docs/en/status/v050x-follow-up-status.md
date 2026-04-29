@@ -173,3 +173,26 @@ This update partially addresses #167.
 - trusted approval evidence source expectations;
 - approval fatigue and repeated approval interaction with HUM-02;
 - whether related evidence, schema, control, or assessment profile changes are needed.
+
+## Update after #201
+
+PR #201 added the evidence integrity CSV refinement proposal.
+
+The review determined that the first evidence integrity incorporation step does not require an immediate active testing procedure CSV change.
+
+The existing active testing procedure row already provides substantial coverage:
+
+- `AAEF-EVD-04` — critical and audit-grade evidence integrity, tamper-evident protection, append-only or write-restricted storage, cryptographic linkage, independent corroboration, deletion/redaction handling, replay, reordering, truncation, selective omission, and evidence trust limitations.
+
+This update records #165 as already substantially represented in the current active testing procedure model through `AAEF-EVD-04`.
+
+#165 remains open because additional evidence integrity work is still pending, including:
+
+- deciding whether evidence integrity fields should be added to the Evidence Event Schema;
+- defining E5 or higher-depth examples using tamper-evident evidence;
+- defining minimum integrity expectations by evidence depth or action risk;
+- defining negative tests for evidence tampering, deletion, replay, reordering, truncation, and selective omission;
+- defining evidence replay tests;
+- defining selective omission tests;
+- defining incident-response evidence preservation guidance;
+- deciding whether a later minor `AAEF-EVD-04` wording refinement is needed.
