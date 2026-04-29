@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x principal context testing candidate appendix.
 - Added a temporary v0.5.x principal context testing proposal for the first testing incorporation batch.
 - Added a temporary v0.5.x testing incorporation readiness review for selected testing candidates.
 - Added temporary v0.5.x testing draft pass/fail criteria for selected testing candidates.
