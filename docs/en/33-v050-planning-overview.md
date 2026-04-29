@@ -20,7 +20,8 @@ For control design tradeoffs, incorporation rules, and the preliminary outcome r
 
 For a consolidated authority lifecycle model covering Principal Context Degradation, Cross-Agent and Cross-Domain Authority, and Authority Denial and Reauthorization Flow, see `docs/en/50-authority-lifecycle-model.md`
 - `docs/en/51-evidence-integrity-levels.md`
-- `docs/en/52-approval-quality-model.md`.
+- `docs/en/52-approval-quality-model.md`
+- `docs/en/53-v050-release-scope-decision.md`.
 
 ## v0.5.0 Core Design Themes
 
@@ -328,3 +329,5 @@ The following non-normative example documents illustrate how selected v0.5.0 pla
 For a risk-proportional evidence integrity model covering tamper-evident storage, trusted evidence generation, and performance overhead tradeoffs, see `docs/en/51-evidence-integrity-levels.md`.
 
 For an approval quality model covering meaningful approval, context sufficiency, batch approval risk, approval fatigue, and approval evidence expectations, see `docs/en/52-approval-quality-model.md`.
+
+For the v0.5.0 release scope decision and disposition of current planning themes, see `docs/en/53-v050-release-scope-decision.md`.
