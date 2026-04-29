@@ -383,3 +383,29 @@ Remaining #163-related incorporation decisions include:
 - whether downstream redelegation requires new active testing language;
 - whether minimum delegation chain evidence expectations require additional refinement;
 - whether related evidence/schema, control catalog, or assessment profile changes are needed.
+
+## Incorporation Update after #199
+
+PR #199 completed the first active testing procedure refinement based on the approval quality testing candidate work.
+
+The refinement did not add temporary `VTC-APP-*` rows to the active testing procedure CSV.
+
+Instead, it preserved the one-control-one-row testing model and refined existing active rows:
+
+- `AAEF-HUM-01` for meaningful approval context, what the approver actually saw, vague approval prompt handling, and approval-to-action linkage;
+- `AAEF-AUZ-03` for canonical action matching, approved scope, approval state source, and independent approval enforcement before dispatch or backend execution.
+
+This confirms the selected incorporation path for the first #167 batch:
+
+- use VTC candidates as planning and review inputs;
+- refine existing control-linked testing rows where appropriate;
+- avoid promoting temporary VTC IDs into active testing artifacts unless the testing model is explicitly changed.
+
+Remaining #167-related incorporation decisions include:
+
+- whether and how to incorporate draft-vs-execute approval operation-class tests;
+- whether and how to incorporate post-approval payload modification tests;
+- whether and how to incorporate model-generated approval summary evidence tests;
+- whether approval evidence trusted-source expectations require `AAEF-EVD-03` refinement;
+- whether approval fatigue and repeated approval behavior require additional `AAEF-HUM-02` refinement;
+- whether related evidence/schema, control catalog, or assessment profile changes are needed.
