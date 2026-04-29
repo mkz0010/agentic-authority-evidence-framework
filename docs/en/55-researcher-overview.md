@@ -38,6 +38,8 @@ For v0.5.x testing incorporation readiness review, see `docs/en/status/v050x-tes
 
 For v0.5.x principal context testing proposal, see `docs/en/status/v050x-principal-context-testing-proposal.md`.
 
+For v0.5.x principal context testing candidate appendix, see `docs/en/status/v050x-principal-context-testing-candidate-appendix.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
