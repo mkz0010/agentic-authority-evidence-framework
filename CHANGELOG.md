@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added optional Evidence Event Schema fields for evidence integrity, evidence trust limitations, approval evidence source, approval binding, and approval enforcement references.
 - Added a temporary v0.5.x evidence schema/example implementation readiness review.
 - Added a temporary v0.5.x evidence example design proposal.
 - Added a temporary v0.5.x evidence schema field proposal.

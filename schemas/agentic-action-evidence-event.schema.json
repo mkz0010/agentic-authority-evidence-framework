@@ -427,6 +427,78 @@
             "type": "string"
           },
           "description": "Information shown to the human approver."
+        },
+        "source_type": {
+          "type": "string",
+          "description": "Type of approval evidence source, such as workflow, ticket, policy engine, model summary, agent self-report, or external system."
+        },
+        "source_system": {
+          "type": "string",
+          "description": "System or workflow that produced the approval evidence."
+        },
+        "workflow_record_id": {
+          "type": "string",
+          "description": "Reference to the approval workflow record."
+        },
+        "trusted_source": {
+          "type": "boolean",
+          "description": "Whether the approval evidence source is treated as trusted for assessment purposes."
+        },
+        "context_presented_ref": {
+          "type": "string",
+          "description": "Reference to the action-bound context presented to the approver."
+        },
+        "approver_view_ref": {
+          "type": "string",
+          "description": "Reference to the approval UI, prompt, ticket, or review surface shown to the approver."
+        },
+        "canonical_action_id": {
+          "type": "string",
+          "description": "Canonical action identifier approved by the approval workflow."
+        },
+        "action_digest": {
+          "type": "string",
+          "description": "Digest or hash representing the approved action."
+        },
+        "approved_scope": {
+          "description": "Scope approved by the approval workflow.",
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object",
+              "additionalProperties": true
+            }
+          ]
+        },
+        "approved_operation_class": {
+          "type": "string",
+          "description": "Operation class approved by the workflow, such as draft, preview, execute, publish, send, delete, or spend."
+        },
+        "enforcement_check_id": {
+          "type": "string",
+          "description": "Reference to the execution-bound approval enforcement check."
+        },
+        "enforcement_result": {
+          "type": "string",
+          "enum": [
+            "allow",
+            "deny",
+            "defer",
+            "escalate",
+            "not_checked",
+            "not_applicable"
+          ],
+          "description": "Result of the approval enforcement check before execution."
+        },
+        "checked_at_execution_boundary": {
+          "type": "boolean",
+          "description": "Whether approval state and scope were checked at the execution boundary before execution."
+        },
+        "model_summary_trusted_as_evidence": {
+          "type": "boolean",
+          "description": "Whether a model-generated approval summary was treated as trusted approval evidence."
         }
       }
     },
@@ -588,6 +660,76 @@
         "privacy_notes": {
           "type": "string",
           "description": "Notes on privacy-preserving storage, redaction, minimization, or access control."
+        },
+        "evidence_integrity": {
+          "type": "object",
+          "description": "Optional integrity metadata for evidence records or referenced evidence packages.",
+          "additionalProperties": false,
+          "properties": {
+            "protected": {
+              "type": "boolean",
+              "description": "Whether the evidence record or referenced evidence package is protected by an integrity mechanism."
+            },
+            "mechanism": {
+              "type": "string",
+              "description": "Integrity mechanism summary, such as append-only, write-restricted, signature, hash-chain, merkle-tree, immutable-storage, external-anchor, independent-corroboration, or equivalent."
+            },
+            "storage_class": {
+              "type": "string",
+              "description": "Storage or retention class relevant to the integrity mechanism."
+            },
+            "coverage": {
+              "type": "string",
+              "description": "Description or reference identifying what evidence scope the integrity mechanism covers."
+            },
+            "verification_result": {
+              "type": "string",
+              "enum": [
+                "pass",
+                "fail",
+                "not_checked",
+                "partial",
+                "unavailable",
+                "not_applicable"
+              ],
+              "description": "Result of evidence integrity verification when available."
+            },
+            "verified_at": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Timestamp when integrity verification was performed."
+            },
+            "verification_error": {
+              "type": "string",
+              "description": "Error or limitation observed during integrity verification."
+            },
+            "verification_ref": {
+              "type": "string",
+              "description": "Reference to the verification event, job, record, or report."
+            },
+            "proof_ref": {
+              "type": "string",
+              "description": "Reference to an integrity proof, such as a signature, hash chain, Merkle proof, immutable-storage proof, or external anchor."
+            },
+            "external_anchor_ref": {
+              "type": "string",
+              "description": "Reference to an external timestamp, ledger, archive, or corroborating anchor."
+            }
+          }
+        },
+        "evidence_trust_limitation": {
+          "description": "Optional statement or list describing known limitations of the evidence source, completeness, independence, or verifiability.",
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
         }
       }
     },
