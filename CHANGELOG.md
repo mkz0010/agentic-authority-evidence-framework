@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x cross-agent delegation testing proposal.
+
 ### Changed
 
 - Updated v0.5.x status documents after the principal context testing procedure refinement.

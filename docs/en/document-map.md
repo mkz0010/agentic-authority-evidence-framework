@@ -141,6 +141,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-principal-context-testing-proposal.md` | v0.5.x principal context testing proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-principal-context-testing-candidate-appendix.md` | v0.5.x principal context testing candidate appendix | Temporary status / coordination material |
 | `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md` | v0.5.x principal context testing CSV refinement proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md` | v0.5.x cross-agent delegation testing proposal | Temporary status / coordination material |
 
 ## Physical Organization Policy
 
