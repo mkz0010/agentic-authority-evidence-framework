@@ -336,3 +336,11 @@ The readiness review recommends a schema-first, example-follow-up approach:
 2. add one tamper-evident evidence example;
 3. add one approval-to-execution binding example;
 4. update status documents after implementation.
+
+## Integrity E5 Example Implementation
+
+The first example implementation adds `examples/agentic-action-evidence-event.integrity-e5.json`.
+
+The example demonstrates optional evidence integrity metadata, integrity verification result, proof reference, external anchor reference, and evidence trust limitations.
+
+It does not add approval-binding evidence and does not change the Evidence Event Schema.

@@ -299,3 +299,13 @@ The first implementation PR for this track adds optional Evidence Event Schema s
 - execution-bound approval enforcement references.
 
 This implementation keeps the new schema fields optional and does not add evidence examples in the same change.
+
+## Integrity Example Implementation Progress
+
+The first example PR adds the tamper-evident / integrity-verifiable evidence example:
+
+- `examples/agentic-action-evidence-event.integrity-e5.json`
+
+This follows the planned schema-first, example-follow-up approach.
+
+The approval-to-execution binding example remains pending.
