@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x approval quality CSV refinement proposal.
 - Added a temporary v0.5.x approval quality testing candidate appendix.
 - Added a temporary v0.5.x approval quality testing proposal.
 
