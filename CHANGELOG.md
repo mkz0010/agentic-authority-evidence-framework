@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Refined cross-agent authority lifecycle guidance for capability-scoped delegation, explicit acceptance or refusal, delegation chain limits, evidence linkage, and budget propagation.
 - Added a non-normative v0.5.0 evidence integrity levels model for risk-proportional evidence, tamper-evident storage, and performance overhead tradeoffs.
 - Added `docs/en/18-implementation-guidance.md` to close the documentation numbering gap and provide non-normative implementation adoption guidance.
 - Added a non-normative v0.5.0 authority lifecycle model covering principal context degradation, cross-agent authority, denial, freeze, revocation, and reauthorization.
