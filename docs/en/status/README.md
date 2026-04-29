@@ -55,3 +55,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`
 - `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md`
 - `docs/en/status/v050x-approval-quality-testing-proposal.md`
+- `docs/en/status/v050x-approval-quality-testing-candidate-appendix.md`
