@@ -14,6 +14,12 @@ It explains how principal context can weaken, drift, become stale, or become amb
 
 This document does not add new control requirements yet. It is intended to prepare future refinements to Principal Binding, Delegation and Authority, Action Authorization, Evidence, and Response controls.
 
+## Testing Guidance Follow-up
+
+Principal context degradation testing guidance is maintained in `docs/en/59-principal-context-degradation-testing.md`.
+
+That document defines non-normative negative test guidance for stale context, task drift, scope expansion, risk escalation, role or policy changes, revocation, delegation after context degradation, retry pressure, task splitting, and untrusted input changes to principal intent.
+
 ## Definition
 
 **Principal Context Degradation** is the loss, weakening, staleness, semantic drift, or ambiguity of the information required to determine on whose behalf an agentic action is attempted or performed.

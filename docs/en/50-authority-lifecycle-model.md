@@ -24,6 +24,12 @@ Capability-scoped cross-agent delegation is further described in `docs/en/56-cap
 
 That guidance supports the authority lifecycle model by distinguishing communication, delegation acceptance, and execution authorization across agent boundaries.
 
+## Principal Context Degradation Testing
+
+Principal context degradation testing guidance is maintained in `docs/en/59-principal-context-degradation-testing.md`.
+
+That guidance supports the authority lifecycle model by describing failure modes where authority context becomes stale, ambiguous, expanded, revoked, or insufficient for the current action.
+
 ## Cross-Agent Budget Propagation
 
 Cross-agent budget propagation is further described in `docs/en/58-cross-agent-budget-propagation.md`.
