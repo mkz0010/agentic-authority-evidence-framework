@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x evidence depth and E5 profile decision proposal.
+
 ### Changed
 
 - Updated v0.5.x status after incident-response evidence preservation guidance and candidate appendix completion.
