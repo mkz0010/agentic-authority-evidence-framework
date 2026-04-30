@@ -263,3 +263,25 @@ This proposal addresses a remaining #165 work area after the evidence integrity 
 The incident-response evidence preservation candidate appendix is recorded in `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`.
 
 This appendix adds concrete preservation scenarios and reviewer-facing preservation package candidates for #165.
+
+## Update after #217 and #218
+
+PRs #217 and #218 completed the current v0.5.x incident-response evidence preservation planning sequence for #165.
+
+Implemented work:
+
+- #217 added `docs/en/status/v050x-incident-response-evidence-preservation-guidance-proposal.md`.
+- #218 added `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`.
+
+Current result:
+
+- Incident-response evidence preservation now has both a guidance proposal and a detailed candidate appendix.
+- The candidate appendix covers preservation levels, preservation scenarios, evidence packages, reviewer checklist candidates, and anti-patterns.
+- No active testing procedure CSV change is required from #217 or #218.
+- No Evidence Event Schema change is required from #217 or #218.
+- No evidence example or validator fixture change is required from #217 or #218.
+
+Current #165 status:
+
+- The incident-response evidence preservation portion is substantially addressed for the current v0.5.x follow-up cycle.
+- #165 remains open because evidence depth / E5 profile decisions, possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.

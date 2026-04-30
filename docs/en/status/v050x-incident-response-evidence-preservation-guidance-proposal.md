@@ -192,3 +192,17 @@ It records a temporary guidance proposal before any active incorporation decisio
 The incident-response evidence preservation candidate appendix is recorded in `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`.
 
 The appendix expands the guidance proposal into concrete preservation scenarios, preservation levels, evidence packages, reviewer checklist candidates, anti-patterns, and incorporation assessment.
+
+## Status after Candidate Appendix
+
+The candidate appendix was added in `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`.
+
+Current incorporation status:
+
+- guidance proposal completed;
+- candidate appendix completed;
+- no active CSV change required at this time;
+- no schema change required at this time;
+- no example change required at this time.
+
+The remaining question is whether these materials should later be consolidated into stable guidance, assessment quick-start material, or retained as temporary v0.5.x planning material.

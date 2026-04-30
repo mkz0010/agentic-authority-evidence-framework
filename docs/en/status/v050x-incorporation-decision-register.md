@@ -575,3 +575,32 @@ Decision status:
 | Primary active row | `AAEF-EVD-04` |
 
 The appendix records preservation scenarios, preservation levels, minimal and dispute-grade evidence packages, reviewer checklist candidates, and anti-patterns for incident-response evidence handling.
+
+## Incorporation Decision after Incident-Response Evidence Preservation Work
+
+After #217 and #218, the incident-response evidence preservation work for #165 was reviewed.
+
+Decision:
+
+| Area | Decision |
+| --- | --- |
+| Guidance proposal | Added in #217 |
+| Candidate appendix | Added in #218 |
+| Active CSV change | Not required at this time |
+| Evidence Event Schema change | Not required at this time |
+| Evidence example change | Not required at this time |
+| Validator fixture change | Not required at this time |
+| Primary active row | `AAEF-EVD-04` |
+
+Rationale:
+
+- `AAEF-EVD-04` already covers evidence integrity and tamper-evident evidence.
+- The new preservation materials are better treated as guidance and assessment support rather than active CSV changes at this stage.
+- The candidate appendix provides sufficient scenario-level detail for review without introducing new control IDs, candidate IDs, schema fields, or example artifacts.
+
+Remaining decisions for #165:
+
+- whether evidence depth / E5 terminology should become profile guidance or remain example terminology;
+- whether negative evidence examples or validator fixtures would improve reviewability;
+- whether `AAEF-EVD-01` should later receive evidence sufficiency / limitation refinement;
+- whether temporary planning documents should be consolidated after the current follow-up cycle.

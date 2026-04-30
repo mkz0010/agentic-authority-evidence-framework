@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated v0.5.x status after incident-response evidence preservation guidance and candidate appendix completion.
+
 ### Added
 
 - Added a temporary v0.5.x incident-response evidence preservation candidate appendix.
