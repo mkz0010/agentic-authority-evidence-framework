@@ -224,3 +224,17 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records the incorporation decision before any active CSV modification.
+
+## Active Row Review Outcome
+
+After this proposal, the active `AAEF-EVD-04` row was reviewed against the proposed evidence integrity negative testing concepts.
+
+Outcome:
+
+- no immediate active CSV refinement is required;
+- the existing row already covers the core negative test concepts;
+- no testing procedure rows were added;
+- no candidate IDs were added to the active CSV;
+- no schema, examples, controls, profiles, worksheet, or mapping changes were needed.
+
+This changes the next step from active CSV modification to status tracking and remaining-work planning for #165.

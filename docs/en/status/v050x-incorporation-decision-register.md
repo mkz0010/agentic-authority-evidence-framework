@@ -509,3 +509,37 @@ Remaining incorporation decisions include:
 - whether principal context freshness/degradation requires schema fields later;
 - whether delegation lineage or receiving-side validation requires schema fields later;
 - whether temporary planning documents should be consolidated after the next follow-up cycle.
+
+## Incorporation Decision after Evidence Integrity Testing Row Review
+
+After #215, `AAEF-EVD-04` was reviewed against the evidence integrity negative test candidates.
+
+Decision:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not required at this time |
+| Target row | `AAEF-EVD-04` |
+| Rationale | Existing testing objective, method, evidence, pass criteria, partial criteria, and fail conditions already cover the main negative test concepts |
+| Candidate IDs in active CSV | Not added |
+| New control IDs | Not added |
+| Schema or example changes | Not required |
+
+Observed existing coverage includes:
+
+- undetected alteration;
+- deletion;
+- replay;
+- reordering;
+- truncation;
+- selective omission;
+- integrity verification;
+- evidence trust limitations;
+- retention, deletion, and redaction documentation.
+
+Remaining decisions for #165:
+
+- whether incident-response evidence preservation guidance is needed;
+- whether evidence depth such as E5 should become profile guidance or remain example terminology;
+- whether negative examples or validator fixtures would improve reviewability;
+- whether `AAEF-EVD-01` should later receive evidence sufficiency / limitation refinement.

@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated v0.5.x status after reviewing evidence integrity testing procedure coverage.
+
 ### Added
 
 - Added a temporary v0.5.x evidence integrity negative tests CSV refinement proposal.

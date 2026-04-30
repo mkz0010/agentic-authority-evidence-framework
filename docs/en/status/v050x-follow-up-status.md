@@ -236,3 +236,18 @@ Current issue status:
 - #163 remains open because delegation lineage and receiving-side validation schema treatment was explicitly deferred.
 
 No active testing procedure CSV changes were made in #209, #210, or #211.
+
+## Update after evidence integrity testing row review
+
+After #215, the active `AAEF-EVD-04` testing procedure row was reviewed for evidence integrity negative testing coverage.
+
+Review result:
+
+- No active CSV refinement is required at this time.
+- The existing `AAEF-EVD-04` row already covers alteration, deletion, replay, reordering, truncation, selective omission, integrity verification, retention/deletion/redaction records, and evidence trust limitations.
+- The attempted active CSV refinement branch produced no repository changes and was deleted without a PR.
+
+Current issue status:
+
+- #165 remains open because incident-response evidence preservation guidance, evidence depth/profile decisions, possible evidence integrity negative examples or validator fixtures, and later evidence sufficiency / limitation review remain pending.
+- `AAEF-EVD-04` does not need immediate active CSV modification based on the current review.
