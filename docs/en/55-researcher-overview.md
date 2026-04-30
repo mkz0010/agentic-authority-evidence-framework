@@ -72,6 +72,8 @@ For the v0.5.x evidence integrity negative tests track proposal, see `docs/en/st
 
 For the v0.5.x evidence integrity negative tests candidate appendix, see `docs/en/status/v050x-evidence-integrity-negative-tests-candidate-appendix.md`.
 
+For the v0.5.x evidence integrity negative tests CSV refinement proposal, see `docs/en/status/v050x-evidence-integrity-negative-tests-csv-refinement-proposal.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
