@@ -309,3 +309,13 @@ The first example PR adds the tamper-evident / integrity-verifiable evidence exa
 This follows the planned schema-first, example-follow-up approach.
 
 The approval-to-execution binding example remains pending.
+
+## Approval Binding Example Implementation Progress
+
+The second example PR adds the approval-to-execution binding evidence example:
+
+- `examples/agentic-action-evidence-event.approval-binding.json`
+
+This follows the planned schema-first, example-follow-up approach.
+
+The example demonstrates trusted approval source, approval binding, approval scope, and execution-bound approval enforcement using optional schema fields.
