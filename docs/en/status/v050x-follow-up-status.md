@@ -318,3 +318,24 @@ Current #165 status:
 The negative evidence examples and validator fixtures decision proposal is recorded in `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`.
 
 The proposal recommends not adding schema-invalid validator fixtures or negative evidence examples immediately. It distinguishes structural schema validity from semantic evidence sufficiency and treats schema-valid negative evidence examples as possible future reviewer-facing guidance.
+
+## Update after #222
+
+PR #222 added the v0.5.x negative evidence examples and validator fixtures decision proposal.
+
+Implemented work:
+
+- #222 added `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`.
+
+Current result:
+
+- Schema-invalid validator fixtures are not added in the current v0.5.x cycle.
+- Schema-valid negative evidence examples are deferred.
+- `tools/validate_evidence_schema.py` remains focused on structural schema validation.
+- Evidence integrity failure is treated primarily as a semantic or assurance issue, not a JSON Schema validity issue.
+- Reviewer-facing negative examples remain candidate future work.
+
+Current #165 status:
+
+- Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, E5/evidence depth decision work, and negative example / validator fixture decision work are now substantially addressed for the current v0.5.x follow-up cycle.
+- #165 remains open because possible `AAEF-EVD-01` evidence sufficiency / limitation review and temporary-document consolidation remain pending.

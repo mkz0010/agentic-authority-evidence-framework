@@ -667,3 +667,32 @@ Decision status:
 | Future reviewer-facing examples | Candidate future work |
 
 The proposal records that most evidence integrity failure states are semantic or assurance failures rather than JSON Schema failures.
+
+## Incorporation Decision after Negative Evidence Examples and Validator Fixtures Decision
+
+After #222, the negative evidence examples and validator fixtures question for #165 was reviewed.
+
+Decision:
+
+| Area | Decision |
+| --- | --- |
+| Schema-invalid fixtures | Not added in this cycle |
+| Schema-valid negative examples | Deferred |
+| Validator behavior | Unchanged |
+| Evidence Event Schema | Unchanged |
+| Active CSV | Unchanged |
+| Reviewer-facing negative examples | Candidate future work |
+| Primary active row | `AAEF-EVD-04` |
+
+Rationale:
+
+- Most evidence integrity failure states are semantic or assurance failures rather than JSON Schema failures.
+- A failed, partial, unavailable, or limitation-bearing evidence state can be valid to record.
+- Schema validity should not be confused with evidence sufficiency, evidence completeness, or tamper-evidence.
+- The validator should continue to answer whether an evidence event is structurally valid, not whether the evidence is sufficient or trustworthy.
+
+Remaining decisions for #165:
+
+- whether `AAEF-EVD-01` should later receive evidence sufficiency / limitation refinement;
+- whether evidence depth guidance should be created later from the temporary proposal;
+- whether temporary planning documents should be consolidated after the current follow-up cycle.
