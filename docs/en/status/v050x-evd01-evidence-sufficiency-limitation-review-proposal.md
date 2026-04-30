@@ -265,3 +265,30 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records the `AAEF-EVD-01` evidence sufficiency and limitation review proposal before any active incorporation decision.
+
+## Active Row Review Outcome
+
+The active `AAEF-EVD-01` testing procedure row was reviewed after this proposal.
+
+Outcome:
+
+- no immediate active CSV refinement is required;
+- the existing row already covers the reviewed sufficiency and limitation concepts;
+- no testing procedure rows were added;
+- no candidate IDs were added to the active CSV;
+- no schema, examples, controls, profiles, worksheet, or mapping changes were needed.
+
+Observed coverage includes:
+
+- evidence sufficient to reconstruct sampled high-impact actions;
+- authority basis;
+- requested action;
+- resource;
+- decision path;
+- dispatch or execution result;
+- timestamp;
+- correlation identifiers;
+- partial reconstruction gaps;
+- missing, self-reported-only, contradictory, or insufficient evidence as fail conditions.
+
+This changes the next step from active CSV modification to status tracking and temporary-document consolidation planning for #165.
