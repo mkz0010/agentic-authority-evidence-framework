@@ -80,6 +80,8 @@ For the v0.5.x incident-response evidence preservation candidate appendix, see `
 
 For the v0.5.x evidence depth and E5 profile decision proposal, see `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`.
 
+For the v0.5.x negative evidence examples and validator fixtures decision proposal, see `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:

@@ -650,3 +650,20 @@ Remaining decisions for #165:
 - whether `AAEF-EVD-01` should later receive evidence sufficiency / limitation refinement;
 - whether evidence depth guidance should be created later from the temporary proposal;
 - whether temporary planning documents should be consolidated after the current follow-up cycle.
+
+## Negative Evidence Examples and Validator Fixtures Decision Proposal
+
+A temporary decision proposal was added in `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Schema-invalid fixtures | Not added now |
+| Schema-valid negative examples | Deferred |
+| Validator behavior | Unchanged |
+| Evidence Event Schema | Unchanged |
+| Active CSV | Unchanged |
+| Future reviewer-facing examples | Candidate future work |
+
+The proposal records that most evidence integrity failure states are semantic or assurance failures rather than JSON Schema failures.
