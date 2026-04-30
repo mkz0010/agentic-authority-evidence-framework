@@ -312,3 +312,9 @@ Current #165 status:
 
 - Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, and E5/evidence depth decision work are now substantially addressed for the current v0.5.x follow-up cycle.
 - #165 remains open because possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.
+
+## Negative Evidence Examples and Validator Fixtures Decision Proposal
+
+The negative evidence examples and validator fixtures decision proposal is recorded in `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`.
+
+The proposal recommends not adding schema-invalid validator fixtures or negative evidence examples immediately. It distinguishes structural schema validity from semantic evidence sufficiency and treats schema-valid negative evidence examples as possible future reviewer-facing guidance.

@@ -70,3 +70,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-incident-response-evidence-preservation-guidance-proposal.md`
 - `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`
 - `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`
+- `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`
