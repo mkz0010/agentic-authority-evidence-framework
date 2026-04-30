@@ -251,3 +251,9 @@ Current issue status:
 
 - #165 remains open because incident-response evidence preservation guidance, evidence depth/profile decisions, possible evidence integrity negative examples or validator fixtures, and later evidence sufficiency / limitation review remain pending.
 - `AAEF-EVD-04` does not need immediate active CSV modification based on the current review.
+
+## Incident-Response Evidence Preservation Guidance Proposal
+
+The incident-response evidence preservation guidance proposal is recorded in `docs/en/status/v050x-incident-response-evidence-preservation-guidance-proposal.md`.
+
+This proposal addresses a remaining #165 work area after the evidence integrity negative testing review.

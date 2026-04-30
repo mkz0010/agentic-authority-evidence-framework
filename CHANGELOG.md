@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x incident-response evidence preservation guidance proposal.
+
 ### Changed
 
 - Updated v0.5.x status after reviewing evidence integrity testing procedure coverage.

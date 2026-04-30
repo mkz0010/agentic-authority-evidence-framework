@@ -543,3 +543,19 @@ Remaining decisions for #165:
 - whether evidence depth such as E5 should become profile guidance or remain example terminology;
 - whether negative examples or validator fixtures would improve reviewability;
 - whether `AAEF-EVD-01` should later receive evidence sufficiency / limitation refinement.
+
+## Incident-Response Evidence Preservation Guidance Proposal
+
+A temporary guidance proposal was added in `docs/en/status/v050x-incident-response-evidence-preservation-guidance-proposal.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not required in this proposal |
+| Schema change | Not required in this proposal |
+| Example change | Not required in this proposal |
+| Primary issue | #165 |
+| Primary active row | `AAEF-EVD-04` |
+
+The proposal records preservation triggers, evidence types, preservation actions, trust-boundary considerations, and anti-patterns for incident-response evidence handling.
