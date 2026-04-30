@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated v0.5.x status after the evidence depth and E5 profile decision proposal.
+
 ### Added
 
 - Added a temporary v0.5.x evidence depth and E5 profile decision proposal.

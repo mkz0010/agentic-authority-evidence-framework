@@ -265,3 +265,18 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records the evidence depth / E5 decision proposal before any active incorporation decision.
+
+## Status after Initial Decision
+
+This proposal records the current v0.5.x decision for evidence depth and E5 terminology.
+
+Current incorporation status:
+
+- E5 is retained as non-normative evidence depth terminology.
+- No E5 certification tier is created.
+- No E5 formal profile is created in this cycle.
+- No evidence depth schema field is added.
+- No active CSV requirement is added.
+- No evidence example or validator fixture change is required by this decision.
+
+The remaining question is whether evidence depth vocabulary should later be consolidated into stable reviewer guidance, assessment quick-start material, or retained as temporary planning material.
