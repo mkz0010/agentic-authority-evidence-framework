@@ -230,3 +230,18 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records the negative evidence examples and validator fixtures decision proposal before any active incorporation decision.
+
+## Status after Initial Decision
+
+This proposal records the current v0.5.x decision for negative evidence examples and validator fixtures.
+
+Current incorporation status:
+
+- schema-invalid validator fixtures are not added in this cycle;
+- schema-valid negative evidence examples are deferred;
+- validator behavior remains unchanged;
+- the Evidence Event Schema remains unchanged;
+- active testing procedures remain unchanged;
+- reviewer-facing negative examples remain candidate future work.
+
+The remaining question is whether evidence sufficiency and evidence limitation language should later be reviewed under `AAEF-EVD-01`.

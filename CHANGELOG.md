@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated v0.5.x status after the negative evidence examples and validator fixtures decision proposal.
+
 ### Added
 
 - Added a temporary v0.5.x negative evidence examples and validator fixtures decision proposal.
