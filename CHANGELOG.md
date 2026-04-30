@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x evidence integrity negative tests candidate appendix.
 - Added a temporary v0.5.x evidence integrity negative tests track proposal.
 
 ### Changed

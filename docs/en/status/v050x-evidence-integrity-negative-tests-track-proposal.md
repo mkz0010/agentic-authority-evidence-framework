@@ -308,3 +308,9 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records the starting proposal for the v0.5.x evidence integrity negative tests track.
+
+## Candidate Appendix
+
+The structured candidate appendix is recorded in `docs/en/status/v050x-evidence-integrity-negative-tests-candidate-appendix.md`.
+
+The appendix expands the track proposal into eight candidate negative tests covering tampering, deletion, replay, reordering, truncation, selective omission, verification failure handling, and evidence trust limitation bypass.
