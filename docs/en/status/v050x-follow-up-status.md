@@ -345,3 +345,18 @@ Current #165 status:
 The `AAEF-EVD-01` evidence sufficiency and limitation review proposal is recorded in `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`.
 
 The proposal opens review of whether `AAEF-EVD-01` needs narrow refinement to distinguish evidence sufficiency from evidence integrity, schema validity, and model-generated or self-reported evidence.
+
+## Update after AAEF-EVD-01 evidence sufficiency review
+
+After #224, the active `AAEF-EVD-01` testing procedure row was reviewed for evidence sufficiency and limitation coverage.
+
+Review result:
+
+- No active CSV refinement is required at this time.
+- The existing `AAEF-EVD-01` row already covers evidence completeness, high-impact action sampling, authorization, dispatch, backend and evidence records, reconstruction sufficiency, partial reconstruction gaps, and self-reported-only evidence failure.
+- The coverage scan found the reviewed sufficiency criteria likely covered, including action-bound evidence, risk-proportionate evidence, self-report limitation, missing or partial evidence limitation, authorization/execution traceability, and insufficient-evidence fail handling.
+
+Current #165 status:
+
+- Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, E5/evidence depth decision work, negative example / validator fixture decision work, and `AAEF-EVD-01` sufficiency review are now substantially addressed for the current v0.5.x follow-up cycle.
+- #165 remains open only for temporary-document consolidation and any later decision on whether stable guidance should be extracted from the temporary v0.5.x materials.

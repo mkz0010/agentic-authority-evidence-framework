@@ -713,3 +713,32 @@ Decision status:
 | Validator change | Not required in this proposal |
 
 The proposal records that evidence sufficiency is distinct from evidence integrity and schema validity.
+
+## Incorporation Decision after AAEF-EVD-01 Evidence Sufficiency Review
+
+After #224, `AAEF-EVD-01` was reviewed for evidence sufficiency and limitation coverage.
+
+Decision:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not required at this time |
+| Target row | `AAEF-EVD-01` |
+| Related row | `AAEF-EVD-04` |
+| Schema change | Not required |
+| Example change | Not required |
+| Validator change | Not required |
+| Guidance extraction | Candidate future work |
+
+Rationale:
+
+- `AAEF-EVD-01` already requires evidence sufficient to reconstruct what happened for sampled high-impact actions.
+- The active row already references initiated-by, authority basis, requested action, resource, decision path, dispatch or execution result, timestamp, and correlation identifiers.
+- Partial criteria already cover reconstruction gaps in authority, dispatch, result, timing, or correlation identifiers.
+- Fail conditions already cover missing, self-reported-only, contradictory, or insufficient evidence.
+- The row is sufficient for the current v0.5.x follow-up cycle without active CSV modification.
+
+Remaining decisions for #165:
+
+- whether temporary planning documents should be consolidated after the current follow-up cycle;
+- whether stable evidence sufficiency, evidence depth, or incident-response preservation guidance should be extracted later.
