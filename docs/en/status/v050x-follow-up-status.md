@@ -285,3 +285,9 @@ Current #165 status:
 
 - The incident-response evidence preservation portion is substantially addressed for the current v0.5.x follow-up cycle.
 - #165 remains open because evidence depth / E5 profile decisions, possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.
+
+## Evidence Depth and E5 Profile Decision Proposal
+
+The evidence depth and E5 profile decision proposal is recorded in `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`.
+
+The proposal recommends treating E5 as non-normative evidence depth terminology for examples, review, and future guidance, not as a certification level, required schema value, or active testing procedure requirement.

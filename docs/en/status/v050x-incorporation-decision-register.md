@@ -604,3 +604,20 @@ Remaining decisions for #165:
 - whether negative evidence examples or validator fixtures would improve reviewability;
 - whether `AAEF-EVD-01` should later receive evidence sufficiency / limitation refinement;
 - whether temporary planning documents should be consolidated after the current follow-up cycle.
+
+## Evidence Depth and E5 Profile Decision Proposal
+
+A temporary decision proposal was added in `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| E5 formal profile | Deferred |
+| Certification scale | Not created |
+| Required schema field | Not added |
+| Active CSV requirement | Not added |
+| Example terminology | Allowed with non-normative framing |
+| Future guidance | Candidate for later work |
+
+The proposal records that evidence depth vocabulary may be useful for review and guidance, but should not become a formal certification or required schema/profile mechanism in the current v0.5.x cycle.
