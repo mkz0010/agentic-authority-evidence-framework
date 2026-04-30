@@ -759,3 +759,20 @@ Decision status:
 | Issue disposition | Close-ready if future guidance extraction is tracked separately |
 
 The checkpoint consolidates the #165 evidence integrity and tamper-evident evidence follow-up decisions for the current v0.5.x cycle.
+
+## Tamper-Evident Evidence Selected Contexts Proposal
+
+A temporary selected contexts proposal was added in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not made in this proposal |
+| Evidence Event Schema change | Not made in this proposal |
+| Example change | Not made in this proposal |
+| Validator change | Not made in this proposal |
+| Primary issue | #166 |
+| Related rows | `AAEF-EVD-04`, `AAEF-EVD-01` |
+
+The proposal identifies candidate required, recommended, and optional contexts for tamper-evident evidence.

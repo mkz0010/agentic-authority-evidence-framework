@@ -366,3 +366,9 @@ Current #165 status:
 The #165 evidence integrity consolidation checkpoint is recorded in `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`.
 
 The checkpoint records that the major #165 workstreams are substantially addressed for the current v0.5.x follow-up cycle and that #165 appears close-ready if stable guidance extraction is tracked separately.
+
+## Tamper-Evident Evidence Selected Contexts Proposal
+
+The tamper-evident evidence selected contexts proposal is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`.
+
+The proposal starts #166 by identifying contexts where tamper-evident evidence may be required, recommended, or optional, without changing active CSV, schema, examples, or validators.

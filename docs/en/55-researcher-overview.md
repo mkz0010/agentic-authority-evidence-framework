@@ -86,6 +86,8 @@ For the v0.5.x `AAEF-EVD-01` evidence sufficiency and limitation review proposal
 
 For the v0.5.x issue #165 evidence integrity consolidation checkpoint, see `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`.
 
+For the v0.5.x tamper-evident evidence selected contexts proposal, see `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
