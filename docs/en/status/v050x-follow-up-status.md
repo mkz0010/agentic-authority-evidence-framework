@@ -291,3 +291,24 @@ Current #165 status:
 The evidence depth and E5 profile decision proposal is recorded in `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`.
 
 The proposal recommends treating E5 as non-normative evidence depth terminology for examples, review, and future guidance, not as a certification level, required schema value, or active testing procedure requirement.
+
+## Update after #220
+
+PR #220 added the v0.5.x evidence depth and E5 profile decision proposal.
+
+Implemented work:
+
+- #220 added `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`.
+
+Current result:
+
+- E5 is treated as non-normative evidence depth terminology for examples, review, and future guidance.
+- E5 is not treated as a certification tier, formal profile, required schema value, active CSV requirement, or scoring scale in the current v0.5.x cycle.
+- No active testing procedure CSV change is required from #220.
+- No Evidence Event Schema change is required from #220.
+- No evidence example or validator fixture change is required from #220.
+
+Current #165 status:
+
+- Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, and E5/evidence depth decision work are now substantially addressed for the current v0.5.x follow-up cycle.
+- #165 remains open because possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.
