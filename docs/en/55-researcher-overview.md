@@ -84,6 +84,8 @@ For the v0.5.x negative evidence examples and validator fixtures decision propos
 
 For the v0.5.x `AAEF-EVD-01` evidence sufficiency and limitation review proposal, see `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`.
 
+For the v0.5.x issue #165 evidence integrity consolidation checkpoint, see `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:
