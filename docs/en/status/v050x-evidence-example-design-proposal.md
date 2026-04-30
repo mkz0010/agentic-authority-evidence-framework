@@ -344,3 +344,11 @@ The first example implementation adds `examples/agentic-action-evidence-event.in
 The example demonstrates optional evidence integrity metadata, integrity verification result, proof reference, external anchor reference, and evidence trust limitations.
 
 It does not add approval-binding evidence and does not change the Evidence Event Schema.
+
+## Approval Binding Example Implementation
+
+The second example implementation adds `examples/agentic-action-evidence-event.approval-binding.json`.
+
+The example demonstrates trusted approval evidence source, approval-to-action binding, approved scope, approved operation class, execution-bound approval enforcement, and explicit treatment of model-generated summaries as non-trusted approval evidence.
+
+It does not change the Evidence Event Schema.

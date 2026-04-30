@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added an approval-binding evidence example using optional approval source, approval binding, and enforcement fields.
 - Added an integrity-focused evidence example using optional evidence integrity and trust limitation fields.
 - Added optional Evidence Event Schema fields for evidence integrity, evidence trust limitations, approval evidence source, approval binding, and approval enforcement references.
 - Added a temporary v0.5.x evidence schema/example implementation readiness review.
