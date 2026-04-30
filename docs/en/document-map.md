@@ -162,6 +162,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md` | v0.5.x evidence depth and E5 profile decision proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md` | v0.5.x negative evidence examples and validator fixtures decision proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md` | v0.5.x AAEF-EVD-01 evidence sufficiency and limitation review proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md` | v0.5.x issue #165 evidence integrity consolidation checkpoint | Temporary status / coordination material |
 
 ## Physical Organization Policy
 

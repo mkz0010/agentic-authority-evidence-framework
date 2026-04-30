@@ -360,3 +360,9 @@ Current #165 status:
 
 - Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, E5/evidence depth decision work, negative example / validator fixture decision work, and `AAEF-EVD-01` sufficiency review are now substantially addressed for the current v0.5.x follow-up cycle.
 - #165 remains open only for temporary-document consolidation and any later decision on whether stable guidance should be extracted from the temporary v0.5.x materials.
+
+## Issue #165 Evidence Integrity Consolidation Checkpoint
+
+The #165 evidence integrity consolidation checkpoint is recorded in `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`.
+
+The checkpoint records that the major #165 workstreams are substantially addressed for the current v0.5.x follow-up cycle and that #165 appears close-ready if stable guidance extraction is tracked separately.

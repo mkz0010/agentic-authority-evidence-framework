@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x issue #165 evidence integrity consolidation checkpoint.
+
 ### Changed
 
 - Updated v0.5.x status after reviewing `AAEF-EVD-01` evidence sufficiency coverage.

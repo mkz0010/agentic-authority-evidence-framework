@@ -742,3 +742,20 @@ Remaining decisions for #165:
 
 - whether temporary planning documents should be consolidated after the current follow-up cycle;
 - whether stable evidence sufficiency, evidence depth, or incident-response preservation guidance should be extracted later.
+
+## Issue #165 Evidence Integrity Consolidation Checkpoint
+
+A temporary consolidation checkpoint was added in `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not required |
+| Evidence Event Schema change | Not required |
+| Example change | Not required |
+| Validator change | Not required |
+| Stable guidance extraction | Candidate future work |
+| Issue disposition | Close-ready if future guidance extraction is tracked separately |
+
+The checkpoint consolidates the #165 evidence integrity and tamper-evident evidence follow-up decisions for the current v0.5.x cycle.
