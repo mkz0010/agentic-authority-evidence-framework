@@ -762,3 +762,17 @@ This appendix does not:
 - close #161, #163, #165, or #167.
 
 It records candidate incident-response preservation scenarios before any active incorporation decision.
+
+## Status after Initial Appendix Completion
+
+This appendix completes the current incident-response evidence preservation candidate coverage for #165.
+
+Current result:
+
+- ten preservation scenarios are documented;
+- preservation levels are documented;
+- common evidence package guidance is documented;
+- minimal and dispute-grade preservation package candidates are documented;
+- reviewer checklist candidates and anti-patterns are documented.
+
+No active CSV, schema, example, validator fixture, control catalog, assessment worksheet, assessment profile, or external mapping change is required by this appendix.
