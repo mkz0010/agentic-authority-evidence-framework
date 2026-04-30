@@ -295,3 +295,18 @@ The proposal evaluates whether schema fields or examples are needed for:
 - model-generated approval summary limitations;
 - principal context freshness and degradation evidence;
 - delegation and authority lineage evidence.
+
+## T2 Track Proposal
+
+Track T2 is started in `docs/en/status/v050x-evidence-integrity-negative-tests-track-proposal.md`.
+
+The proposal defines negative test categories for:
+
+- evidence tampering;
+- evidence deletion;
+- evidence replay;
+- evidence reordering;
+- evidence truncation;
+- selective omission;
+- verification failure;
+- evidence trust limitation bypass.

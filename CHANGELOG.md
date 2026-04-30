@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x evidence integrity negative tests track proposal.
+
 ### Changed
 
 - Updated v0.5.x status documents after the first evidence schema and example implementation wave.
