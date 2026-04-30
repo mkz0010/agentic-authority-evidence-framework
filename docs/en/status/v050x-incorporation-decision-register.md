@@ -696,3 +696,20 @@ Remaining decisions for #165:
 - whether `AAEF-EVD-01` should later receive evidence sufficiency / limitation refinement;
 - whether evidence depth guidance should be created later from the temporary proposal;
 - whether temporary planning documents should be consolidated after the current follow-up cycle.
+
+## AAEF-EVD-01 Evidence Sufficiency and Limitation Review Proposal
+
+A temporary review proposal was added in `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not made in this proposal |
+| Target row under review | `AAEF-EVD-01` |
+| Related row | `AAEF-EVD-04` |
+| Schema change | Not required in this proposal |
+| Example change | Not required in this proposal |
+| Validator change | Not required in this proposal |
+
+The proposal records that evidence sufficiency is distinct from evidence integrity and schema validity.

@@ -339,3 +339,9 @@ Current #165 status:
 
 - Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, E5/evidence depth decision work, and negative example / validator fixture decision work are now substantially addressed for the current v0.5.x follow-up cycle.
 - #165 remains open because possible `AAEF-EVD-01` evidence sufficiency / limitation review and temporary-document consolidation remain pending.
+
+## AAEF-EVD-01 Evidence Sufficiency and Limitation Review Proposal
+
+The `AAEF-EVD-01` evidence sufficiency and limitation review proposal is recorded in `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`.
+
+The proposal opens review of whether `AAEF-EVD-01` needs narrow refinement to distinguish evidence sufficiency from evidence integrity, schema validity, and model-generated or self-reported evidence.

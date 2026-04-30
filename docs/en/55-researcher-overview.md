@@ -82,6 +82,8 @@ For the v0.5.x evidence depth and E5 profile decision proposal, see `docs/en/sta
 
 For the v0.5.x negative evidence examples and validator fixtures decision proposal, see `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`.
 
+For the v0.5.x `AAEF-EVD-01` evidence sufficiency and limitation review proposal, see `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:

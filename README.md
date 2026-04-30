@@ -303,7 +303,8 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │           ├── v050x-incident-response-evidence-preservation-guidance-proposal.md
 │           ├── v050x-incident-response-evidence-preservation-candidate-appendix.md
 │           ├── v050x-evidence-depth-e5-profile-decision-proposal.md
-│           └── v050x-negative-evidence-examples-fixtures-decision-proposal.md
+│           ├── v050x-negative-evidence-examples-fixtures-decision-proposal.md
+│           └── v050x-evd01-evidence-sufficiency-limitation-review-proposal.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
