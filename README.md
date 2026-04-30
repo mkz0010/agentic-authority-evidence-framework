@@ -300,7 +300,8 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │           ├── v050x-evidence-integrity-negative-tests-track-proposal.md
 │           ├── v050x-evidence-integrity-negative-tests-candidate-appendix.md
 │           ├── v050x-evidence-integrity-negative-tests-csv-refinement-proposal.md
-│           └── v050x-incident-response-evidence-preservation-guidance-proposal.md
+│           ├── v050x-incident-response-evidence-preservation-guidance-proposal.md
+│           └── v050x-incident-response-evidence-preservation-candidate-appendix.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
