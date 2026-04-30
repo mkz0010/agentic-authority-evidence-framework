@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x `AAEF-EVD-01` evidence sufficiency and limitation review proposal.
+
 ### Changed
 
 - Updated v0.5.x status after the negative evidence examples and validator fixtures decision proposal.
