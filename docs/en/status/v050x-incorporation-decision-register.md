@@ -559,3 +559,19 @@ Decision status:
 | Primary active row | `AAEF-EVD-04` |
 
 The proposal records preservation triggers, evidence types, preservation actions, trust-boundary considerations, and anti-patterns for incident-response evidence handling.
+
+## Incident-Response Evidence Preservation Candidate Appendix
+
+A temporary candidate appendix was added in `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not required in this appendix |
+| Schema change | Not required in this appendix |
+| Example change | Not required in this appendix |
+| Primary issue | #165 |
+| Primary active row | `AAEF-EVD-04` |
+
+The appendix records preservation scenarios, preservation levels, minimal and dispute-grade evidence packages, reviewer checklist candidates, and anti-patterns for incident-response evidence handling.

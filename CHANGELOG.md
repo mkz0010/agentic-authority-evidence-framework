@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x incident-response evidence preservation candidate appendix.
 - Added a temporary v0.5.x incident-response evidence preservation guidance proposal.
 
 ### Changed

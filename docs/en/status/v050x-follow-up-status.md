@@ -257,3 +257,9 @@ Current issue status:
 The incident-response evidence preservation guidance proposal is recorded in `docs/en/status/v050x-incident-response-evidence-preservation-guidance-proposal.md`.
 
 This proposal addresses a remaining #165 work area after the evidence integrity negative testing review.
+
+## Incident-Response Evidence Preservation Candidate Appendix
+
+The incident-response evidence preservation candidate appendix is recorded in `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`.
+
+This appendix adds concrete preservation scenarios and reviewer-facing preservation package candidates for #165.

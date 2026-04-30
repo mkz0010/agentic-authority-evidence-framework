@@ -186,3 +186,9 @@ This proposal does not:
 - close #161, #163, #165, or #167.
 
 It records a temporary guidance proposal before any active incorporation decision.
+
+## Candidate Appendix
+
+The incident-response evidence preservation candidate appendix is recorded in `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`.
+
+The appendix expands the guidance proposal into concrete preservation scenarios, preservation levels, evidence packages, reviewer checklist candidates, anti-patterns, and incorporation assessment.
