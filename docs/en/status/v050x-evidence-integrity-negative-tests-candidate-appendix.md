@@ -492,3 +492,9 @@ This appendix does not:
 - close #161, #163, #165, or #167.
 
 It records candidate negative tests before any active incorporation decision.
+
+## CSV Refinement Proposal
+
+The CSV refinement proposal is recorded in `docs/en/status/v050x-evidence-integrity-negative-tests-csv-refinement-proposal.md`.
+
+The proposal recommends refining the existing `AAEF-EVD-04` active testing procedure row instead of adding new rows, new candidate IDs, new controls, schema fields, or examples.

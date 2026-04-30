@@ -66,3 +66,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-evidence-schema-example-implementation-readiness.md`
 - `docs/en/status/v050x-evidence-integrity-negative-tests-track-proposal.md`
 - `docs/en/status/v050x-evidence-integrity-negative-tests-candidate-appendix.md`
+- `docs/en/status/v050x-evidence-integrity-negative-tests-csv-refinement-proposal.md`
