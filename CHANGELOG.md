@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated v0.5.x status documents after the first evidence schema and example implementation wave.
+
 ### Added
 
 - Added an approval-binding evidence example using optional approval source, approval binding, and enforcement fields.

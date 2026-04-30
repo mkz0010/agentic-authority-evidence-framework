@@ -476,3 +476,36 @@ The next incorporation phase should focus on smaller follow-up decisions rather 
 - delegation semantics;
 - approval semantics;
 - status document cleanup and publication readiness.
+
+## Incorporation Update after #209, #210, and #211
+
+PRs #209, #210, and #211 completed the first implementation wave for the evidence schema and examples track.
+
+Incorporation decisions implemented:
+
+| PR | Decision | Result |
+| --- | --- | --- |
+| #209 | Add narrow optional schema support before examples | Optional fields added under evidence and approval schema definitions |
+| #210 | Add first integrity-focused example | `agentic-action-evidence-event.integrity-e5.json` added and validated |
+| #211 | Add approval-to-execution binding example | `agentic-action-evidence-event.approval-binding.json` added and validated |
+
+The implementation followed the selected path:
+
+- schema-first;
+- example-follow-up;
+- optional fields only;
+- no active testing procedure CSV changes;
+- no new control IDs;
+- no principal context or delegation lineage schema fields in the first implementation wave.
+
+This confirms that the first T1 implementation wave is complete.
+
+Remaining incorporation decisions include:
+
+- whether evidence integrity negative tests should become active testing refinements, example artifacts, or separate guidance;
+- whether evidence depth such as E5 should become profile guidance or remain example terminology;
+- whether approval semantics require further HUM/AUZ/EVD testing procedure refinement;
+- whether trusted approval evidence source expectations require additional `AAEF-EVD-03` refinement;
+- whether principal context freshness/degradation requires schema fields later;
+- whether delegation lineage or receiving-side validation requires schema fields later;
+- whether temporary planning documents should be consolidated after the next follow-up cycle.
