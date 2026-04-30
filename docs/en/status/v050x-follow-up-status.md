@@ -211,3 +211,28 @@ Current checkpoint:
 For the consolidated checkpoint, see `docs/en/status/v050x-incorporation-review-checkpoint.md`.
 
 The next phase should split remaining work into smaller tracks for evidence schema and examples, negative tests, delegation semantics, approval semantics, and cleanup/publication readiness.
+
+## Update after #209, #210, and #211
+
+PRs #209, #210, and #211 completed the first implementation wave for the v0.5.x evidence schema and examples track.
+
+Implemented work:
+
+- #209 added optional Evidence Event Schema fields for evidence integrity, evidence trust limitations, approval evidence source, approval-to-action binding, and execution-bound approval enforcement references.
+- #210 added `examples/agentic-action-evidence-event.integrity-e5.json`.
+- #211 added `examples/agentic-action-evidence-event.approval-binding.json`.
+
+This completes the first schema-first, example-follow-up implementation sequence described in:
+
+- `docs/en/status/v050x-evidence-schema-example-implementation-readiness.md`
+- `docs/en/status/v050x-evidence-schema-field-proposal.md`
+- `docs/en/status/v050x-evidence-example-design-proposal.md`
+
+Current issue status:
+
+- #165 remains open because evidence integrity negative tests, replay/reordering/selective omission tests, incident-response evidence preservation guidance, and any evidence-depth/profile decisions remain pending.
+- #167 remains open because approval semantics, draft-vs-execute approval, post-approval modification, approval fatigue, and related HUM/AUZ/EVD testing decisions remain pending.
+- #161 remains open because principal context freshness/degradation schema or profile treatment was explicitly deferred.
+- #163 remains open because delegation lineage and receiving-side validation schema treatment was explicitly deferred.
+
+No active testing procedure CSV changes were made in #209, #210, or #211.

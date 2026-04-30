@@ -319,3 +319,25 @@ The second example PR adds the approval-to-execution binding evidence example:
 This follows the planned schema-first, example-follow-up approach.
 
 The example demonstrates trusted approval source, approval binding, approval scope, and execution-bound approval enforcement using optional schema fields.
+
+## Implementation Completion after #209, #210, and #211
+
+The initial implementation sequence described in this readiness review has been completed.
+
+Completed implementation sequence:
+
+1. #209 added optional schema support for evidence integrity and approval evidence fields.
+2. #210 added the tamper-evident / integrity-verifiable evidence example.
+3. #211 added the approval-to-execution binding evidence example.
+
+This completed the initial schema-first, example-follow-up path.
+
+The following items remain outside the first implementation wave:
+
+- evidence integrity negative tests;
+- evidence replay, reordering, truncation, deletion, and selective omission tests;
+- incident-response evidence preservation guidance;
+- approval semantics beyond the positive approval-binding example;
+- principal context freshness schema fields;
+- delegation lineage schema fields;
+- cleanup or consolidation of temporary status documents.
