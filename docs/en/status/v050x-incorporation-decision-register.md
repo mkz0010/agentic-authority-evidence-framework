@@ -844,3 +844,22 @@ Remaining decisions for #166:
 - whether to add a consolidation / close-readiness checkpoint;
 - whether stable selected-context guidance should be extracted later;
 - whether selected-context examples should be added in a future cycle.
+
+## Issue #166 Tamper-Evident Evidence Contexts Consolidation Checkpoint
+
+A temporary consolidation checkpoint was added in `docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not required |
+| Evidence Event Schema change | Not required |
+| Example change | Not required |
+| Validator change | Not required |
+| Context tier fields | Not added |
+| Candidate context IDs in active CSV | Not added |
+| Stable guidance extraction | Candidate future work |
+| Issue disposition | Close-ready if future guidance extraction is tracked separately |
+
+The checkpoint consolidates the #166 selected-context tamper-evident evidence follow-up decisions for the current v0.5.x cycle.

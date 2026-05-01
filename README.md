@@ -308,7 +308,8 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │           ├── v050x-issue-165-evidence-integrity-consolidation-checkpoint.md
 │           ├── v050x-tamper-evident-evidence-selected-contexts-proposal.md
 │           ├── v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md
-│           └── v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md
+│           ├── v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md
+│           └── v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
