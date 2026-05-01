@@ -437,3 +437,22 @@ Current decision:
 - no control catalog, assessment worksheet, assessment profile, or external mapping change is required for #161 at this time.
 
 Remaining principal context freshness, schema, example, assessment profile, and cross-agent interaction work can be tracked separately if needed.
+
+## Issue #162 Cross-Agent Capability-Scoped Delegation Consolidation Checkpoint
+
+A close-readiness checkpoint has been prepared for #162 in `docs/en/status/v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md`.
+
+The checkpoint records that capability-scoped cross-agent delegation remains an existing-control refinement and guidance concept for the current v0.5.x follow-up cycle.
+
+The current active testing procedure model already covers the core #162 expectations through `AAEF-DEL-01` and `AAEF-DEL-05`, with supporting coverage in `AAEF-DEL-02`, `AAEF-DEL-04`, `AAEF-PRN-02`, `AAEF-AUZ-*`, `AAEF-EVD-*`, and `AAEF-RES-04`.
+
+Current decision:
+
+- no new cross-agent control domain is required for #162 at this time;
+- no new dedicated cross-agent control ID is required for #162 at this time;
+- no active control catalog change is required for #162 at this time;
+- no further active testing procedure CSV change is required for #162 at this time;
+- no Evidence Event Schema change is required for #162 at this time;
+- no evidence example or validator change is required for #162 at this time.
+
+Remaining acceptance/refusal, chain accountability, downstream redelegation, and budget propagation work can continue under #163 and #164.
