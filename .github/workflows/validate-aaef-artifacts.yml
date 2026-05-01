@@ -28,6 +28,9 @@ jobs:
       - name: Install validation dependencies
         run: python -m pip install --upgrade pip jsonschema
 
+      - name: Validate Markdown indexes
+        run: python tools/validate_markdown_indexes.py
+
       - name: Validate assessment profile mapping
         run: python tools/validate_assessment_profiles.py
 
