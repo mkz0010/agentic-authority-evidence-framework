@@ -173,6 +173,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md` | v0.5.x tamper-evident evidence selected contexts candidate appendix | Temporary status / coordination material |
 | `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md` | v0.5.x tamper-evident evidence selected contexts incorporation decision | Temporary status / coordination material |
 | `docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md` | v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint | Temporary status / coordination material |
+| `docs/en/status/v060-planning-input-synthesis.md` | v0.6.0 planning input synthesis | Consolidates adoption-readiness feedback and defines the initial v0.6.0 workstreams. |
 
 ## Physical Organization Policy
 

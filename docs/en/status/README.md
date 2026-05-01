@@ -83,3 +83,5 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`](v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md) — v0.5.x tamper-evident evidence selected contexts candidate appendix.
 - [`docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`](v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md) — v0.5.x tamper-evident evidence selected contexts incorporation decision.
 - [`docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md`](v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md) — v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint.
+
+- [`docs/en/status/v060-planning-input-synthesis.md`](v060-planning-input-synthesis.md) — v0.6.0 planning input synthesis.
