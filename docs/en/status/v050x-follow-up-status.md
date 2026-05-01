@@ -456,3 +456,21 @@ Current decision:
 - no evidence example or validator change is required for #162 at this time.
 
 Remaining acceptance/refusal, chain accountability, downstream redelegation, and budget propagation work can continue under #163 and #164.
+
+## Issue #163 Delegation Negative Tests Consolidation Checkpoint
+
+A close-readiness checkpoint has been prepared for #163 in `docs/en/status/v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md`.
+
+The checkpoint records that delegation acceptance/refusal and chain accountability negative tests are already defined in non-normative guidance, supported by proposal, candidate appendix, CSV refinement proposal, and active testing coverage.
+
+The current active testing procedure model already covers the core #163 expectations through `AAEF-DEL-01`, `AAEF-DEL-03`, `AAEF-DEL-05`, `AAEF-AUZ-09`, `AAEF-EVD-05`, `AAEF-EVD-06`, and `AAEF-RES-03`.
+
+Current decision:
+
+- no further active testing procedure CSV change is required for #163 at this time;
+- no new delegation acceptance/refusal or chain accountability control ID is required for #163 at this time;
+- no Evidence Event Schema change is required for #163 at this time;
+- no evidence example or validator fixture change is required for #163 at this time;
+- no control catalog, assessment worksheet, assessment profile, or external mapping change is required for #163 at this time.
+
+Remaining executable fixtures, stable examples, schema fields, tamper-evident treatment for selected refusal paths, and budget propagation work can be tracked separately or under #164 / #3.

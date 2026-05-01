@@ -55,6 +55,7 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md`
 - `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`
 - `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md
+- [v0.5.x Issue #163 Delegation Negative Tests Consolidation Checkpoint](v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md) — records close-readiness for #163 after negative-test, candidate, and active testing coverage review.
 - [v0.5.x Issue #162 Cross-Agent Capability-Scoped Delegation Consolidation Checkpoint](v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md) — records close-readiness for #162 after active control and testing coverage review.`
 - `docs/en/status/v050x-approval-quality-testing-proposal.md`
 - `docs/en/status/v050x-approval-quality-testing-candidate-appendix.md`

@@ -906,3 +906,15 @@ Decision:
 - rely on the current active testing procedure coverage in `AAEF-DEL-01` and `AAEF-DEL-05`, supported by related DEL, PRN, AUZ, EVD, and RES rows;
 - keep possible future dedicated cross-agent authority controls as a candidate for later design work;
 - track acceptance/refusal, chain accountability, downstream redelegation, and budget propagation under adjacent follow-up issues.
+
+## #163 Delegation Negative Tests Consolidation Checkpoint
+
+The #163 consolidation checkpoint records close-readiness for the current v0.5.x follow-up cycle.
+
+Decision:
+
+- keep delegation acceptance/refusal and chain accountability negative tests as non-normative guidance and candidate material for the current cycle;
+- do not add new active testing procedure rows in the current cycle;
+- do not add new delegation acceptance/refusal or chain accountability control IDs in the current cycle;
+- rely on the current active testing procedure coverage in `AAEF-DEL-01`, `AAEF-DEL-03`, `AAEF-DEL-05`, `AAEF-AUZ-09`, `AAEF-EVD-05`, `AAEF-EVD-06`, and `AAEF-RES-03`;
+- track executable fixtures, stable examples, schema fields, selected evidence integrity treatment, and budget propagation separately if needed.
