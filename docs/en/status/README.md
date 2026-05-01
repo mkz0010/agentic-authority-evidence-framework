@@ -74,3 +74,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`
 - `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`
 - `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`
+- `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`
