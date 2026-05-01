@@ -474,3 +474,22 @@ Current decision:
 - no control catalog, assessment worksheet, assessment profile, or external mapping change is required for #163 at this time.
 
 Remaining executable fixtures, stable examples, schema fields, tamper-evident treatment for selected refusal paths, and budget propagation work can be tracked separately or under #164 / #3.
+
+## Issue #164 Budget Propagation Consolidation Checkpoint
+
+A close-readiness checkpoint has been prepared for #164 in `docs/en/status/v050x-issue-164-budget-propagation-consolidation-checkpoint.md`.
+
+The checkpoint records that cross-agent budget propagation guidance is already defined in non-normative guidance and that the current v0.5.x cycle does not require immediate active artifact changes.
+
+The guidance covers inherited ceilings, quota, rate, cost, API, tool-use, compute, time, data access, operational, delegation, and review constraints; receiving-side validation; enforcement points; evidence expectations; anti-patterns; and implementation-neutral mechanisms.
+
+Current decision:
+
+- no new cross-agent budget propagation control ID is required for #164 at this time;
+- no active control catalog change is required for #164 at this time;
+- no active testing procedure CSV change is required for #164 at this time;
+- no Evidence Event Schema change is required for #164 at this time;
+- no evidence example or validator fixture change is required for #164 at this time;
+- no assessment worksheet, assessment profile, or external mapping change is required for #164 at this time.
+
+Future work can separately consider selected high-impact contexts, resource constraint schema candidates, aggregate budget tracking tests, budget propagation examples, assessment profile treatment, or broader #3 roadmap work.

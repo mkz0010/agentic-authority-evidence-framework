@@ -918,3 +918,16 @@ Decision:
 - do not add new delegation acceptance/refusal or chain accountability control IDs in the current cycle;
 - rely on the current active testing procedure coverage in `AAEF-DEL-01`, `AAEF-DEL-03`, `AAEF-DEL-05`, `AAEF-AUZ-09`, `AAEF-EVD-05`, `AAEF-EVD-06`, and `AAEF-RES-03`;
 - track executable fixtures, stable examples, schema fields, selected evidence integrity treatment, and budget propagation separately if needed.
+
+## #164 Budget Propagation Consolidation Checkpoint
+
+The #164 consolidation checkpoint records close-readiness for the current v0.5.x follow-up cycle.
+
+Decision:
+
+- keep cross-agent budget propagation as non-normative guidance and an existing-control refinement candidate for the current cycle;
+- do not add a new budget propagation control ID in the current cycle;
+- do not add a new control domain in the current cycle;
+- do not update the active control catalog, active testing procedure CSV, Evidence Event Schema, examples, validators, assessment worksheet, assessment profiles, or external mappings in the current cycle;
+- rely on the current guidance and existing active coverage in DEL, AUZ, EVD, RES, and HUM rows;
+- track selected-context testing, schema candidates, examples, assessment profile treatment, and broader cross-agent roadmap work separately if needed.

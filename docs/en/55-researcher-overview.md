@@ -52,6 +52,8 @@ For v0.5.x cross-agent delegation CSV refinement proposal, see `docs/en/status/v
 
 For v0.5.x #163 delegation acceptance/refusal and chain accountability consolidation checkpoint, see `docs/en/status/v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md`.
 
+For v0.5.x #164 cross-agent budget propagation consolidation checkpoint, see `docs/en/status/v050x-issue-164-budget-propagation-consolidation-checkpoint.md`.
+
 For v0.5.x #162 cross-agent capability-scoped delegation consolidation checkpoint, see `docs/en/status/v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md`.
 
 For v0.5.x approval quality testing proposal, see `docs/en/status/v050x-approval-quality-testing-proposal.md`.
