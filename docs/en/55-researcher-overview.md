@@ -90,6 +90,8 @@ For the v0.5.x tamper-evident evidence selected contexts proposal, see `docs/en/
 
 For the v0.5.x tamper-evident evidence selected contexts candidate appendix, see `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
 
+For the v0.5.x tamper-evident evidence selected contexts incorporation decision, see `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:

@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x tamper-evident evidence selected contexts incorporation decision.
 - Added a temporary v0.5.x tamper-evident evidence selected contexts candidate appendix.
 - Added a temporary v0.5.x tamper-evident evidence selected contexts proposal.
 - Added a temporary v0.5.x issue #165 evidence integrity consolidation checkpoint.
