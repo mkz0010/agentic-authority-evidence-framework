@@ -86,3 +86,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 
 - [`docs/en/status/v060-planning-input-synthesis.md`](v060-planning-input-synthesis.md) — v0.6.0 planning input synthesis.
 - [`docs/en/status/v060-operational-responsibility-matrix-planning.md`](v060-operational-responsibility-matrix-planning.md) — v0.6.0 operational responsibility matrix planning draft.
+- [`docs/en/status/v060-high-impact-production-minimum-architecture-profile-planning.md`](v060-high-impact-production-minimum-architecture-profile-planning.md) — v0.6.0 high-impact production minimum architecture profile planning draft.
