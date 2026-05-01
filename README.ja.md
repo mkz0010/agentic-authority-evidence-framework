@@ -81,13 +81,15 @@ AAEFは、主に以下の読者を想定しています。
 
 ## ドキュメントの状態
 
-**AAEF v0.4.1 Public Review Draft** が現在の公開レビュー baseline です。
+**AAEF v0.5.0 Public Review Planning Release** が最新の公開レビュー planning release です。
 
-AAEF v0.4.1 は v0.4.0 の maintenance / refinement release です。v0.4.0 の企業評価・監査補助向け baseline を維持しつつ、testing criteria と external framework mappings の post-release refinement を反映しています。
+AAEF v0.5.0 は、non-normative な planning and design-clarification release です。authority lifecycle、evidence integrity、approval quality、および future v0.5.x work に向けた planning models と incorporation guidance を追加しています。
+
+ただし、control catalog、evidence schema、assessment artifacts、または testing procedures が後続リリースで明示的に更新されるまでは、**AAEF v0.4.1 が現在の control and assessment baseline** として維持されます。
 
 以前の v0.3.x、v0.2.x、v0.1.x releases は prior public review baselines として引き続き参照できます。
 
-AAEF v0.4.x で追加・整理された主な要素:
+AAEF v0.5.0 に含まれる主な要素:
 
 - control catalog versioning and change impact guidance
 - measurable testing procedures and pass criteria
@@ -97,8 +99,15 @@ AAEF v0.4.x で追加・整理された主な要素:
 - external framework mapping methodology
 - initial conservative external framework mapping draft
 - validation for testing procedures and external mappings
+- refined control-specific testing procedure pass criteria
+- updated conservative external framework mappings, including NIST AI RMF / GenAI Profile, ISO/IEC 42001 feasibility, and CSA Agentic Trust Framework mapping
+- authority lifecycle planning guidance
+- cross-agent and cross-domain authority planning material
+- evidence integrity and tamper-evident evidence planning material
+- approval quality and approval fatigue planning material
+- v0.5.x follow-up completion status summary
 
-AAEF v0.4.1 は公開レビュー草案です。認証制度、正式標準、implementation conformance claim、audit opinion、compliance equivalence、または完全なリスク軽減を主張するものではありません。
+AAEF v0.5.0 は公開レビュー planning release です。認証制度、正式標準、implementation conformance claim、audit opinion、compliance equivalence、または完全なリスク軽減を主張するものではありません。
 
 フィードバック、Issue、Pull Requestを歓迎します。
 
