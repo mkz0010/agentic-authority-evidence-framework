@@ -4,6 +4,7 @@
 
 
 ### Documentation
+- Added v0.5.x #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint and linked it from status materials.
 - Added v0.5.x #162 cross-agent capability-scoped delegation consolidation checkpoint and linked it from status materials.
 - Added v0.5.x #161 principal context degradation consolidation checkpoint and linked it from status materials.
 ### Added

@@ -145,6 +145,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md` | v0.5.x cross-agent delegation testing proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md` | v0.5.x cross-agent delegation testing candidate appendix | Temporary status / coordination material |
 | `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md`
+| `docs/en/status/v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md` | v0.5.x issue #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint | Temporary status / coordination material |
 | `docs/en/status/v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md` | v0.5.x issue #162 cross-agent capability-scoped delegation consolidation checkpoint | Temporary status / coordination material | | v0.5.x cross-agent delegation CSV refinement proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-approval-quality-testing-proposal.md` | v0.5.x approval quality testing proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-approval-quality-testing-candidate-appendix.md` | v0.5.x approval quality testing candidate appendix | Temporary status / coordination material |
