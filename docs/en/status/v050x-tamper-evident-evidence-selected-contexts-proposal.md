@@ -219,3 +219,9 @@ It records selected-context proposal guidance before any active incorporation de
 The tamper-evident evidence selected contexts candidate appendix is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
 
 The appendix expands the proposal into concrete selected-context candidates, expectation tiers, evidence package candidates, escalation rules, and incorporation considerations.
+
+## Incorporation Decision
+
+The selected-context incorporation decision is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`.
+
+The decision keeps selected-context requirements as guidance-only for the current v0.5.x cycle and does not require active CSV, schema, example, or validator changes.

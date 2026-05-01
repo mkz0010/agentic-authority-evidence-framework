@@ -793,3 +793,22 @@ Decision status:
 | Related rows | `AAEF-EVD-04`, `AAEF-EVD-01` |
 
 The appendix records concrete required, recommended, optional, and escalation contexts for tamper-evident evidence.
+
+## Tamper-Evident Evidence Selected Contexts Incorporation Decision
+
+A temporary incorporation decision was added in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not required at this time |
+| Evidence Event Schema change | Not required at this time |
+| Example change | Not required at this time |
+| Validator change | Not required at this time |
+| Context tier fields | Not added |
+| Candidate context IDs in active CSV | Not added |
+| Stable guidance extraction | Candidate future work |
+| Primary issue | #166 |
+
+The decision keeps selected-context requirements guidance-only for the current v0.5.x cycle.

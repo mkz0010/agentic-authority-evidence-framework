@@ -378,3 +378,9 @@ The proposal starts #166 by identifying contexts where tamper-evident evidence m
 The tamper-evident evidence selected contexts candidate appendix is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
 
 The appendix expands #166 selected-context planning into concrete candidate scenarios and expectation tiers.
+
+## Tamper-Evident Evidence Selected Contexts Incorporation Decision
+
+The tamper-evident evidence selected contexts incorporation decision is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`.
+
+The decision keeps selected contexts as guidance-only for the current v0.5.x cycle and records that no active CSV, schema, example, or validator change is required at this time for #166.

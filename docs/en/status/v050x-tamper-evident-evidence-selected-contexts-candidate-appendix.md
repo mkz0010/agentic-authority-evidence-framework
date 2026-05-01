@@ -818,3 +818,15 @@ This appendix does not:
 - close #161, #163, #165, #166, or #167.
 
 It records selected-context candidates before any active incorporation decision.
+
+## Incorporation Decision
+
+The selected-context incorporation decision is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`.
+
+Current result:
+
+- selected contexts remain non-normative guidance;
+- no active CSV change is required at this time;
+- no Evidence Event Schema change is required at this time;
+- no evidence example change is required at this time;
+- no validator change is required at this time.
