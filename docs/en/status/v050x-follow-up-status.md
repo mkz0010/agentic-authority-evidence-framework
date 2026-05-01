@@ -372,3 +372,9 @@ The checkpoint records that the major #165 workstreams are substantially address
 The tamper-evident evidence selected contexts proposal is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`.
 
 The proposal starts #166 by identifying contexts where tamper-evident evidence may be required, recommended, or optional, without changing active CSV, schema, examples, or validators.
+
+## Tamper-Evident Evidence Selected Contexts Candidate Appendix
+
+The tamper-evident evidence selected contexts candidate appendix is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
+
+The appendix expands #166 selected-context planning into concrete candidate scenarios and expectation tiers.

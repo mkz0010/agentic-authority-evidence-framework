@@ -213,3 +213,9 @@ This proposal does not:
 - close #161, #163, #165, #166, or #167.
 
 It records selected-context proposal guidance before any active incorporation decision.
+
+## Candidate Appendix
+
+The tamper-evident evidence selected contexts candidate appendix is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
+
+The appendix expands the proposal into concrete selected-context candidates, expectation tiers, evidence package candidates, escalation rules, and incorporation considerations.

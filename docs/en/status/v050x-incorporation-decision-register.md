@@ -776,3 +776,20 @@ Decision status:
 | Related rows | `AAEF-EVD-04`, `AAEF-EVD-01` |
 
 The proposal identifies candidate required, recommended, and optional contexts for tamper-evident evidence.
+
+## Tamper-Evident Evidence Selected Contexts Candidate Appendix
+
+A temporary selected contexts candidate appendix was added in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
+
+Decision status:
+
+| Area | Decision |
+| --- | --- |
+| Active CSV change | Not made in this appendix |
+| Evidence Event Schema change | Not made in this appendix |
+| Example change | Not made in this appendix |
+| Validator change | Not made in this appendix |
+| Primary issue | #166 |
+| Related rows | `AAEF-EVD-04`, `AAEF-EVD-01` |
+
+The appendix records concrete required, recommended, optional, and escalation contexts for tamper-evident evidence.

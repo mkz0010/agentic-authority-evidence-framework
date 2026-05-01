@@ -88,6 +88,8 @@ For the v0.5.x issue #165 evidence integrity consolidation checkpoint, see `docs
 
 For the v0.5.x tamper-evident evidence selected contexts proposal, see `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`.
 
+For the v0.5.x tamper-evident evidence selected contexts candidate appendix, see `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
+
 ## Research Motivation
 
 AAEF focuses on a specific problem in agentic AI assurance:

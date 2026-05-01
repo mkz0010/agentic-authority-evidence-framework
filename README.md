@@ -306,7 +306,8 @@ These documents currently remain under `docs/en/` for public review continuity. 
 │           ├── v050x-negative-evidence-examples-fixtures-decision-proposal.md
 │           ├── v050x-evd01-evidence-sufficiency-limitation-review-proposal.md
 │           ├── v050x-issue-165-evidence-integrity-consolidation-checkpoint.md
-│           └── v050x-tamper-evident-evidence-selected-contexts-proposal.md
+│           ├── v050x-tamper-evident-evidence-selected-contexts-proposal.md
+│           └── v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md
 │       └── release/
 │           ├── v0.2.0-preparation-checklist.md
 │           ├── v0.3.0-preparation-checklist.md
