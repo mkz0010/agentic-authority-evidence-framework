@@ -197,3 +197,19 @@ This decision does not:
 - close #161, #163, #165, #166, or #167.
 
 It records the selected-context incorporation decision before any issue closure decision.
+
+## Status after Initial Incorporation Decision
+
+This decision records the current v0.5.x incorporation outcome for selected-context tamper-evident evidence requirements.
+
+Current incorporation status:
+
+- selected contexts remain non-normative guidance;
+- no active CSV change is required;
+- no Evidence Event Schema change is required;
+- no evidence example change is required;
+- no validator change is required;
+- context tier fields are not added;
+- candidate context IDs are not added to active CSV.
+
+The remaining question is whether #166 can be closed for the current v0.5.x follow-up cycle after a consolidation checkpoint, with stable guidance extraction tracked separately if needed.

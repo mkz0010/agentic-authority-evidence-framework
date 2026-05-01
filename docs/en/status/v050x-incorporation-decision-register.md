@@ -812,3 +812,35 @@ Decision status:
 | Primary issue | #166 |
 
 The decision keeps selected-context requirements guidance-only for the current v0.5.x cycle.
+
+## Update after Tamper-Evident Evidence Selected Contexts Incorporation Decision
+
+After #229, the selected-context tamper-evident evidence incorporation decision for #166 was reviewed.
+
+Decision:
+
+| Area | Decision |
+| --- | --- |
+| Selected-context model | Guidance-only for the current cycle |
+| Active CSV change | Not required at this time |
+| Evidence Event Schema change | Not required at this time |
+| Evidence example change | Not required at this time |
+| Validator change | Not required at this time |
+| Context tier fields | Not added |
+| Candidate context IDs in active CSV | Not added |
+| Stable guidance extraction | Candidate future work |
+| Primary issue | #166 |
+
+Rationale:
+
+- `AAEF-EVD-04` already covers evidence integrity and tamper-evident evidence at the active testing procedure level.
+- `AAEF-EVD-01` already covers evidence sufficiency and action reconstruction.
+- Selected contexts are useful for review and implementation guidance, but should not become schema values or active CSV IDs before feedback.
+- Context-specific evidence requirements may vary by action impact, reversibility, dispute likelihood, delegation complexity, and implementation maturity.
+- Keeping the selected-context model guidance-only avoids false precision, certification confusion, and premature schema or CSV coupling.
+
+Remaining decisions for #166:
+
+- whether to add a consolidation / close-readiness checkpoint;
+- whether stable selected-context guidance should be extracted later;
+- whether selected-context examples should be added in a future cycle.
