@@ -50,7 +50,8 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - `docs/en/status/v050x-testing-incorporation-readiness-review.md`
 - `docs/en/status/v050x-principal-context-testing-proposal.md`
 - `docs/en/status/v050x-principal-context-testing-candidate-appendix.md`
-- `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md`
+- `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md
+- [v0.5.x Issue #161 Principal Context Degradation Consolidation Checkpoint](v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md) — records close-readiness for #161 after active testing coverage review.`
 - `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md`
 - `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`
 - `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md`

@@ -462,7 +462,7 @@ The current incorporation decisions are:
 
 | Issue | Topic | Incorporation decision | Active artifact result | Status |
 | --- | --- | --- | --- | --- |
-| #161 | Principal context | Partially incorporate into existing active testing rows | Active testing procedure CSV refined | Open |
+| #161 | Principal context | Partially incorporate into existing active testing rows | Active testing procedure CSV refined; consolidation checkpoint prepared | Close-ready after checkpoint merge |
 | #163 | Cross-agent delegation | Partially incorporate into existing active DEL testing rows | Active testing procedure CSV refined | Open |
 | #165 | Evidence integrity | Treat as substantially represented by `AAEF-EVD-04` for the first step | No immediate active CSV change | Open |
 | #167 | Approval quality | Partially incorporate into existing active HUM/AUZ testing rows | Active testing procedure CSV refined | Open |
@@ -880,3 +880,16 @@ Decision status:
 | Issue disposition | Close-ready if future guidance extraction is tracked separately |
 
 The checkpoint consolidates the #167 approval quality testing and evidence expectation decisions for the current v0.5.x cycle.
+
+## #161 Principal Context Degradation Consolidation Checkpoint
+
+The #161 consolidation checkpoint records close-readiness for the current v0.5.x follow-up cycle.
+
+Decision:
+
+- keep Principal Context Degradation as a cross-cutting authority lifecycle concept;
+- rely on the current active testing procedure coverage in `AAEF-PRN-02`, supported by related AUZ, EVD, HUM, and MEM rows;
+- do not add a new PRN control for #161 in the current cycle;
+- do not add principal context freshness or degradation fields to the Evidence Event Schema in the current cycle;
+- do not add evidence examples or validator fixtures for #161 in the current cycle;
+- track any future stable guidance extraction, examples, schema/profile treatment, or cross-agent interaction separately.

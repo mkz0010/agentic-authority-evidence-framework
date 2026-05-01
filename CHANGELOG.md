@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+
+### Documentation
+- Added v0.5.x #161 principal context degradation consolidation checkpoint and linked it from status materials.
 ### Added
 
 - Added a temporary v0.5.x issue #167 approval quality consolidation checkpoint.

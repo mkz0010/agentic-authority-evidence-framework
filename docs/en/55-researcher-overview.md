@@ -42,6 +42,8 @@ For v0.5.x principal context testing candidate appendix, see `docs/en/status/v05
 
 For v0.5.x principal context testing CSV refinement proposal, see `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md`.
 
+For v0.5.x #161 principal context degradation consolidation checkpoint, see `docs/en/status/v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md`.
+
 For v0.5.x cross-agent delegation testing proposal, see `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md`.
 
 For v0.5.x cross-agent delegation testing candidate appendix, see `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`.
