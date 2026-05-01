@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a temporary v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint.
+
 ### Changed
 
 - Updated v0.5.x status after the tamper-evident evidence selected contexts incorporation decision.
