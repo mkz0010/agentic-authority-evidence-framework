@@ -2,148 +2,85 @@
 
 ## Unreleased
 
-
-
-### Tooling
-- Added Markdown index validation for status document indexes and document-map rows.
-### Documentation
-- Updated Japanese README document status to align with the v0.5.0 Public Review Planning Release.
+### Planning and Status
 - Added v0.5.x follow-up completion summary and cleaned up status/index references after #161 through #167 were closed.
 - Added v0.5.x #164 cross-agent budget propagation consolidation checkpoint and linked it from status materials.
-- Added v0.5.x #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint and linked it from status materials.
 - Added v0.5.x #162 cross-agent capability-scoped delegation consolidation checkpoint and linked it from status materials.
-- Added v0.5.x #161 principal context degradation consolidation checkpoint and linked it from status materials.
-### Added
-
 - Added a temporary v0.5.x issue #167 approval quality consolidation checkpoint.
 - Added a temporary v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint.
-
-### Changed
-
-- Updated v0.5.x status after the tamper-evident evidence selected contexts incorporation decision.
-
-### Added
-
-- Added a temporary v0.5.x tamper-evident evidence selected contexts incorporation decision.
-- Added a temporary v0.5.x tamper-evident evidence selected contexts candidate appendix.
-- Added a temporary v0.5.x tamper-evident evidence selected contexts proposal.
 - Added a temporary v0.5.x issue #165 evidence integrity consolidation checkpoint.
-
-### Changed
-
-- Updated v0.5.x status after reviewing `AAEF-EVD-01` evidence sufficiency coverage.
-
-### Added
-
-- Added a temporary v0.5.x `AAEF-EVD-01` evidence sufficiency and limitation review proposal.
-
-### Changed
-
-- Updated v0.5.x status after the negative evidence examples and validator fixtures decision proposal.
-
-### Added
-
-- Added a temporary v0.5.x negative evidence examples and validator fixtures decision proposal.
-
-### Changed
-
-- Updated v0.5.x status after the evidence depth and E5 profile decision proposal.
-
-### Added
-
-- Added a temporary v0.5.x evidence depth and E5 profile decision proposal.
-
-### Changed
-
-- Updated v0.5.x status after incident-response evidence preservation guidance and candidate appendix completion.
-
-### Added
-
-- Added a temporary v0.5.x incident-response evidence preservation candidate appendix.
-- Added a temporary v0.5.x incident-response evidence preservation guidance proposal.
-
-### Changed
-
 - Updated v0.5.x status after reviewing evidence integrity testing procedure coverage.
+- Updated v0.5.x status documents after the first evidence schema and example implementation wave.
+- Added a temporary v0.5.x incorporation review checkpoint for #161, #163, #165, and #167.
+- Updated v0.5.x status documents after the evidence integrity CSV refinement proposal review.
+- Added temporary v0.5.x follow-up status tracking under `docs/en/status/`.
+- Added a temporary v0.5.x tamper-evident evidence selected contexts candidate appendix.
+- Added a temporary v0.5.x next phase track plan.
+- Added a temporary v0.5.x evidence integrity CSV refinement proposal.
+- Added a temporary v0.5.x approval quality CSV refinement proposal.
+- Added a temporary v0.5.x cross-agent delegation CSV refinement proposal.
+- Added a temporary v0.5.x evidence schema and examples track proposal.
+- Added v0.5.x #161 principal context degradation consolidation checkpoint and linked it from status materials.
+- Updated v0.5.x status after the tamper-evident evidence selected contexts incorporation decision.
+- Added a temporary v0.5.x tamper-evident evidence selected contexts incorporation decision.
+- Updated v0.5.x status after reviewing `AAEF-EVD-01` evidence sufficiency coverage.
+- Added a temporary v0.5.x `AAEF-EVD-01` evidence sufficiency and limitation review proposal.
+- Updated v0.5.x status after the evidence depth and E5 profile decision proposal.
+- Added a temporary v0.5.x evidence depth and E5 profile decision proposal.
+- Updated v0.5.x status after incident-response evidence preservation guidance and candidate appendix completion.
+- Added a temporary v0.5.x incident-response evidence preservation candidate appendix.
+- Added a temporary v0.5.x incorporation decision register for #161 through #167.
 
-### Added
+### Documentation
+- Updated Japanese README document status to align with the v0.5.0 Public Review Planning Release.
+- Added non-normative evidence integrity profile guidance for high-impact and audit-grade v0.5.x follow-up work.
+- Added non-normative cross-agent budget propagation guidance for v0.5.x follow-up work.
+- Added non-normative cross-agent delegation negative test guidance for v0.5.x follow-up work.
+- Added non-normative capability-scoped cross-agent delegation guidance for v0.5.x follow-up work.
+- Added a temporary v0.5.x tamper-evident evidence selected contexts proposal.
+- Added a document map to classify AAEF documents by role without moving existing files.
+- Added non-normative tamper-evident evidence requirements guidance for selected v0.5.x contexts.
+- Added a temporary v0.5.x incident-response evidence preservation guidance proposal.
+- Added non-normative principal context degradation testing guidance for v0.5.x follow-up work.
+- Added a researcher overview as a research-facing entry point with reading paths, review questions, and links to open research questions and v0.5.x follow-up work.
 
+### Testing and Assessment
+- Added v0.5.x #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint and linked it from status materials.
+- Updated v0.5.x status documents after the approval quality testing procedure refinement.
+- Updated v0.5.x status documents after the cross-agent delegation testing procedure refinement.
+- Added a temporary v0.5.x testing incorporation readiness review for selected testing candidates.
+- Added a temporary v0.5.x testing candidate selection document for #161, #163, and #167.
+- Added non-normative approval quality testing and evidence guidance for v0.5.x follow-up work.
+- Added a temporary v0.5.x testing candidate mapping document for likely control areas and evidence expectations.
 - Added a temporary v0.5.x evidence integrity negative tests CSV refinement proposal.
 - Added a temporary v0.5.x evidence integrity negative tests candidate appendix.
 - Added a temporary v0.5.x evidence integrity negative tests track proposal.
+- Refined `AAEF-HUM-01` and `AAEF-AUZ-03` testing procedure language for approval quality and approval-to-execution binding.
+- Added a temporary v0.5.x approval quality testing candidate appendix.
+- Added a temporary v0.5.x approval quality testing proposal.
+- Added a temporary v0.5.x cross-agent delegation testing candidate appendix.
+- Added a temporary v0.5.x cross-agent delegation testing proposal.
+- Refined `AAEF-AUZ-02` and `AAEF-AUZ-07` testing procedure language for scope expansion and authority lifecycle state changes.
+- Added temporary v0.5.x testing draft pass/fail criteria for selected testing candidates.
+- Added a temporary v0.5.x testing procedure candidate matrix for selected testing candidates.
+- Refined `AAEF-DEL-01` and `AAEF-DEL-05` testing procedure language for cross-agent delegation authority validation.
+- Updated v0.5.x status documents after the principal context testing procedure refinement.
+- Added a temporary v0.5.x principal context testing CSV refinement proposal.
+- Added a temporary v0.5.x principal context testing candidate appendix.
+- Added a temporary v0.5.x principal context testing proposal for the first testing incorporation batch.
 
-### Changed
-
-- Updated v0.5.x status documents after the first evidence schema and example implementation wave.
-
-### Added
-
+### Schema and Examples
 - Added an approval-binding evidence example using optional approval source, approval binding, and enforcement fields.
 - Added an integrity-focused evidence example using optional evidence integrity and trust limitation fields.
 - Added optional Evidence Event Schema fields for evidence integrity, evidence trust limitations, approval evidence source, approval binding, and approval enforcement references.
 - Added a temporary v0.5.x evidence schema/example implementation readiness review.
 - Added a temporary v0.5.x evidence example design proposal.
 - Added a temporary v0.5.x evidence schema field proposal.
-- Added a temporary v0.5.x evidence schema and examples track proposal.
-- Added a temporary v0.5.x next phase track plan.
-- Added a temporary v0.5.x incorporation review checkpoint for #161, #163, #165, and #167.
+- Updated v0.5.x status after the negative evidence examples and validator fixtures decision proposal.
+- Added a temporary v0.5.x negative evidence examples and validator fixtures decision proposal.
 
-### Changed
-
-- Updated v0.5.x status documents after the evidence integrity CSV refinement proposal review.
-
-### Added
-
-- Added a temporary v0.5.x evidence integrity CSV refinement proposal.
-
-### Changed
-
-- Updated v0.5.x status documents after the approval quality testing procedure refinement.
-- Refined `AAEF-HUM-01` and `AAEF-AUZ-03` testing procedure language for approval quality and approval-to-execution binding.
-
-### Added
-
-- Added a temporary v0.5.x approval quality CSV refinement proposal.
-- Added a temporary v0.5.x approval quality testing candidate appendix.
-- Added a temporary v0.5.x approval quality testing proposal.
-
-### Changed
-
-- Updated v0.5.x status documents after the cross-agent delegation testing procedure refinement.
-- Refined `AAEF-DEL-01` and `AAEF-DEL-05` testing procedure language for cross-agent delegation authority validation.
-
-### Added
-
-- Added a temporary v0.5.x cross-agent delegation CSV refinement proposal.
-- Added a temporary v0.5.x cross-agent delegation testing candidate appendix.
-- Added a temporary v0.5.x cross-agent delegation testing proposal.
-
-### Changed
-
-- Updated v0.5.x status documents after the principal context testing procedure refinement.
-- Refined `AAEF-AUZ-02` and `AAEF-AUZ-07` testing procedure language for scope expansion and authority lifecycle state changes.
-
-### Added
-
-- Added a temporary v0.5.x principal context testing CSV refinement proposal.
-- Added a temporary v0.5.x principal context testing candidate appendix.
-- Added a temporary v0.5.x principal context testing proposal for the first testing incorporation batch.
-- Added a temporary v0.5.x testing incorporation readiness review for selected testing candidates.
-- Added temporary v0.5.x testing draft pass/fail criteria for selected testing candidates.
-- Added a temporary v0.5.x testing candidate mapping document for likely control areas and evidence expectations.
-- Added a temporary v0.5.x testing procedure candidate matrix for selected testing candidates.
-- Added a temporary v0.5.x testing candidate selection document for #161, #163, and #167.
-- Added a temporary v0.5.x incorporation decision register for #161 through #167.
-- Added temporary v0.5.x follow-up status tracking under `docs/en/status/`.
-- Added a document map to classify AAEF documents by role without moving existing files.
-- Added non-normative approval quality testing and evidence guidance for v0.5.x follow-up work.
-- Added non-normative tamper-evident evidence requirements guidance for selected v0.5.x contexts.
-- Added non-normative evidence integrity profile guidance for high-impact and audit-grade v0.5.x follow-up work.
-- Added non-normative principal context degradation testing guidance for v0.5.x follow-up work.
-- Added non-normative cross-agent budget propagation guidance for v0.5.x follow-up work.
-- Added non-normative cross-agent delegation negative test guidance for v0.5.x follow-up work.
-- Added non-normative capability-scoped cross-agent delegation guidance for v0.5.x follow-up work.
-- Added a researcher overview as a research-facing entry point with reading paths, review questions, and links to open research questions and v0.5.x follow-up work.
+### Tooling
+- Added Markdown index validation for status document indexes and document-map rows.
 
 ## v0.5.0 Public Review Planning Release - 2026-04-29
 
