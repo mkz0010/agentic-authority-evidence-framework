@@ -85,3 +85,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md`](v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md) — v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint.
 
 - [`docs/en/status/v060-planning-input-synthesis.md`](v060-planning-input-synthesis.md) — v0.6.0 planning input synthesis.
+- [`docs/en/status/v060-operational-responsibility-matrix-planning.md`](v060-operational-responsibility-matrix-planning.md) — v0.6.0 operational responsibility matrix planning draft.
