@@ -3,6 +3,9 @@
 ## Unreleased
 
 
+
+### Tooling
+- Added Markdown index validation for status document indexes and document-map rows.
 ### Documentation
 - Updated Japanese README document status to align with the v0.5.0 Public Review Planning Release.
 - Added v0.5.x follow-up completion summary and cleaned up status/index references after #161 through #167 were closed.
