@@ -41,44 +41,45 @@ Any normative incorporation must be handled through a later PR that explicitly u
 
 ## Current Status Documents
 
-- `docs/en/status/v050x-follow-up-status.md`
-- `docs/en/status/v050x-incorporation-decision-register.md`
-- `docs/en/status/v050x-testing-candidate-selection.md`
-- `docs/en/status/v050x-testing-procedure-candidate-matrix.md`
-- `docs/en/status/v050x-testing-candidate-mapping.md`
-- `docs/en/status/v050x-testing-draft-pass-fail-criteria.md`
-- `docs/en/status/v050x-testing-incorporation-readiness-review.md`
-- `docs/en/status/v050x-principal-context-testing-proposal.md`
-- `docs/en/status/v050x-principal-context-testing-candidate-appendix.md`
-- `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md
-- [v0.5.x Issue #161 Principal Context Degradation Consolidation Checkpoint](v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md) — records close-readiness for #161 after active testing coverage review.`
-- `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md`
-- `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`
-- `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md
-- [v0.5.x Issue #163 Delegation Negative Tests Consolidation Checkpoint](v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md
-- [v0.5.x Issue #164 Budget Propagation Consolidation Checkpoint](v050x-issue-164-budget-propagation-consolidation-checkpoint.md) — records close-readiness for #164 after budget propagation guidance and active coverage review.) — records close-readiness for #163 after negative-test, candidate, and active testing coverage review.
-- [v0.5.x Issue #162 Cross-Agent Capability-Scoped Delegation Consolidation Checkpoint](v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md) — records close-readiness for #162 after active control and testing coverage review.`
-- `docs/en/status/v050x-approval-quality-testing-proposal.md`
-- `docs/en/status/v050x-approval-quality-testing-candidate-appendix.md`
-- `docs/en/status/v050x-approval-quality-csv-refinement-proposal.md`
-- `docs/en/status/v050x-evidence-integrity-csv-refinement-proposal.md`
-- `docs/en/status/v050x-incorporation-review-checkpoint.md`
-- `docs/en/status/v050x-next-phase-track-plan.md`
-- `docs/en/status/v050x-evidence-schema-and-examples-track-proposal.md`
-- `docs/en/status/v050x-evidence-schema-field-proposal.md`
-- `docs/en/status/v050x-evidence-example-design-proposal.md`
-- `docs/en/status/v050x-evidence-schema-example-implementation-readiness.md`
-- `docs/en/status/v050x-evidence-integrity-negative-tests-track-proposal.md`
-- `docs/en/status/v050x-evidence-integrity-negative-tests-candidate-appendix.md`
-- `docs/en/status/v050x-evidence-integrity-negative-tests-csv-refinement-proposal.md`
-- `docs/en/status/v050x-incident-response-evidence-preservation-guidance-proposal.md`
-- `docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`
-- `docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`
-- `docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`
-- `docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`
-- `docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`
-- `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`
-- `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`
-- `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`
-- `docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md`
-- `docs/en/status/v050x-issue-167-approval-quality-consolidation-checkpoint.md`
+- [`docs/en/status/v050x-follow-up-completion-summary.md`](v050x-follow-up-completion-summary.md) — v0.5.x follow-up completion summary for #161 through #167.
+- [`docs/en/status/v050x-follow-up-status.md`](v050x-follow-up-status.md) — v0.5.x follow-up status.
+- [`docs/en/status/v050x-incorporation-decision-register.md`](v050x-incorporation-decision-register.md) — v0.5.x incorporation direction register.
+- [`docs/en/status/v050x-testing-candidate-selection.md`](v050x-testing-candidate-selection.md) — v0.5.x testing candidate selection.
+- [`docs/en/status/v050x-testing-procedure-candidate-matrix.md`](v050x-testing-procedure-candidate-matrix.md) — v0.5.x testing procedure candidate matrix.
+- [`docs/en/status/v050x-testing-candidate-mapping.md`](v050x-testing-candidate-mapping.md) — v0.5.x testing candidate mapping.
+- [`docs/en/status/v050x-testing-draft-pass-fail-criteria.md`](v050x-testing-draft-pass-fail-criteria.md) — v0.5.x testing draft pass/fail criteria.
+- [`docs/en/status/v050x-testing-incorporation-readiness-review.md`](v050x-testing-incorporation-readiness-review.md) — v0.5.x testing incorporation readiness review.
+- [`docs/en/status/v050x-principal-context-testing-proposal.md`](v050x-principal-context-testing-proposal.md) — v0.5.x principal context testing proposal.
+- [`docs/en/status/v050x-principal-context-testing-candidate-appendix.md`](v050x-principal-context-testing-candidate-appendix.md) — v0.5.x principal context testing candidate appendix.
+- [`docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md`](v050x-principal-context-testing-csv-refinement-proposal.md) — v0.5.x principal context testing CSV refinement proposal.
+- [`docs/en/status/v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md`](v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md) — v0.5.x issue #161 principal context degradation consolidation checkpoint.
+- [`docs/en/status/v050x-cross-agent-delegation-testing-proposal.md`](v050x-cross-agent-delegation-testing-proposal.md) — v0.5.x cross-agent delegation testing proposal.
+- [`docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`](v050x-cross-agent-delegation-testing-candidate-appendix.md) — v0.5.x cross-agent delegation testing candidate appendix.
+- [`docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md`](v050x-cross-agent-delegation-csv-refinement-proposal.md) — v0.5.x cross-agent delegation CSV refinement proposal.
+- [`docs/en/status/v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md`](v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md) — v0.5.x issue #162 cross-agent capability-scoped delegation consolidation checkpoint.
+- [`docs/en/status/v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md`](v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md) — v0.5.x issue #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint.
+- [`docs/en/status/v050x-issue-164-budget-propagation-consolidation-checkpoint.md`](v050x-issue-164-budget-propagation-consolidation-checkpoint.md) — v0.5.x issue #164 cross-agent budget propagation consolidation checkpoint.
+- [`docs/en/status/v050x-approval-quality-testing-proposal.md`](v050x-approval-quality-testing-proposal.md) — v0.5.x approval quality testing proposal.
+- [`docs/en/status/v050x-approval-quality-testing-candidate-appendix.md`](v050x-approval-quality-testing-candidate-appendix.md) — v0.5.x approval quality testing candidate appendix.
+- [`docs/en/status/v050x-approval-quality-csv-refinement-proposal.md`](v050x-approval-quality-csv-refinement-proposal.md) — v0.5.x approval quality CSV refinement proposal.
+- [`docs/en/status/v050x-issue-167-approval-quality-consolidation-checkpoint.md`](v050x-issue-167-approval-quality-consolidation-checkpoint.md) — v0.5.x issue #167 approval quality consolidation checkpoint.
+- [`docs/en/status/v050x-evidence-integrity-csv-refinement-proposal.md`](v050x-evidence-integrity-csv-refinement-proposal.md) — v0.5.x evidence integrity CSV refinement proposal.
+- [`docs/en/status/v050x-incorporation-review-checkpoint.md`](v050x-incorporation-review-checkpoint.md) — v0.5.x incorporation review checkpoint.
+- [`docs/en/status/v050x-next-phase-track-plan.md`](v050x-next-phase-track-plan.md) — v0.5.x next phase track plan.
+- [`docs/en/status/v050x-evidence-schema-and-examples-track-proposal.md`](v050x-evidence-schema-and-examples-track-proposal.md) — v0.5.x evidence schema and examples track proposal.
+- [`docs/en/status/v050x-evidence-schema-field-proposal.md`](v050x-evidence-schema-field-proposal.md) — v0.5.x evidence schema field proposal.
+- [`docs/en/status/v050x-evidence-example-design-proposal.md`](v050x-evidence-example-design-proposal.md) — v0.5.x evidence example design proposal.
+- [`docs/en/status/v050x-evidence-schema-example-implementation-readiness.md`](v050x-evidence-schema-example-implementation-readiness.md) — v0.5.x evidence schema/example implementation readiness review.
+- [`docs/en/status/v050x-evidence-integrity-negative-tests-track-proposal.md`](v050x-evidence-integrity-negative-tests-track-proposal.md) — v0.5.x evidence integrity negative tests track proposal.
+- [`docs/en/status/v050x-evidence-integrity-negative-tests-candidate-appendix.md`](v050x-evidence-integrity-negative-tests-candidate-appendix.md) — v0.5.x evidence integrity negative tests candidate appendix.
+- [`docs/en/status/v050x-evidence-integrity-negative-tests-csv-refinement-proposal.md`](v050x-evidence-integrity-negative-tests-csv-refinement-proposal.md) — v0.5.x evidence integrity negative tests CSV refinement proposal.
+- [`docs/en/status/v050x-incident-response-evidence-preservation-guidance-proposal.md`](v050x-incident-response-evidence-preservation-guidance-proposal.md) — v0.5.x incident-response evidence preservation guidance proposal.
+- [`docs/en/status/v050x-incident-response-evidence-preservation-candidate-appendix.md`](v050x-incident-response-evidence-preservation-candidate-appendix.md) — v0.5.x incident-response evidence preservation candidate appendix.
+- [`docs/en/status/v050x-evidence-depth-e5-profile-decision-proposal.md`](v050x-evidence-depth-e5-profile-decision-proposal.md) — v0.5.x evidence depth and E5 profile decision proposal.
+- [`docs/en/status/v050x-negative-evidence-examples-fixtures-decision-proposal.md`](v050x-negative-evidence-examples-fixtures-decision-proposal.md) — v0.5.x negative evidence examples and validator fixtures decision proposal.
+- [`docs/en/status/v050x-evd01-evidence-sufficiency-limitation-review-proposal.md`](v050x-evd01-evidence-sufficiency-limitation-review-proposal.md) — v0.5.x AAEF-EVD-01 evidence sufficiency and limitation review proposal.
+- [`docs/en/status/v050x-issue-165-evidence-integrity-consolidation-checkpoint.md`](v050x-issue-165-evidence-integrity-consolidation-checkpoint.md) — v0.5.x issue #165 evidence integrity consolidation checkpoint.
+- [`docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`](v050x-tamper-evident-evidence-selected-contexts-proposal.md) — v0.5.x tamper-evident evidence selected contexts proposal.
+- [`docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`](v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md) — v0.5.x tamper-evident evidence selected contexts candidate appendix.
+- [`docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`](v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md) — v0.5.x tamper-evident evidence selected contexts incorporation decision.
+- [`docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md`](v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md) — v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint.

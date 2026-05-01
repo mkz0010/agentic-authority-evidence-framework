@@ -1,5 +1,8 @@
 # v0.5.x Next Phase Track Plan
 
+> **Historical note:** This document records an earlier v0.5.x planning or incorporation state. The current completion state for #161 through #167 is summarized in `docs/en/status/v050x-follow-up-completion-summary.md`.
+
+
 **Status:** Temporary, non-normative planning and coordination document
 
 ## Purpose

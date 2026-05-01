@@ -1,5 +1,28 @@
 # v0.5.x Follow-up Status
 
+## Current Completion Status
+
+The v0.5.x follow-up issues #161 through #167 are complete for the current follow-up cycle.
+
+Current disposition:
+
+| Issue | Topic | Completion PR | Current status |
+| --- | --- | --- | --- |
+| #161 | Principal context degradation testing criteria | #233 | Completed and closed |
+| #162 | Capability-scoped cross-agent delegation controls | #234 | Completed and closed |
+| #163 | Delegation acceptance/refusal and chain accountability negative tests | #235 | Completed and closed |
+| #164 | Cross-agent budget propagation guidance | #236 | Completed and closed |
+| #165 | Evidence integrity and tamper-evident evidence follow-up | #226 | Completed and closed |
+| #166 | Tamper-evident evidence requirements for selected contexts | #231 | Completed and closed |
+| #167 | Approval quality testing and evidence expectations | #232 | Completed and closed |
+
+#3 remains open as the umbrella roadmap and discussion issue for Cross-Agent and Cross-Domain Authority.
+
+For the consolidated current state, see `docs/en/status/v050x-follow-up-completion-summary.md`.
+
+Older sections in this document may describe intermediate states before the consolidation checkpoints were merged and the related issues were closed.
+
+
 **Status:** Temporary, non-normative follow-up status document
 
 ## Purpose
@@ -41,11 +64,11 @@ They do not update:
 | #166 | Tamper-evident evidence requirements for selected contexts | PR #176 | `docs/en/61-tamper-evident-evidence-requirements.md` | Decide which contexts should require tamper-evident evidence and whether evidence fields, E5 examples, or testing candidates should be added. |
 | #167 | Approval quality testing and evidence expectations | PR #177 | `docs/en/62-approval-quality-testing-guidance.md` | Decide which approval quality tests become testing procedure candidates, assessment profile inputs, evidence/schema candidates, or HUM control refinements. |
 
-## Why the Issues Remain Open
+## Historical: Why the Issues Initially Remained Open
 
 The initial guidance/testing pass is complete.
 
-The issues remain open because incorporation decisions are still pending.
+At the time this section was written, the issues remained open because incorporation decisions were still pending.
 
 The next step is not only to ask whether the concepts are useful, but to decide where each concept belongs.
 
@@ -126,7 +149,7 @@ The active testing procedure CSV was refined for:
 
 This update partially addresses #161.
 
-#161 remains open because additional principal context degradation work is still pending, including:
+At that stage, #161 remained open because additional principal context degradation work is still pending, including:
 
 - material task drift thresholds;
 - retry-after-denial correlation;
@@ -145,7 +168,7 @@ The active testing procedure CSV was refined for:
 
 This update partially addresses #163.
 
-#163 remains open because additional cross-agent delegation work is still pending, including:
+At that stage, #163 remained open because additional cross-agent delegation work is still pending, including:
 
 - capability-scoped delegation refinement for `AAEF-DEL-02`;
 - fire-and-forget delegation and explicit acceptance behavior;
@@ -165,7 +188,7 @@ The active testing procedure CSV was refined for:
 
 This update partially addresses #167.
 
-#167 remains open because additional approval quality work is still pending, including:
+At that stage, #167 remained open because additional approval quality work is still pending, including:
 
 - draft-vs-execute approval operation-class refinement;
 - post-approval payload modification and materiality criteria;
@@ -186,7 +209,7 @@ The existing active testing procedure row already provides substantial coverage:
 
 This update records #165 as already substantially represented in the current active testing procedure model through `AAEF-EVD-04`.
 
-#165 remains open because additional evidence integrity work is still pending, including:
+At that stage, #165 remained open because additional evidence integrity work is still pending, including:
 
 - deciding whether evidence integrity fields should be added to the Evidence Event Schema;
 - defining E5 or higher-depth examples using tamper-evident evidence;
@@ -203,10 +226,10 @@ After #202, the first incorporation review cycle for #161, #163, #165, and #167 
 
 Current checkpoint:
 
-- #161 principal context — first active CSV refinement incorporated; issue remains open.
-- #163 cross-agent delegation — first active CSV refinement incorporated; issue remains open.
-- #165 evidence integrity — substantially represented by existing `AAEF-EVD-04`; no immediate active CSV change required; issue remains open.
-- #167 approval quality — first active CSV refinement incorporated; issue remains open.
+- #161 principal context — first active CSV refinement incorporated; issue remained open at that stage.
+- #163 cross-agent delegation — first active CSV refinement incorporated; issue remained open at that stage.
+- #165 evidence integrity — substantially represented by existing `AAEF-EVD-04`; no immediate active CSV change required; issue remained open at that stage.
+- #167 approval quality — first active CSV refinement incorporated; issue remained open at that stage.
 
 For the consolidated checkpoint, see `docs/en/status/v050x-incorporation-review-checkpoint.md`.
 
@@ -230,10 +253,10 @@ This completes the first schema-first, example-follow-up implementation sequence
 
 Current issue status:
 
-- #165 remains open because evidence integrity negative tests, replay/reordering/selective omission tests, incident-response evidence preservation guidance, and any evidence-depth/profile decisions remain pending.
-- #167 remains open because approval semantics, draft-vs-execute approval, post-approval modification, approval fatigue, and related HUM/AUZ/EVD testing decisions remain pending.
-- #161 remains open because principal context freshness/degradation schema or profile treatment was explicitly deferred.
-- #163 remains open because delegation lineage and receiving-side validation schema treatment was explicitly deferred.
+- At that stage, #165 remained open because evidence integrity negative tests, replay/reordering/selective omission tests, incident-response evidence preservation guidance, and any evidence-depth/profile decisions remain pending.
+- At that stage, #167 remained open because approval semantics, draft-vs-execute approval, post-approval modification, approval fatigue, and related HUM/AUZ/EVD testing decisions remain pending.
+- At that stage, #161 remained open because principal context freshness/degradation schema or profile treatment was explicitly deferred.
+- At that stage, #163 remained open because delegation lineage and receiving-side validation schema treatment was explicitly deferred.
 
 No active testing procedure CSV changes were made in #209, #210, or #211.
 
@@ -249,7 +272,7 @@ Review result:
 
 Current issue status:
 
-- #165 remains open because incident-response evidence preservation guidance, evidence depth/profile decisions, possible evidence integrity negative examples or validator fixtures, and later evidence sufficiency / limitation review remain pending.
+- At that stage, #165 remained open because incident-response evidence preservation guidance, evidence depth/profile decisions, possible evidence integrity negative examples or validator fixtures, and later evidence sufficiency / limitation review remain pending.
 - `AAEF-EVD-04` does not need immediate active CSV modification based on the current review.
 
 ## Incident-Response Evidence Preservation Guidance Proposal
@@ -284,7 +307,7 @@ Current result:
 Current #165 status:
 
 - The incident-response evidence preservation portion is substantially addressed for the current v0.5.x follow-up cycle.
-- #165 remains open because evidence depth / E5 profile decisions, possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.
+- At that stage, #165 remained open because evidence depth / E5 profile decisions, possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.
 
 ## Evidence Depth and E5 Profile Decision Proposal
 
@@ -311,7 +334,7 @@ Current result:
 Current #165 status:
 
 - Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, and E5/evidence depth decision work are now substantially addressed for the current v0.5.x follow-up cycle.
-- #165 remains open because possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.
+- At that stage, #165 remained open because possible negative examples or validator fixtures, possible `AAEF-EVD-01` evidence sufficiency / limitation review, and temporary-document consolidation remain pending.
 
 ## Negative Evidence Examples and Validator Fixtures Decision Proposal
 
@@ -338,7 +361,7 @@ Current result:
 Current #165 status:
 
 - Evidence integrity schema support, integrity-focused example, evidence integrity negative test planning, incident-response preservation guidance, incident-response preservation candidate coverage, E5/evidence depth decision work, and negative example / validator fixture decision work are now substantially addressed for the current v0.5.x follow-up cycle.
-- #165 remains open because possible `AAEF-EVD-01` evidence sufficiency / limitation review and temporary-document consolidation remain pending.
+- At that stage, #165 remained open because possible `AAEF-EVD-01` evidence sufficiency / limitation review and temporary-document consolidation remain pending.
 
 ## AAEF-EVD-01 Evidence Sufficiency and Limitation Review Proposal
 
