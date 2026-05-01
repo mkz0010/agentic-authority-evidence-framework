@@ -54,7 +54,8 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [v0.5.x Issue #161 Principal Context Degradation Consolidation Checkpoint](v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md) — records close-readiness for #161 after active testing coverage review.`
 - `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md`
 - `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md`
-- `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md`
+- `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md
+- [v0.5.x Issue #162 Cross-Agent Capability-Scoped Delegation Consolidation Checkpoint](v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md) — records close-readiness for #162 after active control and testing coverage review.`
 - `docs/en/status/v050x-approval-quality-testing-proposal.md`
 - `docs/en/status/v050x-approval-quality-testing-candidate-appendix.md`
 - `docs/en/status/v050x-approval-quality-csv-refinement-proposal.md`

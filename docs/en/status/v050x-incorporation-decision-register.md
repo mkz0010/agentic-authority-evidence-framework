@@ -893,3 +893,16 @@ Decision:
 - do not add principal context freshness or degradation fields to the Evidence Event Schema in the current cycle;
 - do not add evidence examples or validator fixtures for #161 in the current cycle;
 - track any future stable guidance extraction, examples, schema/profile treatment, or cross-agent interaction separately.
+
+## #162 Cross-Agent Capability-Scoped Delegation Consolidation Checkpoint
+
+The #162 consolidation checkpoint records close-readiness for the current v0.5.x follow-up cycle.
+
+Decision:
+
+- keep capability-scoped cross-agent delegation as an existing-control refinement and guidance concept for the current cycle;
+- do not add a new cross-agent control domain in the current cycle;
+- do not add new dedicated cross-agent control IDs in the current cycle;
+- rely on the current active testing procedure coverage in `AAEF-DEL-01` and `AAEF-DEL-05`, supported by related DEL, PRN, AUZ, EVD, and RES rows;
+- keep possible future dedicated cross-agent authority controls as a candidate for later design work;
+- track acceptance/refusal, chain accountability, downstream redelegation, and budget propagation under adjacent follow-up issues.
