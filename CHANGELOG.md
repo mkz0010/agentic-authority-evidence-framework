@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added a temporary v0.5.x issue #167 approval quality consolidation checkpoint.
 - Added a temporary v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint.
 
 ### Changed
