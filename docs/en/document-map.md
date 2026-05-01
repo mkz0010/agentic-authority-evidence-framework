@@ -176,6 +176,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-planning-input-synthesis.md` | v0.6.0 planning input synthesis | Consolidates adoption-readiness feedback and defines the initial v0.6.0 workstreams. |
 | `docs/en/status/v060-operational-responsibility-matrix-planning.md` | v0.6.0 operational responsibility matrix planning draft | Defines candidate operational ownership, responsibility boundaries, readiness questions, evidence examples, and metrics for practical adoption. |
 | `docs/en/status/v060-high-impact-production-minimum-architecture-profile-planning.md` | v0.6.0 high-impact production minimum architecture profile planning draft | Defines candidate minimum production architecture expectations for high-impact agentic action assurance. |
+| `docs/en/status/v060-authorization-decision-artifact-minimal-profile-planning.md` | v0.6.0 authorization decision artifact minimal profile planning draft | Defines candidate minimal authorization decision fields, validation expectations, dispatch binding, backend verification, and evidence linkage. |
 
 ## Physical Organization Policy
 
