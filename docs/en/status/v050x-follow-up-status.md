@@ -415,3 +415,9 @@ Current #166 status:
 The #166 tamper-evident evidence contexts consolidation checkpoint is recorded in `docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md`.
 
 The checkpoint records that selected-context tamper-evident evidence requirements are substantially addressed for the current v0.5.x follow-up cycle and that #166 appears close-ready if stable selected-context guidance extraction is tracked separately.
+
+## Issue #167 Approval Quality Consolidation Checkpoint
+
+The #167 approval quality consolidation checkpoint is recorded in `docs/en/status/v050x-issue-167-approval-quality-consolidation-checkpoint.md`.
+
+The checkpoint records that approval quality testing and evidence expectations are substantially addressed for the current v0.5.x follow-up cycle and that #167 appears close-ready if stable approval-quality guidance extraction is tracked separately.
