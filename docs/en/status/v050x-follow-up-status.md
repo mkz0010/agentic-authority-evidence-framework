@@ -421,3 +421,19 @@ The checkpoint records that selected-context tamper-evident evidence requirement
 The #167 approval quality consolidation checkpoint is recorded in `docs/en/status/v050x-issue-167-approval-quality-consolidation-checkpoint.md`.
 
 The checkpoint records that approval quality testing and evidence expectations are substantially addressed for the current v0.5.x follow-up cycle and that #167 appears close-ready if stable approval-quality guidance extraction is tracked separately.
+
+## Issue #161 Principal Context Degradation Consolidation Checkpoint
+
+A close-readiness checkpoint has been prepared for #161 in `docs/en/status/v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md`.
+
+The checkpoint records that the current active testing procedure model already covers the core principal context degradation expectations through `AAEF-PRN-02`, with supporting coverage in `AAEF-AUZ-07`, `AAEF-AUZ-09`, `AAEF-EVD-05`, `AAEF-EVD-06`, `AAEF-HUM-01`, and `AAEF-MEM-03`.
+
+Current decision:
+
+- no further active testing procedure CSV change is required for #161 at this time;
+- no Evidence Event Schema change is required for #161 at this time;
+- no evidence example change is required for #161 at this time;
+- no validator change is required for #161 at this time;
+- no control catalog, assessment worksheet, assessment profile, or external mapping change is required for #161 at this time.
+
+Remaining principal context freshness, schema, example, assessment profile, and cross-agent interaction work can be tracked separately if needed.
