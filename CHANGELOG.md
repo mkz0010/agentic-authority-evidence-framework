@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated v0.5.x status after the tamper-evident evidence selected contexts incorporation decision.
+
 ### Added
 
 - Added a temporary v0.5.x tamper-evident evidence selected contexts incorporation decision.

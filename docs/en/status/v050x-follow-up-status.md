@@ -384,3 +384,28 @@ The appendix expands #166 selected-context planning into concrete candidate scen
 The tamper-evident evidence selected contexts incorporation decision is recorded in `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`.
 
 The decision keeps selected contexts as guidance-only for the current v0.5.x cycle and records that no active CSV, schema, example, or validator change is required at this time for #166.
+
+## Update after #227, #228, and #229
+
+PRs #227, #228, and #229 completed the current v0.5.x selected-context planning sequence for #166.
+
+Implemented work:
+
+- #227 added `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-proposal.md`.
+- #228 added `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md`.
+- #229 added `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md`.
+
+Current result:
+
+- selected-context tamper-evident evidence requirements remain guidance-only for the current v0.5.x cycle;
+- no active testing procedure CSV change is required at this time;
+- no Evidence Event Schema change is required at this time;
+- no evidence example change is required at this time;
+- no validator change is required at this time;
+- context tier fields are not added;
+- candidate context IDs are not added to active CSV.
+
+Current #166 status:
+
+- #166 is substantially addressed for the current v0.5.x follow-up cycle.
+- #166 remains open for a consolidation / close-readiness checkpoint and any later decision on whether stable selected-context guidance should be extracted from the temporary v0.5.x materials.
