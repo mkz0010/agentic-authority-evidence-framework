@@ -1,5 +1,28 @@
 # v0.5.x Incorporation Decision Register
 
+## Current Completion Status
+
+The incorporation decisions for #161 through #167 have been resolved for the current v0.5.x follow-up cycle.
+
+Current disposition:
+
+| Issue | Topic | Completion PR | Current status |
+| --- | --- | --- | --- |
+| #161 | Principal context degradation | #233 | Completed and closed |
+| #162 | Capability-scoped cross-agent delegation | #234 | Completed and closed |
+| #163 | Delegation acceptance/refusal and chain accountability | #235 | Completed and closed |
+| #164 | Cross-agent budget propagation | #236 | Completed and closed |
+| #165 | Evidence integrity and tamper-evident evidence | #226 | Completed and closed |
+| #166 | Tamper-evident evidence selected contexts | #231 | Completed and closed |
+| #167 | Approval quality | #232 | Completed and closed |
+
+#3 remains open as the umbrella roadmap and discussion issue for Cross-Agent and Cross-Domain Authority.
+
+For the consolidated current state, see `docs/en/status/v050x-follow-up-completion-summary.md`.
+
+Older entries in this register may describe intermediate incorporation states before the consolidation checkpoints were merged and the related issues were closed.
+
+
 **Status:** Temporary, non-normative incorporation decision register
 
 ## Purpose
@@ -154,7 +177,7 @@ Recommended next step:
 
 Closure condition:
 
-- this issue should remain open until selected tests are either incorporated, split into testing issues, or explicitly deferred.
+- at that stage, this issue was kept open until selected tests are either incorporated, split into testing issues, or explicitly deferred.
 
 ### #162 — Capability-scoped cross-agent delegation controls
 
@@ -171,7 +194,7 @@ Recommended next step:
 
 Closure condition:
 
-- this issue should remain open until a control refinement proposal, deferral decision, or split issue set exists.
+- at that stage, this issue was kept open until a control refinement proposal, deferral decision, or split issue set exists.
 
 ### #163 — Delegation acceptance/refusal and chain accountability negative tests
 
@@ -187,7 +210,7 @@ Recommended next step:
 
 Closure condition:
 
-- this issue should remain open until the test subset is selected, split, or deferred.
+- at that stage, this issue was kept open until the test subset is selected, split, or deferred.
 
 ### #164 — Cross-agent budget propagation guidance
 
@@ -204,7 +227,7 @@ Recommended next step:
 
 Closure condition:
 
-- this issue should remain open until selected-context expectations are defined or deferred.
+- at that stage, this issue was kept open until selected-context expectations are defined or deferred.
 
 ### #165 — Evidence integrity levels for high-impact and audit-grade profiles
 
@@ -220,7 +243,7 @@ Recommended next step:
 
 Closure condition:
 
-- this issue should remain open until assessment profile impact is incorporated, split, or deferred.
+- at that stage, this issue was kept open until assessment profile impact is incorporated, split, or deferred.
 
 ### #166 — Tamper-evident evidence requirements for selected contexts
 
@@ -237,7 +260,7 @@ Recommended next step:
 
 Closure condition:
 
-- this issue should remain open until selected contexts and schema/testing follow-ups are decided.
+- at that stage, this issue was kept open until selected contexts and schema/testing follow-ups are decided.
 
 ### #167 — Approval quality testing and evidence expectations
 
@@ -253,11 +276,11 @@ Recommended next step:
 
 Closure condition:
 
-- this issue should remain open until selected tests, evidence expectations, HUM refinements, or deferrals are created.
+- at that stage, this issue was kept open until selected tests, evidence expectations, HUM refinements, or deferrals are created.
 
 ## Cross-Cutting Decisions
 
-### Do not close #161 through #167 yet
+### Historical: do not close #161 through #167 yet
 
 The initial guidance/testing pass is complete, but incorporation decisions remain active.
 
@@ -300,7 +323,7 @@ The status tracker answers:
 
 - what has been completed;
 - which documents exist;
-- why issues remain open.
+- why issues remained open at that stage.
 
 This register answers:
 
@@ -462,10 +485,10 @@ The current incorporation decisions are:
 
 | Issue | Topic | Incorporation decision | Active artifact result | Status |
 | --- | --- | --- | --- | --- |
-| #161 | Principal context | Partially incorporate into existing active testing rows | Active testing procedure CSV refined; consolidation checkpoint prepared | Close-ready after checkpoint merge |
-| #163 | Cross-agent delegation | Partially incorporate into existing active DEL testing rows | Active testing procedure CSV refined | Open |
-| #165 | Evidence integrity | Treat as substantially represented by `AAEF-EVD-04` for the first step | No immediate active CSV change | Open |
-| #167 | Approval quality | Partially incorporate into existing active HUM/AUZ testing rows | Active testing procedure CSV refined | Open |
+| #161 | Principal context | Completed for current cycle | Consolidation checkpoint merged in #233 | Closed |
+| #163 | Cross-agent delegation | Completed for current cycle | Consolidation checkpoint merged in #235 | Closed |
+| #165 | Evidence integrity | Completed for current cycle | Consolidation checkpoint merged in #226 | Closed |
+| #167 | Approval quality | Completed for current cycle | Consolidation checkpoint merged in #232 | Closed |
 
 The consolidated checkpoint is recorded in `docs/en/status/v050x-incorporation-review-checkpoint.md`.
 

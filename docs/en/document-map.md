@@ -131,7 +131,8 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 
 | Path | Purpose | Classification |
 | --- | --- | --- |
-| _No matching documents in this category yet._ |  |  |
+| `docs/en/status/v050x-follow-up-completion-summary.md` | v0.5.x follow-up completion summary for #161 through #167 | Temporary status / coordination material |
+| `docs/en/status/v050x-follow-up-status.md` | v0.5.x follow-up status | Temporary status / coordination material |
 | `docs/en/status/v050x-incorporation-decision-register.md` | v0.5.x incorporation direction register | Temporary status / coordination material |
 | `docs/en/status/v050x-testing-candidate-selection.md` | v0.5.x testing candidate selection | Temporary status / coordination material |
 | `docs/en/status/v050x-testing-procedure-candidate-matrix.md` | v0.5.x testing procedure candidate matrix | Temporary status / coordination material |
@@ -140,17 +141,18 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-testing-incorporation-readiness-review.md` | v0.5.x testing incorporation readiness review | Temporary status / coordination material |
 | `docs/en/status/v050x-principal-context-testing-proposal.md` | v0.5.x principal context testing proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-principal-context-testing-candidate-appendix.md` | v0.5.x principal context testing candidate appendix | Temporary status / coordination material |
-| `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md`
-| `docs/en/status/v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md` | v0.5.x issue #161 principal context degradation consolidation checkpoint | Temporary status / coordination material | | v0.5.x principal context testing CSV refinement proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-principal-context-testing-csv-refinement-proposal.md` | v0.5.x principal context testing CSV refinement proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-issue-161-principal-context-degradation-consolidation-checkpoint.md` | v0.5.x issue #161 principal context degradation consolidation checkpoint | Temporary status / coordination material |
 | `docs/en/status/v050x-cross-agent-delegation-testing-proposal.md` | v0.5.x cross-agent delegation testing proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-cross-agent-delegation-testing-candidate-appendix.md` | v0.5.x cross-agent delegation testing candidate appendix | Temporary status / coordination material |
-| `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md`
-| `docs/en/status/v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md`
-| `docs/en/status/v050x-issue-164-budget-propagation-consolidation-checkpoint.md` | v0.5.x issue #164 cross-agent budget propagation consolidation checkpoint | Temporary status / coordination material | | v0.5.x issue #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint | Temporary status / coordination material |
-| `docs/en/status/v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md` | v0.5.x issue #162 cross-agent capability-scoped delegation consolidation checkpoint | Temporary status / coordination material | | v0.5.x cross-agent delegation CSV refinement proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-cross-agent-delegation-csv-refinement-proposal.md` | v0.5.x cross-agent delegation CSV refinement proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-issue-162-cross-agent-capability-delegation-consolidation-checkpoint.md` | v0.5.x issue #162 cross-agent capability-scoped delegation consolidation checkpoint | Temporary status / coordination material |
+| `docs/en/status/v050x-issue-163-delegation-negative-tests-consolidation-checkpoint.md` | v0.5.x issue #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint | Temporary status / coordination material |
+| `docs/en/status/v050x-issue-164-budget-propagation-consolidation-checkpoint.md` | v0.5.x issue #164 cross-agent budget propagation consolidation checkpoint | Temporary status / coordination material |
 | `docs/en/status/v050x-approval-quality-testing-proposal.md` | v0.5.x approval quality testing proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-approval-quality-testing-candidate-appendix.md` | v0.5.x approval quality testing candidate appendix | Temporary status / coordination material |
 | `docs/en/status/v050x-approval-quality-csv-refinement-proposal.md` | v0.5.x approval quality CSV refinement proposal | Temporary status / coordination material |
+| `docs/en/status/v050x-issue-167-approval-quality-consolidation-checkpoint.md` | v0.5.x issue #167 approval quality consolidation checkpoint | Temporary status / coordination material |
 | `docs/en/status/v050x-evidence-integrity-csv-refinement-proposal.md` | v0.5.x evidence integrity CSV refinement proposal | Temporary status / coordination material |
 | `docs/en/status/v050x-incorporation-review-checkpoint.md` | v0.5.x incorporation review checkpoint | Temporary status / coordination material |
 | `docs/en/status/v050x-next-phase-track-plan.md` | v0.5.x next phase track plan | Temporary status / coordination material |
@@ -171,7 +173,6 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-candidate-appendix.md` | v0.5.x tamper-evident evidence selected contexts candidate appendix | Temporary status / coordination material |
 | `docs/en/status/v050x-tamper-evident-evidence-selected-contexts-incorporation-decision.md` | v0.5.x tamper-evident evidence selected contexts incorporation decision | Temporary status / coordination material |
 | `docs/en/status/v050x-issue-166-tamper-evident-contexts-consolidation-checkpoint.md` | v0.5.x issue #166 tamper-evident evidence contexts consolidation checkpoint | Temporary status / coordination material |
-| `docs/en/status/v050x-issue-167-approval-quality-consolidation-checkpoint.md` | v0.5.x issue #167 approval quality consolidation checkpoint | Temporary status / coordination material |
 
 ## Physical Organization Policy
 

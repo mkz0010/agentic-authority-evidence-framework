@@ -4,6 +4,7 @@
 
 
 ### Documentation
+- Added v0.5.x follow-up completion summary and cleaned up status/index references after #161 through #167 were closed.
 - Added v0.5.x #164 cross-agent budget propagation consolidation checkpoint and linked it from status materials.
 - Added v0.5.x #163 delegation acceptance/refusal and chain accountability negative tests consolidation checkpoint and linked it from status materials.
 - Added v0.5.x #162 cross-agent capability-scoped delegation consolidation checkpoint and linked it from status materials.
