@@ -29,3 +29,7 @@ JSON examples should pass syntax validation:
     py tools/validate_json_examples.py
 
 Schema validation is not automatically implied by presence in this directory. If schema validation applies to an example, the example README or validation tooling should say so explicitly.
+
+## Prototype examples
+
+- [Prototype Examples](prototype/README.md) — Non-executable boundary and planned structure for future prototype-facing examples.
