@@ -252,10 +252,34 @@ def validate_document_map_status_coverage(errors: list[str]) -> None:
         )
 
 
+
+def validate_numbered_docs_registered(errors: list[str]) -> None:
+    """Ensure top-level numbered docs/en/*.md files are listed in document-map.md."""
+    document_map_text = DOCUMENT_MAP.read_text(encoding="utf-8")
+    registered_paths = set(
+        re.findall(r"`(docs/en/[^`]+\.md)`", document_map_text)
+    )
+
+    numbered_doc_pattern = re.compile(r"^\d{2}-.*\.md$")
+    numbered_docs = sorted(
+        path
+        for path in (REPO_ROOT / "docs" / "en").glob("*.md")
+        if numbered_doc_pattern.match(path.name)
+    )
+
+    for numbered_doc in numbered_docs:
+        expected = f"docs/en/{numbered_doc.name}"
+        if expected not in registered_paths:
+            errors.append(
+                f"{rel(DOCUMENT_MAP)}: missing document-map row for numbered document {expected}."
+            )
+
+
 def main() -> int:
     errors: list[str] = []
 
     validate_document_map(errors)
+    validate_numbered_docs_registered(errors)
     validate_status_readme(errors)
     validate_document_map_status_coverage(errors)
 
