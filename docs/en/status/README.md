@@ -122,6 +122,7 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v070-planning-entrypoint.md`](v070-planning-entrypoint.md) - Planning entrypoint for the v0.7.0 cycle after v0.6.x completion.
 - [`docs/en/status/v070-evaluation-readiness-planning.md`](v070-evaluation-readiness-planning.md) - Planning artifact for v0.7.0 evaluation readiness scope and claim boundaries.
 - [`docs/en/status/v070-evaluation-scenario-walkthrough-planning.md`](v070-evaluation-scenario-walkthrough-planning.md) - Planning artifact for v0.7.0 evaluation scenario walkthrough structure and claim boundaries.
+- [`docs/en/status/v070-evaluation-scenario-walkthrough-candidates.md`](v070-evaluation-scenario-walkthrough-candidates.md) - Initial v0.7.0 evaluation scenario walkthrough candidates for permitted action and non-execution review.
 - [`docs/en/status/v060-adoption-navigation-integration-planning.md`](v060-adoption-navigation-integration-planning.md) — v0.6.x adoption navigation integration planning.
 - [`docs/en/status/v060-operator-runbook-active-guidance-candidate-review.md`](v060-operator-runbook-active-guidance-candidate-review.md) — v0.6.x operator runbook active guidance candidate review.
 - [`docs/en/status/v060-operator-guidance-placement-and-scope-planning.md`](v060-operator-guidance-placement-and-scope-planning.md) — v0.6.x operator guidance placement and scope planning.
