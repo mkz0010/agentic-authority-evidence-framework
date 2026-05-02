@@ -106,3 +106,5 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-version-reference-audit.md`](v060-version-reference-audit.md) — v0.6.0 version reference audit.
 - [`docs/en/status/v060-external-review-reassessment-response.md`](v060-external-review-reassessment-response.md) — v0.6.0 external review reassessment response.
 - [`docs/en/status/v060-implementation-reference-pattern-planning.md`](v060-implementation-reference-pattern-planning.md) — v0.6.0 implementation reference pattern planning.
+- [`docs/en/status/v060-permitted-action-evidence-example-planning.md`](v060-permitted-action-evidence-example-planning.md) — v0.6.0 permitted action evidence example planning.
+- [`docs/en/status/v060-non-execution-evidence-example-planning.md`](v060-non-execution-evidence-example-planning.md) — v0.6.0 non-execution evidence example planning.
