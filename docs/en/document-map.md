@@ -208,6 +208,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-adoption-navigation-integration-planning.md` | v0.6.x adoption navigation integration planning | Plans how v0.6.0 adoption-oriented materials should be discoverable from README, README.ja, document-map, researcher overview, and future adoption entry points while preserving planning and baseline boundaries. |
 | `docs/en/status/v060-operator-runbook-active-guidance-candidate-review.md` | v0.6.x operator runbook active guidance candidate review | Reviews operator runbook planning material for reusable active guidance candidates, organization-specific areas, evidence review expectations, freeze/hold guidance, operational metrics, handoff guidance, and promotion readiness. |
 | `docs/en/status/v060-operator-guidance-placement-and-scope-planning.md` | v0.6.x operator guidance placement and scope planning | Defines the preferred placement and scope for future active operator guidance, including recommended `docs/en/operator-guidance.md` scope, exclusions, handoff guidance, evidence review coverage, and claim boundaries. |
+| `docs/en/status/v060-risk-owner-adoption-package-refinement-planning.md` | v0.6.x risk-owner adoption package refinement planning | Plans refinement of the risk-owner adoption package for adoption, exception, residual-risk, evidence request, decision memo, and executive reporting decisions while preserving claim boundaries. |
 
 ## Numbered Document Coverage Additions
 
@@ -268,4 +269,3 @@ It is a navigation and classification aid only.
 ## Operator guidance
 
 - [Operator Guidance](operator-guidance.md) — Operator-facing guidance for reviewing AAEF-style action execution, non-execution, evidence availability, and reconstruction readiness.
-- [`docs/en/status/v060-risk-owner-adoption-package-refinement-planning.md`](status/v060-risk-owner-adoption-package-refinement-planning.md) — v0.6.x risk-owner adoption package refinement planning.
