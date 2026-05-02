@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Validate conservative external framework mapping CSV files.
+"""Validate AAEF external framework mapping files.
 
-This validator intentionally checks conservative mapping hygiene only.
-It does not validate compliance, conformity, certification, audit sufficiency,
-or equivalence with any external framework.
+This validator supports both:
+- the existing legacy external framework mapping draft; and
+- the v0.6.x conservative external mapping pilot.
+
+It checks mapping hygiene only. It does not validate compliance,
+conformity, certification, audit sufficiency, or equivalence with any
+external framework.
 """
 
 from __future__ import annotations
@@ -13,7 +17,62 @@ from pathlib import Path
 import sys
 
 
-REQUIRED_FIELDS = [
+REPO_ROOT = Path(__file__).resolve().parents[1]
+CATALOG_PATH = REPO_ROOT / "controls" / "aaef-controls-v0.1.csv"
+MAPPINGS_ROOT = REPO_ROOT / "mappings"
+
+LEGACY_MAPPING_NAME = "aaef-external-framework-mapping-v0.4-draft.csv"
+
+LEGACY_REQUIRED_COLUMNS = [
+    "Mapping ID",
+    "External Framework",
+    "External Version",
+    "External Reference ID",
+    "External Reference Title",
+    "AAEF References",
+    "AAEF Control IDs",
+    "Relationship Type",
+    "Mapping Confidence",
+    "Mapping Status",
+    "Mapping Rationale",
+    "Limitations",
+    "Notes",
+]
+
+LEGACY_REQUIRED_NON_EMPTY_COLUMNS = [
+    "Mapping ID",
+    "External Framework",
+    "External Version",
+    "External Reference ID",
+    "External Reference Title",
+    "AAEF References",
+    "Relationship Type",
+    "Mapping Confidence",
+    "Mapping Status",
+    "Mapping Rationale",
+    "Limitations",
+]
+
+LEGACY_ALLOWED_RELATIONSHIP_TYPES = {
+    "Supports",
+    "Partially Supports",
+    "Related",
+    "Contextual",
+    "Not Equivalent",
+    "Out of Scope",
+}
+
+LEGACY_ALLOWED_MAPPING_CONFIDENCE = {"High", "Medium", "Low", "Needs Review"}
+
+LEGACY_ALLOWED_MAPPING_STATUS = {
+    "Draft",
+    "Review Needed",
+    "Reviewed",
+    "Deprecated",
+    "Superseded",
+}
+
+CONSERVATIVE_REQUIRED_FIELDS = [
     "mapping_id",
     "external_framework",
     "external_version_or_date",
@@ -30,7 +89,7 @@ REQUIRED_FIELDS = [
     "review_status",
 ]
 
-ALLOWED_RELATIONSHIP_TYPES = {
+CONSERVATIVE_ALLOWED_RELATIONSHIP_TYPES = {
     "supports_analysis_of",
     "provides_action_boundary_context_for",
     "provides_evidence_context_for",
@@ -42,7 +101,7 @@ ALLOWED_RELATIONSHIP_TYPES = {
     "deferred",
 }
 
-ALLOWED_CONFIDENCE = {
+CONSERVATIVE_ALLOWED_CONFIDENCE = {
     "high",
     "medium",
     "low",
@@ -50,7 +109,7 @@ ALLOWED_CONFIDENCE = {
     "not_applicable",
 }
 
-ALLOWED_REVIEW_STATUS = {
+CONSERVATIVE_ALLOWED_REVIEW_STATUS = {
     "draft",
     "reviewed",
     "deferred",
@@ -82,6 +141,19 @@ FORBIDDEN_POSITIVE_CLAIM_PHRASES = [
 ]
 
 
+def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
+    if not path.exists():
+        raise FileNotFoundError(path)
+
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        return reader.fieldnames or [], list(reader)
+
+
+def split_semicolon_values(value: str) -> list[str]:
+    return [item.strip() for item in value.split(";") if item.strip()]
+
+
 def has_forbidden_positive_claim(text: str) -> str | None:
     lowered = text.lower()
     for phrase in FORBIDDEN_POSITIVE_CLAIM_PHRASES:
@@ -90,88 +162,181 @@ def has_forbidden_positive_claim(text: str) -> str | None:
     return None
 
 
-def validate_file(path: Path, repo_root: Path) -> list[str]:
+def validate_legacy_mapping(path: Path) -> list[str]:
     errors: list[str] = []
-    rel = path.relative_to(repo_root)
+    rel = path.relative_to(REPO_ROOT)
 
-    with path.open("r", encoding="utf-8", newline="") as handle:
-        reader = csv.DictReader(handle)
-        fieldnames = reader.fieldnames or []
+    try:
+        catalog_fields, catalog_rows = read_csv(CATALOG_PATH)
+        mapping_fields, mapping_rows = read_csv(path)
+    except FileNotFoundError as exc:
+        return [f"Required file not found: {exc}"]
 
-        missing = [field for field in REQUIRED_FIELDS if field not in fieldnames]
-        if missing:
-            errors.append(f"{rel}: missing required fields: {', '.join(missing)}")
-            return errors
+    catalog_ids = {
+        (row.get("Control ID") or "").strip()
+        for row in catalog_rows
+        if (row.get("Control ID") or "").strip()
+    }
 
-        for index, row in enumerate(reader, start=2):
-            row_id = row.get("mapping_id", f"line {index}")
+    missing_columns = [
+        column for column in LEGACY_REQUIRED_COLUMNS if column not in mapping_fields
+    ]
+    if missing_columns:
+        errors.append(f"{rel}: missing legacy mapping columns: {', '.join(missing_columns)}")
+        return errors
 
-            for field in REQUIRED_FIELDS:
-                if not (row.get(field) or "").strip():
-                    errors.append(f"{rel}:{index} {row_id}: required field '{field}' is empty")
+    if not mapping_rows:
+        errors.append(f"{rel}: mapping file contains no rows")
 
-            relationship_type = (row.get("relationship_type") or "").strip()
-            if relationship_type not in ALLOWED_RELATIONSHIP_TYPES:
+    seen_mapping_ids: dict[str, int] = {}
+
+    for index, row in enumerate(mapping_rows, start=2):
+        mapping_id = (row.get("Mapping ID") or "").strip()
+
+        if not mapping_id:
+            errors.append(f"{rel}:{index}: Mapping ID is empty")
+            continue
+
+        if mapping_id in seen_mapping_ids:
+            errors.append(
+                f"{rel}:{index}: duplicate Mapping ID '{mapping_id}' "
+                f"(first seen on line {seen_mapping_ids[mapping_id]})"
+            )
+        else:
+            seen_mapping_ids[mapping_id] = index
+
+        for column in LEGACY_REQUIRED_NON_EMPTY_COLUMNS:
+            value = (row.get(column) or "").strip()
+            if not value:
+                errors.append(f"{rel}:{index} {mapping_id}: column '{column}' is empty")
+
+        relationship = (row.get("Relationship Type") or "").strip()
+        if relationship and relationship not in LEGACY_ALLOWED_RELATIONSHIP_TYPES:
+            errors.append(
+                f"{rel}:{index} {mapping_id}: invalid Relationship Type '{relationship}'"
+            )
+
+        confidence = (row.get("Mapping Confidence") or "").strip()
+        if confidence and confidence not in LEGACY_ALLOWED_MAPPING_CONFIDENCE:
+            errors.append(
+                f"{rel}:{index} {mapping_id}: invalid Mapping Confidence '{confidence}'"
+            )
+
+        status = (row.get("Mapping Status") or "").strip()
+        if status and status not in LEGACY_ALLOWED_MAPPING_STATUS:
+            errors.append(
+                f"{rel}:{index} {mapping_id}: invalid Mapping Status '{status}'"
+            )
+
+        control_ids = split_semicolon_values(row.get("AAEF Control IDs") or "")
+        for control_id in control_ids:
+            if control_id not in catalog_ids:
                 errors.append(
-                    f"{rel}:{index} {row_id}: relationship_type '{relationship_type}' is not allowed"
+                    f"{rel}:{index} {mapping_id}: unknown AAEF Control ID '{control_id}'"
                 )
 
-            if relationship_type in FORBIDDEN_RELATIONSHIP_TYPES:
+    return errors
+
+
+def validate_conservative_mapping(path: Path) -> list[str]:
+    errors: list[str] = []
+    rel = path.relative_to(REPO_ROOT)
+
+    fields, rows = read_csv(path)
+
+    missing = [field for field in CONSERVATIVE_REQUIRED_FIELDS if field not in fields]
+    if missing:
+        errors.append(f"{rel}: missing required fields: {', '.join(missing)}")
+        return errors
+
+    if not rows:
+        errors.append(f"{rel}: mapping file contains no rows")
+
+    seen_mapping_ids: dict[str, int] = {}
+
+    for index, row in enumerate(rows, start=2):
+        row_id = (row.get("mapping_id") or f"line {index}").strip()
+
+        if row_id in seen_mapping_ids:
+            errors.append(
+                f"{rel}:{index} {row_id}: duplicate mapping_id "
+                f"(first seen on line {seen_mapping_ids[row_id]})"
+            )
+        else:
+            seen_mapping_ids[row_id] = index
+
+        for field in CONSERVATIVE_REQUIRED_FIELDS:
+            if not (row.get(field) or "").strip():
+                errors.append(f"{rel}:{index} {row_id}: required field '{field}' is empty")
+
+        relationship_type = (row.get("relationship_type") or "").strip()
+        if relationship_type not in CONSERVATIVE_ALLOWED_RELATIONSHIP_TYPES:
+            errors.append(
+                f"{rel}:{index} {row_id}: relationship_type '{relationship_type}' is not allowed"
+            )
+
+        if relationship_type in FORBIDDEN_RELATIONSHIP_TYPES:
+            errors.append(
+                f"{rel}:{index} {row_id}: relationship_type '{relationship_type}' is forbidden"
+            )
+
+        confidence = (row.get("relationship_confidence") or "").strip()
+        if confidence not in CONSERVATIVE_ALLOWED_CONFIDENCE:
+            errors.append(
+                f"{rel}:{index} {row_id}: relationship_confidence '{confidence}' is not allowed"
+            )
+
+        review_status = (row.get("review_status") or "").strip()
+        if review_status not in CONSERVATIVE_ALLOWED_REVIEW_STATUS:
+            errors.append(
+                f"{rel}:{index} {row_id}: review_status '{review_status}' is not allowed"
+            )
+
+        for field in ["mapping_rationale", "scope_limitations"]:
+            phrase = has_forbidden_positive_claim(row.get(field) or "")
+            if phrase:
                 errors.append(
-                    f"{rel}:{index} {row_id}: relationship_type '{relationship_type}' is forbidden"
+                    f"{rel}:{index} {row_id}: field '{field}' contains forbidden positive claim phrase '{phrase}'"
                 )
 
-            confidence = (row.get("relationship_confidence") or "").strip()
-            if confidence not in ALLOWED_CONFIDENCE:
+        claim_boundary = (row.get("claim_boundary") or "").lower()
+        if "does not assert" not in claim_boundary:
+            errors.append(
+                f"{rel}:{index} {row_id}: claim_boundary must explicitly say 'does not assert'"
+            )
+
+        for required_boundary_term in [
+            "compliance",
+            "certification",
+            "audit sufficiency",
+            "equivalence",
+        ]:
+            if required_boundary_term not in claim_boundary:
                 errors.append(
-                    f"{rel}:{index} {row_id}: relationship_confidence '{confidence}' is not allowed"
+                    f"{rel}:{index} {row_id}: claim_boundary missing '{required_boundary_term}'"
                 )
-
-            review_status = (row.get("review_status") or "").strip()
-            if review_status not in ALLOWED_REVIEW_STATUS:
-                errors.append(
-                    f"{rel}:{index} {row_id}: review_status '{review_status}' is not allowed"
-                )
-
-            for field in ["mapping_rationale", "scope_limitations"]:
-                phrase = has_forbidden_positive_claim(row.get(field) or "")
-                if phrase:
-                    errors.append(
-                        f"{rel}:{index} {row_id}: field '{field}' contains forbidden positive claim phrase '{phrase}'"
-                    )
-
-            claim_boundary = (row.get("claim_boundary") or "").lower()
-            if "does not assert" not in claim_boundary:
-                errors.append(
-                    f"{rel}:{index} {row_id}: claim_boundary must explicitly say 'does not assert'"
-                )
-
-            for required_boundary_term in ["compliance", "certification", "audit sufficiency", "equivalence"]:
-                if required_boundary_term not in claim_boundary:
-                    errors.append(
-                        f"{rel}:{index} {row_id}: claim_boundary missing '{required_boundary_term}'"
-                    )
 
     return errors
 
 
 def main() -> int:
-    repo_root = Path(__file__).resolve().parents[1]
-    mappings_root = repo_root / "mappings"
-
-    if not mappings_root.exists():
+    if not MAPPINGS_ROOT.exists():
         print("No mappings directory found.")
         return 0
 
-    csv_files = sorted(mappings_root.glob("*.csv"))
-
-    if not csv_files:
-        print("No mapping CSV files found.")
-        return 0
-
     errors: list[str] = []
-    for path in csv_files:
-        errors.extend(validate_file(path, repo_root))
+    validated_files: list[str] = []
+    skipped_files: list[str] = []
+
+    for path in sorted(MAPPINGS_ROOT.glob("*.csv")):
+        if path.name == LEGACY_MAPPING_NAME:
+            errors.extend(validate_legacy_mapping(path))
+            validated_files.append(str(path.relative_to(REPO_ROOT)))
+        elif path.name.startswith("external-framework-mapping") and path.name.endswith(".csv"):
+            errors.extend(validate_conservative_mapping(path))
+            validated_files.append(str(path.relative_to(REPO_ROOT)))
+        else:
+            skipped_files.append(str(path.relative_to(REPO_ROOT)))
 
     if errors:
         print("External mapping validation failed:")
@@ -179,7 +344,18 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print(f"External mapping validation passed for {len(csv_files)} file(s).")
+    if validated_files:
+        print("External mapping validation passed for:")
+        for rel in validated_files:
+            print(f"- {rel}")
+    else:
+        print("No external mapping CSV files found.")
+
+    if skipped_files:
+        print("Skipped non-external mapping CSV files:")
+        for rel in skipped_files:
+            print(f"- {rel}")
+
     return 0
 
 
