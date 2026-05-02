@@ -94,3 +94,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-planning-progress-summary.md`](v060-planning-progress-summary.md) — v0.6.0 planning progress summary.
 - [`docs/en/status/v060-status-document-triage-planning.md`](v060-status-document-triage-planning.md) — v0.6.0 status document triage planning draft.
 - [`docs/en/status/v060-status-document-inventory-planning.md`](v060-status-document-inventory-planning.md) — v0.6.0 status document inventory planning draft.
+- [`docs/en/status/v060-status-document-triage-decision-register.md`](v060-status-document-triage-decision-register.md) — v0.6.0 status document triage decision register.
