@@ -1,0 +1,28 @@
+{
+  "fixture_type": "backend_verification",
+  "path": "non-execution",
+  "is_static_fixture": true,
+  "is_executable": false,
+  "claim_boundary": [
+    "illustrative_example_only",
+    "not_validation_backed",
+    "not_implementation_conformance",
+    "not_production_readiness",
+    "not_audit_sufficiency",
+    "not_legal_or_compliance_advice",
+    "not_certification_or_conformity"
+  ],
+  "correlation_id": "proto-corr-nonexecution-001",
+  "backend_verification_id": "proto-backend-nonexecution-001",
+  "dispatch_decision_id": "proto-dispatch-nonexecution-001",
+  "authorization_decision_id": "proto-authz-nonexecution-001",
+  "action_type": "prototype.customer_record.export",
+  "backend_decision": "not_invoked_after_dispatch_refusal",
+  "checks": {
+    "dispatch_forwarded_to_backend": false,
+    "backend_execution_occurred": false,
+    "model_output_treated_as_authority": false
+  },
+  "reason": "dispatch_refused_before_backend_execution",
+  "notes": "Static backend fixture showing that backend execution does not occur after dispatch refusal."
+}

@@ -1,0 +1,28 @@
+{
+  "fixture_type": "dispatch_decision",
+  "path": "permitted",
+  "is_static_fixture": true,
+  "is_executable": false,
+  "claim_boundary": [
+    "illustrative_example_only",
+    "not_validation_backed",
+    "not_implementation_conformance",
+    "not_production_readiness",
+    "not_audit_sufficiency",
+    "not_legal_or_compliance_advice",
+    "not_certification_or_conformity"
+  ],
+  "correlation_id": "proto-corr-permitted-001",
+  "dispatch_decision_id": "proto-dispatch-permitted-001",
+  "action_request_id": "proto-req-permitted-001",
+  "authorization_decision_id": "proto-authz-permitted-001",
+  "action_type": "prototype.customer_record.read",
+  "dispatch_decision": "forward_to_backend",
+  "checks": {
+    "authorization_present": true,
+    "authorization_action_matches_request": true,
+    "authorization_not_expired": true,
+    "model_output_treated_as_authority": false
+  },
+  "notes": "Static dispatch fixture showing enforcement before backend forwarding."
+}

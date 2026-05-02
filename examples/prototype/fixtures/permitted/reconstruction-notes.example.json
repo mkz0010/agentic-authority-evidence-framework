@@ -1,0 +1,25 @@
+{
+  "fixture_type": "reconstruction_notes",
+  "path": "permitted",
+  "is_static_fixture": true,
+  "is_executable": false,
+  "claim_boundary": [
+    "illustrative_example_only",
+    "not_validation_backed",
+    "not_implementation_conformance",
+    "not_production_readiness",
+    "not_audit_sufficiency",
+    "not_legal_or_compliance_advice",
+    "not_certification_or_conformity"
+  ],
+  "correlation_id": "proto-corr-permitted-001",
+  "reconstruction_path": [
+    "proto-req-permitted-001",
+    "proto-authz-permitted-001",
+    "proto-dispatch-permitted-001",
+    "proto-backend-permitted-001",
+    "proto-evidence-permitted-001"
+  ],
+  "expected_reviewer_conclusion": "The action is represented as executed only after separate authorization, dispatch enforcement, backend verification, and evidence generation are present in the static fixture set.",
+  "notes": "Static reconstruction notes for the permitted path."
+}
