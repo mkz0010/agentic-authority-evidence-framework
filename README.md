@@ -358,7 +358,7 @@ These documents currently remain under `docs/en/` for public review continuity. 
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.5.0 Public Review Planning Release, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.6.0 Practical Adoption Readiness Planning Release, 2026.
 
 ## Research and Open Questions
 
