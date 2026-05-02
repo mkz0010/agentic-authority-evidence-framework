@@ -182,6 +182,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-risk-owner-guide-planning.md` | v0.6.0 risk owner guide planning draft | Defines candidate risk owner decision inputs, outcomes, decision matrix, risk acceptance structure, residual risk register fields, KRIs/KPIs, exception handling, and executive reporting considerations. |
 | `docs/en/status/v060-planning-progress-summary.md` | v0.6.0 planning progress summary | Summarizes the initial five-pillar v0.6.0 planning set, document-map review follow-up, and remaining planning follow-up candidates. |
 | `docs/en/status/v060-status-document-triage-planning.md` | v0.6.0 status document triage planning draft | Defines candidate keep, archive, promote, replace, and remove outcomes for accumulated status documents without moving or deleting files. |
+| `docs/en/status/v060-status-document-inventory-planning.md` | v0.6.0 status document inventory planning draft | Provides an initial generated inventory of status documents with candidate triage categories and outcomes without moving or deleting files. |
 
 ## Numbered Document Coverage Additions
 
