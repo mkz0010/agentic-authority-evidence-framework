@@ -183,6 +183,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-planning-progress-summary.md` | v0.6.0 planning progress summary | Summarizes the initial five-pillar v0.6.0 planning set, document-map review follow-up, and remaining planning follow-up candidates. |
 | `docs/en/status/v060-status-document-triage-planning.md` | v0.6.0 status document triage planning draft | Defines candidate keep, archive, promote, replace, and remove outcomes for accumulated status documents without moving or deleting files. |
 | `docs/en/status/v060-status-document-inventory-planning.md` | v0.6.0 status document inventory planning draft | Provides an initial generated inventory of status documents with candidate triage categories and outcomes without moving or deleting files. |
+| `docs/en/status/v060-status-document-triage-decision-register.md` | v0.6.0 status document triage decision register | Converts the generated status document inventory into conservative candidate decisions without moving, deleting, archiving, or promoting files. |
 
 ## Numbered Document Coverage Additions
 
