@@ -100,3 +100,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-review-follow-up-summary.md`](v060-review-follow-up-summary.md) — v0.6.0 review follow-up summary.
 - [`docs/en/status/v060-release-preparation-planning.md`](v060-release-preparation-planning.md) — v0.6.0 release preparation planning.
 - [`docs/en/status/v060-release-notes-draft.md`](v060-release-notes-draft.md) — v0.6.0 release notes draft.
+- [`docs/en/status/v060-release-readiness-review.md`](v060-release-readiness-review.md) — v0.6.0 release readiness review.
