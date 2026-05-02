@@ -1,0 +1,142 @@
+{
+  "example_metadata": {
+    "example_name": "Non-execution evidence example",
+    "example_status": "active_example_candidate",
+    "example_version": "v0.6.x",
+    "scenario": "A proposed production service API key rotation is denied because the requested key slot exceeds the authorized scope.",
+    "outcome": "not_executed",
+    "validation_scope": {
+      "json_syntax_validation": true,
+      "active_schema_validation": "deferred",
+      "cross_reference_validation": "deferred",
+      "controlled_vocabulary_validation": "deferred"
+    },
+    "claim_boundaries": [
+      "does_not_assert_certification",
+      "does_not_assert_compliance",
+      "does_not_assert_audit_sufficiency",
+      "does_not_assert_implementation_conformance",
+      "does_not_assert_production_readiness",
+      "does_not_assert_external_framework_equivalence",
+      "does_not_assert_complete_mitigation"
+    ],
+    "related_planning_artifacts": [
+      "docs/en/status/v060-non-execution-evidence-example-planning.md",
+      "docs/en/status/v060-active-evidence-example-candidate-review.md",
+      "docs/en/status/v060-active-example-placement-and-validation-planning.md"
+    ]
+  },
+  "action_request": {
+    "action_request_id": "arq-20260502-0002",
+    "requested_action": "rotate_service_api_key",
+    "target_resource": "service:svc-billing-export:key:secondary",
+    "principal_id": "user:ops-engineer-17",
+    "agent_instance_id": "agent:ops-maintenance-assistant:session-9f2a",
+    "session_id": "maint-session-20260502-01",
+    "input_sources": [
+      {
+        "source_type": "change_ticket",
+        "source_id": "chg-20260502-1042",
+        "trusted_for_authority": true
+      },
+      {
+        "source_type": "chat_instruction",
+        "source_id": "chatmsg-7815",
+        "trusted_for_authority": false
+      }
+    ],
+    "untrusted_input_present": true,
+    "impact_level": "high",
+    "requested_scope": {
+      "action": "rotate",
+      "service": "svc-billing-export",
+      "environment": "production",
+      "key_slot": "secondary"
+    },
+    "requested_time_window": {
+      "not_before": "2026-05-02T07:00:00Z",
+      "not_after": "2026-05-02T08:00:00Z"
+    },
+    "reason_code": "approved_maintenance_key_rotation",
+    "request_hash": "sha256:example-request-hash-secondary"
+  },
+  "available_authorization_decision": {
+    "authorization_decision_id": "auz-20260502-0001",
+    "action_request_id": "arq-20260502-0001",
+    "decision": "permit",
+    "principal_id": "user:ops-engineer-17",
+    "authorized_action": "rotate_service_api_key",
+    "authorized_resource": "service:svc-billing-export:key:primary",
+    "authorized_scope": {
+      "action": "rotate",
+      "service": "svc-billing-export",
+      "environment": "production",
+      "key_slot": "primary"
+    },
+    "policy_version": "policy-agentic-prod-maintenance-2026-05-01",
+    "decision_time": "2026-05-02T07:10:12Z",
+    "expires_at": "2026-05-02T08:00:00Z",
+    "constraints": {
+      "change_ticket_id": "chg-20260502-1042",
+      "requires_backend_verification": true,
+      "requires_evidence_event": true,
+      "requires_non_reuse": true
+    },
+    "decision_hash": "sha256:example-decision-hash"
+  },
+  "dispatch_enforcement": {
+    "dispatch_event_id": "dsp-20260502-0002",
+    "authorization_decision_id": "auz-20260502-0001",
+    "action_request_id": "arq-20260502-0002",
+    "dispatcher_id": "dispatcher:prod-tool-gateway-01",
+    "dispatch_decision": "denied",
+    "denial_reason": "resource_scope_mismatch",
+    "checks": {
+      "decision_exists": "pass",
+      "decision_not_expired": "pass",
+      "request_binding_matches": "fail",
+      "principal_matches": "pass",
+      "action_matches": "pass",
+      "resource_matches": "fail",
+      "scope_constraints_match": "fail",
+      "policy_version_accepted": "pass",
+      "evidence_required": "pass"
+    },
+    "expected_resource": "service:svc-billing-export:key:primary",
+    "requested_resource": "service:svc-billing-export:key:secondary",
+    "dispatch_time": "2026-05-02T07:13:04Z"
+  },
+  "backend_verification": {
+    "backend_verification_id": null,
+    "backend_id": "backend:key-management-service:prod",
+    "backend_invoked": false,
+    "non_invocation_reason": "dispatch_denied_before_backend_call"
+  },
+  "evidence_event": {
+    "evidence_event_id": "evd-20260502-0002",
+    "event_type": "agentic_action_not_executed",
+    "action_request_id": "arq-20260502-0002",
+    "authorization_decision_id": "auz-20260502-0001",
+    "dispatch_event_id": "dsp-20260502-0002",
+    "backend_verification_id": null,
+    "principal_id": "user:ops-engineer-17",
+    "agent_instance_id": "agent:ops-maintenance-assistant:session-9f2a",
+    "target_resource": "service:svc-billing-export:key:secondary",
+    "action": "rotate_service_api_key",
+    "outcome": "not_executed",
+    "non_execution_reason": "resource_scope_mismatch",
+    "failed_boundary": "tool_dispatcher",
+    "backend_invoked": false,
+    "evidence_sources": [
+      "authorization_service",
+      "tool_dispatcher",
+      "evidence_writer"
+    ],
+    "evidence_trust_limitations": [
+      "backend did not independently verify because dispatch failed before backend invocation",
+      "example uses illustrative identifiers",
+      "does not imply audit sufficiency"
+    ],
+    "recorded_at": "2026-05-02T07:13:09Z"
+  }
+}
