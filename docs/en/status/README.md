@@ -126,3 +126,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-prototype-fixture-validation-planning.md`](v060-prototype-fixture-validation-planning.md) — v0.6.x prototype fixture validation planning.
 - [`docs/en/status/v060-research-related-work-mapping-planning.md`](v060-research-related-work-mapping-planning.md) — v0.6.x research related-work mapping planning.
 - [`docs/en/status/v060-research-related-work-candidate-map.md`](v060-research-related-work-candidate-map.md) - Candidate related-work categories and conservative claim boundaries for future research positioning.
+- [`docs/en/status/v060-research-contribution-matrix.md`](v060-research-contribution-matrix.md) - Candidate research contribution matrix and conservative claim boundaries for future AAEF research positioning.

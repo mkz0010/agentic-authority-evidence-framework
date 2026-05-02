@@ -215,6 +215,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-prototype-fixture-validation-planning.md` | v0.6.x prototype fixture validation planning | Defines planned validation boundaries for future prototype static fixtures, including required files, JSON syntax, field presence, correlation consistency, permitted/non-execution path checks, claim-boundary checks, sequencing, and non-goals. |
 | `docs/en/status/v060-research-related-work-mapping-planning.md` | v0.6.x research related-work mapping planning | Defines conservative planning boundaries for future research related-work mapping, including source eligibility, mapping dimensions, claim boundaries, novelty language, validation review, and explicit exclusions. |
 | `docs/en/status/v060-research-related-work-candidate-map.md` | v0.6.x research related-work candidate map | Temporary status / coordination material |
+| `docs/en/status/v060-research-contribution-matrix.md` | v0.6.x research contribution matrix | Temporary status / coordination material |
 
 ## Numbered Document Coverage Additions
 
