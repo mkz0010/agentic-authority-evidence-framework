@@ -67,3 +67,27 @@ They may support:
 - `docs/en/status/v060-active-example-placement-and-validation-planning.md`
 - `docs/en/status/v060-permitted-action-evidence-example-planning.md`
 - `docs/en/status/v060-non-execution-evidence-example-planning.md`
+
+## Evidence example hygiene validation
+
+The evidence examples in this directory are illustrative active example candidates.
+
+They are:
+
+- intended to support reviewability of permitted-action and non-execution evidence patterns;
+- intended to support local validation of example hygiene;
+- not production-ready evidence records;
+- not implementation conformance tests;
+- not audit sufficiency evidence by themselves;
+- not compliance evidence by themselves;
+- not certification evidence;
+- not conformity evidence;
+- not external-framework equivalence evidence.
+
+Run the dedicated evidence example hygiene validator with:
+
+    py tools/validate_evidence_examples.py
+
+This validator checks example file presence, `.example.json` naming, illustrative metadata, scenario type, selected identifier hygiene, forbidden overclaiming phrases, and README claim-boundary coverage.
+
+This validator does not assert active evidence schema conformance, implementation conformance, production readiness, audit sufficiency, legal sufficiency, compliance, certification, conformity, or external-framework equivalence.
