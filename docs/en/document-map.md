@@ -181,6 +181,40 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-legal-compliance-applicability-note-planning.md` | v0.6.0 legal and compliance applicability note planning draft | Defines conservative applicability, claim boundaries, legal/compliance support areas, evidence privacy and retention considerations, contractual topics, and anti-patterns. |
 | `docs/en/status/v060-risk-owner-guide-planning.md` | v0.6.0 risk owner guide planning draft | Defines candidate risk owner decision inputs, outcomes, decision matrix, risk acceptance structure, residual risk register fields, KRIs/KPIs, exception handling, and executive reporting considerations. |
 
+## Numbered Document Coverage Additions
+
+These entries register top-level numbered English documents that were not previously represented in this document map.
+
+| Document | Title | Classification |
+| --- | --- | --- |
+| `docs/en/06-control-domains.md` | 06. Control Domains | Core framework document |
+| `docs/en/07-control-requirements.md` | 07. Control Requirements | Core control requirements |
+| `docs/en/08-assessment-methodology.md` | 08. Assessment Methodology | Core assessment methodology |
+| `docs/en/09-relationship-to-existing-frameworks.md` | 09. Relationship to Existing Frameworks | Core framework document |
+| `docs/en/10-maintenance-and-validation.md` | 10. Maintenance and Validation | Core framework document |
+| `docs/en/11-high-impact-action-taxonomy.md` | 11. High-Impact Action Taxonomy | Core framework document |
+| `docs/en/12-assessment-quick-start.md` | 12. Assessment Quick Start | Practitioner assessment guidance |
+| `docs/en/13-one-page-overview.md` | 13. AAEF One-Page Overview | Core framework document |
+| `docs/en/14-evidence-event-schema.md` | 14. Evidence Event Schema | Core schema reference |
+| `docs/en/15-v02-control-expansion-notes.md` | 15. v0.2 Control Expansion Notes | Core framework document |
+| `docs/en/17-reference-architecture.md` | 17. Reference Architecture | Core framework document |
+| `docs/en/20-assessment-profiles.md` | Assessment Profiles and Tiered Applicability | Assessment guidance |
+| `docs/en/21-action-sequence-monitoring.md` | Action Sequence Monitoring and Task Splitting | Core framework document |
+| `docs/en/22-assessment-automation-and-human-review.md` | Assessment Automation and Human Review Classification | Core framework document |
+| `docs/en/23-infrastructure-siem-evidence-integration.md` | Infrastructure and SIEM Evidence Integration | Core framework document |
+| `docs/en/24-control-catalog-versioning.md` | Control Catalog Versioning and Change Impact Model | Core framework document |
+| `docs/en/25-testing-procedures-and-pass-criteria.md` | Testing Procedures and Pass Criteria | Assessment guidance |
+| `docs/en/26-high-impact-audit-grade-prequalification.md` | High-Impact and Audit-Grade Pre-qualification Gate | Core framework document |
+| `docs/en/27-trusted-control-boundary-integrity.md` | Trusted Control Boundary Integrity Requirements | Core framework document |
+| `docs/en/28-external-framework-mapping-methodology.md` | External Framework Mapping Methodology | Framework mapping or methodology reference |
+| `docs/en/29-iso-iec-42001-feasibility.md` | ISO/IEC 42001 Feasibility and Initial Alignment Note | Framework mapping or methodology reference |
+| `docs/en/32-authority-denial-reauthorization-flow.md` | Authority Denial and Reauthorization Flow | Non-normative planning concept |
+| `docs/en/35-authority-assertion-profile.md` | Authority Assertion Profile | Non-normative planning profile |
+| `docs/en/38-v050-evidence-schema-field-candidates.md` | v0.5.0 Evidence Schema Field Candidates | Non-normative planning note |
+| `docs/en/41-non-execution-reauthorization-examples.md` | Non-Execution and Reauthorization Examples | Non-normative examples |
+| `docs/en/43-risk-proportional-evidence-assessment-guidance.md` | Risk-Proportional Evidence Assessment Guidance | Non-normative guidance |
+| `docs/en/47-approval-quality-assessment-guidance.md` | Approval Quality Assessment Guidance | Non-normative guidance |
+
 ## Physical Organization Policy
 
 This map is intentionally a logical classification layer.
