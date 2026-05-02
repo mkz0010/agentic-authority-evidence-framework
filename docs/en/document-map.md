@@ -188,6 +188,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-external-framework-mapping-csv-enrichment-review.md` | v0.6.0 external framework mapping CSV enrichment review | Reviews mapping CSV and Markdown candidates and defines conservative enrichment principles before modifying external framework mappings. |
 | `docs/en/status/v060-review-follow-up-summary.md` | v0.6.0 review follow-up summary | Summarizes v0.6.0 repository review follow-up work across document-map coverage, changelog cleanup, status document triage, and external mapping CSV enrichment planning. |
 | `docs/en/status/v060-release-preparation-planning.md` | v0.6.0 release preparation planning | Defines release positioning, pre-release checks, validation commands, claim boundaries, and decision points for a possible v0.6.0 planning release. |
+| `docs/en/status/v060-release-notes-draft.md` | v0.6.0 release notes draft | Provides draft release notes for a possible v0.6.0 Practical Adoption Readiness planning release without creating a release or tag. |
 
 ## Numbered Document Coverage Additions
 
