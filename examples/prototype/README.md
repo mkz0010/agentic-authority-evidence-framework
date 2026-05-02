@@ -132,6 +132,32 @@ This directory does not currently provide:
 - audit opinion support, or
 - legal advice.
 
+## Current static fixtures
+
+This directory now includes minimal static fixture examples for two illustrative paths:
+
+- `fixtures/permitted/` — a permitted action path with request, authorization decision, dispatch decision, backend verification, evidence event, and reconstruction notes.
+- `fixtures/non-execution/` — a non-execution path with request, authorization decision, dispatch refusal, backend non-execution, evidence event, and reconstruction notes.
+
+These fixtures are static JSON examples only.
+
+They do not provide:
+
+- executable prototype behavior,
+- runtime authorization,
+- runtime dispatch enforcement,
+- backend service behavior,
+- validation-backed assurance,
+- implementation conformance,
+- production readiness,
+- audit sufficiency,
+- legal sufficiency,
+- compliance sufficiency,
+- certification, or
+- conformity.
+
+A later PR may add local validation for these fixtures.
+
 ## Next step
 
 The next safe step is to add static fixtures for a permitted path and a non-execution path, or to define validation planning for such fixtures.

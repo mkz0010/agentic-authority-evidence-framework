@@ -1,0 +1,32 @@
+{
+  "fixture_type": "authorization_decision",
+  "path": "permitted",
+  "is_static_fixture": true,
+  "is_executable": false,
+  "claim_boundary": [
+    "illustrative_example_only",
+    "not_validation_backed",
+    "not_implementation_conformance",
+    "not_production_readiness",
+    "not_audit_sufficiency",
+    "not_legal_or_compliance_advice",
+    "not_certification_or_conformity"
+  ],
+  "correlation_id": "proto-corr-permitted-001",
+  "authorization_decision_id": "proto-authz-permitted-001",
+  "action_request_id": "proto-req-permitted-001",
+  "action_type": "prototype.customer_record.read",
+  "policy_version": "prototype-policy-v0.1",
+  "decision": "allow",
+  "decision_scope": {
+    "allowed_action_type": "prototype.customer_record.read",
+    "allowed_resource_id": "customer-record-001"
+  },
+  "validity": {
+    "not_before": "2026-05-02T00:00:00Z",
+    "not_after": "2026-05-03T00:00:00Z"
+  },
+  "authority_basis": "prototype_fixture_policy",
+  "model_output_is_authority": false,
+  "notes": "Static authorization fixture showing action-bound authority for the permitted path."
+}

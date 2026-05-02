@@ -1,0 +1,30 @@
+{
+  "fixture_type": "action_request",
+  "path": "non-execution",
+  "is_static_fixture": true,
+  "is_executable": false,
+  "claim_boundary": [
+    "illustrative_example_only",
+    "not_validation_backed",
+    "not_implementation_conformance",
+    "not_production_readiness",
+    "not_audit_sufficiency",
+    "not_legal_or_compliance_advice",
+    "not_certification_or_conformity"
+  ],
+  "correlation_id": "proto-corr-nonexecution-001",
+  "action_request_id": "proto-req-nonexecution-001",
+  "action_type": "prototype.customer_record.export",
+  "requested_by": {
+    "principal_type": "prototype_user",
+    "principal_id": "prototype-user-001"
+  },
+  "target": {
+    "resource_type": "customer_record",
+    "resource_id": "customer-record-001"
+  },
+  "requested_outcome": "execute_if_authorized",
+  "model_output_role": "proposal_only",
+  "model_output_is_authority": false,
+  "notes": "Static request fixture for an illustrative non-execution path."
+}

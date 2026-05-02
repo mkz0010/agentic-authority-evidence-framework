@@ -1,0 +1,31 @@
+{
+  "fixture_type": "evidence_event",
+  "path": "non-execution",
+  "is_static_fixture": true,
+  "is_executable": false,
+  "claim_boundary": [
+    "illustrative_example_only",
+    "not_validation_backed",
+    "not_implementation_conformance",
+    "not_production_readiness",
+    "not_audit_sufficiency",
+    "not_legal_or_compliance_advice",
+    "not_certification_or_conformity"
+  ],
+  "correlation_id": "proto-corr-nonexecution-001",
+  "evidence_event_id": "proto-evidence-nonexecution-001",
+  "action_request_id": "proto-req-nonexecution-001",
+  "authorization_decision_id": "proto-authz-nonexecution-001",
+  "dispatch_decision_id": "proto-dispatch-nonexecution-001",
+  "backend_verification_id": "proto-backend-nonexecution-001",
+  "action_type": "prototype.customer_record.export",
+  "outcome": "not_executed",
+  "reason": "authorization_denied_and_dispatch_refused",
+  "evidence_summary": {
+    "authority_separated_from_model_output": true,
+    "dispatch_enforcement_observed": true,
+    "backend_execution_prevented": true,
+    "reconstructable_from_static_fixtures": true
+  },
+  "notes": "Static evidence fixture for an illustrative non-execution path."
+}

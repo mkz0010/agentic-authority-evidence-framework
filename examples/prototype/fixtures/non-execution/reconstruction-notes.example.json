@@ -1,0 +1,25 @@
+{
+  "fixture_type": "reconstruction_notes",
+  "path": "non-execution",
+  "is_static_fixture": true,
+  "is_executable": false,
+  "claim_boundary": [
+    "illustrative_example_only",
+    "not_validation_backed",
+    "not_implementation_conformance",
+    "not_production_readiness",
+    "not_audit_sufficiency",
+    "not_legal_or_compliance_advice",
+    "not_certification_or_conformity"
+  ],
+  "correlation_id": "proto-corr-nonexecution-001",
+  "reconstruction_path": [
+    "proto-req-nonexecution-001",
+    "proto-authz-nonexecution-001",
+    "proto-dispatch-nonexecution-001",
+    "proto-backend-nonexecution-001",
+    "proto-evidence-nonexecution-001"
+  ],
+  "expected_reviewer_conclusion": "The action is represented as not executed because authorization denies the requested export-like action, dispatch refuses forwarding, backend execution does not occur, and evidence records the non-execution outcome.",
+  "notes": "Static reconstruction notes for the non-execution path."
+}
