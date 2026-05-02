@@ -132,6 +132,28 @@ This directory does not currently provide:
 - audit opinion support, or
 - legal advice.
 
+## Local fixture validation
+
+Prototype fixtures can be checked locally with:
+
+~~~bash
+py tools/validate_prototype_examples.py
+~~~
+
+This validator is limited to static prototype fixtures under `examples/prototype/fixtures/`.
+
+It checks:
+
+- required fixture files,
+- JSON object shape,
+- required identifier fields,
+- correlation consistency,
+- permitted-path consistency,
+- non-execution-path consistency, and
+- static fixture claim-boundary markers.
+
+The validator does not provide production assurance, implementation conformance, audit sufficiency, legal sufficiency, compliance sufficiency, certification, conformity, or equivalence with external frameworks.
+
 ## Current static fixtures
 
 This directory now includes minimal static fixture examples for two illustrative paths:
