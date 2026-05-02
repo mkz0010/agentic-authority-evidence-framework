@@ -212,6 +212,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-prototype-reference-implementation-scope-planning.md` | v0.6.x prototype and reference implementation scope planning | Defines planning boundaries for prototype/reference implementation scope, candidate components, evidence flow, validation expectations, placement options, non-goals, and claim boundaries. |
 | `docs/en/status/v060-prototype-placement-and-file-inventory-planning.md` | v0.6.x prototype placement and file inventory planning | Defines conservative placement and file-inventory planning for future prototype materials, including `examples/prototype/`, non-executable README scope, later fixture candidates, validation planning, maintenance considerations, and claim boundaries. |
 | `docs/en/status/v060-prototype-static-fixture-planning.md` | v0.6.x prototype static fixture planning | Defines the planned static fixture set for future prototype examples, including permitted and non-execution paths, candidate fixture names, correlation expectations, validation planning, sequencing, maintenance considerations, and claim boundaries. |
+| `docs/en/status/v060-prototype-fixture-validation-planning.md` | v0.6.x prototype fixture validation planning | Defines planned validation boundaries for future prototype static fixtures, including required files, JSON syntax, field presence, correlation consistency, permitted/non-execution path checks, claim-boundary checks, sequencing, and non-goals. |
 
 ## Numbered Document Coverage Additions
 

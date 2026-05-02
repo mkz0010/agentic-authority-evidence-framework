@@ -123,3 +123,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-prototype-reference-implementation-scope-planning.md`](v060-prototype-reference-implementation-scope-planning.md) — v0.6.x prototype and reference implementation scope planning.
 - [`docs/en/status/v060-prototype-placement-and-file-inventory-planning.md`](v060-prototype-placement-and-file-inventory-planning.md) — v0.6.x prototype placement and file inventory planning.
 - [`docs/en/status/v060-prototype-static-fixture-planning.md`](v060-prototype-static-fixture-planning.md) — v0.6.x prototype static fixture planning.
+- [`docs/en/status/v060-prototype-fixture-validation-planning.md`](v060-prototype-fixture-validation-planning.md) — v0.6.x prototype fixture validation planning.
