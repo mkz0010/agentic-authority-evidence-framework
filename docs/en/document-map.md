@@ -186,6 +186,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-status-document-triage-decision-register.md` | v0.6.0 status document triage decision register | Converts the generated status document inventory into conservative candidate decisions without moving, deleting, archiving, or promoting files. |
 | `docs/en/status/v060-status-document-archive-readiness-review.md` | v0.6.0 status document archive readiness review | Reviews references for archive-later status documents before any future archive, movement, replacement, or deletion work. |
 | `docs/en/status/v060-external-framework-mapping-csv-enrichment-review.md` | v0.6.0 external framework mapping CSV enrichment review | Reviews mapping CSV and Markdown candidates and defines conservative enrichment principles before modifying external framework mappings. |
+| `docs/en/status/v060-review-follow-up-summary.md` | v0.6.0 review follow-up summary | Summarizes v0.6.0 repository review follow-up work across document-map coverage, changelog cleanup, status document triage, and external mapping CSV enrichment planning. |
 
 ## Numbered Document Coverage Additions
 
