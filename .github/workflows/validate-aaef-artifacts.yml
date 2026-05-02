@@ -30,7 +30,9 @@ jobs:
 
       - name: Validate Markdown indexes
         run: python tools/validate_markdown_indexes.py
-        py tools/validate_json_examples.py
+
+      - name: Validate JSON examples
+        run: python tools/validate_json_examples.py
 
       - name: Validate assessment profile mapping
         run: python tools/validate_assessment_profiles.py
