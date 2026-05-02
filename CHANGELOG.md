@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+No unreleased changes.
+
+## v0.6.0 Practical Adoption Readiness Planning Release - 2026-05-02
+
 ### v0.6.0 Planning and Adoption Readiness
 
 - Added the v0.6.0 planning input synthesis for the Practical Adoption Readiness planning cycle.
@@ -13,6 +17,11 @@
 - Added the Legal and Compliance Applicability Note planning draft to define conservative claim boundaries, applicability positioning, evidence privacy and retention considerations, contractual topics, and SaaS / external-agent responsibility boundaries.
 - Added the Risk Owner Guide planning draft for decision inputs, decision outcomes, high-impact action decision matrix, residual risk tracking, exception management, KRIs/KPIs, and executive reporting considerations.
 - Added the v0.6.0 Planning Progress Summary to summarize the initial five-pillar planning set, cross-workstream integration, document-map review follow-up, and remaining planning candidates.
+- Added the v0.6.0 Review Follow-up Summary to summarize repository review follow-up across F-01 through F-05.
+- Added the v0.6.0 Release Preparation Planning document.
+- Added the v0.6.0 Release Notes Draft.
+- Added the v0.6.0 Release Readiness Review.
+- Added the v0.6.0 Release Decision Record.
 
 ### Repository Structure and Documentation
 
@@ -31,6 +40,14 @@
 - Added temporary v0.5.x issue consolidation checkpoints, incorporation reviews, decision registers, candidate appendices, and track proposals under `docs/en/status/`.
 - Recorded v0.5.x follow-up decisions and status updates for principal context degradation, cross-agent delegation, delegation acceptance/refusal, cross-agent budget propagation, evidence integrity, tamper-evident evidence contexts, and approval quality.
 
+### Status Document Triage and Review Follow-up
+
+- Added the v0.6.0 status document triage planning draft.
+- Added the v0.6.0 status document inventory planning draft, identifying 52 status documents.
+- Added the v0.6.0 status document triage decision register, with 36 archive-later candidates, 15 keep decisions, and 1 replace-later candidate.
+- Added the v0.6.0 status document archive readiness review, finding that all 36 archive-later documents still have status-document references.
+- Added the v0.6.0 external framework mapping CSV enrichment review, identifying 2 mapping CSV candidates and 9 mapping Markdown candidates.
+
 ### Testing, Assessment, Schema, and Examples
 
 - Refined testing procedure language for principal context degradation, cross-agent delegation, authority lifecycle state changes, approval quality, approval-to-execution binding, and evidence integrity scenarios.
@@ -44,6 +61,13 @@
 - Added Markdown index validation for status document indexes and document-map rows.
 - Strengthened Markdown index validation so top-level numbered English docs under `docs/en/` must be represented in `docs/en/document-map.md`.
 - Added regression protection for repository review findings F-01 and F-05 related to document-map coverage.
+
+### Notes
+
+- v0.6.0 is a planning and adoption-readiness release.
+- v0.6.0 does not, by itself, change the current active control and assessment baseline.
+- v0.6.0 does not create a certification scheme, legal compliance claim, audit opinion, conformity assessment, or equivalence claim with external frameworks.
+- v0.6.0 planning artifacts remain non-normative unless later PRs explicitly promote selected material into active guidance, controls, schemas, assessment methods, testing procedures, examples, or release artifacts.
 
 ## v0.5.0 Public Review Planning Release - 2026-04-29
 

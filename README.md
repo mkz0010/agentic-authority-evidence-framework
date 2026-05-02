@@ -81,11 +81,13 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.5.0 Public Review Planning Release** is the latest public review planning release.
+**AAEF v0.6.0 Practical Adoption Readiness Planning Release** is the latest public review planning release.
 
-AAEF v0.5.0 is a non-normative planning and design-clarification release. It adds planning models and incorporation guidance for authority lifecycle, evidence integrity, approval quality, and future v0.5.x work. AAEF v0.4.1 remains the current control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, or testing procedures.
+AAEF v0.6.0 is a non-normative planning and adoption-readiness release. It organizes implementer, operational, legal/compliance, security architecture, and risk owner planning artifacts for future adoption-facing refinement.
 
-Earlier v0.3.x, v0.2.x, and v0.1.x releases remain available as prior public review baselines.
+AAEF v0.6.0 does not, by itself, change the current active control and assessment baseline. AAEF v0.4.1 remains the current control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, or testing procedures.
+
+AAEF v0.5.0 remains available as the prior public review planning release. Earlier v0.3.x, v0.2.x, and v0.1.x releases remain available as prior public review baselines.
 
 The current control catalog file remains:
 
@@ -120,7 +122,7 @@ The v0.4.x Public Review Draft includes:
 - validation for testing procedures and external mappings,
 - and historical release preparation records under `docs/en/release/`.
 
-AAEF v0.5.0 remains a public review planning release. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, or claim of complete mitigation.
+AAEF v0.6.0 remains a public review planning release. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, conformity claim, or claim of complete mitigation.
 
 Feedback, issues, and pull requests are welcome.
 
