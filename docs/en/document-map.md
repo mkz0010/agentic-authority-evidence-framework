@@ -177,6 +177,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-operational-responsibility-matrix-planning.md` | v0.6.0 operational responsibility matrix planning draft | Defines candidate operational ownership, responsibility boundaries, readiness questions, evidence examples, and metrics for practical adoption. |
 | `docs/en/status/v060-high-impact-production-minimum-architecture-profile-planning.md` | v0.6.0 high-impact production minimum architecture profile planning draft | Defines candidate minimum production architecture expectations for high-impact agentic action assurance. |
 | `docs/en/status/v060-authorization-decision-artifact-minimal-profile-planning.md` | v0.6.0 authorization decision artifact minimal profile planning draft | Defines candidate minimal authorization decision fields, validation expectations, dispatch binding, backend verification, and evidence linkage. |
+| `docs/en/status/v060-implementer-quick-start-planning.md` | v0.6.0 implementer quick start planning draft | Defines a candidate implementation path from action request through authorization, dispatch, backend verification, evidence, monitoring, and reconstruction. |
 
 ## Physical Organization Policy
 
