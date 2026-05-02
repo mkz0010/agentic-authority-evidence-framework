@@ -33,6 +33,8 @@ jobs:
 
       - name: Validate JSON examples
         run: python tools/validate_json_examples.py
+
+      - name: Validate evidence examples
         run: python tools/validate_evidence_examples.py
 
       - name: Validate assessment profile mapping
