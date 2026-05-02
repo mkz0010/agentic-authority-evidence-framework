@@ -201,6 +201,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-consultant-discovery-checklist-planning.md` | v0.6.0 consultant discovery checklist planning | Provides a non-normative consultant discovery checklist for scoping AAEF-style review, advisory, pilot, implementation planning, and risk-owner decision support engagements. |
 | `docs/en/status/v060-adoption-package-index-planning.md` | v0.6.0 adoption package index planning | Organizes v0.6.0 adoption-oriented planning materials by audience, use case, reading path, adoption path, coverage, and follow-up need. |
 | `docs/en/status/v060-operator-runbook-planning.md` | v0.6.0 operator runbook planning | Provides a non-normative operator runbook planning guide for day-to-day operation, monitoring, denied-action review, evidence handling, freeze/hold behavior, escalation, metrics, and operational handoff for AAEF-style agentic action assurance. |
+| `docs/en/status/v060-adoption-follow-up-split-planning.md` | v0.6.x adoption follow-up split planning | Organizes candidate v0.6.x follow-up work after the v0.6.0 adoption-oriented planning set, including active examples, external mapping, operator runbook review, navigation integration, risk-owner refinement, prototype scope, and research related-work mapping. |
 
 ## Numbered Document Coverage Additions
 

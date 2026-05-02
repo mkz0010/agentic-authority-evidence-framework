@@ -112,3 +112,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-consultant-discovery-checklist-planning.md`](v060-consultant-discovery-checklist-planning.md) — v0.6.0 consultant discovery checklist planning.
 - [`docs/en/status/v060-adoption-package-index-planning.md`](v060-adoption-package-index-planning.md) — v0.6.0 adoption package index planning.
 - [`docs/en/status/v060-operator-runbook-planning.md`](v060-operator-runbook-planning.md) — v0.6.0 operator runbook planning.
+- [`docs/en/status/v060-adoption-follow-up-split-planning.md`](v060-adoption-follow-up-split-planning.md) — v0.6.x adoption follow-up split planning.
