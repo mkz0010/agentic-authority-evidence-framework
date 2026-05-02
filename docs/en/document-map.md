@@ -264,3 +264,7 @@ This document does not:
 - replace milestone tracking.
 
 It is a navigation and classification aid only.
+
+## Operator guidance
+
+- [Operator Guidance](operator-guidance.md) — Operator-facing guidance for reviewing AAEF-style action execution, non-execution, evidence availability, and reconstruction readiness.
