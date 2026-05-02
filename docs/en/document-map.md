@@ -209,6 +209,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-operator-runbook-active-guidance-candidate-review.md` | v0.6.x operator runbook active guidance candidate review | Reviews operator runbook planning material for reusable active guidance candidates, organization-specific areas, evidence review expectations, freeze/hold guidance, operational metrics, handoff guidance, and promotion readiness. |
 | `docs/en/status/v060-operator-guidance-placement-and-scope-planning.md` | v0.6.x operator guidance placement and scope planning | Defines the preferred placement and scope for future active operator guidance, including recommended `docs/en/operator-guidance.md` scope, exclusions, handoff guidance, evidence review coverage, and claim boundaries. |
 | `docs/en/status/v060-risk-owner-adoption-package-refinement-planning.md` | v0.6.x risk-owner adoption package refinement planning | Plans refinement of the risk-owner adoption package for adoption, exception, residual-risk, evidence request, decision memo, and executive reporting decisions while preserving claim boundaries. |
+| `docs/en/status/v060-prototype-reference-implementation-scope-planning.md` | v0.6.x prototype and reference implementation scope planning | Defines planning boundaries for prototype/reference implementation scope, candidate components, evidence flow, validation expectations, placement options, non-goals, and claim boundaries. |
 
 ## Numbered Document Coverage Additions
 
@@ -272,4 +273,3 @@ It is a navigation and classification aid only.
 ## Risk-owner guidance
 
 - [Risk-Owner Guidance](risk-owner-guidance.md) — Risk-owner-facing guidance for AAEF-style adoption, exception, residual-risk, and escalation decisions.
-
