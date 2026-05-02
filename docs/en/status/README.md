@@ -96,3 +96,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-status-document-inventory-planning.md`](v060-status-document-inventory-planning.md) — v0.6.0 status document inventory planning draft.
 - [`docs/en/status/v060-status-document-triage-decision-register.md`](v060-status-document-triage-decision-register.md) — v0.6.0 status document triage decision register.
 - [`docs/en/status/v060-status-document-archive-readiness-review.md`](v060-status-document-archive-readiness-review.md) — v0.6.0 status document archive readiness review.
+- [`docs/en/status/v060-external-framework-mapping-csv-enrichment-review.md`](v060-external-framework-mapping-csv-enrichment-review.md) — v0.6.0 external framework mapping CSV enrichment review.
