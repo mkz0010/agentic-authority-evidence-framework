@@ -104,3 +104,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-release-decision-record.md`](v060-release-decision-record.md) — v0.6.0 release decision record.
 - [`docs/en/status/v060-research-positioning-review.md`](v060-research-positioning-review.md) — v0.6.0 research positioning review.
 - [`docs/en/status/v060-version-reference-audit.md`](v060-version-reference-audit.md) — v0.6.0 version reference audit.
+- [`docs/en/status/v060-external-review-reassessment-response.md`](v060-external-review-reassessment-response.md) — v0.6.0 external review reassessment response.
