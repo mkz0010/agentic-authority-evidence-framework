@@ -191,6 +191,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-release-notes-draft.md` | v0.6.0 release notes draft | Provides draft release notes for a possible v0.6.0 Practical Adoption Readiness planning release without creating a release or tag. |
 | `docs/en/status/v060-release-readiness-review.md` | v0.6.0 release readiness review | Defines release-readiness checks, release-blocking decisions, validation commands, claim boundaries, and baseline-change review before any v0.6.0 release action. |
 | `docs/en/status/v060-release-decision-record.md` | v0.6.0 release decision record | Records release-scope decisions for CHANGELOG, README, CITATION, release notes, roadmap issues, deferred work, and tag prerequisites before a v0.6.0 release PR. |
+| `docs/en/status/v060-research-positioning-review.md` | v0.6.0 research positioning review | Positions AAEF v0.6.0 as a research and development artifact with candidate contributions, research questions, evaluation directions, paper framing, presentation framing, and claim boundaries. |
 
 ## Numbered Document Coverage Additions
 
