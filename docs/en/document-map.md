@@ -268,3 +268,4 @@ It is a navigation and classification aid only.
 ## Operator guidance
 
 - [Operator Guidance](operator-guidance.md) — Operator-facing guidance for reviewing AAEF-style action execution, non-execution, evidence availability, and reconstruction readiness.
+- [v0.6.x Risk Owner Adoption Package Refinement Planning](status/v060-risk-owner-adoption-package-refinement-planning.md) — Plans refinement of the risk-owner adoption package for adoption, exception, and residual-risk decisions.

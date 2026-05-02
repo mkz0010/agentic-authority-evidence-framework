@@ -119,3 +119,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-adoption-navigation-integration-planning.md`](v060-adoption-navigation-integration-planning.md) — v0.6.x adoption navigation integration planning.
 - [`docs/en/status/v060-operator-runbook-active-guidance-candidate-review.md`](v060-operator-runbook-active-guidance-candidate-review.md) — v0.6.x operator runbook active guidance candidate review.
 - [`docs/en/status/v060-operator-guidance-placement-and-scope-planning.md`](v060-operator-guidance-placement-and-scope-planning.md) — v0.6.x operator guidance placement and scope planning.
+- [v0.6.x Risk Owner Adoption Package Refinement Planning](v060-risk-owner-adoption-package-refinement-planning.md) — Plans refinement of the risk-owner adoption package for adoption, exception, and residual-risk decisions.
