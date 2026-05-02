@@ -180,6 +180,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-implementer-quick-start-planning.md` | v0.6.0 implementer quick start planning draft | Defines a candidate implementation path from action request through authorization, dispatch, backend verification, evidence, monitoring, and reconstruction. |
 | `docs/en/status/v060-legal-compliance-applicability-note-planning.md` | v0.6.0 legal and compliance applicability note planning draft | Defines conservative applicability, claim boundaries, legal/compliance support areas, evidence privacy and retention considerations, contractual topics, and anti-patterns. |
 | `docs/en/status/v060-risk-owner-guide-planning.md` | v0.6.0 risk owner guide planning draft | Defines candidate risk owner decision inputs, outcomes, decision matrix, risk acceptance structure, residual risk register fields, KRIs/KPIs, exception handling, and executive reporting considerations. |
+| `docs/en/status/v060-planning-progress-summary.md` | v0.6.0 planning progress summary | Summarizes the initial five-pillar v0.6.0 planning set, document-map review follow-up, and remaining planning follow-up candidates. |
 
 ## Numbered Document Coverage Additions
 
