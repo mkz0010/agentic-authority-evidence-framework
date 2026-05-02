@@ -197,6 +197,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-implementation-reference-pattern-planning.md` | v0.6.0 implementation reference pattern planning | Defines a non-normative minimal implementation reference pattern for action request, authorization decision, dispatch enforcement, backend verification, evidence generation, non-execution, and reconstruction. |
 | `docs/en/status/v060-permitted-action-evidence-example-planning.md` | v0.6.0 permitted action evidence example planning | Provides a non-normative permitted-action evidence example linking action request, authorization decision, dispatch enforcement, backend verification, execution, evidence, and reconstruction. |
 | `docs/en/status/v060-non-execution-evidence-example-planning.md` | v0.6.0 non-execution evidence example planning | Provides a non-normative non-execution evidence example showing denied dispatch, backend non-invocation, non-execution evidence, reconstruction questions, and evidence limitations. |
+| `docs/en/status/v060-auditor-evidence-request-checklist-planning.md` | v0.6.0 auditor evidence request checklist planning | Provides a non-normative evidence request checklist for auditors, assessors, reviewers, consultants, operators, and risk owners reviewing AAEF-style agentic action implementations. |
 
 ## Numbered Document Coverage Additions
 
