@@ -90,3 +90,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-authorization-decision-artifact-minimal-profile-planning.md`](v060-authorization-decision-artifact-minimal-profile-planning.md) — v0.6.0 authorization decision artifact minimal profile planning draft.
 - [`docs/en/status/v060-implementer-quick-start-planning.md`](v060-implementer-quick-start-planning.md) — v0.6.0 implementer quick start planning draft.
 - [`docs/en/status/v060-legal-compliance-applicability-note-planning.md`](v060-legal-compliance-applicability-note-planning.md) — v0.6.0 legal and compliance applicability note planning draft.
+- [`docs/en/status/v060-risk-owner-guide-planning.md`](v060-risk-owner-guide-planning.md) — v0.6.0 risk owner guide planning draft.
