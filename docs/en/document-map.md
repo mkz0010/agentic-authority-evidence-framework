@@ -210,6 +210,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-operator-guidance-placement-and-scope-planning.md` | v0.6.x operator guidance placement and scope planning | Defines the preferred placement and scope for future active operator guidance, including recommended `docs/en/operator-guidance.md` scope, exclusions, handoff guidance, evidence review coverage, and claim boundaries. |
 | `docs/en/status/v060-risk-owner-adoption-package-refinement-planning.md` | v0.6.x risk-owner adoption package refinement planning | Plans refinement of the risk-owner adoption package for adoption, exception, residual-risk, evidence request, decision memo, and executive reporting decisions while preserving claim boundaries. |
 | `docs/en/status/v060-prototype-reference-implementation-scope-planning.md` | v0.6.x prototype and reference implementation scope planning | Defines planning boundaries for prototype/reference implementation scope, candidate components, evidence flow, validation expectations, placement options, non-goals, and claim boundaries. |
+| `docs/en/status/v060-prototype-placement-and-file-inventory-planning.md` | v0.6.x prototype placement and file inventory planning | Defines conservative placement and file-inventory planning for future prototype materials, including `examples/prototype/`, non-executable README scope, later fixture candidates, validation planning, maintenance considerations, and claim boundaries. |
 
 ## Numbered Document Coverage Additions
 
