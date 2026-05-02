@@ -203,6 +203,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-operator-runbook-planning.md` | v0.6.0 operator runbook planning | Provides a non-normative operator runbook planning guide for day-to-day operation, monitoring, denied-action review, evidence handling, freeze/hold behavior, escalation, metrics, and operational handoff for AAEF-style agentic action assurance. |
 | `docs/en/status/v060-adoption-follow-up-split-planning.md` | v0.6.x adoption follow-up split planning | Organizes candidate v0.6.x follow-up work after the v0.6.0 adoption-oriented planning set, including active examples, external mapping, operator runbook review, navigation integration, risk-owner refinement, prototype scope, and research related-work mapping. |
 | `docs/en/status/v060-active-evidence-example-candidate-review.md` | v0.6.x active evidence example candidate review | Reviews whether the permitted-action and non-execution evidence planning examples should later be promoted into active examples, fixtures, or schema-adjacent examples. |
+| `docs/en/status/v060-active-example-placement-and-validation-planning.md` | v0.6.x active example placement and validation planning | Plans placement, naming, validation expectations, schema alignment, controlled vocabulary treatment, and claim boundaries before any evidence planning examples are promoted into active examples or fixtures. |
 
 ## Numbered Document Coverage Additions
 
