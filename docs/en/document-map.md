@@ -204,6 +204,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-adoption-follow-up-split-planning.md` | v0.6.x adoption follow-up split planning | Organizes candidate v0.6.x follow-up work after the v0.6.0 adoption-oriented planning set, including active examples, external mapping, operator runbook review, navigation integration, risk-owner refinement, prototype scope, and research related-work mapping. |
 | `docs/en/status/v060-active-evidence-example-candidate-review.md` | v0.6.x active evidence example candidate review | Reviews whether the permitted-action and non-execution evidence planning examples should later be promoted into active examples, fixtures, or schema-adjacent examples. |
 | `docs/en/status/v060-active-example-placement-and-validation-planning.md` | v0.6.x active example placement and validation planning | Plans placement, naming, validation expectations, schema alignment, controlled vocabulary treatment, and claim boundaries before any evidence planning examples are promoted into active examples or fixtures. |
+| `docs/en/status/v060-conservative-external-framework-mapping-enrichment-planning.md` | v0.6.x conservative external framework mapping enrichment planning | Defines conservative external framework mapping enrichment principles, relationship vocabulary, confidence levels, candidate fields, validation expectations, and claim boundaries without asserting compliance, certification, audit sufficiency, conformity, or equivalence. |
 
 ## Numbered Document Coverage Additions
 
