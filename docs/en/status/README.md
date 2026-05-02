@@ -117,3 +117,4 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v060-active-example-placement-and-validation-planning.md`](v060-active-example-placement-and-validation-planning.md) — v0.6.x active example placement and validation planning.
 - [`docs/en/status/v060-conservative-external-framework-mapping-enrichment-planning.md`](v060-conservative-external-framework-mapping-enrichment-planning.md) — v0.6.x conservative external framework mapping enrichment planning.
 - [`docs/en/status/v060-adoption-navigation-integration-planning.md`](v060-adoption-navigation-integration-planning.md) — v0.6.x adoption navigation integration planning.
+- [`docs/en/status/v060-operator-runbook-active-guidance-candidate-review.md`](v060-operator-runbook-active-guidance-candidate-review.md) — v0.6.x operator runbook active guidance candidate review.
