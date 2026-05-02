@@ -89,23 +89,24 @@ AAEF v0.6.0 は、それ自体では current active control and assessment basel
 
 AAEF v0.5.0 は prior public review planning release として引き続き参照できます。以前の v0.3.x、v0.2.x、v0.1.x releases は prior public review baselines として引き続き参照できます。
 
-AAEF v0.5.0 に含まれる主な要素:
+AAEF v0.6.0 に含まれる主な要素:
 
-- control catalog versioning and change impact guidance
-- measurable testing procedures and pass criteria
-- machine-readable testing procedure draft
-- High-Impact and Audit-Grade pre-qualification guidance
-- Trusted Control Boundary integrity requirements
-- external framework mapping methodology
-- initial conservative external framework mapping draft
-- validation for testing procedures and external mappings
-- refined control-specific testing procedure pass criteria
-- updated conservative external framework mappings, including NIST AI RMF / GenAI Profile, ISO/IEC 42001 feasibility, and CSA Agentic Trust Framework mapping
-- authority lifecycle planning guidance
-- cross-agent and cross-domain authority planning material
-- evidence integrity and tamper-evident evidence planning material
-- approval quality and approval fatigue planning material
-- v0.5.x follow-up completion status summary
+- Practical Adoption Readiness planning foundation
+- Implementer Readiness planning material
+- Operational Readiness planning material
+- Legal and Compliance Applicability planning material
+- Security Architecture Hardening planning material
+- Risk Owner and Executive Adoption planning material
+- Authorization Decision Artifact Minimal Profile planning draft
+- Implementer Quick Start planning draft
+- Operational Responsibility Matrix planning draft
+- High-Impact Production Minimum Architecture Profile planning draft
+- Legal and Compliance Applicability Note planning draft
+- Risk Owner Guide planning draft
+- repository review follow-up summary
+- status document triage, inventory, decision register, and archive-readiness review
+- external framework mapping CSV enrichment review
+- release preparation planning, release notes draft, release readiness review, and release decision record
 
 AAEF v0.6.0 は公開レビュー planning release です。認証制度、正式標準、implementation conformance claim、audit opinion、compliance equivalence、conformity claim、または完全なリスク軽減を主張するものではありません。
 

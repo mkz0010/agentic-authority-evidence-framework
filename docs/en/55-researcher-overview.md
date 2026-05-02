@@ -12,7 +12,7 @@ This document does not create new control requirements and does not change the c
 
 ## Current Status
 
-AAEF v0.5.0 is the latest public review planning release.
+AAEF v0.6.0 Practical Adoption Readiness Planning Release is the latest public review planning release.
 
 AAEF v0.4.1 remains the current control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, testing procedures, or related normative or assessment artifacts.
 
