@@ -184,6 +184,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-status-document-triage-planning.md` | v0.6.0 status document triage planning draft | Defines candidate keep, archive, promote, replace, and remove outcomes for accumulated status documents without moving or deleting files. |
 | `docs/en/status/v060-status-document-inventory-planning.md` | v0.6.0 status document inventory planning draft | Provides an initial generated inventory of status documents with candidate triage categories and outcomes without moving or deleting files. |
 | `docs/en/status/v060-status-document-triage-decision-register.md` | v0.6.0 status document triage decision register | Converts the generated status document inventory into conservative candidate decisions without moving, deleting, archiving, or promoting files. |
+| `docs/en/status/v060-status-document-archive-readiness-review.md` | v0.6.0 status document archive readiness review | Reviews references for archive-later status documents before any future archive, movement, replacement, or deletion work. |
 
 ## Numbered Document Coverage Additions
 
