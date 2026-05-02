@@ -198,6 +198,7 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-permitted-action-evidence-example-planning.md` | v0.6.0 permitted action evidence example planning | Provides a non-normative permitted-action evidence example linking action request, authorization decision, dispatch enforcement, backend verification, execution, evidence, and reconstruction. |
 | `docs/en/status/v060-non-execution-evidence-example-planning.md` | v0.6.0 non-execution evidence example planning | Provides a non-normative non-execution evidence example showing denied dispatch, backend non-invocation, non-execution evidence, reconstruction questions, and evidence limitations. |
 | `docs/en/status/v060-auditor-evidence-request-checklist-planning.md` | v0.6.0 auditor evidence request checklist planning | Provides a non-normative evidence request checklist for auditors, assessors, reviewers, consultants, operators, and risk owners reviewing AAEF-style agentic action implementations. |
+| `docs/en/status/v060-consultant-discovery-checklist-planning.md` | v0.6.0 consultant discovery checklist planning | Provides a non-normative consultant discovery checklist for scoping AAEF-style review, advisory, pilot, implementation planning, and risk-owner decision support engagements. |
 
 ## Numbered Document Coverage Additions
 
