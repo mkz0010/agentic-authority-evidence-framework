@@ -21,5 +21,6 @@
     "proto-evidence-permitted-001"
   ],
   "expected_reviewer_conclusion": "The action is represented as executed only after separate authorization, dispatch enforcement, backend verification, and evidence generation are present in the static fixture set.",
-  "notes": "Static reconstruction notes for the permitted path."
+  "notes": "Static reconstruction notes for the permitted path.",
+  "action_type": "prototype.customer_record.read"
 }
