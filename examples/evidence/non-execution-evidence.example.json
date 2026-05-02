@@ -1,7 +1,7 @@
 {
   "example_metadata": {
     "example_name": "Non-execution evidence example",
-    "example_status": "active_example_candidate",
+    "example_status": "illustrative_candidate",
     "example_version": "v0.6.x",
     "scenario": "A proposed production service API key rotation is denied because the requested key slot exceeds the authorized scope.",
     "outcome": "not_executed",
@@ -11,20 +11,25 @@
       "cross_reference_validation": "deferred",
       "controlled_vocabulary_validation": "deferred"
     },
-    "claim_boundaries": [
-      "does_not_assert_certification",
-      "does_not_assert_compliance",
-      "does_not_assert_audit_sufficiency",
-      "does_not_assert_implementation_conformance",
-      "does_not_assert_production_readiness",
-      "does_not_assert_external_framework_equivalence",
-      "does_not_assert_complete_mitigation"
-    ],
+    "claim_boundaries": {
+      "production_readiness": false,
+      "implementation_conformance": false,
+      "audit_sufficiency": false,
+      "compliance": false,
+      "certification": false,
+      "conformity": false,
+      "external_framework_equivalence": false
+    },
     "related_planning_artifacts": [
       "docs/en/status/v060-non-execution-evidence-example-planning.md",
       "docs/en/status/v060-active-evidence-example-candidate-review.md",
       "docs/en/status/v060-active-example-placement-and-validation-planning.md"
-    ]
+    ],
+    "scenario_type": "non_execution",
+    "normative_status": "non_normative",
+    "schema_conformance": "not_asserted",
+    "implementation_conformance": "not_asserted",
+    "evidence_sufficiency": "not_asserted"
   },
   "action_request": {
     "action_request_id": "arq-20260502-0002",
@@ -62,7 +67,7 @@
   },
   "available_authorization_decision": {
     "authorization_decision_id": "auz-20260502-0001",
-    "action_request_id": "arq-20260502-0001",
+    "action_request_id": "arq-20260502-0002",
     "decision": "permit",
     "principal_id": "user:ops-engineer-17",
     "authorized_action": "rotate_service_api_key",
