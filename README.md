@@ -8,6 +8,15 @@ Agentic Authority & Evidence Framework (AAEF) is a practical control framework f
 
 AAEF is designed for AI agents that do more than generate text. It focuses on agents that can call tools, access data, delegate tasks, interact with other agents, and perform meaningful actions on behalf of humans or organizations.
 
+
+## Adoption-readiness navigation
+
+For role-based adoption guidance, see the [v0.6.0 adoption package index](docs/en/status/v060-adoption-package-index-planning.md).
+
+It provides entry points for implementers, auditors, consultants, operators, risk owners, legal/compliance reviewers, security architects, and researchers.
+
+These materials are adoption-readiness planning materials and do not, by themselves, change the current control and assessment baseline.
+
 ## Core Position
 
 AAEF shifts agentic AI security from **trusting model behavior** to **governing authorized action**.

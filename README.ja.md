@@ -4,6 +4,15 @@
 
 **AAEF: Agentic AI SystemsのためのAction Assurance Control Profile**
 
+
+## 採用準備向けナビゲーション
+
+役割別の採用・検討ガイドとして、[v0.6.0 adoption package index](docs/en/status/v060-adoption-package-index-planning.md) を参照してください。
+
+実装者、監査人、コンサルタント、運用担当者、リスクオーナー、法務・コンプライアンス担当者、セキュリティアーキテクト、研究者向けの入口を整理しています。
+
+これらは採用準備のための planning material であり、それ自体では current control and assessment baseline を変更しません。
+
 ## 翻訳に関する注意
 
 この文書は、英語版READMEを基にした日本語参考訳です。
