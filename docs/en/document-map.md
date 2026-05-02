@@ -195,6 +195,8 @@ They may be removed, replaced, or archived when the related milestone, follow-up
 | `docs/en/status/v060-version-reference-audit.md` | v0.6.0 version reference audit | Audits release, baseline, and planning-material version references after v0.6.0 to identify expected, stale, ambiguous, and review-needed wording. |
 | `docs/en/status/v060-external-review-reassessment-response.md` | v0.6.0 external review reassessment response | Responds to a version-aware external reassessment by recording accepted strengths, adoption gaps, adoption personas, follow-up priorities, and claim boundaries. |
 | `docs/en/status/v060-implementation-reference-pattern-planning.md` | v0.6.0 implementation reference pattern planning | Defines a non-normative minimal implementation reference pattern for action request, authorization decision, dispatch enforcement, backend verification, evidence generation, non-execution, and reconstruction. |
+| `docs/en/status/v060-permitted-action-evidence-example-planning.md` | v0.6.0 permitted action evidence example planning | Provides a non-normative permitted-action evidence example linking action request, authorization decision, dispatch enforcement, backend verification, execution, evidence, and reconstruction. |
+| `docs/en/status/v060-non-execution-evidence-example-planning.md` | v0.6.0 non-execution evidence example planning | Provides a non-normative non-execution evidence example showing denied dispatch, backend non-invocation, non-execution evidence, reconstruction questions, and evidence limitations. |
 
 ## Numbered Document Coverage Additions
 
