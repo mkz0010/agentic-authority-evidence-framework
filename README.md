@@ -202,6 +202,18 @@ Documents under `docs/en/30-54` are v0.5.0 planning materials. They are non-norm
 
 These documents currently remain under `docs/en/` for public review continuity. A future release may move them into a dedicated planning directory if the repository structure is reorganized.
 
+
+### Version status and baseline reference
+
+AAEF uses different "latest" references depending on review purpose.
+
+- Latest completed planning roadmap: v0.7.0.
+- Latest v0.7.0 roadmap wrap-up artifact: `docs/en/status/v070-roadmap-wrap-up-and-release-readiness-note.md`.
+- Current active control and assessment baseline: not changed automatically by v0.7.0.
+- Future v1.0.0 path: not current, active, or baseline until a later release explicitly makes that change.
+
+For the post-v0.7.0 reference rules, see [`docs/en/status/post-v070-version-status-and-baseline-reference-note.md`](docs/en/status/post-v070-version-status-and-baseline-reference-note.md).
+
 ## Repository Structure
 
 ```text

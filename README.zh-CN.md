@@ -81,13 +81,15 @@ AAEF 面向以下读者：
 
 ## 文档状态
 
-**AAEF v0.5.0 Public Review Planning Release** 是最新公开评审 planning release。
+**AAEF v0.7.0 roadmap work** 是最新已完成的 planning roadmap。published release 状态应以 GitHub Releases、tags、release notes 和明确的 release artifacts 为准。
 
-AAEF v0.5.0 是 non-normative planning and design-clarification release。它增加了面向 authority lifecycle、evidence integrity、approval quality 以及 future v0.5.x work 的 planning models 和 incorporation guidance。除非后续版本明确更新 control catalog、evidence schema、assessment artifacts 或 testing procedures，AAEF v0.4.1 仍然是当前 control and assessment baseline。
+AAEF v0.7.0 是 planning and reviewability consolidation milestone。它完成了 Evaluation Readiness、Implementation Reviewability、Research Positioning、Operational Reconstruction 和 Risk-Owner Decision Support tracks。v0.7.0 不会自动改变 active control and assessment baseline；除非后续版本明确更新 control catalog、evidence schema、assessment artifacts、testing procedures 或相关 baseline artifacts，active baseline 仍按明确的 baseline statements 和 release artifacts 判断。
+
+版本状态和 baseline reference 的详细规则见 `docs/en/status/post-v070-version-status-and-baseline-reference-note.md`。
 
 此前的 v0.3.x、v0.2.x、v0.1.x releases 仍可作为 prior public review baselines 参考。
 
-AAEF v0.5.0 包含的主要内容包括：
+作为 historical planning material，AAEF v0.5.0 包含的主要内容包括：
 
 - control catalog versioning and change impact guidance
 - measurable testing procedures and pass criteria
@@ -100,7 +102,7 @@ AAEF v0.5.0 包含的主要内容包括：
 - refined control-specific testing procedure pass criteria
 - updated conservative external framework mappings, including NIST AI RMF / GenAI Profile, ISO/IEC 42001 feasibility, and CSA Agentic Trust Framework mapping
 
-AAEF v0.5.0 是公开评审 planning release。它不是认证机制、正式标准、implementation conformance claim、audit opinion、compliance equivalence，也不声称能够完全缓解所有风险。
+AAEF 的 planning releases 和 roadmap artifacts 不是认证机制、正式标准、implementation conformance claim、audit opinion、compliance equivalence，也不声称能够完全缓解所有风险。
 
 欢迎通过 Issues 和 Pull Requests 提供反馈。
 
