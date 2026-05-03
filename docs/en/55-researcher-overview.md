@@ -12,7 +12,9 @@ This document does not create new control requirements and does not change the c
 
 ## Current Status
 
-AAEF v0.6.0 Practical Adoption Readiness Planning Release is the latest public review planning release.
+The latest completed planning roadmap is v0.7.0. AAEF v0.7.0 completed the Evaluation Readiness, Implementation Reviewability, Research Positioning, Operational Reconstruction, and Risk-Owner Decision Support tracks. Published-release status should be determined from GitHub Releases, tags, release notes, and explicit release artifacts.
+
+For the post-v0.7.0 version status and baseline reference rules, see `docs/en/status/post-v070-version-status-and-baseline-reference-note.md`.
 
 AAEF v0.4.1 remains the current control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, testing procedures, or related normative or assessment artifacts.
 
@@ -223,9 +225,9 @@ For readers focused on cross-agent systems, start with:
 6. `docs/en/58-cross-agent-budget-propagation.md`
 7. the open Cross-Agent and Cross-Domain Authority umbrella issue and related v0.5.x follow-up issues.
 
-## Current v0.5.x Follow-up Areas
+## Historical v0.5.x Follow-up Areas
 
-The active v0.5.x follow-up work includes:
+The v0.5.x follow-up work included:
 
 - principal context degradation testing criteria;
 - capability-scoped cross-agent delegation controls;

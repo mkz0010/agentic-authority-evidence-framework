@@ -37,6 +37,8 @@ This directory should not contain:
 
 Documents in this directory do not change the current AAEF control and assessment baseline.
 
+For post-v0.7.0 version-status and baseline-reference rules, see [`docs/en/status/post-v070-version-status-and-baseline-reference-note.md`](post-v070-version-status-and-baseline-reference-note.md).
+
 Any normative incorporation must be handled through a later PR that explicitly updates the relevant control, testing, evidence, assessment, schema, mapping, or release artifacts.
 
 ## Current Status Documents
@@ -145,6 +147,7 @@ Any normative incorporation must be handled through a later PR that explicitly u
 - [`docs/en/status/v070-risk-owner-decision-package-checklist.md`](v070-risk-owner-decision-package-checklist.md) - Checklist for v0.7.0 Risk-Owner Decision Support packages, covering decision request, reviewed boundary, reconstruction result, evidence, gaps, residual uncertainty, impact, options, owners, claim boundaries, and decision record linkage.
 - [`docs/en/status/v070-risk-owner-decision-matrix.md`](v070-risk-owner-decision-matrix.md) - Decision matrix for v0.7.0 Risk-Owner Decision Support, covering accept, reject, request-evidence, defer, and escalate paths for scoped residual uncertainty decisions.
 - [`docs/en/status/v070-roadmap-wrap-up-and-release-readiness-note.md`](v070-roadmap-wrap-up-and-release-readiness-note.md) - Wrap-up and release-readiness note for the v0.7.0 roadmap, summarizing completed child tracks, preserved baseline boundaries, public communication posture, and v1.0.0 path considerations.
+- [`docs/en/status/post-v070-version-status-and-baseline-reference-note.md`](post-v070-version-status-and-baseline-reference-note.md) - Post-v0.7.0 reference note clarifying latest completed roadmap, published release, active baseline, historical artifact, and future v1.0.0 path wording.
 - [`docs/en/status/v060-adoption-navigation-integration-planning.md`](v060-adoption-navigation-integration-planning.md) — v0.6.x adoption navigation integration planning.
 - [`docs/en/status/v060-operator-runbook-active-guidance-candidate-review.md`](v060-operator-runbook-active-guidance-candidate-review.md) — v0.6.x operator runbook active guidance candidate review.
 - [`docs/en/status/v060-operator-guidance-placement-and-scope-planning.md`](v060-operator-guidance-placement-and-scope-planning.md) — v0.6.x operator guidance placement and scope planning.
