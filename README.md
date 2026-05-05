@@ -2,6 +2,11 @@
 
 [![Validate AAEF Artifacts](https://github.com/mkz0010/agentic-authority-evidence-framework/actions/workflows/validate-aaef-artifacts.yml/badge.svg)](https://github.com/mkz0010/agentic-authority-evidence-framework/actions/workflows/validate-aaef-artifacts.yml)
 
+<!-- AAEF_VERSION_BASELINE_STATUS_START -->
+> [!NOTE]
+> **Version / baseline status:** Latest release: [AAEF v1.0.0](https://github.com/mkz0010/agentic-authority-evidence-framework/releases/tag/v1.0.0). AAEF v1.0.0 is a conservative release path planning release. It does not change the active control and assessment baseline, and it does not establish certification, compliance, conformity, audit sufficiency, legal sufficiency, implementation conformance, production readiness, or external-framework equivalence.
+<!-- AAEF_VERSION_BASELINE_STATUS_END -->
+
 **AAEF: An Action Assurance Control Profile for Agentic AI Systems**
 
 Agentic Authority & Evidence Framework (AAEF) is a practical control framework for governing **delegated authority**, **policy-enforced action boundaries**, and **verifiable evidence** in agentic AI systems.
