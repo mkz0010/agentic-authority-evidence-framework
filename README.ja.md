@@ -2,6 +2,11 @@
 
 [![Validate AAEF Artifacts](https://github.com/mkz0010/agentic-authority-evidence-framework/actions/workflows/validate-aaef-artifacts.yml/badge.svg)](https://github.com/mkz0010/agentic-authority-evidence-framework/actions/workflows/validate-aaef-artifacts.yml)
 
+<!-- AAEF_VERSION_BASELINE_STATUS_START -->
+> [!NOTE]
+> **バージョン / ベースライン状態:** 最新リリースは [AAEF v1.0.0](https://github.com/mkz0010/agentic-authority-evidence-framework/releases/tag/v1.0.0) です。AAEF v1.0.0 は conservative release path planning release であり、active control and assessment baseline は変更しません。また、certification、compliance、conformity、audit/legal sufficiency、implementation conformance、production readiness、external-framework equivalence を主張しません。
+<!-- AAEF_VERSION_BASELINE_STATUS_END -->
+
 **AAEF: Agentic AI SystemsのためのAction Assurance Control Profile**
 
 
