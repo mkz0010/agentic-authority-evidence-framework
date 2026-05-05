@@ -210,14 +210,14 @@ These documents currently remain under `docs/en/` for public review continuity. 
 
 ### Version status and baseline reference
 
-AAEF uses different "latest" references depending on review purpose.
+- Latest release: [AAEF v1.0.0](https://github.com/mkz0010/agentic-authority-evidence-framework/releases/tag/v1.0.0).
+- Release posture: conservative release path planning release.
+- Current active control and assessment baseline: unchanged by v1.0.0.
+- Active baseline reference: AAEF v0.4.1 remains the current active control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, or testing procedures.
+- Planning and readiness-review materials from v0.6.0, v0.7.0, and v1.0.0 are status and planning records unless a later release explicitly promotes their contents into the active baseline.
+- AAEF v1.0.0 does not establish certification, compliance, conformity, audit sufficiency, legal sufficiency, implementation conformance, production readiness, or external-framework equivalence.
 
-- Latest completed planning roadmap: v0.7.0.
-- Latest v0.7.0 roadmap wrap-up artifact: `docs/en/status/v070-roadmap-wrap-up-and-release-readiness-note.md`.
-- Current active control and assessment baseline: not changed automatically by v0.7.0.
-- Future v1.0.0 path: not current, active, or baseline until a later release explicitly makes that change.
-
-For the post-v0.7.0 reference rules, see [`docs/en/status/post-v070-version-status-and-baseline-reference-note.md`](docs/en/status/post-v070-version-status-and-baseline-reference-note.md).
+For the post-v1.0.0 release and baseline posture, see the v1.0.0 release notes and the post-v1.0.0 review materials under `docs/en/status/`.
 
 ## Repository Structure
 
