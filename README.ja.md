@@ -9,6 +9,14 @@
 
 **AAEF: Agentic AI SystemsのためのAction Assurance Control Profile**
 
+Agentic Authority & Evidence Framework（AAEF）は、Agentic AI Systems における行為の権限境界を記述し、レビューし、証跡化するための公開フレームワークです。
+
+中心となる考え方は次のとおりです。
+
+> Model output is not authority.
+
+AAEF は、モデル出力、エージェントが生成した意図、またはツール要求が、実際の行為へ移る境界に焦点を当てます。その行為が認可され、強制され、境界づけられ、帰属可能で、証跡によって検証可能かを問います。
+
 
 ## 採用準備向けナビゲーション
 
@@ -63,9 +71,11 @@ AAEFは、組織が以下の5つの問いに答えられるようにすること
 
 AAEFは、新しいIDプロトコル、認証プロトコル、認可プロトコル、またはエージェント通信プロトコルを定義するものではありません。
 
-AAEFは、AIガバナンスフレームワーク、Zero Trustフレームワーク、アイデンティティ標準、エージェント通信標準、脅威分類を置き換えるものでもありません。
+AAEFは、AIガバナンスフレームワーク、Zero Trustフレームワーク、アイデンティティ標準、エージェント通信標準、特権アクセス管理、監査プログラム、法務レビュー、脅威分類を置き換えるものでもありません。
 
-AAEFは、高影響なAIエージェントの行為に対するAction Assurance Controlを定義することで、これらを補完することを目的としています。
+AAEFは、認証制度、コンプライアンスフレームワーク、監査意見、法的十分性モデル、本番準備完了の主張、または外部フレームワークとの同等性主張ではありません。
+
+AAEFは、高影響なAIエージェントの行為に対するAction Assurance Controlを定義することで、既存のガバナンス、セキュリティ、アイデンティティ、保証の取り組みを補完することを目的としています。
 
 ## 言語 / 翻訳
 
@@ -95,13 +105,15 @@ AAEFは、主に以下の読者を想定しています。
 
 ## ドキュメントの状態
 
-**AAEF v0.6.0 Practical Adoption Readiness Planning Release** が最新の公開レビュー planning release です。
+**AAEF v1.0.0 Stable Release Path Planning Release** が最新リリースです。
 
-AAEF v0.6.0 は、non-normative な planning and adoption-readiness release です。implementer、operational、legal/compliance、security architecture、および risk owner 向けの planning artifacts を、将来の adoption-facing refinement に向けて整理しています。
+AAEF v1.0.0 は conservative release path planning release です。リリース経路と post-v1.0.0 の planning posture を整理しますが、それ自体では current active control and assessment baseline を変更しません。
 
-AAEF v0.6.0 は、それ自体では current active control and assessment baseline を変更しません。control catalog、evidence schema、assessment artifacts、または testing procedures が後続リリースで明示的に更新されるまでは、**AAEF v0.4.1 が現在の control and assessment baseline** として維持されます。
+control catalog、evidence schema、assessment artifacts、または testing procedures が後続リリースで明示的に更新されるまでは、**AAEF v0.4.1 が現在の control and assessment baseline** として維持されます。
 
-AAEF v0.5.0 は prior public review planning release として引き続き参照できます。以前の v0.3.x、v0.2.x、v0.1.x releases は prior public review baselines として引き続き参照できます。
+v0.6.0、v0.7.0、v1.0.0、および post-v1.0.0 status review の planning / readiness-review materials は、後続リリースで明示的に active baseline へ昇格されない限り、status and planning records です。
+
+以前の v0.6.0、v0.5.0、v0.4.x、v0.3.x、v0.2.x、v0.1.x releases は、それぞれの release posture に応じて、過去の public review、planning、または baseline-related records として参照できます。
 
 AAEF v0.6.0 に含まれる主な要素:
 
@@ -122,7 +134,9 @@ AAEF v0.6.0 に含まれる主な要素:
 - external framework mapping CSV enrichment review
 - release preparation planning, release notes draft, release readiness review, and release decision record
 
-AAEF v0.6.0 は公開レビュー planning release です。認証制度、正式標準、implementation conformance claim、audit opinion、compliance equivalence、conformity claim、または完全なリスク軽減を主張するものではありません。
+AAEF v1.0.0 は、certification、compliance、conformity、audit sufficiency、legal sufficiency、implementation conformance、production readiness、または external-framework equivalence を主張しません。
+
+AAEF artifacts は structured review を支援し得ますが、implementation-specific assessment、組織ごとの risk decision、legal review、external assurance process、または auditor judgment を置き換えるものではありません。
 
 フィードバック、Issue、Pull Requestを歓迎します。
 
@@ -142,7 +156,7 @@ AAEFを初めて読む場合は、英語版の以下の文書から読むこと�
 
 この成果物を参照する場合は、以下のように引用してください。
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.6.0 Practical Adoption Readiness Planning Release, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v1.0.0 Stable Release Path Planning Release, 2026.
 
 ## ライセンス
 
