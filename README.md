@@ -9,7 +9,13 @@
 
 **AAEF: An Action Assurance Control Profile for Agentic AI Systems**
 
-Agentic Authority & Evidence Framework (AAEF) is a practical control framework for governing **delegated authority**, **policy-enforced action boundaries**, and **verifiable evidence** in agentic AI systems.
+Agentic Authority & Evidence Framework (AAEF) is a public framework for describing, reviewing, and evidencing authority boundaries in agentic AI systems.
+
+Its core thesis is:
+
+> Model output is not authority.
+
+AAEF focuses on the point where model output, agent-generated intent, or tool requests may become real-world action. It asks whether that action was authorized, enforced, bounded, attributable, and evidenced.
 
 AAEF is designed for AI agents that do more than generate text. It focuses on agents that can call tools, access data, delegate tasks, interact with other agents, and perform meaningful actions on behalf of humans or organizations.
 
@@ -50,9 +56,11 @@ If an organization cannot answer these questions, it cannot reliably govern agen
 
 AAEF does **not** define a new identity protocol, authentication protocol, authorization protocol, or agent communication protocol.
 
-AAEF does **not** replace AI governance frameworks, Zero Trust frameworks, identity standards, agent communication standards, or threat taxonomies.
+AAEF does **not** replace AI governance frameworks, Zero Trust frameworks, identity standards, agent communication standards, privileged-access controls, audit programs, legal review, or threat taxonomies.
 
-Instead, AAEF is intended to complement them by defining action assurance controls for high-impact AI agent actions.
+AAEF is not a certification scheme, compliance framework, audit opinion, legal sufficiency model, production-readiness claim, or assertion of equivalence with external frameworks.
+
+Instead, AAEF is intended to complement existing governance, security, identity, and assurance approaches by defining action assurance controls for high-impact AI agent actions.
 
 ## Language / Translations
 
@@ -95,13 +103,15 @@ AAEF is intended for:
 
 ## Document Status
 
-**AAEF v0.6.0 Practical Adoption Readiness Planning Release** is the latest public review planning release.
+**AAEF v1.0.0 Stable Release Path Planning Release** is the latest release.
 
-AAEF v0.6.0 is a non-normative planning and adoption-readiness release. It organizes implementer, operational, legal/compliance, security architecture, and risk owner planning artifacts for future adoption-facing refinement.
+AAEF v1.0.0 is a conservative release path planning release. It consolidates the release path and post-v1.0.0 planning posture, but it does not, by itself, change the current active control and assessment baseline.
 
-AAEF v0.6.0 does not, by itself, change the current active control and assessment baseline. AAEF v0.4.1 remains the current control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, or testing procedures.
+AAEF v0.4.1 remains the current active control and assessment baseline unless a later release explicitly updates the control catalog, evidence schema, assessment artifacts, or testing procedures.
 
-AAEF v0.5.0 remains available as the prior public review planning release. Earlier v0.3.x, v0.2.x, and v0.1.x releases remain available as prior public review baselines.
+Planning and readiness-review materials from v0.6.0, v0.7.0, v1.0.0, and post-v1.0.0 status reviews remain status and planning records unless a later release explicitly promotes their contents into the active baseline.
+
+Earlier v0.6.0, v0.5.0, v0.4.x, v0.3.x, v0.2.x, and v0.1.x releases remain available as prior public review, planning, or baseline-related records according to their release posture.
 
 The current control catalog file remains:
 
@@ -136,7 +146,9 @@ The v0.4.x Public Review Draft includes:
 - validation for testing procedures and external mappings,
 - and historical release preparation records under `docs/en/release/`.
 
-AAEF v0.6.0 remains a public review planning release. It is not a certification scheme, formal standard, implementation conformance claim, audit opinion, compliance equivalence, conformity claim, or claim of complete mitigation.
+AAEF v1.0.0 does not establish certification, compliance, conformity, audit sufficiency, legal sufficiency, implementation conformance, production readiness, or external-framework equivalence.
+
+AAEF artifacts may support structured review, but they do not replace implementation-specific assessment, organizational risk decisions, legal review, external assurance processes, or auditor judgment.
 
 Feedback, issues, and pull requests are welcome.
 
@@ -384,7 +396,7 @@ For the post-v1.0.0 release and baseline posture, see the v1.0.0 release notes a
 
 If you reference this work, please cite it as:
 
-> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v0.6.0 Practical Adoption Readiness Planning Release, 2026.
+> Kazuma Horishita, *Agentic Authority & Evidence Framework (AAEF): An Action Assurance Control Profile for Agentic AI Systems*, v1.0.0 Stable Release Path Planning Release, 2026.
 
 ## Research and Open Questions
 
