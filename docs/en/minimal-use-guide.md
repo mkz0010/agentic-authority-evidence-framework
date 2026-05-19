@@ -336,13 +336,13 @@ This table is only a discussion aid.
 
 It is not a complete AAEF assessment result.
 
-## Other tool-call decisions where the same pattern applies
+## Other AI agent action decisions where the same pattern applies
 
 The email example is only one illustration.
 
-The same AAEF review pattern can apply to other AI agent tool-call decisions.
+The same AAEF review pattern can apply to other AI agent action decisions, including tool calls, backend operations, data access, external communications, and delegated tasks.
 
-| Tool-call decision | What the review should bound | What evidence or non-execution record should show |
+| Action decision | What the review should bound | What evidence or non-execution record should show |
 | --- | --- | --- |
 | Create, modify, or delete a cloud resource | Resource identity, cloud account, environment, requested change, cost or security impact, and authority to change it. | Linked request, policy or approval decision, dispatch result, backend result, rollback record, or non-dispatch reason. |
 | Query or export data from an internal database | Dataset, query scope, row or field limits, purpose, sensitivity, retention, and principal context. | Query request, authorization decision, export or query result, data boundary, approval context, or blocked/out-of-scope reason. |
