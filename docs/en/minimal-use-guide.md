@@ -336,6 +336,28 @@ This table is only a discussion aid.
 
 It is not a complete AAEF assessment result.
 
+## Other tool-call decisions where the same pattern applies
+
+The email example is only one illustration.
+
+The same AAEF review pattern can apply to other AI agent tool-call decisions.
+
+| Tool-call decision | What the review should bound | What evidence or non-execution record should show |
+| --- | --- | --- |
+| Create, modify, or delete a cloud resource | Resource identity, cloud account, environment, requested change, cost or security impact, and authority to change it. | Linked request, policy or approval decision, dispatch result, backend result, rollback record, or non-dispatch reason. |
+| Query or export data from an internal database | Dataset, query scope, row or field limits, purpose, sensitivity, retention, and principal context. | Query request, authorization decision, export or query result, data boundary, approval context, or blocked/out-of-scope reason. |
+| Change an account, role, permission, or access policy | Target principal, target resource, requested permission, duration, approval authority, and scope. | Entitlement-change request, decision record, applied or not-applied result, expiry, revocation, or escalation requirement. |
+| Trigger a CI/CD deployment or rollback | Repository, artifact or commit digest, environment, change ticket, deployment window, and rollback authority. | Deployment request, policy decision, artifact binding, dispatch result, deployment outcome, hold, denial, or rollback record. |
+| Open, escalate, or close an operational ticket | Ticket identity, affected service, severity, status transition, assignee, and workflow authority. | Ticket action request, workflow decision, status-change record, reviewer context, or reason the transition was blocked. |
+| Request a security scan within an approved scope | Target scope, scan type, intensity, time window, authorization source, and non-target boundaries. | Scan request, scope decision, dispatch or non-dispatch record, tool result reference, or out-of-scope denial reason. |
+| Modify or delete a shared file | File identity, owner, location, data classification, requested change, retention rule, and authority to modify or delete. | File action request, permission decision, file digest or reference, change/delete result, restoration path, or blocked reason. |
+
+In each case, the review question is not whether the model sounded reasonable.
+
+The review question is whether the proposed action was converted into a bounded request, checked against authority and scope, controlled at dispatch or backend execution, and evidenced in a way that supports later reconstruction.
+
+These examples are illustrative only. They are not complete assessment scenarios, conformance tests, implementation checklists, production-readiness checks, or authorization to execute those actions.
+
 ## What AAEF evidence does not prove
 
 AAEF evidence supports review and reconstruction.
