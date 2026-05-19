@@ -309,6 +309,7 @@ These entries register top-level numbered English documents that were not previo
 | `docs/en/11-high-impact-action-taxonomy.md` | 11. High-Impact Action Taxonomy | Core framework document |
 | `docs/en/12-assessment-quick-start.md` | 12. Assessment Quick Start | Practitioner assessment guidance |
 | `docs/en/13-one-page-overview.md` | 13. AAEF One-Page Overview | Core framework document |
+| `docs/en/minimal-use-guide.md` | minimal use guide | Non-normative first-stop entry point for new readers; introduces the AAEF thesis, five questions, minimal vocabulary, one action-flow review pattern, and non-proof boundaries without creating a complete assessment or baseline update. |
 | `docs/en/14-evidence-event-schema.md` | 14. Evidence Event Schema | Core schema reference |
 | `docs/en/15-v02-control-expansion-notes.md` | 15. v0.2 Control Expansion Notes | Core framework document |
 | `docs/en/17-reference-architecture.md` | 17. Reference Architecture | Core framework document |

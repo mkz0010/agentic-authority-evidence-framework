@@ -20,6 +20,12 @@ AAEF focuses on the point where model output, agent-generated intent, or tool re
 AAEF is designed for AI agents that do more than generate text. It focuses on agents that can call tools, access data, delegate tasks, interact with other agents, and perform meaningful actions on behalf of humans or organizations.
 
 
+## First stop for new readers
+
+New to AAEF? Start with [`docs/en/minimal-use-guide.md`](docs/en/minimal-use-guide.md).
+
+The minimal use guide is a non-normative entry point for understanding AAEF's core thesis, five questions, minimal vocabulary, and a single action-flow review pattern. It supports minimal review framing only; it is not a complete AAEF assessment, certification, audit, compliance, legal, readiness, conformance, or external-framework-equivalence claim.
+
 ## Adoption-readiness navigation
 
 For role-based adoption guidance, see the [v0.6.0 adoption package index](docs/en/status/v060-adoption-package-index-planning.md).
