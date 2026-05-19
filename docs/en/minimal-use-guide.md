@@ -170,7 +170,7 @@ A reviewer should not assume that a human approval click is the same as risk-own
 
 ## One action-flow review pattern
 
-This pattern illustrates AAEF framing for one AI agent tool-call decision.
+This pattern illustrates AAEF framing for one AI agent action decision.
 
 It is not a complete assessment procedure.
 
