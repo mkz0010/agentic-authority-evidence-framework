@@ -32,6 +32,19 @@ This guide is useful for a single design review conversation.
 
 It is not a complete AAEF assessment.
 
+## What this guide helps you do
+
+This guide is intended to help a reviewer turn a vague question such as "Can the AI agent do this?" into a more precise review conversation:
+
+- What action was proposed?
+- Who or what had authority to request it?
+- What boundary decided whether execution was allowed?
+- Was the action dispatched or blocked?
+- What evidence exists for the decision and outcome?
+- What remains uncertain after reviewing that evidence?
+
+The guide does not make the action safe, compliant, authorized, or production-ready by itself. It provides a small entry point for asking the right questions before larger AAEF materials are needed.
+
 ## What this guide is not
 
 This guide is not:
@@ -72,6 +85,8 @@ Before a meaningful action is executed, a system should be able to show:
 AAEF focuses on the boundary between model-generated intent and real-world or system-level action.
 
 ## The five questions
+
+This guide presents the five questions before the vocabulary on purpose. A new reader should first see the review problem AAEF is trying to make visible. The vocabulary section then provides the minimum terms needed to discuss those questions more precisely.
 
 Use these five questions in the first review conversation.
 
@@ -281,6 +296,10 @@ Review question:
 
 ### Step 6: Record what remains uncertain
 
+Uncertainty is structural, not incidental. AAEF evidence can support reconstruction and review, but it does not eliminate all uncertainty about intent, correctness, sufficiency, safety, legal effect, or risk acceptance.
+
+A minimal review should therefore record what remains uncertain instead of treating the evidence record as proof that the action was fully safe, compliant, or acceptable.
+
 AAEF evidence may still leave gaps.
 
 Examples:
@@ -299,6 +318,8 @@ Review question:
 ## Minimal review output
 
 For a first conversation, a reviewer can summarize the result in a small table.
+
+The following table condenses Steps 1-6 into a single discussion artifact. It is not a complete AAEF assessment worksheet, conformance test, implementation checklist, or production-readiness checklist.
 
 | Review item | Example answer |
 | --- | --- |
