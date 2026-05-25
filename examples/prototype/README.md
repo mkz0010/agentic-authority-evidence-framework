@@ -180,7 +180,7 @@ They do not provide:
 - certification, or
 - conformity.
 
-A later PR may add local validation for these fixtures.
+Local validation is present for the current generic prototype fixtures, but it is limited to static structural and consistency checks. It does not provide production assurance, implementation conformance, audit sufficiency, legal sufficiency, compliance sufficiency, certification, conformity, evidence sufficiency, assessment sufficiency, or external-framework equivalence.
 
 ## Next step
 
