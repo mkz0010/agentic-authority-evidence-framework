@@ -156,6 +156,8 @@ The validator does not provide production assurance, implementation conformance,
 
 ## Current static fixtures
 
+The current prototype fixture validator covers the existing generic `permitted/` and `non-execution/` fixture paths. The `operational-action/` fixture family is currently static JSON example material and is not yet covered by operational-action-specific validation beyond general JSON syntax checks.
+
 These fixtures may be checked by repository prototype validation tools, but they are not conformance tests, certification evidence, production-readiness checks, audit evidence sufficiency determinations, or legal/compliance sufficiency claims.
 
 This directory now includes minimal static fixture examples for two illustrative paths:
@@ -185,8 +187,10 @@ Local validation is present for the current generic prototype fixtures, but it i
 
 ## Next step
 
-The next safe step is to keep the current generic static fixtures stable while considering a separately scoped operational-action fixture family, such as a logistics/RPA shipment action boundary demo.
+The current prototype area now includes generic static fixtures and a separately scoped operational-action static fixture family.
 
-Any such fixture family should remain static, illustrative, non-executable, and separate from live AI, real RPA, real backend execution, real customer data, vulnerability assessment behavior, scanner behavior, and AAEF-AI-VA implementation detail.
+The next safe step is to keep these fixtures stable while considering a reviewer walkthrough and, separately, whether prototype validation should be extended to cover the operational-action fixture family.
+
+Any validator extension should remain limited to static structural and consistency checks. It should not create production assurance, implementation conformance, control conformance, certification, audit sufficiency, legal sufficiency, compliance sufficiency, evidence sufficiency, assessment sufficiency, external-framework equivalence, deployment guidance, or customer PoC approval.
 
 Any future executable code should be introduced only after the static fixture and validation boundaries are clear.

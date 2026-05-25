@@ -10,6 +10,10 @@ These fixtures are designed to show how a simulated AI or automation proposal ca
 
 They are not a logistics product, RPA integration, production automation system, deployment guide, conformance test, certification artifact, audit opinion, legal/compliance determination, evidence sufficiency determination, assessment sufficiency determination, or external-framework equivalence claim.
 
+The file names and field shapes are illustrative fixture structure only; they are not a required AAEF schema, conformance format, or production data model.
+
+`backend-verification.example.json` represents a simulated backend boundary check or non-invocation record, not a real backend integration or backend implementation pattern.
+
 ## Fixture paths
 
 - `permitted-shipment-release/` — an allowed shipment hold release path.
@@ -24,6 +28,12 @@ Each path contains:
 - `backend-verification.example.json`
 - `evidence-event.example.json`
 - `reconstruction-notes.example.json`
+
+## How to read one scenario
+
+Start with `action-request.example.json`, then follow the identifiers through `authorization-decision.example.json`, `dispatch-decision.example.json`, `backend-verification.example.json`, `evidence-event.example.json`, and `reconstruction-notes.example.json`.
+
+The point is not to model logistics operations. The point is to see where proposal, authority, dispatch, backend invocation or non-invocation, evidence, and reconstruction are separated.
 
 ## Review questions
 
