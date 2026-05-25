@@ -1,0 +1,42 @@
+{
+  "fixture_family": "operational-action",
+  "scenario_id": "denied-address-change",
+  "scenario_title": "Denied address change / non-execution",
+  "correlation_id": "opact-denied-address-change-chain-001",
+  "status": "static_illustrative_fixture",
+  "claim_boundary": [
+    "static_fixture_only",
+    "illustrative_example_only",
+    "not_executable_code",
+    "not_production_automation",
+    "not_logistics_policy",
+    "not_customer_data",
+    "not_real_backend_execution",
+    "not_rpa_integration",
+    "not_scanner_behavior",
+    "not_vulnerability_assessment",
+    "not_aaef_ai_va_implementation_detail",
+    "not_production_assurance",
+    "not_implementation_conformance",
+    "not_control_conformance",
+    "not_certification",
+    "not_audit_sufficiency",
+    "not_legal_sufficiency",
+    "not_compliance_sufficiency",
+    "not_evidence_sufficiency",
+    "not_assessment_sufficiency",
+    "not_external_framework_equivalence"
+  ],
+  "record_type": "backend_verification",
+  "backend_verification_id": "opact-denied-address-change-backend-001",
+  "dispatch_decision_id": "opact-denied-address-change-dispatch-001",
+  "backend_boundary": "simulated_backend_boundary",
+  "backend_outcome": "simulated_backend_not_invoked",
+  "backend_invoked": false,
+  "verification": {
+    "request_correlation_checked": true,
+    "authorization_decision_checked": true,
+    "dispatch_decision_checked": true,
+    "real_backend_not_used": true
+  }
+}

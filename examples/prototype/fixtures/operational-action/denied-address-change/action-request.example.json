@@ -1,0 +1,53 @@
+{
+  "fixture_family": "operational-action",
+  "scenario_id": "denied-address-change",
+  "scenario_title": "Denied address change / non-execution",
+  "correlation_id": "opact-denied-address-change-chain-001",
+  "status": "static_illustrative_fixture",
+  "claim_boundary": [
+    "static_fixture_only",
+    "illustrative_example_only",
+    "not_executable_code",
+    "not_production_automation",
+    "not_logistics_policy",
+    "not_customer_data",
+    "not_real_backend_execution",
+    "not_rpa_integration",
+    "not_scanner_behavior",
+    "not_vulnerability_assessment",
+    "not_aaef_ai_va_implementation_detail",
+    "not_production_assurance",
+    "not_implementation_conformance",
+    "not_control_conformance",
+    "not_certification",
+    "not_audit_sufficiency",
+    "not_legal_sufficiency",
+    "not_compliance_sufficiency",
+    "not_evidence_sufficiency",
+    "not_assessment_sufficiency",
+    "not_external_framework_equivalence"
+  ],
+  "record_type": "action_request",
+  "action_request_id": "opact-denied-address-change-request-001",
+  "proposal_source": "simulated_ai_or_automation_proposal",
+  "model_or_automation_output_is_authority": false,
+  "requested_action": {
+    "action_type": "delivery_address_change",
+    "summary": "A simulated automation proposal requests a delivery address change for a higher-risk order, but the request is denied and not dispatched.",
+    "risk_level": "elevated",
+    "scenario_inputs": {
+      "payment_status": "confirmed",
+      "item_value_band": "high_value",
+      "address_change_requested": true,
+      "new_address_previously_associated": false,
+      "identity_verification_status": "incomplete",
+      "fraud_or_exception_flag": true,
+      "actor_scope": "address_change_not_allowed_without_additional_verification"
+    }
+  },
+  "authority_context": {
+    "authority_required": true,
+    "execution_requires_authorization_decision": true,
+    "dispatch_requires_allowed_or_reviewed_decision": true
+  }
+}

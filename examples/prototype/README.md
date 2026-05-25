@@ -162,6 +162,7 @@ This directory now includes minimal static fixture examples for two illustrative
 
 - `fixtures/permitted/` — a permitted action path with request, authorization decision, dispatch decision, backend verification, evidence event, and reconstruction notes.
 - `fixtures/non-execution/` — a non-execution path with request, authorization decision, dispatch refusal, backend non-execution, evidence event, and reconstruction notes.
+- `fixtures/operational-action/` — a logistics/RPA shipment action boundary fixture family with permitted, denied, and human-review-required static paths.
 
 These fixtures are static JSON examples only.
 

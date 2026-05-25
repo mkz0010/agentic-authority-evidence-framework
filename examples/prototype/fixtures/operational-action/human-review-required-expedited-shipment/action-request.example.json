@@ -1,0 +1,52 @@
+{
+  "fixture_family": "operational-action",
+  "scenario_id": "human-review-required-expedited-shipment",
+  "scenario_title": "Human review required expedited shipment",
+  "correlation_id": "opact-human-review-expedited-shipment-chain-001",
+  "status": "static_illustrative_fixture",
+  "claim_boundary": [
+    "static_fixture_only",
+    "illustrative_example_only",
+    "not_executable_code",
+    "not_production_automation",
+    "not_logistics_policy",
+    "not_customer_data",
+    "not_real_backend_execution",
+    "not_rpa_integration",
+    "not_scanner_behavior",
+    "not_vulnerability_assessment",
+    "not_aaef_ai_va_implementation_detail",
+    "not_production_assurance",
+    "not_implementation_conformance",
+    "not_control_conformance",
+    "not_certification",
+    "not_audit_sufficiency",
+    "not_legal_sufficiency",
+    "not_compliance_sufficiency",
+    "not_evidence_sufficiency",
+    "not_assessment_sufficiency",
+    "not_external_framework_equivalence"
+  ],
+  "record_type": "action_request",
+  "action_request_id": "opact-human-review-expedited-shipment-request-001",
+  "proposal_source": "simulated_ai_or_automation_proposal",
+  "model_or_automation_output_is_authority": false,
+  "requested_action": {
+    "action_type": "expedited_shipment_request",
+    "summary": "A simulated automation proposal requests expedited shipment for a high-value order, requiring human review before any dispatch.",
+    "risk_level": "requires_review",
+    "scenario_inputs": {
+      "payment_status": "confirmed",
+      "item_value_band": "high_value",
+      "special_contract_or_sla": true,
+      "inventory_allocation_impact": "possible",
+      "additional_cost_or_exception_handling": true,
+      "actor_scope": "automatic_expedite_not_allowed_for_review_required_case"
+    }
+  },
+  "authority_context": {
+    "authority_required": true,
+    "execution_requires_authorization_decision": true,
+    "dispatch_requires_allowed_or_reviewed_decision": true
+  }
+}
