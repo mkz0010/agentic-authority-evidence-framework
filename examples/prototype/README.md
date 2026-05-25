@@ -1,8 +1,8 @@
 # Prototype Examples
 
-This directory is reserved for future AAEF prototype and reference implementation examples.
+This directory contains non-executable AAEF prototype example materials, including static JSON fixtures and boundary notes.
 
-The initial purpose of this directory is to establish a safe, non-executable boundary for prototype-facing materials before fixtures, validators, or runnable code are introduced.
+It does not contain runnable prototype code, production service code, or reference implementation code.
 
 ## Status and claim boundary
 
@@ -184,6 +184,8 @@ Local validation is present for the current generic prototype fixtures, but it i
 
 ## Next step
 
-The next safe step is to add static fixtures for a permitted path and a non-execution path, or to define validation planning for such fixtures.
+The next safe step is to keep the current generic static fixtures stable while considering a separately scoped operational-action fixture family, such as a logistics/RPA shipment action boundary demo.
+
+Any such fixture family should remain static, illustrative, non-executable, and separate from live AI, real RPA, real backend execution, real customer data, vulnerability assessment behavior, scanner behavior, and AAEF-AI-VA implementation detail.
 
 Any future executable code should be introduced only after the static fixture and validation boundaries are clear.

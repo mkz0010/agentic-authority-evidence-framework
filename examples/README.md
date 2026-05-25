@@ -32,4 +32,4 @@ Schema validation is not automatically implied by presence in this directory. If
 
 ## Prototype examples
 
-- [Prototype Examples](prototype/README.md) — Non-executable boundary and planned structure for future prototype-facing examples.
+- [Prototype Examples](prototype/README.md) — Non-executable static prototype fixtures and boundary notes for prototype-facing examples.
