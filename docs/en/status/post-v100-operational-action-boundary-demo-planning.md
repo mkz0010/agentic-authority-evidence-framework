@@ -54,7 +54,7 @@ AAEF-AI-VA is an Applied Implementation with separate commercial, safety, operat
 
 AAEF-AI-VA should not become the primary public demo of AAEF main.
 
-AAEF main should be able to explain the framework using a safe, static, domain-neutral operational action-boundary example that does not depend on vulnerability assessment, scanner behavior, customer PoC material, commercial implementation detail, or AAEF-AI-VA technical design.
+AAEF main should be able to explain the framework using a safe, static, non-security operational action-boundary example that does not depend on vulnerability assessment, scanner behavior, customer PoC material, commercial implementation detail, or AAEF-AI-VA technical design.
 
 A logistics/RPA-style shipment action boundary is a useful first candidate because it is concrete, operational, understandable to non-security readers, and naturally supports permitted, denied, and human-review-required paths.
 
@@ -178,11 +178,13 @@ A static fixture helps readers understand the concept:
 
 A minimal executable demo would serve a different purpose. It would help readers imagine what changes when AAEF-style boundaries are inserted into their own system.
 
-The minimum executable proof-of-concept should show only three dynamic moments:
+The minimum executable proof-of-concept should show only five dynamic moments:
 
 1. an action request is created from an AI or automation proposal
 2. an authorization gate allows, denies, or holds the request
-3. an evidence record is produced for later reconstruction
+3. a dispatch decision is made
+4. a simulated backend invocation or non-invocation outcome is recorded
+5. an evidence record is produced for later reconstruction
 
 A later minimal executable demo does not need:
 
@@ -239,6 +241,14 @@ The logistics/RPA example is useful because it is:
 - suitable for demonstrating non-execution evidence
 
 It also avoids making the first public demo appear to be a scanner, compliance tool, audit system, or production automation product.
+
+## Relationship to existing prototype fixtures
+
+Existing prototype fixtures are generic AAEF prototype examples.
+
+This planning artifact considers whether a separate logistics/RPA-oriented static fixture family should be added later as a public operational action-boundary demo.
+
+A future logistics/RPA fixture family would not replace the existing prototype fixtures. It would provide a more reader-facing operational scenario for explaining action request, authorization decision, dispatch or non-dispatch, backend verification or non-invocation, evidence, and reviewer reconstruction boundaries.
 
 ## Proposed later repository work
 

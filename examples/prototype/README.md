@@ -6,7 +6,7 @@ The initial purpose of this directory is to establish a safe, non-executable bou
 
 ## Status and claim boundary
 
-This directory currently contains documentation only.
+This directory currently contains documentation and static JSON fixtures only.
 
 It does not provide:
 
@@ -155,6 +155,8 @@ It checks:
 The validator does not provide production assurance, implementation conformance, audit sufficiency, legal sufficiency, compliance sufficiency, certification, conformity, or equivalence with external frameworks.
 
 ## Current static fixtures
+
+These fixtures may be checked by repository prototype validation tools, but they are not conformance tests, certification evidence, production-readiness checks, audit evidence sufficiency determinations, or legal/compliance sufficiency claims.
 
 This directory now includes minimal static fixture examples for two illustrative paths:
 
