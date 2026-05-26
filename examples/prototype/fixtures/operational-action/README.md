@@ -35,6 +35,8 @@ Start with `action-request.example.json`, then follow the identifiers through `a
 
 The point is not to model logistics operations. The point is to see where proposal, authority, dispatch, backend invocation or non-invocation, evidence, and reconstruction are separated.
 
+For a longer static reviewer walkthrough, see [`reviewer-walkthrough.md`](reviewer-walkthrough.md).
+
 ## Review questions
 
 A reviewer should be able to ask:
