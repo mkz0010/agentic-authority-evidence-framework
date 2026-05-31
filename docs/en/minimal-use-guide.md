@@ -315,6 +315,8 @@ Review question:
 
 > What does the evidence not prove?
 
+For a static worked example of this pattern, see [`examples/prototype/fixtures/operational-action/reviewer-walkthrough.md`](../../examples/prototype/fixtures/operational-action/reviewer-walkthrough.md). It is illustrative only and does not provide implementation conformance, production readiness, audit sufficiency, legal sufficiency, compliance sufficiency, evidence sufficiency, assessment sufficiency, certification, or external-framework equivalence.
+
 ## Minimal review output
 
 For a first conversation, a reviewer can summarize the result in a small table.
