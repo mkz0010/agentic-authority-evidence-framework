@@ -160,7 +160,7 @@ The current prototype fixture validator covers the existing generic `permitted/`
 
 These fixtures may be checked by repository prototype validation tools, but they are not conformance tests, certification evidence, production-readiness checks, audit evidence sufficiency determinations, or legal/compliance sufficiency claims.
 
-This directory now includes minimal static fixture examples for two illustrative paths:
+This directory now includes generic static fixture examples and a separately scoped operational-action fixture family:
 
 - `fixtures/permitted/` — a permitted action path with request, authorization decision, dispatch decision, backend verification, evidence event, and reconstruction notes.
 - `fixtures/non-execution/` — a non-execution path with request, authorization decision, dispatch refusal, backend non-execution, evidence event, and reconstruction notes.
@@ -189,7 +189,7 @@ Local validation is present for the current generic prototype fixtures, but it i
 
 The current prototype area now includes generic static fixtures and a separately scoped operational-action static fixture family.
 
-The next safe step is to keep these fixtures stable while considering a reviewer walkthrough and, separately, whether prototype validation should be extended to cover the operational-action fixture family.
+The next safe step is to keep these fixtures and the reviewer walkthrough stable while considering, separately, whether prototype validation should be extended to cover the operational-action fixture family.
 
 Any validator extension should remain limited to static structural and consistency checks. It should not create production assurance, implementation conformance, control conformance, certification, audit sufficiency, legal sufficiency, compliance sufficiency, evidence sufficiency, assessment sufficiency, external-framework equivalence, deployment guidance, or customer PoC approval.
 
