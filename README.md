@@ -54,7 +54,7 @@ AAEF focuses on five practical assurance questions:
 2. **On whose behalf did it act?**
 3. **What authority did it have?**
 4. **Was the action allowed at the point of execution?**
-5. **What evidence proves what happened?**
+5. **What evidence supports review and reconstruction of the action path?**
 
 If an organization cannot answer these questions, it cannot reliably govern agentic AI systems in production.
 
