@@ -2,7 +2,21 @@
 
 ## Unreleased
 
-No unreleased changes.
+### Post-v1.0.0 non-normative documentation and example updates
+
+- Added and refined the operational-action static fixture family and reviewer walkthrough material.
+- Added operational-action validation planning limited to possible future static structural and consistency checks.
+- Linked the Minimal Use Guide to the operational-action reviewer walkthrough.
+- Cleaned up prototype README state wording after the operational-action fixture and walkthrough work.
+- Clarified public-entry and foundational evidence wording from proof-oriented language to review-and-reconstruction support language.
+
+### Scope boundary
+
+- These unreleased changes do not update the active baseline.
+- These unreleased changes do not update the framework version.
+- These unreleased changes do not update `CITATION.cff` beyond release metadata hygiene.
+- These unreleased changes do not update schemas, controls, validators, assessment artifacts, or testing procedures.
+- These unreleased changes do not create certification, audit, legal, compliance, evidence sufficiency, assessment sufficiency, production-readiness, implementation conformance, control conformance, or external-framework-equivalence claims.
 
 ## v0.6.0 Practical Adoption Readiness Planning Release - 2026-05-02
 
