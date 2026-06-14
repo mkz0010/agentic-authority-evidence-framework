@@ -30,7 +30,7 @@ AAEF is most relevant when a system must answer:
 2. On whose behalf was the action requested?
 3. With what authority?
 4. Was the action allowed at the point of execution?
-5. What evidence proves what happened or did not happen?
+5. What evidence supports review and reconstruction of what happened or did not happen?
 
 ## Planning-level gap statement
 

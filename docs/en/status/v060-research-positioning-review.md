@@ -37,7 +37,7 @@ A production system must also answer:
 2. On whose behalf did it act?
 3. What authority did it have?
 4. Was the action allowed at the point of execution?
-5. What evidence proves what happened?
+5. What evidence supports review and reconstruction of the action path?
 
 AAEF treats these questions as the core of agentic action assurance.
 
